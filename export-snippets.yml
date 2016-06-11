@@ -1404,3 +1404,91 @@
             </div>
         </section>
 
+- trigger: most-requested
+  description: Creates a Most requested section used on Canada.ca pages
+  scope: html
+  mTime: 1465680405835
+  text: |
+        <section class="lnkbx well">
+            <h2>Most requested</h2>
+            <ul>
+                <li><a href="${1:link}">${2:text}</a></li>${3}
+            </ul>
+        </section>
+
+- trigger: more-info
+  description: Creates a More information for section used on Canada.ca pages
+  scope: html
+  mTime: 1465680399641
+  text: |
+        <section class="lnkbx well">
+            <h2>More information for</h2>
+            <ul>
+                <li><a href="${1:link}">${2:text}</a></li>${3}
+            </ul>
+        </section>
+
+- trigger: services-info
+  description: Creates a Services and information section used on Canada.ca pages
+  scope: html
+  mTime: 1465680534631
+  text: |
+        <h2>Services and information</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <section class="gc-drmt">
+                    <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
+                    <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section class="gc-drmt">
+                    <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
+                    <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
+                </section>
+            </div>
+            <div class="clearfix"></div>${1}
+        </div>
+
+- trigger: services-info-more
+  description: Creates a details panel for more services and information used on Canada.ca pages
+  scope: html
+  mTime: 1465680639425
+  text: |
+        <details class="mrgn-tp-md brdr-0">
+            <summary class="btn btn-default text-center">Show more services and information</summary>
+            <div class="row">
+                <div class="col-md-6">
+                    <section class="gc-drmt">
+                        <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
+                        <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <section class="gc-drmt">
+                        <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
+                        <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
+                    </section>
+                </div>
+                <div class="clearfix"></div>${1}
+            </div>
+        </details>
+
+- trigger: topic-head
+  description: Creates the head section for a topic pages used on Canada.ca pages
+  scope: html
+  mTime: 1465680764395
+  text: |
+        <div class="row profile">
+            <div class="col-md-6">
+                <h1 property="name" id="wb-cont">${1:[Topic name]}</h1>
+                <p class="pagetag">${2:1-2 sentences that describe the topics and top tasks that can be accessed on this page.}</p>
+                <section class="followus">
+                    <h2>Follow:</h2>
+                </section>
+            </div>
+            <div class="col-md-6 margin-top-small hidden-sm hidden-xs">
+                <img src="${3:https://wet-boew.github.io/themes-dist/GCWeb/img/520x200.png}" alt="${4:description}" class="pull-right img-responsive thumbnail">
+            </div>
+        </div>${5}
+
