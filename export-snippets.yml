@@ -1,0 +1,890 @@
+- trigger: fn-item
+  description: Creates a footnote item
+  scope: html
+  mTime: 1465584805341
+  text: |
+        <dt>Footnote ${1:#}</dt>
+        <dd id="fn${1:#}">
+            <p>${2:Example of standard footnote}</p>
+            <p class="fn-rtn">
+                <a href="#fn${1:#}-rf"><span class="wb-inv">Return to footnote</span> ${1:#}<span class="wb-inv"> referrer</span></a>
+            </p>
+        </dd>
+        ${3}
+
+- trigger: fn-section
+  description: Creates a section for footnotes
+  scope: html
+  mTime: 1465584780866
+  text: |
+        <aside class="wb-fnote" role="note">
+            <h3 id="fn">Footnotes</h3>
+            <dl>
+                <dt>Footnote 1</dt>
+                <dd id="fn1">
+                    <p>${1:Example of a standard footnote.}</p>
+                    <p class="fn-rtn">
+                        <a href="#fn1-rf"><span class="wb-inv"> Return to footnote </span>1<span class="wb-inve"> referrer</span></a>
+                    </p>
+                </dd>
+                ${2}
+            </dl>
+        </aside>
+
+- trigger: tab-link
+  description: Creates a link to show a specific panel in a tabbed interface
+  scope: html
+  mTime: 1465584110361
+  text: |
+        <a href="${1:details-panel1}" class="wb-tabs-ext">${2:Show the first panel}</a>
+
+- trigger: wb-tabs
+  description: Creates a basic WET4 tabbed interface
+  scope: html
+  mTime: 1465605611899
+  text: |
+        <div class="wb-tabs">
+            <div class="tabpanels">
+                <details id="${1:details-panel1}">
+                    <summary>${2:Example 1}</summary>
+                    ${3}
+                </details>
+                ${4}
+            </div>
+        </div>
+
+- trigger: wb-table-striped
+  description: Creates a striped WET4 sortable table
+  scope: html
+  mTime: 1465583601963
+  text: |
+        <table class="table wb-tables table-striped">
+            <thead>
+                <tr>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+- trigger: wb-table
+  description: Creates a WET4 sortable table
+  scope: html
+  mTime: 1465583572620
+  text: |
+        <table class="table wb-tables">
+            <thead>
+                <tr>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+- trigger: table-striped
+  description: Creates a striped table
+  scope: html
+  mTime: 1465583518776
+  text: |
+        <table class="table table-responsive table-bordered table-striped">
+            <thead>
+                <tr class="active">
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+- trigger: table
+  description: Creates a basic table
+  scope: html
+  mTime: 1465583491870
+  text: |
+        <table class="table table-responsive table-bordered">
+            <thead>
+                <tr class="active">
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+- trigger: blockquote-reverse
+  description: Creates a reverse blockquote with a footer
+  scope: html
+  mTime: 1465583335055
+  text: |
+        <blockquote class="blockquote-reverse">
+            <p>${1:quote}</p>
+            <footer>${2:Someone famous}</footer>
+        </blockquote>
+
+- trigger: blockquote
+  description: Creates a blockquote with a footer
+  scope: html
+  mTime: 1465583297601
+  text: |
+        <blockquote>
+            <p>${1:quote}</p>
+            <footer>${2:Someone famous}</footer>
+        </blockquote>
+
+- trigger: ul-col-all
+  description: Creates a multi-column ul
+  scope: html
+  mTime: 1465582482482
+  text: |
+        <ul class="colcount-xs-${1:2-4} colcount-sm-${2:2-4} colcount-md-${3:2-4} colcount-lg-${4:2-4}">
+            <li>${5}</li>
+        </ul>
+
+- trigger: ol-col-all
+  description: Creates a multi-column ol
+  scope: html
+  mTime: 1465582465395
+  text: |
+        <ol class="colcount-xs-${1:2-4} colcount-sm-${2:2-4} colcount-md-${3:2-4} colcount-lg-${4:2-4}">
+            <li>${5}</li>
+        </ol>
+
+- trigger: row
+  description: Creates a basic row div
+  scope: html
+  mTime: 1465578440234
+  text: |
+        <div class="row">
+            ${1}
+        </div>
+
+- trigger: ul-col-xs
+  description: Creates a multi-column-xs ul
+  scope: html
+  mTime: 1465581858932
+  text: |
+        <ul class="colcount-xs-${1:2-4}">
+            <li>${2}</li>
+        </ul>
+
+- trigger: ul-col-sm
+  description: Creates a multi-column-sm ul
+  scope: html
+  mTime: 1465581858932
+  text: |
+        <ul class="colcount-sm-${1:2-4}">
+            <li>${2}</li>
+        </ul>
+
+- trigger: ul-col-md
+  description: Creates a multi-column-md ul
+  scope: html
+  mTime: 1465581858932
+  text: |
+        <ul class="colcount-md-${1:2-4}">
+            <li>${2}</li>
+        </ul>
+
+- trigger: ul-col-lg
+  description: Creates a multi-column-lg ul
+  scope: html
+  mTime: 1465581858932
+  text: |
+        <ul class="colcount-lg-${1:2-4}">
+            <li>${2}</li>
+        </ul>
+
+- trigger: ol-col-xs
+  description: Creates a multi-column-xs ol
+  scope: html
+  mTime: 1465581858932
+  text: |
+        <ol class="colcount-xs-${1:2-4}">
+            <li>${2}</li>
+        </ol>
+
+- trigger: ol-col-sm
+  description: Creates a multi-column-sm ol
+  scope: html
+  mTime: 1465581858932
+  text: |
+        <ol class="colcount-sm-${1:2-4}">
+            <li>${2}</li>
+        </ol>
+
+- trigger: ol-col-md
+  description: Creates a multi-column-md ol
+  scope: html
+  mTime: 1465581858932
+  text: |
+        <ol class="colcount-md-${1:2-4}">
+            <li>${2}</li>
+        </ol>
+
+- trigger: ol-col-lg
+  description: Creates a multi-column-lg ol
+  scope: html
+  mTime: 1465581858932
+  text: |
+        <ol class="colcount-lg-${1:2-4}">
+            <li>${2}</li>
+        </ol>
+
+- trigger: dl-horrizontal
+  description: Creates a horizontal dl
+  scope: html
+  mTime: 1465581571031
+  text: |
+        <dl class="dl-horizontal">
+            <dt>${1:title}</dt>
+            <dd>${2:definition}</dd>
+        </dl>
+
+- trigger: ol-inline
+  description: Creates an inline ol
+  scope: html
+  mTime: 1465581597945
+  text: |
+        <ol class="list-inline">
+            <li>${1}</li>
+        </ol>
+
+- trigger: ul-inline-unstyled
+  description: Creates an unstyled inline ul
+  scope: html
+  mTime: 1465581613301
+  text: |
+        <ul class="list-inline list-unstyled">
+            <li>${1}</li>
+        </ul>
+
+- trigger: ul-inline
+  description: Creates an inline ul
+  scope: html
+  mTime: 1465581609305
+  text: |
+        <ul class="list-inline">
+            <li>${1}</li>
+        </ul>
+
+- trigger: ol-upr-alph
+  description: Creates an ol using uppercase alpha
+  scope: html
+  mTime: 1465581604154
+  text: |
+        <ol class="lst-upr-alph">
+            <li>${1}</li>
+        </ol>
+
+- trigger: ol-lwr-alph
+  description: Creates an ol using lowercase alpha
+  scope: html
+  mTime: 1465581601411
+  text: |
+        <ol class="lst-lwr-alph">
+            <li>${1}</li>
+        </ol>
+
+- trigger: ul-unstyled
+  description: Creates an unstyled ul
+  scope: html
+  mTime: 1465581616532
+  text: |
+        <ul class="list-untyled">
+            <li>${1}</li>
+        </ul>
+
+- trigger: panel-primary
+  description: Creates a panel-primary div
+  scope: html
+  mTime: 1465580599466
+  text: |
+        <section class="panel panel-primary">
+            <header class="panel-heading">
+                <h3 class="panel-title">${1:Panel title}</h3>
+            </header>
+            <div class="panel-body">
+                <p>${2:Panel content}</p>
+            </div>
+        </section>
+
+- trigger: panel-success
+  description: Creates a panel-success div
+  scope: html
+  mTime: 1465580599466
+  text: |
+        <section class="panel panel-success">
+            <header class="panel-heading">
+                <h3 class="panel-title">${1:Panel title}</h3>
+            </header>
+            <div class="panel-body">
+                <p>${2:Panel content}</p>
+            </div>
+        </section>
+
+- trigger: panel-info
+  description: Creates a panel-info div
+  scope: html
+  mTime: 1465580599466
+  text: |
+        <section class="panel panel-info">
+            <header class="panel-heading">
+                <h3 class="panel-title">${1:Panel title}</h3>
+            </header>
+            <div class="panel-body">
+                <p>${2:Panel content}</p>
+            </div>
+        </section>
+
+- trigger: panel-warning
+  description: Creates a panel-warning div
+  scope: html
+  mTime: 1465580599466
+  text: |
+        <section class="panel panel-warning">
+            <header class="panel-heading">
+                <h3 class="panel-title">${1:Panel title}</h3>
+            </header>
+            <div class="panel-body">
+                <p>${2:Panel content}</p>
+            </div>
+        </section>
+
+- trigger: panel-danger
+  description: Creates a panel-danger div
+  scope: html
+  mTime: 1465580599466
+  text: |
+        <section class="panel panel-danger">
+            <header class="panel-heading">
+                <h3 class="panel-title">${1:Panel title}</h3>
+            </header>
+            <div class="panel-body">
+                <p>${2:Panel content}</p>
+            </div>
+        </section>
+
+- trigger: panel
+  description: Creates a panel div
+  scope: html
+  mTime: 1465580599466
+  text: |
+        <section class="panel panel-${1:default}">
+            <header class="panel-heading">
+                <h3 class="panel-title">${2:Panel title}</h3>
+            </header>
+            <div class="panel-body">
+                <p>${3:Panel content}</p>
+            </div>
+        </section>
+
+- trigger: btn-sm-primary
+  description: Creates an a tag button-sm
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-sm btn-primary">${2:text}</a>
+
+- trigger: btn-sm-success
+  description: Creates an a tag button-sm
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-sm btn-success">${2:text}</a>
+
+- trigger: btn-sm-info
+  description: Creates an a tag button-sm
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-sm btn-info">${2:text}</a>
+
+- trigger: btn-sm-warning
+  description: Creates an a tag button-sm
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-sm btn-warning">${2:text}</a>
+
+- trigger: btn-sm-danger
+  description: Creates an a tag button-sm
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-sm btn-danger">${2:text}</a>
+
+- trigger: btn-xs-primary
+  description: Creates an a tag button-xs
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-xs btn-primary">${2:text}</a>
+
+- trigger: btn-xs-success
+  description: Creates an a tag button-xs
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-xs btn-success">${2:text}</a>
+
+- trigger: btn-xs-info
+  description: Creates an a tag button-xs
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-xs btn-info">${2:text}</a>
+
+- trigger: btn-xs-warning
+  description: Creates an a tag button-xs
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-xs btn-warning">${2:text}</a>
+
+- trigger: btn-xs-danger
+  description: Creates an a tag button-xs
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-xs btn-danger">${2:text}</a>
+
+- trigger: btn-lg-primary
+  description: Creates an a tag button-lg
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-lg btn-primary">${2:text}</a>
+
+- trigger: btn-lg-success
+  description: Creates an a tag button-lg
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-lg btn-success">${2:text}</a>
+
+- trigger: btn-lg-info
+  description: Creates an a tag button-lg
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-lg btn-info">${2:text}</a>
+
+- trigger: btn-lg-warning
+  description: Creates an a tag button-lg
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-lg btn-warning">${2:text}</a>
+
+- trigger: btn-lg-danger
+  description: Creates an a tag button-lg
+  scope: html
+  mTime: 1465579727278
+  text: |
+        <a href="${1:link}" class="btn btn-lg btn-danger">${2:text}</a>
+
+- trigger: btn-lg
+  description: Creates an a tag button-lg
+  scope: html
+  mTime: 1465580632523
+  text: |
+        <a href="${2:link}" class="btn btn-lg btn-${1:default}">${3:text}</a>
+
+- trigger: btn-xs
+  description: Creates an a tag button-xs
+  scope: html
+  mTime: 1465580686873
+  text: |
+        <a href="${2:link}" class="btn btn-xs btn-${1:default}">${3:text}</a>
+
+- trigger: btn-sm
+  description: Creates an a tag button-sm
+  scope: html
+  mTime: 1465580672284
+  text: |
+        <a href="${2:link}" class="btn btn-sm btn-${1:default}">${3:text}</a>
+
+- trigger: label-danger
+  description: Creates a label-danger span
+  scope: html
+  mTime: 1465579565855
+  text: |
+        <span class="label label-danger">${1:text}</span>
+
+- trigger: label-warning
+  description: Creates a label-warning span
+  scope: html
+  mTime: 1465579549750
+  text: |
+        <span class="label label-warning">${1:text}</span>
+
+- trigger: label-info
+  description: Creates a label-info span
+  scope: html
+  mTime: 1465579534190
+  text: |
+        <span class="label label-info">${1:text}</span>
+
+- trigger: label-success
+  description: Creates a label-success span
+  scope: html
+  mTime: 1465579501423
+  text: |
+        <span class="label label-success">${1:text}</span>
+
+- trigger: label-primary
+  description: Creates a label-primary span
+  scope: html
+  mTime: 1465579483464
+  text: |
+        <span class="label label-primary">${1:text}</span>
+
+- trigger: label
+  description: Creates a label span
+  scope: html
+  mTime: 1465580704166
+  text: |
+        <span class="label label-${1:default}">${2:text}</span>
+
+- trigger: archived
+  description: Creates a WET4 archived alert
+  scope: html
+  mTime: 1465578945924
+  text: |
+        <section id="archived" class="alert alert-warning wb-inview" data-inview="archived-bnr">
+           <h2>Archived information</h2>
+           <p>The <a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227">Standard on Web Usability</a> replaces this content. This content is archived because Common Look and Feel 2.0 Standards have been rescinded.</p>
+           <p>Archived information is provided for reference, research or recordkeeping purposes. It is not subject to the Government of Canada Web Standards and has not been altered or updated since it was archived. Please contact us to request a format other than those available.</p>
+        </section>
+        <section id="archived-bnr" class="wb-overlay modal-content overlay-def wb-bar-t">
+           <header>
+              <h2 class="wb-inv">Archived</h2>
+           </header>
+           <p><a href="#archived">This page has been archived on the Web.</a></p>
+        </section>${1}
+
+- trigger: alert-danger
+  description: Creates an alert-danger div
+  scope: html
+  mTime: 1465579111260
+  text: |
+        <section class="alert alert-danger">
+            <h3>${1:Oh snap!}</h3>
+            <p>${2:Change a few things up and try submitting again.}</p>
+        </section>
+
+- trigger: alert-success
+  description: Creates an alert-success div
+  scope: html
+  mTime: 1465579194804
+  text: |
+        <section class="alert alert-success">
+            <h3>${1:Well done!}</h3>
+            <p>${2:You successfully read this important alert message.}</p>
+        </section>
+
+- trigger: alert-warning
+  description: Creates an alert-warning div
+  scope: html
+  mTime: 1465579218829
+  text: |
+        <section class="alert alert-warning">
+            <h3>${1:Warning!}</h3>
+            <p>${2:Best check yourself, you're not looking too good.}</p>
+        </section>
+
+- trigger: alert-info
+  description: Creates an alert-info div
+  scope: html
+  mTime: 1465579190114
+  text: |
+        <section class="alert alert-info">
+            <h3>${1:Heads up!}</h3>
+            <p>${2:This alert needs your attention, but it's not super important.}</p>
+        </section>
+
+- trigger: btn-danger
+  description: Creates an a tag button-danger
+  scope: html
+  mTime: 1465578572774
+  text: |
+        <a href="${1:link}" class="btn btn-danger">${2:text}</a>
+
+- trigger: btn-warning
+  description: Creates an a tag button-warning
+  scope: html
+  mTime: 1465578559020
+  text: |
+        <a href="${1:link}" class="btn btn-warning">${2:text}</a>
+
+- trigger: btn-info
+  description: Creates an a tag button-info
+  scope: html
+  mTime: 1465578542341
+  text: |
+        <a href="${1:link}" class="btn btn-info">${2:text}</a>
+
+- trigger: btn-success
+  description: Creates an a tag button-success
+  scope: html
+  mTime: 1465578516708
+  text: |
+        <a href="${1:link}" class="btn btn-success">${2:text}</a>
+
+- trigger: btn-primary
+  description: Creates an a tag button-primary
+  scope: html
+  mTime: 1465578493713
+  text: |
+        <a href="${1:link}" class="btn btn-primary">${2:text}</a>
+
+- trigger: alert
+  description: Creates an alert div
+  scope: html
+  mTime: 1465579236085
+  text: |
+        <section class="alert alert-${1:type}">
+            <h3>${2:Attention!}</h3>
+            <p>${3:This is an alert.}</p>
+        </section>
+
+- trigger: glyphicon
+  description: Creates a glyphicon span
+  scope: html
+  mTime: 1465578721552
+  text: |
+        <span class="glyphicon glyphicon-${1:type}"></span> ${2}
+
+- trigger: clearfix
+  description: Creates a div with a clearfix
+  scope: html
+  mTime: 1465578406711
+  text: |
+        <div class="clearfix"></div>
+
+- trigger: figure
+  description: Creates a figure section
+  scope: html
+  mTime: 1465578319345
+  text: |
+        <figure class="thumbnail">
+            <img src="${1:link}" class="img-responsive" />
+            <figcaption class="caption">
+                ${2}
+            </figcaption>
+        </figure>
+
+- trigger: btn
+  description: Creates an a tag button
+  scope: html
+  mTime: 1465580619839
+  text: |
+        <a href="${2:link}" class="btn btn-${1:default}">${3:text}</a>
+
+- trigger: glyphicon-envelope
+  description: Creates an envelope glyphicon
+  scope: html
+  mTime: 1465578739188
+  text: |
+        <span class="glyphicon glyphicon-envelope"></span> ${1}
+
+- trigger: glyphicon-phone
+  description: Creates a phone glyphicon
+  scope: html
+  mTime: 1465578742951
+  text: |
+        <span class="glyphicon glyphicon-phone"></span> ${1}
+
+- trigger: img-thumb
+  description: Creates an image tag with img-responsive and thumbnail
+  scope: html
+  mTime: 1465605800396
+  text: |
+        <img src="${1:link}" class="img-responsive thumbnail" alt="${2:description}" />${3}
+
+- trigger: glyphicon-download
+  description: Creates a download glyphicon
+  scope: html
+  mTime: 1465578734573
+  text: |
+        <span class="glyphicon glyphicon-download"></span> ${1}
+
+- trigger: img
+  scope: html
+  description: Creates an image tag with img-responsive
+  mTime: 1465605782231
+  text: |
+        <img src="${1:link}" class="img-responsive" alt="${2:description}" />${3}
+
+- trigger: col-lg
+  description: Creates a div with col-lg set
+  scope: html
+  mTime: 1465578417441
+  text: |
+        <div class="col-lg-${1:1-12}">
+            ${2}
+        </div>
+
+- trigger: col-sm
+  description: Creates a div with col-sm set
+  scope: html
+  mTime: 1465578426159
+  text: |
+        <div class="col-sm-${1:1-12}">
+            ${2}
+        </div>
+
+- trigger: col-xs
+  description: Creates a div with col-xs set
+  scope: html
+  mTime: 1465578431076
+  text: |
+        <div class="col-xs-${1:1-12}">
+            ${2}
+        </div>
+
+- trigger: col-all
+  description: Creates a div with all col sizes
+  scope: html
+  mTime: 1465578412674
+  text: |
+        <div class="col-xs-${1:1-12} col-sm-${2:1-12} col-md-${3:1-12} col-lg-${4:1-12}">
+            
+        </div>
+
+- trigger: col-md
+  description: Creates a div with col-md set
+  scope: html
+  mTime: 1465578421924
+  text: |
+        <div class="col-md-${1:1-12}">
+            ${2}
+        </div>
+
+- trigger: fn-inline
+  description: Creates the inline link to a footnote
+  scope: html
+  mTime: 1465600528626
+  text: |
+        <sup id="fn${1:#}-rf"><a class="fn-lnk" href="#fn${1:#}"><span class="wb-inv">Footnote </span>${1:#}</a></sup>${2}
+
+- trigger: fn-item-multi
+  description: Creates a footnote item linking to the first reference of it
+  scope: html
+  mTime: 1465604439880
+  text: |
+        <dt>Footnote ${1:#}</dt>
+        <dd id="fn${1:#}">
+            <p>${2:Example of standard footnote}</p>
+            <p class="fn-rtn">
+                <a href="#fn${1:#}-1-rf"><span class="wb-inv">Return to footnote</span> ${1:#}<span class="wb-inv"> referrer</span></a>
+            </p>
+        </dd>
+        ${3}
+
+- trigger: fn-section-multi
+  description: Creates a footnote section starting with a multi-reference
+  scope: html
+  mTime: 1465604493101
+  text: |
+        <aside class="wb-fnote" role="note">
+            <h3 id="fn">Footnotes</h3>
+            <dl>
+                <dt>Footnote 1</dt>
+                <dd id="fn1">
+                    <p>${1:Example of a standard footnote.}</p>
+                    <p class="fn-rtn">
+                        <a href="#fn1-1-rf"><span class="wb-inv"> Return to footnote </span>1<span class="wb-inve"> referrer</span></a>
+                    </p>
+                </dd>
+                ${2}
+            </dl>
+        </aside>
+
+- trigger: wb-lbx
+  description: Creates a WET4 lightbox for a single image
+  scope: html
+  mTime: 1465604945983
+  text: |
+        <a class="wb-lbx" href="${1:link}" title="${2:description}">
+            <img src="${1:link}" alt="${2:description}" />
+        </a>${3}
+
+- trigger: lbx-gal
+  description: Creates a WET4 lightbox gallery
+  scope: html
+  mTime: 1465605156535
+  text: |
+        <section class="wb-lbx lbx-gal">
+            <h4>${1:Image gallery}</h4>
+            <ul class="list-inline">
+                <li>
+                    <a href="${2:link}" title="${3:description}">
+                        <img src="${2:link}" alt="${3:description}" />
+                    </a>
+                </li>
+                ${4}
+            </ul>
+        </section>
+
+- trigger: lbx-img
+  description: Creates an image for a WET4 lightbox gallery
+  scope: html
+  mTime: 1465605207729
+  text: |
+        <li>
+            <a href="${1:link}" title="${2:description}">
+                <img src="${1:link}" alt="${2:description}" />
+            </a>
+        </li>
+        ${3}
+
+- trigger: lbx-hide-gal
+  description: Creates a WET4 lightbox hide gallery
+  scope: html
+  mTime: 1465605367441
+  text: |
+        <section class="wb-lbx lbx-hide-gal">
+            <h4>${1:Image gallery}</h4>
+            <ul class="list-inline">
+                <li>
+                    <a href="${2:link}" title="${3:description}">
+                        <img src="${2:link}" alt="${3:description}" />
+                    </a>
+                </li>
+                ${4}
+            </ul>
+        </section>
+
+- trigger: badge
+  description: Creates a badge span
+  scope: html
+  mTime: 1465605497444
+  text: |
+        <span class="badge">${1:#}</span>${2}
+
+- trigger: tab-panel
+  description: Creates a panel for a tabbed interface
+  scope: html
+  mTime: 1465605680550
+  text: |
+        <details id="${1:details-panel}">
+            <summary>${2:Example}</summary>
+            ${3}
+        </details>
+        ${4}
+
