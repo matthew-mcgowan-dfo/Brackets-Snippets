@@ -1,356 +1,286 @@
-- trigger: fn-item
-  description: Creates a footnote item
+- trigger: topic-head
+  description: Creates the head section for a topic pages used on Canada.ca pages
   scope: html
-  mTime: 1465672260096
+  mTime: 1465680764395
   text: |
-        <dt>Footnote ${1:#}</dt>
-        <dd id="fn${1:#}">
-            <p>${2:Example of standard footnote}</p>
-            <p class="fn-rtn">
-                <a href="#fn${1:#}-rf"><span class="wb-inv">Return to footnote</span> ${1:#}<span class="wb-inv"> referrer</span></a>
-            </p>
-        </dd>${3}
-
-- trigger: fn-section
-  description: Creates a section for footnotes
-  scope: html
-  mTime: 1465672284238
-  text: |
-        <aside class="wb-fnote" role="note">
-            <h3 id="fn">Footnotes</h3>
-            <dl>
-                <dt>Footnote 1</dt>
-                <dd id="fn1">
-                    <p>${1:Example of a standard footnote.}</p>
-                    <p class="fn-rtn">
-                        <a href="#fn1-rf"><span class="wb-inv"> Return to footnote </span>1<span class="wb-inve"> referrer</span></a>
-                    </p>
-                </dd>${2}
-            </dl>
-        </aside>
-
-- trigger: tabs-link
-  description: Creates a link to show a specific panel in a tabbed interface
-  scope: html
-  mTime: 1465672529154
-  text: |
-        <a href="${1:details-panel1}" class="wb-tabs-ext">${2:Show the first panel}</a>${3}
-
-- trigger: tabs
-  description: Creates a basic WET4 tabbed interface
-  scope: html
-  mTime: 1465672522759
-  text: |
-        <div class="wb-tabs">
-            <div class="tabpanels">
-                <details id="${1:details-panel1}">
-                    <summary>${2:Example 1}</summary>
-                    ${3}
-                </details>${4}
+        <div class="row profile">
+            <div class="col-md-6">
+                <h1 property="name" id="wb-cont">${1:[Topic name]}</h1>
+                <p class="pagetag">${2:1-2 sentences that describe the topics and top tasks that can be accessed on this page.}</p>
+                <section class="followus">
+                    <h2>Follow:</h2>
+                </section>
             </div>
-        </div>
+            <div class="col-md-6 margin-top-small hidden-sm hidden-xs">
+                <img src="${3:https://wet-boew.github.io/themes-dist/GCWeb/img/520x200.png}" alt="${4:description}" class="pull-right img-responsive thumbnail">
+            </div>
+        </div>${5}
 
-- trigger: wb-table-striped
-  description: Creates a striped WET4 sortable table
+- trigger: services-info-more
+  description: Creates a details panel for more services and information used on Canada.ca pages
   scope: html
-  mTime: 1465583601963
+  mTime: 1465680639425
   text: |
-        <table class="table wb-tables table-striped">
-            <thead>
-                <tr>
-                    <td></td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+        <details class="mrgn-tp-md brdr-0">
+            <summary class="btn btn-default text-center">Show more services and information</summary>
+            <div class="row">
+                <div class="col-md-6">
+                    <section class="gc-drmt">
+                        <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
+                        <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <section class="gc-drmt">
+                        <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
+                        <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
+                    </section>
+                </div>
+                <div class="clearfix"></div>${1}
+            </div>
+        </details>
 
-- trigger: wb-table
-  description: Creates a WET4 sortable table
+- trigger: services-info
+  description: Creates a Services and information section used on Canada.ca pages
   scope: html
-  mTime: 1465583572620
+  mTime: 1465680534631
   text: |
-        <table class="table wb-tables">
-            <thead>
-                <tr>
-                    <td></td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-
-- trigger: table-striped
-  description: Creates a striped table
-  scope: html
-  mTime: 1465583518776
-  text: |
-        <table class="table table-responsive table-bordered table-striped">
-            <thead>
-                <tr class="active">
-                    <td></td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-
-- trigger: table
-  description: Creates a basic table
-  scope: html
-  mTime: 1465583491870
-  text: |
-        <table class="table table-responsive table-bordered">
-            <thead>
-                <tr class="active">
-                    <td></td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-
-- trigger: blockquote-reverse
-  description: Creates a reverse blockquote with a footer
-  scope: html
-  mTime: 1465671949373
-  text: |
-        <blockquote class="blockquote-reverse">
-            <p>${1:quote}</p>
-            <footer>${2:Someone famous}</footer>
-        </blockquote>${3}
-
-- trigger: blockquote
-  description: Creates a blockquote with a footer
-  scope: html
-  mTime: 1465671945462
-  text: |
-        <blockquote>
-            <p>${1:quote}</p>
-            <footer>${2:Someone famous}</footer>
-        </blockquote>${3}
-
-- trigger: ul-col-all
-  description: Creates a multi-column ul
-  scope: html
-  mTime: 1465672552696
-  text: |
-        <ul class="colcount-xs-${1:2-4} colcount-sm-${2:2-4} colcount-md-${3:2-4} colcount-lg-${4:2-4}">
-            <li>${5}</li>${6}
-        </ul>
-
-- trigger: ol-col-all
-  description: Creates a multi-column ol
-  scope: html
-  mTime: 1465672384388
-  text: |
-        <ol class="colcount-xs-${1:2-4} colcount-sm-${2:2-4} colcount-md-${3:2-4} colcount-lg-${4:2-4}">
-            <li>${5}</li>${6}
-        </ol>
-
-- trigger: row
-  description: Creates a basic row div
-  scope: html
-  mTime: 1465578440234
-  text: |
+        <h2>Services and information</h2>
         <div class="row">
-            ${1}
+            <div class="col-md-6">
+                <section class="gc-drmt">
+                    <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
+                    <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section class="gc-drmt">
+                    <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
+                    <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
+                </section>
+            </div>
+            <div class="clearfix"></div>${1}
         </div>
 
-- trigger: ul-col-xs
-  description: Creates a multi-column-xs ul
+- trigger: more-info
+  description: Creates a More information for section used on Canada.ca pages
   scope: html
-  mTime: 1465672570530
+  mTime: 1465680399641
   text: |
-        <ul class="colcount-xs-${1:2-4}">
-            <li>${2}</li>${3}
-        </ul>
+        <section class="lnkbx well">
+            <h2>More information for</h2>
+            <ul>
+                <li><a href="${1:link}">${2:text}</a></li>${3}
+            </ul>
+        </section>
 
-- trigger: ul-col-sm
-  description: Creates a multi-column-sm ul
+- trigger: most-requested
+  description: Creates a Most requested section used on Canada.ca pages
   scope: html
-  mTime: 1465672567457
+  mTime: 1465680405835
   text: |
-        <ul class="colcount-sm-${1:2-4}">
-            <li>${2}</li>${3}
-        </ul>
+        <section class="lnkbx well">
+            <h2>Most requested</h2>
+            <ul>
+                <li><a href="${1:link}">${2:text}</a></li>${3}
+            </ul>
+        </section>
 
-- trigger: ul-col-md
-  description: Creates a multi-column-md ul
+- trigger: lowest-level-topic-page
+  description: Creates a default lowest level topic page structure as specificied by Canada.ca
   scope: html
-  mTime: 1465672564289
+  mTime: 1465675539639
   text: |
-        <ul class="colcount-md-${1:2-4}">
-            <li>${2}</li>${3}
-        </ul>
-
-- trigger: ul-col-lg
-  description: Creates a multi-column-lg ul
-  scope: html
-  mTime: 1465672561070
-  text: |
-        <ul class="colcount-lg-${1:2-4}">
-            <li>${2}</li>${3}
-        </ul>
-
-- trigger: ol-col-xs
-  description: Creates a multi-column-xs ol
-  scope: html
-  mTime: 1465672407679
-  text: |
-        <ol class="colcount-xs-${1:2-4}">
-            <li>${2}</li>${3}
-        </ol>
-
-- trigger: ol-col-sm
-  description: Creates a multi-column-sm ol
-  scope: html
-  mTime: 1465672403549
-  text: |
-        <ol class="colcount-sm-${1:2-4}">
-            <li>${2}</li>${3}
-        </ol>
-
-- trigger: ol-col-md
-  description: Creates a multi-column-md ol
-  scope: html
-  mTime: 1465672400014
-  text: |
-        <ol class="colcount-md-${1:2-4}">
-            <li>${2}</li>${3}
-        </ol>
-
-- trigger: ol-col-lg
-  description: Creates a multi-column-lg ol
-  scope: html
-  mTime: 1465672396154
-  text: |
-        <ol class="colcount-lg-${1:2-4}">
-            <li>${2}</li>${3}
-        </ol>
-
-- trigger: dl-horrizontal
-  description: Creates a horizontal dl
-  scope: html
-  mTime: 1465672126110
-  text: |
-        <dl class="dl-horizontal">
-            <dt>${1:title}</dt>
-            <dd>${2:definition}</dd>${3}
-        </dl>
-
-- trigger: ol-inline
-  description: Creates an inline ol
-  scope: html
-  mTime: 1465672428976
-  text: |
-        <ol class="list-inline">
-            <li>${1}</li>${2}
-        </ol>
-
-- trigger: ul-inline-unstyled
-  description: Creates an unstyled inline ul
-  scope: html
-  mTime: 1465672586021
-  text: |
-        <ul class="list-inline list-unstyled">
-            <li>${1}</li>${2}
-        </ul>
-
-- trigger: ul-inline
-  description: Creates an inline ul
-  scope: html
-  mTime: 1465672582063
-  text: |
-        <ul class="list-inline">
-            <li>${1}</li>${2}
-        </ul>
-
-- trigger: ol-upr-alph
-  description: Creates an ol using uppercase alpha
-  scope: html
-  mTime: 1465672440155
-  text: |
-        <ol class="lst-upr-alph">
-            <li>${1}</li>${2}
-        </ol>
-
-- trigger: ol-lwr-alph
-  description: Creates an ol using lowercase alpha
-  scope: html
-  mTime: 1465672432988
-  text: |
-        <ol class="lst-lwr-alph">
-            <li>${1}</li>${2}
-        </ol>
-
-- trigger: ul-unstyled
-  description: Creates an unstyled ul
-  scope: html
-  mTime: 1465672589980
-  text: |
-        <ul class="list-untyled">
-            <li>${1}</li>${2}
-        </ul>
-
-- trigger: panel-primary
-  description: Creates a panel-primary div
-  scope: html
-  mTime: 1465672480353
-  text: |
-        <section class="panel panel-primary">
-            <header class="panel-heading">
-                <h3 class="panel-title">${1:Panel title}</h3>
-            </header>
-            <div class="panel-body">
-                <p>${2:Panel content}</p>
+        <div class="row profile">
+            <div class="col-md-6">
+                <h1 property="name" id="wb-cont">[Lowest-level subtopic name]</h1>
+                <p class="pagetag">1-2 sentences that describe the topics and top tasks that can be accessed on this page.</p>
+                <section class="followus">
+                    <h2>Follow:</h2>
+                </section>
             </div>
-        </section>${3}
-
-- trigger: panel-success
-  description: Creates a panel-success div
-  scope: html
-  mTime: 1465672485127
-  text: |
-        <section class="panel panel-success">
-            <header class="panel-heading">
-                <h3 class="panel-title">${1:Panel title}</h3>
-            </header>
-            <div class="panel-body">
-                <p>${2:Panel content}</p>
+            <div class="col-md-6 margin-top-small hidden-sm hidden-xs">
+                <img src="https://wet-boew.github.io/themes-dist/GCWeb/img/520x200.png" alt="" class="pull-right img-responsive thumbnail">
             </div>
-        </section>${3}
-
-- trigger: panel-info
-  description: Creates a panel-info div
-  scope: html
-  mTime: 1465672476732
-  text: |
-        <section class="panel panel-info">
-            <header class="panel-heading">
-                <h3 class="panel-title">${1:Panel title}</h3>
-            </header>
-            <div class="panel-body">
-                <p>${2:Panel content}</p>
+        </div>
+        <div class="row">
+            <section class="col-md-8">
+                <h2>Services and information</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Task]</a></h3>
+                            <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Task]</a></h3>
+                            <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
+                        </section>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Task]</a></h3>
+                            <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Task]</a></h3>
+                            <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
+                        </section>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Task]</a></h3>
+                            <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Task]</a></h3>
+                            <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
+                        </section>
+                    </div>
+                    <div class="clearfix"></div>
+                    <details class="mrgn-tp-md brdr-0">
+                        <summary class="btn btn-default text-center">Show more services and information</summary>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Task]</a></h3>
+                                    <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
+                                </section>
+                            </div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Task]</a></h3>
+                                    <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
+                                </section>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Task]</a></h3>
+                                    <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
+                                </section>
+                            </div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Task]</a></h3>
+                                    <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
+                                </section>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Task]</a></h3>
+                                    <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
+                                </section>
+                            </div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Task]</a></h3>
+                                    <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
+                                </section>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </details>
+                </div>
+            </section>
+            <div class="col-md-4 mrgn-tp-lg">
+                <section class="lnkbx well">
+                    <h2>Contributors</h2>
+                    <ul>
+                        <li><a href="#">[Institution name]</a></li>
+                        <li><a href="#">[Institution name]</a></li>
+                        <li><a href="#">[Institution name]</a></li>
+                    </ul>
+                </section>
+                <section class="lnkbx well">
+                    <h2>More information for</h2>
+                    <ul>
+                        <li><a href="#">[Audience hyperlink text]</a></li>
+                        <li><a href="#">[Audience hyperlink text]</a></li>
+                        <li><a href="#">[Audience hyperlink text]</a></li>
+                    </ul>
+                </section>
             </div>
-        </section>${3}
+        </div>
+        <section>
+            <h2>What we are doing</h2>
+            <div class="row wb-eqht">
+                <section class="col-lg-4 col-md-6">
+                    <h3>Laws and regulations</h3>
+                    <ul>
+                        <li><a href="#">[Regulation 1]</a></li>
+                        <li><a href="#">[Law 1 with a long heading]</a></li>
+                        <li><a href="#">[Regulation 2 with a long heading]</a></li>
+                        <li><a href="#">[Regulation 3]</a></li>
+                    </ul>
+                    <p><a href="#">All related laws and regulations</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Publications</h3>
+                    <ul>
+                        <li><a href="#">[Publication 1]</a></li>
+                        <li><a href="#">[Publication 2 with a long heading]</a></li>
+                        <li><a href="#">[Publication 3]</a></li>
+                        <li><a href="#">[Publication 4]</a></li>
+                    </ul>
+                    <p><a href="#">All related publications</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Consultations</h3>
+                    <ul>
+                        <li><a href="#">[Consultation 1]</a></li>
+                        <li><a href="#">[Consultation 2 with a long heading]</a></li>
+                        <li><a href="#">[Consultation 3]</a></li>
+                        <li><a href="#">[Consultation 4 with a long heading..and a bit longer]</a></li>
+                    </ul>
+                    <p><a href="#">All related consultations</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Open data</h3>
+                    <ul>
+                        <li><a href="#">[Open data 1]</a></li>
+                        <li><a href="#">[Open data 2 with a long heading]</a></li>
+                        <li><a href="#">[Open data 3]</a></li>
+                        <li><a href="#">[Open data 4 with a long heading..and a bit longer]</a></li>
+                    </ul>
+                    <p><a href="#">All related open data</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Statistics</h3>
+                    <ul>
+                        <li><a href="#">[Statistic 1]</a></li>
+                        <li><a href="#">[Statistic 2 with a long heading]</a></li>
+                        <li><a href="#">[Statistic 3]</a></li>
+                        <li><a href="#">[Statistic 4 with a long heading..and a bit longer]</a></li>
+                    </ul>
+                    <p><a href="#">All related statistics</a></p>
+                </section>
+            </div>
+        </section>
 
-- trigger: panel-warning
-  description: Creates a panel-warning div
+- trigger: tile
+  description: Creates a tile used on topic and sub-topic pages
   scope: html
-  mTime: 1465672488043
+  mTime: 1465673949087
+  text: |
+        <section class="gc-drmt">
+            <h3 class="h5"><a href="${1:link}">${2:[Subtopic hyperlink text\\\\Task]}</a></h3>
+            <p>${3:Summary of the information or tasks that can be accomplished on the sub-topic page.}</p>
+        </section>${4}
+
+- trigger: panel-ft-warning
+  description: Creates a panel-warning div with a footer
+  scope: html
+  mTime: 1465672962343
   text: |
         <section class="panel panel-warning">
             <header class="panel-heading">
@@ -359,12 +289,58 @@
             <div class="panel-body">
                 <p>${2:Panel content}</p>
             </div>
-        </section>${3}
+            <footer class="panel-footer">${3:Panel footer}</footer>
+        </section>${4}
 
-- trigger: panel-danger
-  description: Creates a panel-danger div
+- trigger: panel-ft-success
+  description: Creates a panel-success div with a footer
   scope: html
-  mTime: 1465672472609
+  mTime: 1465672932542
+  text: |
+        <section class="panel panel-success">
+            <header class="panel-heading">
+                <h3 class="panel-title">${1:Panel title}</h3>
+            </header>
+            <div class="panel-body">
+                <p>${2:Panel content}</p>
+            </div>
+            <footer class="panel-footer">${3:Panel footer}</footer>
+        </section>${4}
+
+- trigger: panel-ft-primary
+  description: Creates a panel-primary div with a footer
+  scope: html
+  mTime: 1465672910674
+  text: |
+        <section class="panel panel-primary">
+            <header class="panel-heading">
+                <h3 class="panel-title">${1:Panel title}</h3>
+            </header>
+            <div class="panel-body">
+                <p>${2:Panel content}</p>
+            </div>
+            <footer class="panel-footer">${3:Panel footer}</footer>
+        </section>${4}
+
+- trigger: panel-ft-info
+  description: Creates a panel-info div with a footer
+  scope: html
+  mTime: 1465672862958
+  text: |
+        <section class="panel panel-info">
+            <header class="panel-heading">
+                <h3 class="panel-title">${1:Panel title}</h3>
+            </header>
+            <div class="panel-body">
+                <p>${2:Panel content}</p>
+            </div>
+            <footer class="panel-footer">${3:Panel footer}</footer>
+        </section>${4}
+
+- trigger: panel-ft-danger
+  description: Creates a panel-danger div with a footer
+  scope: html
+  mTime: 1465672879023
   text: |
         <section class="panel panel-danger">
             <header class="panel-heading">
@@ -373,12 +349,13 @@
             <div class="panel-body">
                 <p>${2:Panel content}</p>
             </div>
-        </section>${3}
+            <footer class="panel-footer">${3:Panel footer}</footer>
+        </section>${4}
 
-- trigger: panel
-  description: Creates a panel div
+- trigger: panel-ft
+  description: Creates a panel div with a footer
   scope: html
-  mTime: 1465672461433
+  mTime: 1465672766701
   text: |
         <section class="panel panel-${1:default}">
             <header class="panel-heading">
@@ -387,497 +364,23 @@
             <div class="panel-body">
                 <p>${3:Panel content}</p>
             </div>
-        </section>${4}
+            <footer class="panel-footer">${4:Panel footer}</footer>
+        </section>${5}
 
-- trigger: btn-sm-primary
-  description: Creates an a tag button-sm
+- trigger: dl-item
+  description: Cretaes a dt and dd.
   scope: html
-  mTime: 1465672043291
+  mTime: 1465672183829
   text: |
-        <a href="${1:link}" class="btn btn-sm btn-primary">${2:text}</a>${3}
+        <dt>${1:title}</dt>
+        <dd>${2:definition}</dd>${3}
 
-- trigger: btn-sm-success
-  description: Creates an a tag button-sm
+- trigger: li-link
+  description: Creates a list item with a link in it
   scope: html
-  mTime: 1465672046569
+  mTime: 1465671897397
   text: |
-        <a href="${1:link}" class="btn btn-sm btn-success">${2:text}</a>${3}
-
-- trigger: btn-sm-info
-  description: Creates an a tag button-sm
-  scope: html
-  mTime: 1465672039999
-  text: |
-        <a href="${1:link}" class="btn btn-sm btn-info">${2:text}</a>${3}
-
-- trigger: btn-sm-warning
-  description: Creates an a tag button-sm
-  scope: html
-  mTime: 1465672049800
-  text: |
-        <a href="${1:link}" class="btn btn-sm btn-warning">${2:text}</a>${3}
-
-- trigger: btn-sm-danger
-  description: Creates an a tag button-sm
-  scope: html
-  mTime: 1465672036797
-  text: |
-        <a href="${1:link}" class="btn btn-sm btn-danger">${2:text}</a>${3}
-
-- trigger: btn-xs-primary
-  description: Creates an a tag button-xs
-  scope: html
-  mTime: 1465672077086
-  text: |
-        <a href="${1:link}" class="btn btn-xs btn-primary">${2:text}</a>${3}
-
-- trigger: btn-xs-success
-  description: Creates an a tag button-xs
-  scope: html
-  mTime: 1465672081495
-  text: |
-        <a href="${1:link}" class="btn btn-xs btn-success">${2:text}</a>${3}
-
-- trigger: btn-xs-info
-  description: Creates an a tag button-xs
-  scope: html
-  mTime: 1465672072713
-  text: |
-        <a href="${1:link}" class="btn btn-xs btn-info">${2:text}</a>${3}
-
-- trigger: btn-xs-warning
-  description: Creates an a tag button-xs
-  scope: html
-  mTime: 1465672084719
-  text: |
-        <a href="${1:link}" class="btn btn-xs btn-warning">${2:text}</a>${3}
-
-- trigger: btn-xs-danger
-  description: Creates an a tag button-xs
-  scope: html
-  mTime: 1465672068581
-  text: |
-        <a href="${1:link}" class="btn btn-xs btn-danger">${2:text}</a>${3}
-
-- trigger: btn-lg-primary
-  description: Creates an a tag button-lg
-  scope: html
-  mTime: 1465672008407
-  text: |
-        <a href="${1:link}" class="btn btn-lg btn-primary">${2:text}</a>${3}
-
-- trigger: btn-lg-success
-  description: Creates an a tag button-lg
-  scope: html
-  mTime: 1465672012468
-  text: |
-        <a href="${1:link}" class="btn btn-lg btn-success">${2:text}</a>${3}
-
-- trigger: btn-lg-info
-  description: Creates an a tag button-lg
-  scope: html
-  mTime: 1465671995445
-  text: |
-        <a href="${1:link}" class="btn btn-lg btn-info">${2:text}</a>${3}
-
-- trigger: btn-lg-warning
-  description: Creates an a tag button-lg
-  scope: html
-  mTime: 1465672017699
-  text: |
-        <a href="${1:link}" class="btn btn-lg btn-warning">${2:text}</a>${3}
-
-- trigger: btn-lg-danger
-  description: Creates an a tag button-lg
-  scope: html
-  mTime: 1465671980189
-  text: |
-        <a href="${1:link}" class="btn btn-lg btn-danger">${2:text}</a>${3}
-
-- trigger: btn-lg
-  description: Creates an a tag button-lg
-  scope: html
-  mTime: 1465671988691
-  text: |
-        <a href="${2:link}" class="btn btn-lg btn-${1:default}">${3:text}</a>${4}
-
-- trigger: btn-xs
-  description: Creates an a tag button-xs
-  scope: html
-  mTime: 1465672061267
-  text: |
-        <a href="${2:link}" class="btn btn-xs btn-${1:default}">${3:text}</a>${4}
-
-- trigger: btn-sm
-  description: Creates an a tag button-sm
-  scope: html
-  mTime: 1465672027544
-  text: |
-        <a href="${2:link}" class="btn btn-sm btn-${1:default}">${3:text}</a>${4}
-
-- trigger: label-danger
-  description: Creates a label-danger span
-  scope: html
-  mTime: 1465672316444
-  text: |
-        <span class="label label-danger">${1:text}</span>${3}
-
-- trigger: label-warning
-  description: Creates a label-warning span
-  scope: html
-  mTime: 1465672330721
-  text: |
-        <span class="label label-warning">${1:text}</span>${3}
-
-- trigger: label-info
-  description: Creates a label-info span
-  scope: html
-  mTime: 1465672319952
-  text: |
-        <span class="label label-info">${1:text}</span>${3}
-
-- trigger: label-success
-  description: Creates a label-success span
-  scope: html
-  mTime: 1465672327531
-  text: |
-        <span class="label label-success">${1:text}</span>${3}
-
-- trigger: label-primary
-  description: Creates a label-primary span
-  scope: html
-  mTime: 1465672323471
-  text: |
-        <span class="label label-primary">${1:text}</span>${3}
-
-- trigger: label
-  description: Creates a label span
-  scope: html
-  mTime: 1465672313533
-  text: |
-        <span class="label label-${1:default}">${2:text}</span>${3}
-
-- trigger: archived
-  description: Creates a WET4 archived alert
-  scope: html
-  mTime: 1465578945924
-  text: |
-        <section id="archived" class="alert alert-warning wb-inview" data-inview="archived-bnr">
-           <h2>Archived information</h2>
-           <p>The <a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227">Standard on Web Usability</a> replaces this content. This content is archived because Common Look and Feel 2.0 Standards have been rescinded.</p>
-           <p>Archived information is provided for reference, research or recordkeeping purposes. It is not subject to the Government of Canada Web Standards and has not been altered or updated since it was archived. Please contact us to request a format other than those available.</p>
-        </section>
-        <section id="archived-bnr" class="wb-overlay modal-content overlay-def wb-bar-t">
-           <header>
-              <h2 class="wb-inv">Archived</h2>
-           </header>
-           <p><a href="#archived">This page has been archived on the Web.</a></p>
-        </section>${1}
-
-- trigger: alert-danger
-  description: Creates an alert-danger div
-  scope: html
-  mTime: 1465671917029
-  text: |
-        <section class="alert alert-danger">
-            <h3>${1:Oh snap!}</h3>
-            <p>${2:Change a few things up and try submitting again.}</p>
-        </section>${3}
-
-- trigger: alert-success
-  description: Creates an alert-success div
-  scope: html
-  mTime: 1465671928273
-  text: |
-        <section class="alert alert-success">
-            <h3>${1:Well done!}</h3>
-            <p>${2:You successfully read this important alert message.}</p>
-        </section>${3}
-
-- trigger: alert-warning
-  description: Creates an alert-warning div
-  scope: html
-  mTime: 1465671932867
-  text: |
-        <section class="alert alert-warning">
-            <h3>${1:Warning!}</h3>
-            <p>${2:Best check yourself, you're not looking too good.}</p>
-        </section>${3}
-
-- trigger: alert-info
-  description: Creates an alert-info div
-  scope: html
-  mTime: 1465671924080
-  text: |
-        <section class="alert alert-info">
-            <h3>${1:Heads up!}</h3>
-            <p>${2:This alert needs your attention, but it's not super important.}</p>
-        </section>${3}
-
-- trigger: btn-danger
-  description: Creates an a tag button-danger
-  scope: html
-  mTime: 1465671968133
-  text: |
-        <a href="${1:link}" class="btn btn-danger">${2:text}</a>${3}
-
-- trigger: btn-warning
-  description: Creates an a tag button-warning
-  scope: html
-  mTime: 1465672056858
-  text: |
-        <a href="${1:link}" class="btn btn-warning">${2:text}</a>${3}
-
-- trigger: btn-info
-  description: Creates an a tag button-info
-  scope: html
-  mTime: 1465671972760
-  text: |
-        <a href="${1:link}" class="btn btn-info">${2:text}</a>${3}
-
-- trigger: btn-success
-  description: Creates an a tag button-success
-  scope: html
-  mTime: 1465672053114
-  text: |
-        <a href="${1:link}" class="btn btn-success">${2:text}</a>${3}
-
-- trigger: btn-primary
-  description: Creates an a tag button-primary
-  scope: html
-  mTime: 1465672021343
-  text: |
-        <a href="${1:link}" class="btn btn-primary">${2:text}</a>${3}
-
-- trigger: alert
-  description: Creates an alert div
-  scope: html
-  mTime: 1465671909166
-  text: |
-        <section class="alert alert-${1:type}">
-            <h3>${2:Attention!}</h3>
-            <p>${3:This is an alert.}</p>
-        </section>${4}
-
-- trigger: glyphicon
-  description: Creates a glyphicon span
-  scope: html
-  mTime: 1465578721552
-  text: |
-        <span class="glyphicon glyphicon-${1:type}"></span> ${2}
-
-- trigger: clearfix
-  description: Creates a div with a clearfix
-  scope: html
-  mTime: 1465672090988
-  text: |
-        <div class="clearfix"></div>${1}
-
-- trigger: figure
-  description: Creates a figure section
-  scope: html
-  mTime: 1465672240643
-  text: |
-        <figure class="thumbnail">
-            <img src="${1:link}" class="img-responsive" />
-            <figcaption class="caption">
-                <p>${2:caption}</p>
-            </figcaption>
-        </figure>${3}
-
-- trigger: btn
-  description: Creates an a tag button
-  scope: html
-  mTime: 1465671962398
-  text: |
-        <a href="${2:link}" class="btn btn-${1:default}">${3:text}</a>${4}
-
-- trigger: glyphicon-envelope
-  description: Creates an envelope glyphicon
-  scope: html
-  mTime: 1465578739188
-  text: |
-        <span class="glyphicon glyphicon-envelope"></span> ${1}
-
-- trigger: glyphicon-phone
-  description: Creates a phone glyphicon
-  scope: html
-  mTime: 1465578742951
-  text: |
-        <span class="glyphicon glyphicon-phone"></span> ${1}
-
-- trigger: img-thumb
-  description: Creates an image tag with img-responsive and thumbnail
-  scope: html
-  mTime: 1465605800396
-  text: |
-        <img src="${1:link}" class="img-responsive thumbnail" alt="${2:description}" />${3}
-
-- trigger: glyphicon-download
-  description: Creates a download glyphicon
-  scope: html
-  mTime: 1465578734573
-  text: |
-        <span class="glyphicon glyphicon-download"></span> ${1}
-
-- trigger: img
-  scope: html
-  description: Creates an image tag with img-responsive
-  mTime: 1465605782231
-  text: |
-        <img src="${1:link}" class="img-responsive" alt="${2:description}" />${3}
-
-- trigger: col-lg
-  description: Creates a div with col-lg set
-  scope: html
-  mTime: 1465578417441
-  text: |
-        <div class="col-lg-${1:1-12}">
-            ${2}
-        </div>
-
-- trigger: col-sm
-  description: Creates a div with col-sm set
-  scope: html
-  mTime: 1465578426159
-  text: |
-        <div class="col-sm-${1:1-12}">
-            ${2}
-        </div>
-
-- trigger: col-xs
-  description: Creates a div with col-xs set
-  scope: html
-  mTime: 1465578431076
-  text: |
-        <div class="col-xs-${1:1-12}">
-            ${2}
-        </div>
-
-- trigger: col-all
-  description: Creates a div with all col sizes
-  scope: html
-  mTime: 1465672100558
-  text: |
-        <div class="col-xs-${1:1-12} col-sm-${2:1-12} col-md-${3:1-12} col-lg-${4:1-12}">
-            ${5}
-        </div>
-
-- trigger: col-md
-  description: Creates a div with col-md set
-  scope: html
-  mTime: 1465578421924
-  text: |
-        <div class="col-md-${1:1-12}">
-            ${2}
-        </div>
-
-- trigger: fn-inline
-  description: Creates the inline link to a footnote
-  scope: html
-  mTime: 1465600528626
-  text: |
-        <sup id="fn${1:#}-rf"><a class="fn-lnk" href="#fn${1:#}"><span class="wb-inv">Footnote </span>${1:#}</a></sup>${2}
-
-- trigger: fn-item-multi
-  description: Creates a footnote item linking to the first reference of it
-  scope: html
-  mTime: 1465672274416
-  text: |
-        <dt>Footnote ${1:#}</dt>
-        <dd id="fn${1:#}">
-            <p>${2:Example of standard footnote}</p>
-            <p class="fn-rtn">
-                <a href="#fn${1:#}-1-rf"><span class="wb-inv">Return to footnote</span> ${1:#}<span class="wb-inv"> referrer</span></a>
-            </p>
-        </dd>${3}
-
-- trigger: fn-section-multi
-  description: Creates a footnote section starting with a multi-reference
-  scope: html
-  mTime: 1465672289948
-  text: |
-        <aside class="wb-fnote" role="note">
-            <h3 id="fn">Footnotes</h3>
-            <dl>
-                <dt>Footnote 1</dt>
-                <dd id="fn1">
-                    <p>${1:Example of a standard footnote.}</p>
-                    <p class="fn-rtn">
-                        <a href="#fn1-1-rf"><span class="wb-inv"> Return to footnote </span>1<span class="wb-inve"> referrer</span></a>
-                    </p>
-                </dd>${2}
-            </dl>
-        </aside>
-
-- trigger: lbx
-  description: Creates a WET4 lightbox for a single image
-  scope: html
-  mTime: 1465670359644
-  text: |
-        <a class="wb-lbx" href="${1:link}" title="${2:description}">
-            <img src="${1:link}" alt="${2:description}" />
-        </a>${3}
-
-- trigger: lbx-gal
-  description: Creates a WET4 lightbox gallery
-  scope: html
-  mTime: 1465672348880
-  text: |
-        <section class="wb-lbx lbx-gal">
-            <h4>${1:Image gallery}</h4>
-            <ul class="list-inline">
-                <li>
-                    <a href="${2:link}" title="${3:description}">
-                        <img src="${2:link}" alt="${3:description}" />
-                    </a>
-                </li>${4}
-            </ul>
-        </section>
-
-- trigger: lbx-img
-  description: Creates an image for a WET4 lightbox gallery
-  scope: html
-  mTime: 1465672359755
-  text: |
-        <li>
-            <a href="${1:link}" title="${2:description}">
-                <img src="${1:link}" alt="${2:description}" />
-            </a>
-        </li>${3}
-
-- trigger: lbx-hide-gal
-  description: Creates a WET4 lightbox hide gallery
-  scope: html
-  mTime: 1465672354524
-  text: |
-        <section class="wb-lbx lbx-hide-gal">
-            <h4>${1:Image gallery}</h4>
-            <ul class="list-inline">
-                <li>
-                    <a href="${2:link}" title="${3:description}">
-                        <img src="${2:link}" alt="${3:description}" />
-                    </a>
-                </li>${4}
-            </ul>
-        </section>
-
-- trigger: badge
-  description: Creates a badge span
-  scope: html
-  mTime: 1465605497444
-  text: |
-        <span class="badge">${1:#}</span>${2}
-
-- trigger: tabs-panel
-  description: Creates a panel for a tabbed interface
-  scope: html
-  mTime: 1465672534566
-  text: |
-        <details id="${1:details-panel}">
-            <summary>${2:Example}</summary>
-            ${3}
-        </details>${4}
+        <li><a href="${1:link}">${2:text}</a></li>${3}
 
 - trigger: topic-landing-page
   description: Creates a default topic landing page structure as specificied by Canada.ca
@@ -1108,25 +611,500 @@
             </div>
         </section>
 
-- trigger: li-link
-  description: Creates a list item with a link in it
+- trigger: tabs-panel
+  description: Creates a panel for a tabbed interface
   scope: html
-  mTime: 1465671897397
+  mTime: 1465672534566
   text: |
-        <li><a href="${1:link}">${2:text}</a></li>${3}
+        <details id="${1:details-panel}">
+            <summary>${2:Example}</summary>
+            ${3}
+        </details>${4}
 
-- trigger: dl-item
-  description: Cretaes a dt and dd.
+- trigger: badge
+  description: Creates a badge span
   scope: html
-  mTime: 1465672183829
+  mTime: 1465605497444
   text: |
-        <dt>${1:title}</dt>
-        <dd>${2:definition}</dd>${3}
+        <span class="badge">${1:#}</span>${2}
 
-- trigger: panel-ft
-  description: Creates a panel div with a footer
+- trigger: lbx-hide-gal
+  description: Creates a WET4 lightbox hide gallery
   scope: html
-  mTime: 1465672766701
+  mTime: 1465672354524
+  text: |
+        <section class="wb-lbx lbx-hide-gal">
+            <h4>${1:Image gallery}</h4>
+            <ul class="list-inline">
+                <li>
+                    <a href="${2:link}" title="${3:description}">
+                        <img src="${2:link}" alt="${3:description}" />
+                    </a>
+                </li>${4}
+            </ul>
+        </section>
+
+- trigger: lbx-img
+  description: Creates an image for a WET4 lightbox gallery
+  scope: html
+  mTime: 1465672359755
+  text: |
+        <li>
+            <a href="${1:link}" title="${2:description}">
+                <img src="${1:link}" alt="${2:description}" />
+            </a>
+        </li>${3}
+
+- trigger: lbx-gal
+  description: Creates a WET4 lightbox gallery
+  scope: html
+  mTime: 1465672348880
+  text: |
+        <section class="wb-lbx lbx-gal">
+            <h4>${1:Image gallery}</h4>
+            <ul class="list-inline">
+                <li>
+                    <a href="${2:link}" title="${3:description}">
+                        <img src="${2:link}" alt="${3:description}" />
+                    </a>
+                </li>${4}
+            </ul>
+        </section>
+
+- trigger: lbx
+  description: Creates a WET4 lightbox for a single image
+  scope: html
+  mTime: 1465670359644
+  text: |
+        <a class="wb-lbx" href="${1:link}" title="${2:description}">
+            <img src="${1:link}" alt="${2:description}" />
+        </a>${3}
+
+- trigger: fn-section-multi
+  description: Creates a footnote section starting with a multi-reference
+  scope: html
+  mTime: 1465672289948
+  text: |
+        <aside class="wb-fnote" role="note">
+            <h3 id="fn">Footnotes</h3>
+            <dl>
+                <dt>Footnote 1</dt>
+                <dd id="fn1">
+                    <p>${1:Example of a standard footnote.}</p>
+                    <p class="fn-rtn">
+                        <a href="#fn1-1-rf"><span class="wb-inv"> Return to footnote </span>1<span class="wb-inve"> referrer</span></a>
+                    </p>
+                </dd>${2}
+            </dl>
+        </aside>
+
+- trigger: fn-item-multi
+  description: Creates a footnote item linking to the first reference of it
+  scope: html
+  mTime: 1465672274416
+  text: |
+        <dt>Footnote ${1:#}</dt>
+        <dd id="fn${1:#}">
+            <p>${2:Example of standard footnote}</p>
+            <p class="fn-rtn">
+                <a href="#fn${1:#}-1-rf"><span class="wb-inv">Return to footnote</span> ${1:#}<span class="wb-inv"> referrer</span></a>
+            </p>
+        </dd>${3}
+
+- trigger: fn-inline
+  description: Creates the inline link to a footnote
+  scope: html
+  mTime: 1465600528626
+  text: |
+        <sup id="fn${1:#}-rf"><a class="fn-lnk" href="#fn${1:#}"><span class="wb-inv">Footnote </span>${1:#}</a></sup>${2}
+
+- trigger: col-md
+  description: Creates a div with col-md set
+  scope: html
+  mTime: 1465578421924
+  text: |
+        <div class="col-md-${1:1-12}">
+            ${2}
+        </div>
+
+- trigger: col-all
+  description: Creates a div with all col sizes
+  scope: html
+  mTime: 1465672100558
+  text: |
+        <div class="col-xs-${1:1-12} col-sm-${2:1-12} col-md-${3:1-12} col-lg-${4:1-12}">
+            ${5}
+        </div>
+
+- trigger: col-xs
+  description: Creates a div with col-xs set
+  scope: html
+  mTime: 1465578431076
+  text: |
+        <div class="col-xs-${1:1-12}">
+            ${2}
+        </div>
+
+- trigger: col-sm
+  description: Creates a div with col-sm set
+  scope: html
+  mTime: 1465578426159
+  text: |
+        <div class="col-sm-${1:1-12}">
+            ${2}
+        </div>
+
+- trigger: col-lg
+  description: Creates a div with col-lg set
+  scope: html
+  mTime: 1465578417441
+  text: |
+        <div class="col-lg-${1:1-12}">
+            ${2}
+        </div>
+
+- trigger: img
+  scope: html
+  description: Creates an image tag with img-responsive
+  mTime: 1465605782231
+  text: |
+        <img src="${1:link}" class="img-responsive" alt="${2:description}" />${3}
+
+- trigger: glyphicon-download
+  description: Creates a download glyphicon
+  scope: html
+  mTime: 1465578734573
+  text: |
+        <span class="glyphicon glyphicon-download"></span> ${1}
+
+- trigger: img-thumb
+  description: Creates an image tag with img-responsive and thumbnail
+  scope: html
+  mTime: 1465605800396
+  text: |
+        <img src="${1:link}" class="img-responsive thumbnail" alt="${2:description}" />${3}
+
+- trigger: glyphicon-phone
+  description: Creates a phone glyphicon
+  scope: html
+  mTime: 1465578742951
+  text: |
+        <span class="glyphicon glyphicon-phone"></span> ${1}
+
+- trigger: glyphicon-envelope
+  description: Creates an envelope glyphicon
+  scope: html
+  mTime: 1465578739188
+  text: |
+        <span class="glyphicon glyphicon-envelope"></span> ${1}
+
+- trigger: btn
+  description: Creates an a tag button
+  scope: html
+  mTime: 1465671962398
+  text: |
+        <a href="${2:link}" class="btn btn-${1:default}">${3:text}</a>${4}
+
+- trigger: figure
+  description: Creates a figure section
+  scope: html
+  mTime: 1465672240643
+  text: |
+        <figure class="thumbnail">
+            <img src="${1:link}" class="img-responsive" />
+            <figcaption class="caption">
+                <p>${2:caption}</p>
+            </figcaption>
+        </figure>${3}
+
+- trigger: clearfix
+  description: Creates a div with a clearfix
+  scope: html
+  mTime: 1465672090988
+  text: |
+        <div class="clearfix"></div>${1}
+
+- trigger: glyphicon
+  description: Creates a glyphicon span
+  scope: html
+  mTime: 1465578721552
+  text: |
+        <span class="glyphicon glyphicon-${1:type}"></span> ${2}
+
+- trigger: alert
+  description: Creates an alert div
+  scope: html
+  mTime: 1465671909166
+  text: |
+        <section class="alert alert-${1:type}">
+            <h3>${2:Attention!}</h3>
+            <p>${3:This is an alert.}</p>
+        </section>${4}
+
+- trigger: btn-primary
+  description: Creates an a tag button-primary
+  scope: html
+  mTime: 1465672021343
+  text: |
+        <a href="${1:link}" class="btn btn-primary">${2:text}</a>${3}
+
+- trigger: btn-success
+  description: Creates an a tag button-success
+  scope: html
+  mTime: 1465672053114
+  text: |
+        <a href="${1:link}" class="btn btn-success">${2:text}</a>${3}
+
+- trigger: btn-info
+  description: Creates an a tag button-info
+  scope: html
+  mTime: 1465671972760
+  text: |
+        <a href="${1:link}" class="btn btn-info">${2:text}</a>${3}
+
+- trigger: btn-warning
+  description: Creates an a tag button-warning
+  scope: html
+  mTime: 1465672056858
+  text: |
+        <a href="${1:link}" class="btn btn-warning">${2:text}</a>${3}
+
+- trigger: btn-danger
+  description: Creates an a tag button-danger
+  scope: html
+  mTime: 1465671968133
+  text: |
+        <a href="${1:link}" class="btn btn-danger">${2:text}</a>${3}
+
+- trigger: alert-info
+  description: Creates an alert-info div
+  scope: html
+  mTime: 1465671924080
+  text: |
+        <section class="alert alert-info">
+            <h3>${1:Heads up!}</h3>
+            <p>${2:This alert needs your attention, but it's not super important.}</p>
+        </section>${3}
+
+- trigger: alert-warning
+  description: Creates an alert-warning div
+  scope: html
+  mTime: 1465671932867
+  text: |
+        <section class="alert alert-warning">
+            <h3>${1:Warning!}</h3>
+            <p>${2:Best check yourself, you're not looking too good.}</p>
+        </section>${3}
+
+- trigger: alert-success
+  description: Creates an alert-success div
+  scope: html
+  mTime: 1465671928273
+  text: |
+        <section class="alert alert-success">
+            <h3>${1:Well done!}</h3>
+            <p>${2:You successfully read this important alert message.}</p>
+        </section>${3}
+
+- trigger: alert-danger
+  description: Creates an alert-danger div
+  scope: html
+  mTime: 1465671917029
+  text: |
+        <section class="alert alert-danger">
+            <h3>${1:Oh snap!}</h3>
+            <p>${2:Change a few things up and try submitting again.}</p>
+        </section>${3}
+
+- trigger: archived
+  description: Creates a WET4 archived alert
+  scope: html
+  mTime: 1465578945924
+  text: |
+        <section id="archived" class="alert alert-warning wb-inview" data-inview="archived-bnr">
+           <h2>Archived information</h2>
+           <p>The <a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227">Standard on Web Usability</a> replaces this content. This content is archived because Common Look and Feel 2.0 Standards have been rescinded.</p>
+           <p>Archived information is provided for reference, research or recordkeeping purposes. It is not subject to the Government of Canada Web Standards and has not been altered or updated since it was archived. Please contact us to request a format other than those available.</p>
+        </section>
+        <section id="archived-bnr" class="wb-overlay modal-content overlay-def wb-bar-t">
+           <header>
+              <h2 class="wb-inv">Archived</h2>
+           </header>
+           <p><a href="#archived">This page has been archived on the Web.</a></p>
+        </section>${1}
+
+- trigger: label
+  description: Creates a label span
+  scope: html
+  mTime: 1465672313533
+  text: |
+        <span class="label label-${1:default}">${2:text}</span>${3}
+
+- trigger: label-primary
+  description: Creates a label-primary span
+  scope: html
+  mTime: 1465672323471
+  text: |
+        <span class="label label-primary">${1:text}</span>${3}
+
+- trigger: label-success
+  description: Creates a label-success span
+  scope: html
+  mTime: 1465672327531
+  text: |
+        <span class="label label-success">${1:text}</span>${3}
+
+- trigger: label-info
+  description: Creates a label-info span
+  scope: html
+  mTime: 1465672319952
+  text: |
+        <span class="label label-info">${1:text}</span>${3}
+
+- trigger: label-warning
+  description: Creates a label-warning span
+  scope: html
+  mTime: 1465672330721
+  text: |
+        <span class="label label-warning">${1:text}</span>${3}
+
+- trigger: label-danger
+  description: Creates a label-danger span
+  scope: html
+  mTime: 1465672316444
+  text: |
+        <span class="label label-danger">${1:text}</span>${3}
+
+- trigger: btn-sm
+  description: Creates an a tag button-sm
+  scope: html
+  mTime: 1465672027544
+  text: |
+        <a href="${2:link}" class="btn btn-sm btn-${1:default}">${3:text}</a>${4}
+
+- trigger: btn-xs
+  description: Creates an a tag button-xs
+  scope: html
+  mTime: 1465672061267
+  text: |
+        <a href="${2:link}" class="btn btn-xs btn-${1:default}">${3:text}</a>${4}
+
+- trigger: btn-lg
+  description: Creates an a tag button-lg
+  scope: html
+  mTime: 1465671988691
+  text: |
+        <a href="${2:link}" class="btn btn-lg btn-${1:default}">${3:text}</a>${4}
+
+- trigger: btn-lg-danger
+  description: Creates an a tag button-lg
+  scope: html
+  mTime: 1465671980189
+  text: |
+        <a href="${1:link}" class="btn btn-lg btn-danger">${2:text}</a>${3}
+
+- trigger: btn-lg-warning
+  description: Creates an a tag button-lg
+  scope: html
+  mTime: 1465672017699
+  text: |
+        <a href="${1:link}" class="btn btn-lg btn-warning">${2:text}</a>${3}
+
+- trigger: btn-lg-info
+  description: Creates an a tag button-lg
+  scope: html
+  mTime: 1465671995445
+  text: |
+        <a href="${1:link}" class="btn btn-lg btn-info">${2:text}</a>${3}
+
+- trigger: btn-lg-success
+  description: Creates an a tag button-lg
+  scope: html
+  mTime: 1465672012468
+  text: |
+        <a href="${1:link}" class="btn btn-lg btn-success">${2:text}</a>${3}
+
+- trigger: btn-lg-primary
+  description: Creates an a tag button-lg
+  scope: html
+  mTime: 1465672008407
+  text: |
+        <a href="${1:link}" class="btn btn-lg btn-primary">${2:text}</a>${3}
+
+- trigger: btn-xs-danger
+  description: Creates an a tag button-xs
+  scope: html
+  mTime: 1465672068581
+  text: |
+        <a href="${1:link}" class="btn btn-xs btn-danger">${2:text}</a>${3}
+
+- trigger: btn-xs-warning
+  description: Creates an a tag button-xs
+  scope: html
+  mTime: 1465672084719
+  text: |
+        <a href="${1:link}" class="btn btn-xs btn-warning">${2:text}</a>${3}
+
+- trigger: btn-xs-info
+  description: Creates an a tag button-xs
+  scope: html
+  mTime: 1465672072713
+  text: |
+        <a href="${1:link}" class="btn btn-xs btn-info">${2:text}</a>${3}
+
+- trigger: btn-xs-success
+  description: Creates an a tag button-xs
+  scope: html
+  mTime: 1465672081495
+  text: |
+        <a href="${1:link}" class="btn btn-xs btn-success">${2:text}</a>${3}
+
+- trigger: btn-xs-primary
+  description: Creates an a tag button-xs
+  scope: html
+  mTime: 1465672077086
+  text: |
+        <a href="${1:link}" class="btn btn-xs btn-primary">${2:text}</a>${3}
+
+- trigger: btn-sm-danger
+  description: Creates an a tag button-sm
+  scope: html
+  mTime: 1465672036797
+  text: |
+        <a href="${1:link}" class="btn btn-sm btn-danger">${2:text}</a>${3}
+
+- trigger: btn-sm-warning
+  description: Creates an a tag button-sm
+  scope: html
+  mTime: 1465672049800
+  text: |
+        <a href="${1:link}" class="btn btn-sm btn-warning">${2:text}</a>${3}
+
+- trigger: btn-sm-info
+  description: Creates an a tag button-sm
+  scope: html
+  mTime: 1465672039999
+  text: |
+        <a href="${1:link}" class="btn btn-sm btn-info">${2:text}</a>${3}
+
+- trigger: btn-sm-success
+  description: Creates an a tag button-sm
+  scope: html
+  mTime: 1465672046569
+  text: |
+        <a href="${1:link}" class="btn btn-sm btn-success">${2:text}</a>${3}
+
+- trigger: btn-sm-primary
+  description: Creates an a tag button-sm
+  scope: html
+  mTime: 1465672043291
+  text: |
+        <a href="${1:link}" class="btn btn-sm btn-primary">${2:text}</a>${3}
+
+- trigger: panel
+  description: Creates a panel div
+  scope: html
+  mTime: 1465672461433
   text: |
         <section class="panel panel-${1:default}">
             <header class="panel-heading">
@@ -1135,13 +1113,12 @@
             <div class="panel-body">
                 <p>${3:Panel content}</p>
             </div>
-            <footer class="panel-footer">${4:Panel footer}</footer>
-        </section>${5}
+        </section>${4}
 
-- trigger: panel-ft-danger
-  description: Creates a panel-danger div with a footer
+- trigger: panel-danger
+  description: Creates a panel-danger div
   scope: html
-  mTime: 1465672879023
+  mTime: 1465672472609
   text: |
         <section class="panel panel-danger">
             <header class="panel-heading">
@@ -1150,58 +1127,12 @@
             <div class="panel-body">
                 <p>${2:Panel content}</p>
             </div>
-            <footer class="panel-footer">${3:Panel footer}</footer>
-        </section>${4}
+        </section>${3}
 
-- trigger: panel-ft-info
-  description: Creates a panel-info div with a footer
+- trigger: panel-warning
+  description: Creates a panel-warning div
   scope: html
-  mTime: 1465672862958
-  text: |
-        <section class="panel panel-info">
-            <header class="panel-heading">
-                <h3 class="panel-title">${1:Panel title}</h3>
-            </header>
-            <div class="panel-body">
-                <p>${2:Panel content}</p>
-            </div>
-            <footer class="panel-footer">${3:Panel footer}</footer>
-        </section>${4}
-
-- trigger: panel-ft-primary
-  description: Creates a panel-primary div with a footer
-  scope: html
-  mTime: 1465672910674
-  text: |
-        <section class="panel panel-primary">
-            <header class="panel-heading">
-                <h3 class="panel-title">${1:Panel title}</h3>
-            </header>
-            <div class="panel-body">
-                <p>${2:Panel content}</p>
-            </div>
-            <footer class="panel-footer">${3:Panel footer}</footer>
-        </section>${4}
-
-- trigger: panel-ft-success
-  description: Creates a panel-success div with a footer
-  scope: html
-  mTime: 1465672932542
-  text: |
-        <section class="panel panel-success">
-            <header class="panel-heading">
-                <h3 class="panel-title">${1:Panel title}</h3>
-            </header>
-            <div class="panel-body">
-                <p>${2:Panel content}</p>
-            </div>
-            <footer class="panel-footer">${3:Panel footer}</footer>
-        </section>${4}
-
-- trigger: panel-ft-warning
-  description: Creates a panel-warning div with a footer
-  scope: html
-  mTime: 1465672962343
+  mTime: 1465672488043
   text: |
         <section class="panel panel-warning">
             <header class="panel-heading">
@@ -1210,285 +1141,401 @@
             <div class="panel-body">
                 <p>${2:Panel content}</p>
             </div>
-            <footer class="panel-footer">${3:Panel footer}</footer>
-        </section>${4}
+        </section>${3}
 
-- trigger: tile
-  description: Creates a tile used on topic and sub-topic pages
+- trigger: panel-info
+  description: Creates a panel-info div
   scope: html
-  mTime: 1465673949087
+  mTime: 1465672476732
   text: |
-        <section class="gc-drmt">
-            <h3 class="h5"><a href="${1:link}">${2:[Subtopic hyperlink text\\Task]}</a></h3>
-            <p>${3:Summary of the information or tasks that can be accomplished on the sub-topic page.}</p>
-        </section>${4}
+        <section class="panel panel-info">
+            <header class="panel-heading">
+                <h3 class="panel-title">${1:Panel title}</h3>
+            </header>
+            <div class="panel-body">
+                <p>${2:Panel content}</p>
+            </div>
+        </section>${3}
 
-- trigger: lowest-level-topic-page
-  description: Creates a default lowest level topic page structure as specificied by Canada.ca
+- trigger: panel-success
+  description: Creates a panel-success div
   scope: html
-  mTime: 1465675539639
+  mTime: 1465672485127
   text: |
-        <div class="row profile">
-            <div class="col-md-6">
-                <h1 property="name" id="wb-cont">[Lowest-level subtopic name]</h1>
-                <p class="pagetag">1-2 sentences that describe the topics and top tasks that can be accessed on this page.</p>
-                <section class="followus">
-                    <h2>Follow:</h2>
-                </section>
+        <section class="panel panel-success">
+            <header class="panel-heading">
+                <h3 class="panel-title">${1:Panel title}</h3>
+            </header>
+            <div class="panel-body">
+                <p>${2:Panel content}</p>
             </div>
-            <div class="col-md-6 margin-top-small hidden-sm hidden-xs">
-                <img src="https://wet-boew.github.io/themes-dist/GCWeb/img/520x200.png" alt="" class="pull-right img-responsive thumbnail">
+        </section>${3}
+
+- trigger: panel-primary
+  description: Creates a panel-primary div
+  scope: html
+  mTime: 1465672480353
+  text: |
+        <section class="panel panel-primary">
+            <header class="panel-heading">
+                <h3 class="panel-title">${1:Panel title}</h3>
+            </header>
+            <div class="panel-body">
+                <p>${2:Panel content}</p>
             </div>
-        </div>
+        </section>${3}
+
+- trigger: ul-unstyled
+  description: Creates an unstyled ul
+  scope: html
+  mTime: 1465672589980
+  text: |
+        <ul class="list-untyled">
+            <li>${1}</li>${2}
+        </ul>
+
+- trigger: ol-lwr-alph
+  description: Creates an ol using lowercase alpha
+  scope: html
+  mTime: 1465672432988
+  text: |
+        <ol class="lst-lwr-alph">
+            <li>${1}</li>${2}
+        </ol>
+
+- trigger: ol-upr-alph
+  description: Creates an ol using uppercase alpha
+  scope: html
+  mTime: 1465672440155
+  text: |
+        <ol class="lst-upr-alph">
+            <li>${1}</li>${2}
+        </ol>
+
+- trigger: ul-inline
+  description: Creates an inline ul
+  scope: html
+  mTime: 1465672582063
+  text: |
+        <ul class="list-inline">
+            <li>${1}</li>${2}
+        </ul>
+
+- trigger: ul-inline-unstyled
+  description: Creates an unstyled inline ul
+  scope: html
+  mTime: 1465672586021
+  text: |
+        <ul class="list-inline list-unstyled">
+            <li>${1}</li>${2}
+        </ul>
+
+- trigger: ol-inline
+  description: Creates an inline ol
+  scope: html
+  mTime: 1465672428976
+  text: |
+        <ol class="list-inline">
+            <li>${1}</li>${2}
+        </ol>
+
+- trigger: dl-horrizontal
+  description: Creates a horizontal dl
+  scope: html
+  mTime: 1465672126110
+  text: |
+        <dl class="dl-horizontal">
+            <dt>${1:title}</dt>
+            <dd>${2:definition}</dd>${3}
+        </dl>
+
+- trigger: ol-col-lg
+  description: Creates a multi-column-lg ol
+  scope: html
+  mTime: 1465672396154
+  text: |
+        <ol class="colcount-lg-${1:2-4}">
+            <li>${2}</li>${3}
+        </ol>
+
+- trigger: ol-col-md
+  description: Creates a multi-column-md ol
+  scope: html
+  mTime: 1465672400014
+  text: |
+        <ol class="colcount-md-${1:2-4}">
+            <li>${2}</li>${3}
+        </ol>
+
+- trigger: ol-col-sm
+  description: Creates a multi-column-sm ol
+  scope: html
+  mTime: 1465672403549
+  text: |
+        <ol class="colcount-sm-${1:2-4}">
+            <li>${2}</li>${3}
+        </ol>
+
+- trigger: ol-col-xs
+  description: Creates a multi-column-xs ol
+  scope: html
+  mTime: 1465672407679
+  text: |
+        <ol class="colcount-xs-${1:2-4}">
+            <li>${2}</li>${3}
+        </ol>
+
+- trigger: ul-col-lg
+  description: Creates a multi-column-lg ul
+  scope: html
+  mTime: 1465672561070
+  text: |
+        <ul class="colcount-lg-${1:2-4}">
+            <li>${2}</li>${3}
+        </ul>
+
+- trigger: ul-col-md
+  description: Creates a multi-column-md ul
+  scope: html
+  mTime: 1465672564289
+  text: |
+        <ul class="colcount-md-${1:2-4}">
+            <li>${2}</li>${3}
+        </ul>
+
+- trigger: ul-col-sm
+  description: Creates a multi-column-sm ul
+  scope: html
+  mTime: 1465672567457
+  text: |
+        <ul class="colcount-sm-${1:2-4}">
+            <li>${2}</li>${3}
+        </ul>
+
+- trigger: ul-col-xs
+  description: Creates a multi-column-xs ul
+  scope: html
+  mTime: 1465672570530
+  text: |
+        <ul class="colcount-xs-${1:2-4}">
+            <li>${2}</li>${3}
+        </ul>
+
+- trigger: row
+  description: Creates a basic row div
+  scope: html
+  mTime: 1465578440234
+  text: |
         <div class="row">
-            <section class="col-md-8">
-                <h2>Services and information</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Task]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Task]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Task]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Task]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Task]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Task]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="clearfix"></div>
-                    <details class="mrgn-tp-md brdr-0">
-                        <summary class="btn btn-default text-center">Show more services and information</summary>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <section class="gc-drmt">
-                                    <h3 class="h5"><a href="#">[Task]</a></h3>
-                                    <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-                                </section>
-                            </div>
-                            <div class="col-md-6">
-                                <section class="gc-drmt">
-                                    <h3 class="h5"><a href="#">[Task]</a></h3>
-                                    <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-                                </section>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-md-6">
-                                <section class="gc-drmt">
-                                    <h3 class="h5"><a href="#">[Task]</a></h3>
-                                    <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-                                </section>
-                            </div>
-                            <div class="col-md-6">
-                                <section class="gc-drmt">
-                                    <h3 class="h5"><a href="#">[Task]</a></h3>
-                                    <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-                                </section>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-md-6">
-                                <section class="gc-drmt">
-                                    <h3 class="h5"><a href="#">[Task]</a></h3>
-                                    <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-                                </section>
-                            </div>
-                            <div class="col-md-6">
-                                <section class="gc-drmt">
-                                    <h3 class="h5"><a href="#">[Task]</a></h3>
-                                    <p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-                                </section>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </details>
-                </div>
-            </section>
-            <div class="col-md-4 mrgn-tp-lg">
-                <section class="lnkbx well">
-                    <h2>Contributors</h2>
-                    <ul>
-                        <li><a href="#">[Institution name]</a></li>
-                        <li><a href="#">[Institution name]</a></li>
-                        <li><a href="#">[Institution name]</a></li>
-                    </ul>
-                </section>
-                <section class="lnkbx well">
-                    <h2>More information for</h2>
-                    <ul>
-                        <li><a href="#">[Audience hyperlink text]</a></li>
-                        <li><a href="#">[Audience hyperlink text]</a></li>
-                        <li><a href="#">[Audience hyperlink text]</a></li>
-                    </ul>
-                </section>
-            </div>
-        </div>
-        <section>
-            <h2>What we are doing</h2>
-            <div class="row wb-eqht">
-                <section class="col-lg-4 col-md-6">
-                    <h3>Laws and regulations</h3>
-                    <ul>
-                        <li><a href="#">[Regulation 1]</a></li>
-                        <li><a href="#">[Law 1 with a long heading]</a></li>
-                        <li><a href="#">[Regulation 2 with a long heading]</a></li>
-                        <li><a href="#">[Regulation 3]</a></li>
-                    </ul>
-                    <p><a href="#">All related laws and regulations</a></p>
-                </section>
-                <section class="col-lg-4 col-md-6">
-                    <h3>Publications</h3>
-                    <ul>
-                        <li><a href="#">[Publication 1]</a></li>
-                        <li><a href="#">[Publication 2 with a long heading]</a></li>
-                        <li><a href="#">[Publication 3]</a></li>
-                        <li><a href="#">[Publication 4]</a></li>
-                    </ul>
-                    <p><a href="#">All related publications</a></p>
-                </section>
-                <section class="col-lg-4 col-md-6">
-                    <h3>Consultations</h3>
-                    <ul>
-                        <li><a href="#">[Consultation 1]</a></li>
-                        <li><a href="#">[Consultation 2 with a long heading]</a></li>
-                        <li><a href="#">[Consultation 3]</a></li>
-                        <li><a href="#">[Consultation 4 with a long heading..and a bit longer]</a></li>
-                    </ul>
-                    <p><a href="#">All related consultations</a></p>
-                </section>
-                <section class="col-lg-4 col-md-6">
-                    <h3>Open data</h3>
-                    <ul>
-                        <li><a href="#">[Open data 1]</a></li>
-                        <li><a href="#">[Open data 2 with a long heading]</a></li>
-                        <li><a href="#">[Open data 3]</a></li>
-                        <li><a href="#">[Open data 4 with a long heading..and a bit longer]</a></li>
-                    </ul>
-                    <p><a href="#">All related open data</a></p>
-                </section>
-                <section class="col-lg-4 col-md-6">
-                    <h3>Statistics</h3>
-                    <ul>
-                        <li><a href="#">[Statistic 1]</a></li>
-                        <li><a href="#">[Statistic 2 with a long heading]</a></li>
-                        <li><a href="#">[Statistic 3]</a></li>
-                        <li><a href="#">[Statistic 4 with a long heading..and a bit longer]</a></li>
-                    </ul>
-                    <p><a href="#">All related statistics</a></p>
-                </section>
-            </div>
-        </section>
-
-- trigger: most-requested
-  description: Creates a Most requested section used on Canada.ca pages
-  scope: html
-  mTime: 1465680405835
-  text: |
-        <section class="lnkbx well">
-            <h2>Most requested</h2>
-            <ul>
-                <li><a href="${1:link}">${2:text}</a></li>${3}
-            </ul>
-        </section>
-
-- trigger: more-info
-  description: Creates a More information for section used on Canada.ca pages
-  scope: html
-  mTime: 1465680399641
-  text: |
-        <section class="lnkbx well">
-            <h2>More information for</h2>
-            <ul>
-                <li><a href="${1:link}">${2:text}</a></li>${3}
-            </ul>
-        </section>
-
-- trigger: services-info
-  description: Creates a Services and information section used on Canada.ca pages
-  scope: html
-  mTime: 1465680534631
-  text: |
-        <h2>Services and information</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <section class="gc-drmt">
-                    <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                    <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                </section>
-            </div>
-            <div class="col-md-6">
-                <section class="gc-drmt">
-                    <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                    <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                </section>
-            </div>
-            <div class="clearfix"></div>${1}
+            ${1}
         </div>
 
-- trigger: services-info-more
-  description: Creates a details panel for more services and information used on Canada.ca pages
+- trigger: ol-col-all
+  description: Creates a multi-column ol
   scope: html
-  mTime: 1465680639425
+  mTime: 1465672384388
   text: |
-        <details class="mrgn-tp-md brdr-0">
-            <summary class="btn btn-default text-center">Show more services and information</summary>
-            <div class="row">
-                <div class="col-md-6">
-                    <section class="gc-drmt">
-                        <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                        <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                    </section>
-                </div>
-                <div class="col-md-6">
-                    <section class="gc-drmt">
-                        <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                        <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                    </section>
-                </div>
-                <div class="clearfix"></div>${1}
-            </div>
-        </details>
+        <ol class="colcount-xs-${1:2-4} colcount-sm-${2:2-4} colcount-md-${3:2-4} colcount-lg-${4:2-4}">
+            <li>${5}</li>${6}
+        </ol>
 
-- trigger: topic-head
-  description: Creates the head section for a topic pages used on Canada.ca pages
+- trigger: ul-col-all
+  description: Creates a multi-column ul
   scope: html
-  mTime: 1465680764395
+  mTime: 1465672552696
   text: |
-        <div class="row profile">
-            <div class="col-md-6">
-                <h1 property="name" id="wb-cont">${1:[Topic name]}</h1>
-                <p class="pagetag">${2:1-2 sentences that describe the topics and top tasks that can be accessed on this page.}</p>
-                <section class="followus">
-                    <h2>Follow:</h2>
-                </section>
+        <ul class="colcount-xs-${1:2-4} colcount-sm-${2:2-4} colcount-md-${3:2-4} colcount-lg-${4:2-4}">
+            <li>${5}</li>${6}
+        </ul>
+
+- trigger: blockquote
+  description: Creates a blockquote with a footer
+  scope: html
+  mTime: 1465671945462
+  text: |
+        <blockquote>
+            <p>${1:quote}</p>
+            <footer>${2:Someone famous}</footer>
+        </blockquote>${3}
+
+- trigger: blockquote-reverse
+  description: Creates a reverse blockquote with a footer
+  scope: html
+  mTime: 1465671949373
+  text: |
+        <blockquote class="blockquote-reverse">
+            <p>${1:quote}</p>
+            <footer>${2:Someone famous}</footer>
+        </blockquote>${3}
+
+- trigger: table
+  description: Creates a basic table
+  scope: html
+  mTime: 1465583491870
+  text: |
+        <table class="table table-responsive table-bordered">
+            <thead>
+                <tr class="active">
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+- trigger: table-striped
+  description: Creates a striped table
+  scope: html
+  mTime: 1465583518776
+  text: |
+        <table class="table table-responsive table-bordered table-striped">
+            <thead>
+                <tr class="active">
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+- trigger: wb-table
+  description: Creates a WET4 sortable table
+  scope: html
+  mTime: 1465583572620
+  text: |
+        <table class="table wb-tables">
+            <thead>
+                <tr>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+- trigger: wb-table-striped
+  description: Creates a striped WET4 sortable table
+  scope: html
+  mTime: 1465583601963
+  text: |
+        <table class="table wb-tables table-striped">
+            <thead>
+                <tr>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+- trigger: tabs
+  description: Creates a basic WET4 tabbed interface
+  scope: html
+  mTime: 1465672522759
+  text: |
+        <div class="wb-tabs">
+            <div class="tabpanels">
+                <details id="${1:details-panel1}">
+                    <summary>${2:Example 1}</summary>
+                    ${3}
+                </details>${4}
             </div>
-            <div class="col-md-6 margin-top-small hidden-sm hidden-xs">
-                <img src="${3:https://wet-boew.github.io/themes-dist/GCWeb/img/520x200.png}" alt="${4:description}" class="pull-right img-responsive thumbnail">
-            </div>
-        </div>${5}
+        </div>
+
+- trigger: tabs-link
+  description: Creates a link to show a specific panel in a tabbed interface
+  scope: html
+  mTime: 1465672529154
+  text: |
+        <a href="${1:details-panel1}" class="wb-tabs-ext">${2:Show the first panel}</a>${3}
+
+- trigger: fn-section
+  description: Creates a section for footnotes
+  scope: html
+  mTime: 1465672284238
+  text: |
+        <aside class="wb-fnote" role="note">
+            <h3 id="fn">Footnotes</h3>
+            <dl>
+                <dt>Footnote 1</dt>
+                <dd id="fn1">
+                    <p>${1:Example of a standard footnote.}</p>
+                    <p class="fn-rtn">
+                        <a href="#fn1-rf"><span class="wb-inv"> Return to footnote </span>1<span class="wb-inve"> referrer</span></a>
+                    </p>
+                </dd>${2}
+            </dl>
+        </aside>
+
+- trigger: fn-item
+  description: Creates a footnote item
+  scope: html
+  mTime: 1465672260096
+  text: |
+        <dt>Footnote ${1:#}</dt>
+        <dd id="fn${1:#}">
+            <p>${2:Example of standard footnote}</p>
+            <p class="fn-rtn">
+                <a href="#fn${1:#}-rf"><span class="wb-inv">Return to footnote</span> ${1:#}<span class="wb-inv"> referrer</span></a>
+            </p>
+        </dd>${3}
+
+- trigger: template
+  description: Creates the header area we use for DFO sites.
+  scope: html
+  mTime: 1465822172795
+  text: |
+        <!--#include virtual="/${1:site}/theme-wet4/asp/init.asp" -->\r
+        <%\r
+        Title = "${2:title}"\r
+        Breadcrumb = "BcRoot<li class='active'>${3:Current page}</li>"\r
+        %>\r
+        <!--#include virtual="/${1:site}/theme-wet4/asp/template-head.asp"-->\r
+        <!-- MainContentStart -->\r
+        ${4}\r
+        <!-- MainContentEnd --> \r
+        <!--#include virtual="/${1:site}/theme-wet4/asp/template-footer.asp"--> 
+
+- trigger: template-init
+  description: Creates the init include used on DFO pages
+  scope: html
+  mTime: 1465822196366
+  text: |
+        <!--#include virtual="/${1:site}/theme-wet4/asp/init.asp" -->
+
+- trigger: template-head
+  description: Creates the head include used on DFO pages
+  scope: html
+  mTime: 1465822236741
+  text: |
+        <!--#include virtual="/${1:site}/theme-wet4/asp/template-head.asp"-->
+
+- trigger: template-foot
+  description: Creates the footer include used on DFO pages
+  scope: html
+  mTime: 1465822267260
+  text: |
+        <!--#include virtual="/${1:site}/theme-wet4/asp/template-footer.asp"--> 
+
+- trigger: template-tbc
+  description: Creates the title and breadcrumb elements used on DFO pages.
+  scope: html
+  mTime: 1465822330962
+  text: |
+        <%\r
+        Title = "${1:title}"\r
+        Breadcrumb = "BcRoot<li class='active'>${2:Current page}</li>"\r
+        %>
 
