@@ -1188,9 +1188,9 @@
 - trigger: ul-unstyled
   description: Creates an unstyled ul
   scope: html
-  mTime: 1465672589980
+  mTime: 1465832725198
   text: |
-        <ul class="list-untyled">
+        <ul class="list-unstyled">
             <li>${1}</li>${2}
         </ul>
 
@@ -1538,4 +1538,18 @@
         Title = "${1:title}"\r
         Breadcrumb = "BcRoot<li class='active'>${2:Current page}</li>"\r
         %>
+
+- trigger: bc-item
+  description: Creates a list item used in the breadcrumbs
+  scope: html
+  mTime: 1465839172684
+  text: |
+        <li><a href='${1:link}'>${2:title of page}</a></li>${3}
+
+- trigger: bc-current
+  description: Creates a list item for a breadcrumb representing the current page.
+  scope: html
+  mTime: 1465839165808
+  text: |
+        <li class='active'>${1:title of page}</li>${2}
 
