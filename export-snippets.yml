@@ -273,7 +273,7 @@
   mTime: 1465673949087
   text: |
         <section class="gc-drmt">
-            <h3 class="h5"><a href="${1:link}">${2:[Subtopic hyperlink text\\\\Task]}</a></h3>
+            <h3 class="h5"><a href="${1:link}">${2:[Subtopic hyperlink text/Task]}</a></h3>
             <p>${3:Summary of the information or tasks that can be accomplished on the sub-topic page.}</p>
         </section>${4}
 
@@ -1497,15 +1497,15 @@
   scope: html
   mTime: 1465822172795
   text: |
-        <!--#include virtual="/${1:site}/theme-wet4/asp/init.asp" -->\r
-        <%\r
-        Title = "${2:title}"\r
-        Breadcrumb = "BcRoot<li class='active'>${3:Current page}</li>"\r
-        %>\r
-        <!--#include virtual="/${1:site}/theme-wet4/asp/template-head.asp"-->\r
-        <!-- MainContentStart -->\r
-        ${4}\r
-        <!-- MainContentEnd --> \r
+        <!--#include virtual="/${1:site}/theme-wet4/asp/init.asp" -->
+        <%
+        Title = "${2:title}"
+        Breadcrumb = "BcRoot<li class='active'>${3:Current page}</li>"
+        %>
+        <!--#include virtual="/${1:site}/theme-wet4/asp/template-head.asp"-->
+        <!-- MainContentStart -->
+        ${4}
+        <!-- MainContentEnd --> 
         <!--#include virtual="/${1:site}/theme-wet4/asp/template-footer.asp"--> 
 
 - trigger: template-init
@@ -1534,9 +1534,9 @@
   scope: html
   mTime: 1465822330962
   text: |
-        <%\r
-        Title = "${1:title}"\r
-        Breadcrumb = "BcRoot<li class='active'>${2:Current page}</li>"\r
+        <%
+        Title = "${1:title}"
+        Breadcrumb = "BcRoot<li class='active'>${2:Current page}</li>"
         %>
 
 - trigger: bc-item
@@ -1594,16 +1594,16 @@
   trigger: publication-pdf
   mTime: 1465913918045
   text: |
-        <div class="col-md-2 mrgn-tp-md pull-right">\r
-            <a href="${1:link}">\r
-                <figure class="thumbnail hidden-xs hidden-sm">\r
-                    <img src="${2:link}" class="img-responsive" alt="${3:description}"/>\r
-                    <figcaption class="caption text-center">\r
-                        <p><span class="glyphicon glyphicon-download"></span> PDF Document</p>\r
-                    </figcaption>\r
-                </figure>\r
-                <p class="visible-xs visible-sm"><span class="glyphicon glyphicon-download"></span> PDF Document</p>\r
-            </a>\r
+        <div class="col-md-2 mrgn-tp-md pull-right">
+            <a href="${1:link}">
+                <figure class="thumbnail hidden-xs hidden-sm">
+                    <img src="${2:link}" class="img-responsive" alt="${3:description}"/>
+                    <figcaption class="caption text-center">
+                        <p><span class="glyphicon glyphicon-download"></span> PDF Document</p>
+                    </figcaption>
+                </figure>
+                <p class="visible-xs visible-sm"><span class="glyphicon glyphicon-download"></span> PDF Document</p>
+            </a>
         </div>${4}
 
 - trigger: publication-nav
@@ -1611,13 +1611,13 @@
   scope: html
   mTime: 1465919128384
   text: |
-        <nav>\r
-        \t<h2 class="wb-inv">Document navigation</h2>\r
-        \t<ul class="pager">\r
-        \t\t<li class="previous"><a href="${1:previousPage}" rel="prev">Previous</a></li>\r
-        \t\t<li><a href="${3:fullPublication}">Complete Text</a></li>\r
-        \t\t<li class="next"><a href="${2:nextPage}" rel="next">Next</a></li>\r
-        \t</ul>\r
+        <nav>
+        <h2 class="wb-inv">Document navigation</h2>
+        <ul class="pager">
+        <li class="previous"><a href="${1:previousPage}" rel="prev">Previous</a></li>
+        <li><a href="${3:fullPublication}">Complete Text</a></li>
+        <li class="next"><a href="${2:nextPage}" rel="next">Next</a></li>
+        </ul>
         </nav>${4}
 
 - trigger: publication-nav-frst
@@ -1625,12 +1625,12 @@
   scope: html
   mTime: 1465919215725
   text: |
-        <nav>\r
-        \t<h2 class="wb-inv">Document navigation</h2>\r
-        \t<ul class="pager">\r
-        \t\t<li><a href="${2:fullPublication}">Complete Text</a></li>\r
-        \t\t<li class="next"><a href="${1:nextPage}" rel="next">Next</a></li>\r
-        \t</ul>\r
+        <nav>
+        <h2 class="wb-inv">Document navigation</h2>
+        <ul class="pager">
+        <li><a href="${2:fullPublication}">Complete Text</a></li>
+        <li class="next"><a href="${1:nextPage}" rel="next">Next</a></li>
+        </ul>
         </nav>${3}
 
 - trigger: publication-nav-lst
@@ -1638,12 +1638,12 @@
   scope: html
   mTime: 1465919260930
   text: |
-        <nav>\r
-        \t<h2 class="wb-inv">Document navigation</h2>\r
-        \t<ul class="pager">\r
-        \t\t<li class="previous"><a href="${1:previousPage}" rel="prev">Previous</a></li>\r
-        \t\t<li><a href="${2:fullPublication}">Complete Text</a></li>\r
-        \t</ul>\r
+        <nav>
+        <h2 class="wb-inv">Document navigation</h2>
+        <ul class="pager">
+        <li class="previous"><a href="${1:previousPage}" rel="prev">Previous</a></li>
+        <li><a href="${2:fullPublication}">Complete Text</a></li>
+        </ul>
         </nav>${3}
 
 - trigger: publication-nav_fr
@@ -1651,13 +1651,13 @@
   scope: html
   mTime: 1465920135076
   text: |
-        <nav>\r
-        \t<h2 class="wb-inv">Document navigation</h2>\r
-        \t<ul class="pager">\r
-        \t\t<li class="previous"><a href="${1:previousPage}" rel="prev">Précédent</a></li>\r
-        \t\t<li><a href="${3:fullPublication}">Texte Complet</a></li>\r
-        \t\t<li class="next"><a href="${2:nextPage}" rel="next">Suivant</a></li>\r
-        \t</ul>\r
+        <nav>
+        <h2 class="wb-inv">Document navigation</h2>
+        <ul class="pager">
+        <li class="previous"><a href="${1:previousPage}" rel="prev">Précédent</a></li>
+        <li><a href="${3:fullPublication}">Texte Complet</a></li>
+        <li class="next"><a href="${2:nextPage}" rel="next">Suivant</a></li>
+        </ul>
         </nav>${4}
 
 - trigger: publication-nav-frst_fr
@@ -1665,12 +1665,12 @@
   scope: html
   mTime: 1465920185068
   text: |
-        <nav>\r
-        \t<h2 class="wb-inv">Document navigation</h2>\r
-        \t<ul class="pager">\r
-        \t\t<li><a href="${2:fullPublication}">Texte Complet</a></li>\r
-        \t\t<li class="next"><a href="${1:nextPage}" rel="next">Suivant</a></li>\r
-        \t</ul>\r
+        <nav>
+        <h2 class="wb-inv">Document navigation</h2>
+        <ul class="pager">
+        <li><a href="${2:fullPublication}">Texte Complet</a></li>
+        <li class="next"><a href="${1:nextPage}" rel="next">Suivant</a></li>
+        </ul>
         </nav>${3}
 
 - trigger: publication-nav-lst_fr
@@ -1678,11 +1678,11 @@
   scope: html
   mTime: 1465920225884
   text: |
-        <nav>\r
-        \t<h2 class="wb-inv">Document navigation</h2>\r
-        \t<ul class="pager">\r
-        \t\t<li class="previous"><a href="${1:previousPage}" rel="prev">Précédent</a></li>\r
-        \t\t<li><a href="${2:fullPublication}">Texte Complet</a></li>\r
-        \t</ul>\r
+        <nav>
+        <h2 class="wb-inv">Document navigation</h2>
+        <ul class="pager">
+        <li class="previous"><a href="${1:previousPage}" rel="prev">Précédent</a></li>
+        <li><a href="${2:fullPublication}">Texte Complet</a></li>
+        </ul>
         </nav>${3}
 
