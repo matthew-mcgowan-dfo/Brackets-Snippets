@@ -1553,3 +1553,56 @@
   text: |
         <li class='active'>${1:title of page}</li>${2}
 
+- trigger: wb-table-bordered
+  description: Creates a bordered WET4 sortable table
+  scope: html
+  mTime: 1465839794684
+  text: |
+        <table class="table wb-tables table-bordered">
+            <thead>
+                <tr>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+- trigger: wb-table-bordered-striped
+  description: Creates a bordered striped WET4 sortable table
+  scope: html
+  mTime: 1465840930021
+  text: |
+        <table class="table wb-tables tabled-bordered table-striped">
+            <thead>
+                <tr>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+- scope: html
+  description: Creates a section for downloading the PDF of a publication
+  trigger: publication-pdf
+  mTime: 1465913918045
+  text: |
+        <div class="col-md-2 mrgn-tp-md pull-right">\r
+            <a href="${1:link}">\r
+                <figure class="thumbnail hidden-xs hidden-sm">\r
+                    <img src="${2:link}" class="img-responsive" alt="${3:description}"/>\r
+                    <figcaption class="caption text-center">\r
+                        <p><span class="glyphicon glyphicon-download"></span> PDF Document</p>\r
+                    </figcaption>\r
+                </figure>\r
+                <p class="visible-xs visible-sm"><span class="glyphicon glyphicon-download"></span> PDF Document</p>\r
+            </a>\r
+        </div>${4}
+
