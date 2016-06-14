@@ -1606,3 +1606,83 @@
             </a>\r
         </div>${4}
 
+- trigger: publication-nav
+  description: Creates the bottom navigation for switching through sections of a publication
+  scope: html
+  mTime: 1465919128384
+  text: |
+        <nav>\r
+        \t<h2 class="wb-inv">Document navigation</h2>\r
+        \t<ul class="pager">\r
+        \t\t<li class="previous"><a href="${1:previousPage}" rel="prev">Previous</a></li>\r
+        \t\t<li><a href="${3:fullPublication}">Complete Text</a></li>\r
+        \t\t<li class="next"><a href="${2:nextPage}" rel="next">Next</a></li>\r
+        \t</ul>\r
+        </nav>${4}
+
+- trigger: publication-nav-frst
+  description: Creates the bottom navigation for switching through sections of a publication (used on the first section)
+  scope: html
+  mTime: 1465919215725
+  text: |
+        <nav>\r
+        \t<h2 class="wb-inv">Document navigation</h2>\r
+        \t<ul class="pager">\r
+        \t\t<li><a href="${2:fullPublication}">Complete Text</a></li>\r
+        \t\t<li class="next"><a href="${1:nextPage}" rel="next">Next</a></li>\r
+        \t</ul>\r
+        </nav>${3}
+
+- trigger: publication-nav-lst
+  description: Creates the bottom navigation for switching through sections of a publication (used on the last section)
+  scope: html
+  mTime: 1465919260930
+  text: |
+        <nav>\r
+        \t<h2 class="wb-inv">Document navigation</h2>\r
+        \t<ul class="pager">\r
+        \t\t<li class="previous"><a href="${1:previousPage}" rel="prev">Previous</a></li>\r
+        \t\t<li><a href="${2:fullPublication}">Complete Text</a></li>\r
+        \t</ul>\r
+        </nav>${3}
+
+- trigger: publication-nav_fr
+  description: Creates the bottom navigation for switching through sections of a publication (in French)
+  scope: html
+  mTime: 1465920135076
+  text: |
+        <nav>\r
+        \t<h2 class="wb-inv">Document navigation</h2>\r
+        \t<ul class="pager">\r
+        \t\t<li class="previous"><a href="${1:previousPage}" rel="prev">Précédent</a></li>\r
+        \t\t<li><a href="${3:fullPublication}">Texte Complet</a></li>\r
+        \t\t<li class="next"><a href="${2:nextPage}" rel="next">Suivant</a></li>\r
+        \t</ul>\r
+        </nav>${4}
+
+- trigger: publication-nav-frst_fr
+  description: Creates the bottom navigation for switching through sections of a publication (used on the first section) (in French)
+  scope: html
+  mTime: 1465920185068
+  text: |
+        <nav>\r
+        \t<h2 class="wb-inv">Document navigation</h2>\r
+        \t<ul class="pager">\r
+        \t\t<li><a href="${2:fullPublication}">Texte Complet</a></li>\r
+        \t\t<li class="next"><a href="${1:nextPage}" rel="next">Suivant</a></li>\r
+        \t</ul>\r
+        </nav>${3}
+
+- trigger: publication-nav-lst_fr
+  description: Creates the bottom navigation for switching through sections of a publication (used on the last section) (in French)
+  scope: html
+  mTime: 1465920225884
+  text: |
+        <nav>\r
+        \t<h2 class="wb-inv">Document navigation</h2>\r
+        \t<ul class="pager">\r
+        \t\t<li class="previous"><a href="${1:previousPage}" rel="prev">Précédent</a></li>\r
+        \t\t<li><a href="${2:fullPublication}">Texte Complet</a></li>\r
+        \t</ul>\r
+        </nav>${3}
+
