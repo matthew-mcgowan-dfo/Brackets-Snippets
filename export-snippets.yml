@@ -1,7 +1,7 @@
 - trigger: topic-head
   description: Creates the head section for a topic pages used on Canada.ca pages
   scope: html
-  mTime: 1465680764395
+  mTime: 1466003668044
   text: |
         <div class="row profile">
             <div class="col-md-6">
@@ -11,7 +11,7 @@
                     <h2>Follow:</h2>
                 </section>
             </div>
-            <div class="col-md-6 margin-top-small hidden-sm hidden-xs">
+            <div class="col-md-6 mrgn-tp-md hidden-sm hidden-xs">
                 <img src="${3:https://wet-boew.github.io/themes-dist/GCWeb/img/520x200.png}" alt="${4:description}" class="pull-right img-responsive thumbnail">
             </div>
         </div>${5}
@@ -89,7 +89,7 @@
 - trigger: lowest-level-topic-page
   description: Creates a default lowest level topic page structure as specificied by Canada.ca
   scope: html
-  mTime: 1465675539639
+  mTime: 1466003694604
   text: |
         <div class="row profile">
             <div class="col-md-6">
@@ -99,7 +99,7 @@
                     <h2>Follow:</h2>
                 </section>
             </div>
-            <div class="col-md-6 margin-top-small hidden-sm hidden-xs">
+            <div class="col-md-6 mrgn-tp-md hidden-sm hidden-xs">
                 <img src="https://wet-boew.github.io/themes-dist/GCWeb/img/520x200.png" alt="" class="pull-right img-responsive thumbnail">
             </div>
         </div>
@@ -385,7 +385,7 @@
 - trigger: topic-landing-page
   description: Creates a default topic landing page structure as specificied by Canada.ca
   scope: html
-  mTime: 1465675444109
+  mTime: 1466003676040
   text: |
         <div class="row profile">
             <div class="col-md-6">
@@ -395,7 +395,7 @@
                     <h2>Follow:</h2>
                 </section>
             </div>
-            <div class="col-md-6 margin-top-small hidden-sm hidden-xs">
+            <div class="col-md-6 mrgn-tp-md hidden-sm hidden-xs">
                 <img src="https://wet-boew.github.io/themes-dist/GCWeb/img/520x200.png" alt="" class="pull-right img-responsive thumbnail">
             </div>
         </div>
