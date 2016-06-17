@@ -1686,3 +1686,34 @@
         </ul>
         </nav>${3}
 
+- scope: html
+  trigger: asp-date
+  description: gets the current date in asp
+  mTime: 1466185860397
+  text: |
+        <%
+               Dim dd, mm, yy
+        Dim currentdate, dtsnow
+        
+        dtsnow = Now()
+        
+        dd = Right("00" & Day(dtsnow), 2)
+        mm = Right("00" & Month(dtsnow), 2)
+        yy = Year(dtsnow)
+        
+        currentdate = yy & "-" & mm & "-" & dd
+               %>
+
+- trigger: asp-date-example
+  description: a sample forum group using asp-date
+  scope: html
+  mTime: 1466186085018
+  text: |
+        <div class="form-group">
+            <label for="{$1:Label for}">
+                <span class="field-name">Calander</span> <span class="datepicker-format"> (<abbr title="Two digits day, dash, two digits month, dash, four digits year">DD-MM-YYYY</abbr>)</span>
+            </label>
+            <div class="clearfix"></div>
+            <input type="date" id="{$1:ID}" name="{$1:Name}" min="2010-01-01" max="<% Response.Write(currentdate) %>" />
+        </div>
+
