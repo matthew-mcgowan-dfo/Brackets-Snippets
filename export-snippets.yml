@@ -1686,6 +1686,94 @@
         </ul>
         </nav>${3}
 
+- trigger: whtwedo
+  description: Creates a What we are doing section used on Canada.ca topic pages
+  scope: html
+  mTime: 1466174616229
+  text: |
+        <section class="whtwedo">
+            <h2>What we are doing</h2>
+            <div class="row wb-eqht">
+                <section class="col-lg-4 col-md-6">
+                    <h3>Laws and regulations</h3>
+                    <ul>
+                        <li><a href="#">[Regulation 1]</a></li>
+                        <li><a href="#">[Law 1 with a long heading]</a></li>
+                        <li><a href="#">[Regulation 2 with a long heading]</a></li>
+                        <li><a href="#">[Regulation 3]</a></li>
+                    </ul>
+                    <p><a href="#">All related laws and regulations</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Publications</h3>
+                    <ul>
+                        <li><a href="#">[Publication 1]</a></li>
+                        <li><a href="#">[Publication 2 with a long heading]</a></li>
+                        <li><a href="#">[Publication 3]</a></li>
+                        <li><a href="#">[Publication 4]</a></li>
+                    </ul>
+                    <p><a href="#">All related publications</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Consultations</h3>
+                    <ul>
+                        <li><a href="#">[Consultation 1]</a></li>
+                        <li><a href="#">[Consultation 2 with a long heading]</a></li>
+                        <li><a href="#">[Consultation 3]</a></li>
+                        <li><a href="#">[Consultation 4 with a long heading..and a bit longer]</a></li>
+                    </ul>
+                    <p><a href="#">All related consultations</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Open data</h3>
+                    <ul>
+                        <li><a href="#">[Open data 1]</a></li>
+                        <li><a href="#">[Open data 2 with a long heading]</a></li>
+                        <li><a href="#">[Open data 3]</a></li>
+                        <li><a href="#">[Open data 4 with a long heading..and a bit longer]</a></li>
+                    </ul>
+                    <p><a href="#">All related open data</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Statistics</h3>
+                    <ul>
+                        <li><a href="#">[Statistic 1]</a></li>
+                        <li><a href="#">[Statistic 2 with a long heading]</a></li>
+                        <li><a href="#">[Statistic 3]</a></li>
+                        <li><a href="#">[Statistic 4 with a long heading..and a bit longer]</a></li>
+                    </ul>
+                    <p><a href="#">All related statistics</a></p>
+                </section>
+            </div>
+        </section>
+
+- trigger: img-link
+  description: Creates an image tag with a link around it.
+  scope: html
+  mTime: 1466514760341
+  text: |
+        <a href="${1:link}"></a><img src="${1:link}" class="img-responsive" alt="${2:description}" /></a>${3}
+
+- trigger: img-thumb-link
+  description: Creates an image tag with the thumbnail class and a link around it.
+  scope: html
+  mTime: 1466514792012
+  text: |
+        <a href="${1:link}"></a><img src="${1:link}" class="img-responsive thumbnail" alt="${2:description}" /></a>${3}
+
+- trigger: asp-date-example
+  description: a sample forum group using asp-date
+  scope: html
+  mTime: 1466186085018
+  text: |
+        <div class="form-group">
+            <label for="{$1:Label for}">
+                <span class="field-name">Calander</span> <span class="datepicker-format"> (<abbr title="Two digits day, dash, two digits month, dash, four digits year">DD-MM-YYYY</abbr>)</span>
+            </label>
+            <div class="clearfix"></div>
+            <input type="date" id="{$1:ID}" name="{$1:Name}" min="2010-01-01" max="<% Response.Write(currentdate) %>" />
+        </div>
+
 - scope: html
   trigger: asp-date
   description: gets the current date in asp
@@ -1704,16 +1792,21 @@
         currentdate = yy & "-" & mm & "-" & dd
                %>
 
-- trigger: asp-date-example
-  description: a sample forum group using asp-date
+- trigger: embed-responsive-16x9
+  description: Creates a  16x9 responsive embed div for iframes and the like
   scope: html
-  mTime: 1466186085018
+  mTime: 1467301626616
   text: |
-        <div class="form-group">
-            <label for="{$1:Label for}">
-                <span class="field-name">Calander</span> <span class="datepicker-format"> (<abbr title="Two digits day, dash, two digits month, dash, four digits year">DD-MM-YYYY</abbr>)</span>
-            </label>
-            <div class="clearfix"></div>
-            <input type="date" id="{$1:ID}" name="{$1:Name}" min="2010-01-01" max="<% Response.Write(currentdate) %>" />
+        <div class="embed-responsive embed-responsive-16by9">\r
+            <iframe class="embed-responsive-item" src="${1:link}" allowfullscreen></iframe>\r
+        </div>
+
+- trigger: embed-responsive-4x3
+  description: Creates a 4x3 responsive ember div for iframes and the like
+  scope: html
+  mTime: 1467301621051
+  text: |
+        <div class="embed-responsive embed-responsive-4by3">\r
+            <iframe class="embed-responsive-item" src="${1:link}"></iframe>\r
         </div>
 
