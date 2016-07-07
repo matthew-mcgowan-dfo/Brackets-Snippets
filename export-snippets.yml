@@ -1797,8 +1797,8 @@
   scope: html
   mTime: 1467301626616
   text: |
-        <div class="embed-responsive embed-responsive-16by9">\r
-            <iframe class="embed-responsive-item" src="${1:link}" allowfullscreen></iframe>\r
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="${1:link}" allowfullscreen></iframe>
         </div>
 
 - trigger: embed-responsive-4x3
@@ -1806,7 +1806,38 @@
   scope: html
   mTime: 1467301621051
   text: |
-        <div class="embed-responsive embed-responsive-4by3">\r
-            <iframe class="embed-responsive-item" src="${1:link}"></iframe>\r
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="${1:link}"></iframe>
         </div>
+
+- trigger: faq
+  description: Creates a dropdown in the standard we use for FAQs
+  scope: html
+  mTime: 1467826587216
+  text: |
+        <details>
+            <summary>${1:Question}</summary>
+            <div class="alert alert-${3:info}">
+                <h3>Answer:</h3>
+                <p>${2:Answer}</p>
+            </div>
+        </details>${4}
+
+- trigger: ol-lwr-rmn
+  description: Creates an ol using lowercase roman numerals
+  scope: html
+  mTime: 1467904648115
+  text: |
+        <ol class="lst-lwr-rmn">
+            <li>${1}</li>${2}
+        </ol>
+
+- trigger: ol-upr-rmn
+  description: Creates an ol using uppercase roman numerals
+  scope: html
+  mTime: 1467904674585
+  text: |
+        <ol class="lst-upr-rmn">
+            <li>${1}</li>${2}
+        </ol>
 
