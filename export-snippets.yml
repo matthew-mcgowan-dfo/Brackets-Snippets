@@ -1750,16 +1750,16 @@
 - trigger: img-link
   description: Creates an image tag with a link around it.
   scope: html
-  mTime: 1466514760341
+  mTime: 1468409207417
   text: |
-        <a href="${1:link}"></a><img src="${1:link}" class="img-responsive" alt="${2:description}" /></a>${3}
+        <a href="${1:link}"><img src="${1:link}" class="img-responsive" alt="${2:description}" /></a>${3}
 
 - trigger: img-thumb-link
   description: Creates an image tag with the thumbnail class and a link around it.
   scope: html
-  mTime: 1466514792012
+  mTime: 1468409239479
   text: |
-        <a href="${1:link}"></a><img src="${1:link}" class="img-responsive thumbnail" alt="${2:description}" /></a>${3}
+        <a href="${1:link}"><img src="${1:link}" class="img-responsive thumbnail" alt="${2:description}" /></a>${3}
 
 - trigger: asp-date-example
   description: a sample forum group using asp-date
@@ -1840,4 +1840,13 @@
         <ol class="lst-upr-rmn">
             <li>${1}</li>${2}
         </ol>
+
+- trigger: ul
+  description: Creates a plain unordered list
+  scope: html
+  mTime: 1468409176952
+  text: |
+        <ul>
+            <li></li>
+        </ul>
 
