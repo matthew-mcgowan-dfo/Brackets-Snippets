@@ -1851,7 +1851,7 @@
         </ul>
 
 - trigger: target_blank
-  description: "Creates a quick target="_blank" attribute for links."
+  description: "Creates a quick target=\"_blank\" attribute for links."
   scope: html
   mTime: 1468417462947
   text: |
