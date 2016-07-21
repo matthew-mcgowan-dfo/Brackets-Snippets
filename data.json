@@ -1,9 +1,5 @@
 {
     "shortcuts": {
-        "d": {
-            "tagName": "div",
-            "type": "block"
-        },
         "i": {
             "tagName": "em",
             "type": "inline"
@@ -55,10 +51,6 @@
             "tagName": "a",
             "type": "inline",
             "attributes": "href=\"\""
-        },
-        "s": {
-            "tagName": "small",
-            "type": "inline"
         },
         "u": {
             "tagName": "ul",
