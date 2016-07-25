@@ -1464,7 +1464,7 @@
 - trigger: fn-section
   description: Creates a section for footnotes
   scope: html
-  mTime: 1465672284238
+  mTime: 1469211626348
   text: |
         <aside class="wb-fnote" role="note">
             <h3 id="fn">Footnotes</h3>
@@ -1473,7 +1473,7 @@
                 <dd id="fn1">
                     <p>${1:Example of a standard footnote.}</p>
                     <p class="fn-rtn">
-                        <a href="#fn1-rf"><span class="wb-inv"> Return to footnote </span>1<span class="wb-inve"> referrer</span></a>
+                        <a href="#fn1-rf"><span class="wb-inv"> Return to footnote </span>1<span class="wb-inv"> referrer</span></a>
                     </p>
                 </dd>${2}
             </dl>
@@ -1592,12 +1592,12 @@
 - scope: html
   description: Creates a section for downloading the PDF of a publication
   trigger: publication-pdf
-  mTime: 1465913918045
+  mTime: 1469122550146
   text: |
         <div class="col-md-2 mrgn-tp-md pull-right">
             <a href="${1:link}">
                 <figure class="thumbnail hidden-xs hidden-sm">
-                    <img src="${2:link}" class="img-responsive" alt="${3:description}"/>
+                    <img src="${2:240x300img}" class="img-responsive" alt="${3:description}"/>
                     <figcaption class="caption text-center">
                         <p><span class="glyphicon glyphicon-download"></span> PDF Document</p>
                     </figcaption>
@@ -1792,19 +1792,19 @@
         currentdate = yy & "-" & mm & "-" & dd
                %>
 
-- trigger: embed-responsive-16x9
+- trigger: vid-16x9
   description: Creates a  16x9 responsive embed div for iframes and the like
   scope: html
-  mTime: 1467301626616
+  mTime: 1468587911434
   text: |
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="${1:link}" allowfullscreen></iframe>
         </div>
 
-- trigger: embed-responsive-4x3
+- trigger: vid-4x3
   description: Creates a 4x3 responsive ember div for iframes and the like
   scope: html
-  mTime: 1467301621051
+  mTime: 1468587918060
   text: |
         <div class="embed-responsive embed-responsive-4by3">
             <iframe class="embed-responsive-item" src="${1:link}"></iframe>
