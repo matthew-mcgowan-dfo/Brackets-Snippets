@@ -631,9 +631,9 @@
 - trigger: lbx-hide-gal
   description: Creates a WET4 lightbox hide gallery
   scope: html
-  mTime: 1465672354524
+  mTime: 1469543076210
   text: |
-        <section class="wb-lbx lbx-hide-gal">
+        <div class="wb-lbx lbx-hide-gal">
             <h4>${1:Image gallery}</h4>
             <ul class="list-inline">
                 <li>
@@ -642,7 +642,7 @@
                     </a>
                 </li>${4}
             </ul>
-        </section>
+        </div>
 
 - trigger: lbx-img
   description: Creates an image for a WET4 lightbox gallery
@@ -658,9 +658,9 @@
 - trigger: lbx-gal
   description: Creates a WET4 lightbox gallery
   scope: html
-  mTime: 1465672348880
+  mTime: 1469543064479
   text: |
-        <section class="wb-lbx lbx-gal">
+        <div class="wb-lbx lbx-gal">
             <h4>${1:Image gallery}</h4>
             <ul class="list-inline">
                 <li>
@@ -669,7 +669,7 @@
                     </a>
                 </li>${4}
             </ul>
-        </section>
+        </div>
 
 - trigger: lbx
   description: Creates a WET4 lightbox for a single image
