@@ -1,7 +1,7 @@
 - trigger: topic-head
-  description: Creates the head section for a topic pages used on Canada.ca pages
+  description: Creates the head section for a topic page used on Canada.ca pages
   scope: html
-  mTime: 1466003668044
+  mTime: 1470412273288
   text: |
         <div class="row profile">
             <div class="col-md-6">
@@ -631,16 +631,15 @@
 - trigger: lbx-hide-gal
   description: Creates a WET4 lightbox hide gallery
   scope: html
-  mTime: 1470406553670
+  mTime: 1470410524609
   text: |
         <div class="wb-lbx lbx-hide-gal">
-            <h4>${1:Image gallery}</h4>
             <ul class="list-inline">
                 <li>
-                    <a href="${2:link}" title="${3:description}">
-                        <img src="${2:link}" alt="${3:description}" class="img-responsive" />
+                    <a href="${1:link}" title="${2:description}">
+                        <img src="${1:link}" alt="${2:description}" class="img-responsive" />
                     </a>
-                </li>${4}
+                </li>${3}
             </ul>
         </div>
 
@@ -658,16 +657,15 @@
 - trigger: lbx-gal
   description: Creates a WET4 lightbox gallery
   scope: html
-  mTime: 1470406545606
+  mTime: 1470410487530
   text: |
         <div class="wb-lbx lbx-gal">
-            <h4>${1:Image gallery}</h4>
             <ul class="list-inline">
                 <li>
-                    <a href="${2:link}" title="${3:description}">
-                        <img src="${2:link}" alt="${3:description}" class="img-responsive" />
+                    <a href="${1:link}" title="${2:description}">
+                        <img src="${1:link}" alt="${2:description}" class="img-responsive" />
                     </a>
-                </li>${4}
+                </li>${3}
             </ul>
         </div>
 
@@ -683,31 +681,31 @@
 - trigger: fn-section-multi
   description: Creates a footnote section starting with a multi-reference
   scope: html
-  mTime: 1465672289948
+  mTime: 1470409839540
   text: |
         <aside class="wb-fnote" role="note">
             <h3 id="fn">Footnotes</h3>
             <dl>
-                <dt>Footnote 1</dt>
+                <dt>Footnote ${1:1}</dt>
                 <dd id="fn1">
-                    <p>${1:Example of a standard footnote.}</p>
+                    <p>${2:Example of a footnote being referenced by multiple pieces of content.}</p>
                     <p class="fn-rtn">
-                        <a href="#fn1-1-rf"><span class="wb-inv"> Return to footnote </span>1<span class="wb-inve"> referrer</span></a>
+                        <a href="#fn${1:1}-1-rf"><span class="wb-inv"> Return to first footnote </span>${1:1}<span class="wb-inve"> referrer</span></a>
                     </p>
-                </dd>${2}
+                </dd>${3}
             </dl>
         </aside>
 
 - trigger: fn-item-multi
   description: Creates a footnote item linking to the first reference of it
   scope: html
-  mTime: 1465672274416
+  mTime: 1470409762127
   text: |
         <dt>Footnote ${1:#}</dt>
         <dd id="fn${1:#}">
-            <p>${2:Example of standard footnote}</p>
+            <p>${2:Example of a footnote being referenced by multiple pieces of content.}</p>
             <p class="fn-rtn">
-                <a href="#fn${1:#}-1-rf"><span class="wb-inv">Return to footnote</span> ${1:#}<span class="wb-inv"> referrer</span></a>
+                <a href="#fn${1:#}-1-rf"><span class="wb-inv">Return to first footnote </span>${1:#}<span class="wb-inv"> referrer</span></a>
             </p>
         </dd>${3}
 
@@ -919,19 +917,20 @@
 - trigger: archived
   description: Creates a WET4 archived alert
   scope: html
-  mTime: 1465578945924
+  mTime: 1470410099484
   text: |
         <section id="archived" class="alert alert-warning wb-inview" data-inview="archived-bnr">
-           <h2>Archived information</h2>
-           <p>The <a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227">Standard on Web Usability</a> replaces this content. This content is archived because Common Look and Feel 2.0 Standards have been rescinded.</p>
-           <p>Archived information is provided for reference, research or recordkeeping purposes. It is not subject to the Government of Canada Web Standards and has not been altered or updated since it was archived. Please contact us to request a format other than those available.</p>
+        <h2>Archived information</h2>
+        <p>The <a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227">Standard on Web Usability</a> replaces this content. This content is archived because Common Look and Feel 2.0 Standards have been rescinded.</p>
+        <p>Archived information is provided for reference, research or recordkeeping purposes. It is not subject to the Government of Canada Web Standards and has not been altered or updated since it was archived. Please contact us to request a format other than those available.</p>
         </section>
+        
         <section id="archived-bnr" class="wb-overlay modal-content overlay-def wb-bar-t">
-           <header>
-              <h2 class="wb-inv">Archived</h2>
-           </header>
-           <p><a href="#archived">This page has been archived on the Web.</a></p>
-        </section>${1}
+        <header>
+        <h2 class="wb-inv">Archived</h2>
+        </header>
+        <p><a href="#archived">This page has been archived on the Web.</a></p>
+        </section>
 
 - trigger: label
   description: Creates a label span
@@ -1464,29 +1463,29 @@
 - trigger: fn-section
   description: Creates a section for footnotes
   scope: html
-  mTime: 1469211626348
+  mTime: 1470409845522
   text: |
         <aside class="wb-fnote" role="note">
             <h3 id="fn">Footnotes</h3>
             <dl>
-                <dt>Footnote 1</dt>
+                <dt>Footnote ${1:1}</dt>
                 <dd id="fn1">
-                    <p>${1:Example of a standard footnote.}</p>
+                    <p>${2:Example of a standard footnote.}</p>
                     <p class="fn-rtn">
-                        <a href="#fn1-rf"><span class="wb-inv"> Return to footnote </span>1<span class="wb-inv"> referrer</span></a>
+                        <a href="#fn${1:1}-rf"><span class="wb-inv"> Return to footnote </span>${1:1}<span class="wb-inv"> referrer</span></a>
                     </p>
-                </dd>${2}
+                </dd>${3}
             </dl>
         </aside>
 
 - trigger: fn-item
   description: Creates a footnote item
   scope: html
-  mTime: 1465672260096
+  mTime: 1470409792040
   text: |
         <dt>Footnote ${1:#}</dt>
         <dd id="fn${1:#}">
-            <p>${2:Example of standard footnote}</p>
+            <p>${2:Example of standard footnote.}</p>
             <p class="fn-rtn">
                 <a href="#fn${1:#}-rf"><span class="wb-inv">Return to footnote</span> ${1:#}<span class="wb-inv"> referrer</span></a>
             </p>
@@ -1592,12 +1591,12 @@
 - scope: html
   description: Creates a section for downloading the PDF of a publication
   trigger: publication-pdf
-  mTime: 1469122550146
+  mTime: 1470408044849
   text: |
         <div class="col-md-2 mrgn-tp-md pull-right">
             <a href="${1:link}">
                 <figure class="thumbnail hidden-xs hidden-sm">
-                    <img src="${2:240x300img}" class="img-responsive" alt="${3:description}"/>
+                    <img src="${2:240x300img}" class="img-responsive" alt="${3:PDF Document}"/>
                     <figcaption class="caption text-center">
                         <p><span class="glyphicon glyphicon-download"></span> PDF Document</p>
                     </figcaption>
@@ -1856,4 +1855,690 @@
   mTime: 1468417462947
   text: |
         target="_blank"
+
+- trigger: publication-pdf_fr
+  description: Creates a section for downloading the PDF of a publication in French
+  scope: html
+  mTime: 1470408036438
+  text: |
+        <div class="col-md-2 mrgn-tp-md pull-right">
+            <a href="${1:link}">
+                <figure class="thumbnail hidden-xs hidden-sm">
+                    <img src="${2:240x300img}" class="img-responsive" alt="${3:Document PDF}"/>
+                    <figcaption class="caption text-center">
+                        <p><span class="glyphicon glyphicon-download"></span> Document PDF</p>
+                    </figcaption>
+                </figure>
+                <p class="visible-xs visible-sm"><span class="glyphicon glyphicon-download"></span> Document PDF</p>
+            </a>
+        </div>${4}
+
+- trigger: fn-inline_fr
+  description: Creates the inline link to a footnote in French
+  scope: html
+  mTime: 1470408245811
+  text: |
+        <sup id="fn${1:#}-rf"><a class="fn-lnk" href="#fn${1:#}"><span class="wb-inv">Note de bas de page </span>${1:#}</a></sup>${2}
+
+- trigger: fn-item_fr
+  description: Creates a footnote item in French
+  scope: html
+  mTime: 1470409802755
+  text: |
+        <dt>Note de bas de page ${1:#}</dt>
+        <dd id="fn${1:#}">
+            <p>${2:Exemple de note de bas de page standard.}</p>
+            <p class="fn-rtn">
+                <a href="#fn${1:#}-rf"><span class="wb-inv">Retour à la référence de la note de bas de page</span> ${1:#}</a>
+            </p>
+        </dd>${3}
+
+- trigger: fn-item-multi_fr
+  description: Creates a footnote item linking to the first reference of it in French
+  scope: html
+  mTime: 1470409782200
+  text: |
+        <dt>Footnote ${1:#}</dt>
+        <dd id="fn${1:#}">
+            <p>${2:Exemple de note de bas de page qui comporte de nombreux liens.}</p>
+            <p class="fn-rtn">
+                <a href="#fn${1:#}-1-rf"><span class="wb-inv">Retour à la première référence de la note de bas de page </span>${1:#}</a>
+            </p>
+        </dd>${3}
+
+- trigger: fn-section_fr
+  scope: html
+  description: Creates a section for footnotes in French
+  mTime: 1470409830839
+  text: |
+        <aside class="wb-fnote" role="note">
+            <h3 id="fn">Notes de bas de page</h3>
+            <dl>
+                <dt>Note de bas de page ${1:1}</dt>
+                <dd id="fn1">
+                    <p>${2:Exemple de note de bas de page standard.}</p>
+                    <p class="fn-rtn">
+                        <a href="#fn${1:1}-rf"><span class="wb-inv"> Retour à la référence de la note de bas de page </span>${1:1}</a>
+                    </p>
+                </dd>${3}
+            </dl>
+        </aside>
+
+- trigger: fn-section-multi_fr
+  scope: html
+  description: Creates a footnotes section starting with a multi-reference in French
+  mTime: 1470409835491
+  text: |
+        <aside class="wb-fnote" role="note">
+            <h3 id="fn">Notes de bas de page</h3>
+            <dl>
+                <dt>Note de bas de page ${1:1}</dt>
+                <dd id="fn1">
+                    <p>${2:Exemple de note de bas de page qui comporte de nombreux liens.}</p>
+                    <p class="fn-rtn">
+                        <a href="#fn${1:1}-1-rf"><span class="wb-inv"> Retour à la première référence de la note de bas de page </span>${1:1}</a>
+                    </p>
+                </dd>${3}
+            </dl>
+        </aside>
+
+- trigger: archived_fr
+  description: Creates a WET4 archived alert in French
+  scope: html
+  mTime: 1470410125858
+  text: |
+        <section id="archived" class="alert alert-warning wb-inview" data-inview="archived-bnr">
+        <h2>Informations archivées</h2>
+        <p>La <a href="http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=24227">Norme sur la facilité d'emploi des sites Web</a> remplace ce contenu. Cette page Web a été archivée parce que les Normes sur la normalisation des sites Internet 2.0 ont étés annulées.</p>
+        <p>Les informations archivées sont fournies aux fins de référence, de recherche ou de tenue de documents. Elles ne sont pas assujetties aux normes Web du gouvernement du Canada et n'ont pas été modifiées ou mises à jour depuis leur archivage. Pour obtenir ces informations dans un autre format, veuillez communiquer avec nous.</p>
+        </section>
+        
+        <section id="archived-bnr" class="wb-overlay modal-content overlay-def wb-bar-t">
+        <header>
+        <h2 class="wb-inv">Archivée</h2>
+        </header>
+        <p><a href="#archived">Cette page Web a été archivée dans le Web.</a></p>
+        </section>
+
+- trigger: faq_fr
+  description: Creates a dropdown in the standard we use for FAQs in French
+  scope: html
+  mTime: 1470410401125
+  text: |
+        <details>
+            <summary>${1:Question}</summary>
+            <div class="alert alert-${3:info}">
+                <h3>Réponse :</h3>
+                <p>${2:Answer}</p>
+            </div>
+        </details>${4}
+
+- trigger: most-requested_fr
+  description: Creates a Most requested section used on Canada.ca pages in French
+  scope: html
+  mTime: 1470410582378
+  text: |
+        <section class="lnkbx well">
+            <h2>En demande</h2>
+            <ul>
+                <li><a href="${1:link}">${2:text}</a></li>${3}
+            </ul>
+        </section>
+
+- trigger: more-info_fr
+  description: Creates a More information for section used on Canada.ca pages in French
+  scope: html
+  mTime: 1470410650634
+  text: |
+        <section class="lnkbx well">
+            <h2>Autres renseignements pour les</h2>
+            <ul>
+                <li><a href="${1:link}">${2:text}</a></li>${3}
+            </ul>
+        </section>
+
+- trigger: lowest-level-topic-page_FR
+  description: Creates a default lowest level topic page structure as specified by Canada.ca in French
+  scope: html
+  mTime: 1470411073469
+  text: |
+        <div class="row profile">
+            <div class="col-md-6">
+                <h1 property="name" id="wb-cont">[Nom du sujet au plus bas niveau]</h1>
+                <p class="pagetag">1 ou 2 phrases d’introduction qui définissent les sous-sujets et les tâches principales qui peuvent être consultés sur cette page.</p>
+                <section class="followus">
+                    <h2>Suivez :</h2>
+                </section>
+            </div>
+            <div class="col-md-6 mrgn-tp-md hidden-sm hidden-xs">
+                <img src="https://wet-boew.github.io/themes-dist/GCWeb/img/520x200.png" alt="" class="pull-right img-responsive thumbnail">
+            </div>
+        </div>
+        <div class="row">
+            <section class="col-md-8">
+                <h2>Services et renseignements</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="clearfix"></div>
+                    <details class="mrgn-tp-md brdr-0">
+                        <summary class="btn btn-default text-center">Afficher plus de services et de renseignements</summary>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                                    <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                                </section>
+                            </div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                                    <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                                </section>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                                    <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                                </section>
+                            </div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                                    <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                                </section>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                                    <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                                </section>
+                            </div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                                    <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                                </section>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </details>
+                </div>
+            </section>
+            <div class="col-md-4 mrgn-tp-lg">
+                <section class="lnkbx well">
+                    <h2>Collaborateurs</h2>
+                    <ul>
+                        <li><a href="#">[Nom de l’institution]</a></li>
+                        <li><a href="#">[Nom de l’institution]</a></li>
+                        <li><a href="#">[Nom de l’institution]</a></li>
+                    </ul>
+                </section>
+                <section class="lnkbx well">
+                    <h2>Autres renseignements pour les</h2>
+                    <ul>
+                        <li><a href="#">[Lien à un sujet pour un auditoire ciblé]</a></li>
+                        <li><a href="#">[Lien à un sujet pour un auditoire ciblé]</a></li>
+                        <li><a href="#">[Lien à un sujet pour un auditoire ciblé]</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <section>
+            <h2>Ce que nous faisons</h2>
+            <div class="row wb-eqht">
+                <section class="col-lg-4 col-md-6">
+                    <h3>Lois et règlements</h3>
+                    <ul>
+                        <li><a href="#">[Politiques 1]</a></li>
+                        <li><a href="#">[Lois 1 avec un long titre]</a></li>
+                        <li><a href="#">[Règlements 2 avec un long titre]</a></li>
+                        <li><a href="#">[Politiques 3]</a></li>
+                    </ul>
+                    <p><a href="#">Tous les règlements et lois connexes</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Publications</h3>
+                    <ul>
+                        <li><a href="#">[Publication 1]</a></li>
+                        <li><a href="#">[Publication 2 avec un long titre]</a></li>
+                        <li><a href="#">[Publication 3]</a></li>
+                        <li><a href="#">[Publication 4]</a></li>
+                    </ul>
+                    <p><a href="#">Toutes les publications connexes</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Consultations</h3>
+                    <ul>
+                        <li><a href="#">[Consultation 1]</a></li>
+                        <li><a href="#">[Consultation 2 avec un long titre]</a></li>
+                        <li><a href="#">[Consultation 3]</a></li>
+                        <li><a href="#">[Consultation 4 avec un long titre... et plus...]</a></li>
+                    </ul>
+                    <p><a href="#">Toutes les consultations connexes</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Données ouvertes</h3>
+                    <ul>
+                        <li><a href="#">[Donnée 1]</a></li>
+                        <li><a href="#">[Donnée 2 avec un long titre]</a></li>
+                        <li><a href="#">[Donnée 3]</a></li>
+                        <li><a href="#">[Donnée 4 avec un long titre... et plus...]</a></li>
+                    </ul>
+                    <p><a href="#">Toutes les données ouvertes connexes</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Statistiques</h3>
+                    <ul>
+                        <li><a href="#">[Statistique 1]</a></li>
+                        <li><a href="#">[Statistique 2 avec un long titre]</a></li>
+                        <li><a href="#">[Statistique 3]</a></li>
+                        <li><a href="#">[Statistique 4 avec un long titre... et plus...]</a></li>
+                    </ul>
+                    <p><a href="#">Toutes les statistiques connexes</a></p>
+                </section>
+            </div>
+        </section>
+
+- trigger: services-info_fr
+  description: Creates a Services and information section use don Canada.ca pages in French
+  scope: html
+  mTime: 1470411671862
+  text: |
+        <h2>Services et renseignements</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <section class="gc-drmt">
+                    <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                    <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section class="gc-drmt">
+                    <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                    <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                </section>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+- trigger: services-info-more_fr
+  description: Creates a details panel for more services and information used on Canada.ca pages in French
+  scope: html
+  mTime: 1470411658795
+  text: |
+        <details class="mrgn-tp-md brdr-0">
+            <summary class="btn btn-default text-center">Afficher plus de services et de renseignements</summary>
+            <div class="row">
+                <div class="col-md-6">
+                    <section class="gc-drmt">
+                        <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                        <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <section class="gc-drmt">
+                        <h3 class="h5"><a href="#">[Tâche]</a></h3>
+                        <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                    </section>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </details>
+
+- trigger: tile_fr
+  description: Creates a tile used on topic and sub-topic pages in French
+  scope: html
+  mTime: 1470411915442
+  text: |
+        <section class="gc-drmt">
+            <h3 class="h5"><a href="${1:link}">${2:[Lien à un sous-sujet/Tâche]}</a></h3>
+            <p>${3:Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.}</p>
+        </section>${4}
+
+- trigger: topic-landing-page_fr
+  description: Creates a default topic landing page structure as specified by Canada.ca in French
+  scope: html
+  mTime: 1470412167751
+  text: |
+        <div class="row profile">
+            <div class="col-md-6">
+                <h1 property="name" id="wb-cont">[Nom du sujet]</h1>
+                <p class="pagetag">1 ou 2 phrases d’introduction qui définissent les sous-sujets et les tâches principales qui peuvent être consultés sur cette page.</p>
+                <section class="followus">
+                    <h2>Suivez :</h2>
+                </section>
+            </div>
+            <div class="col-md-6 mrgn-tp-md hidden-sm hidden-xs">
+                <img src="https://wet-boew.github.io/themes-dist/GCWeb/img/520x200.png" alt="" class="pull-right img-responsive thumbnail">
+            </div>
+        </div>
+        <section class="alert alert-info">
+            <h2 class="h3">Nous procédons actuellement au transfert de nos services et de nos renseignements vers Canada.ca.</h2>
+            <p>Le <a href="#">site Web actuel du / de / de la / de l’[ajouter le nom de l’institution / l'organization]</a> restera accessible jusqu’à ce que le transfert vers Canada.ca soit terminé.</p>
+        </section>
+        <div class="row">
+            <div class="col-md-4 mrgn-tp-lg pull-right">
+                <section class="lnkbx well">
+                    <h2>En demande</h2>
+                    <ul>
+                        <li><a href="#">[Lien à une tâche principale]</a></li>
+                        <li><a href="#">[Lien à une tâche principale]</a></li>
+                        <li><a href="#">[Lien à une tâche principale]</a></li>
+                        <li><a href="#">[Lien à une tâche principale]</a></li>
+                        <li><a href="#">[Lien à une tâche principale]</a></li>
+                        <li><a href="#">[Lien à une tâche principale]</a></li>
+                        <li><a href="#">[Lien à une tâche principale]</a></li>
+                        <li><a href="#">[Lien à une tâche principale]</a></li>
+                        <li><a href="#">[Lien à une tâche principale]</a></li>
+                        <li><a href="#">[Lien à une tâche principale]</a></li>
+                    </ul>
+                </section>
+            </div>
+            <section class="col-md-8 pull-left mrgn-bttm-lg">
+                <h2>Services and information</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <section class="gc-drmt">
+                            <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                            <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                        </section>
+                    </div>
+                    <div class="clearfix"></div>
+                    <details class="mrgn-tp-md brdr-0">
+                        <summary class="btn btn-default text-center">Afficher plus de services et de renseignements</summary>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                                    <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                                </section>
+                            </div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                                    <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                                </section>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                                    <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                                </section>
+                            </div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                                    <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                                </section>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                                    <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                                </section>
+                            </div>
+                            <div class="col-md-6">
+                                <section class="gc-drmt">
+                                    <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>
+                                    <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>
+                                </section>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </details>
+                </div>
+            </section>
+            <div class="clr-rght-md clr-rght-lg"></div>
+            <div class="col-md-4 mrgn-tp-lg">
+                <section class="lnkbx well">
+                    <h2>Collaborateurs</h2>
+                    <ul>
+                        <li><a href="#">[Nom de l’institution]</a></li>
+                        <li><a href="#">[Nom de l’institution]</a></li>
+                        <li><a href="#">[Nom de l’institution]</a></li>
+                    </ul>
+                </section>
+                <section class="lnkbx well">
+                    <h2>Autres renseignements pour les</h2>
+                    <ul>
+                        <li><a href="#">[Lien à un sujet pour un auditoire ciblé]</a></li>
+                        <li><a href="#">[Lien à un sujet pour un auditoire ciblé]</a></li>
+                        <li><a href="#">[Lien à un sujet pour un auditoire ciblé]</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <section>
+            <h2>Ce que nous faisons</h2>
+            <div class="row wb-eqht">
+                <section class="col-lg-4 col-md-6">
+                    <h3>Lois et règlements</h3>
+                    <ul>
+                        <li><a href="#">[Politiques 1]</a></li>
+                        <li><a href="#">[Lois 1 avec un long titre]</a></li>
+                        <li><a href="#">[Règlements 2 avec un long titre]</a></li>
+                        <li><a href="#">[Politiques 3]</a></li>
+                    </ul>
+                    <p><a href="#">Tous les règlements et lois connexes</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Publications</h3>
+                    <ul>
+                        <li><a href="#">[Publication 1]</a></li>
+                        <li><a href="#">[Publication 2 avec un long titre]</a></li>
+                        <li><a href="#">[Publication 3]</a></li>
+                        <li><a href="#">[Publication 4]</a></li>
+                    </ul>
+                    <p><a href="#">Toutes les publications connexes</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Consultations</h3>
+                    <ul>
+                        <li><a href="#">[Consultation 1]</a></li>
+                        <li><a href="#">[Consultation 2 avec un long titre]</a></li>
+                        <li><a href="#">[Consultation 3]</a></li>
+                        <li><a href="#">[Consultation 4 avec un long titre... et plus...]</a></li>
+                    </ul>
+                    <p><a href="#">Toutes les consultations connexes</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Données ouvertes</h3>
+                    <ul>
+                        <li><a href="#">[Donnée 1]</a></li>
+                        <li><a href="#">[Donnée 2 avec un long titre]</a></li>
+                        <li><a href="#">[Donnée 3]</a></li>
+                        <li><a href="#">[Donnée 4 avec un long titre... et plus...]</a></li>
+                    </ul>
+                    <p><a href="#">Toutes les données ouvertes connexes</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Statistiques</h3>
+                    <ul>
+                        <li><a href="#">[Statistique 1]</a></li>
+                        <li><a href="#">[Statistique 2 avec un long titre]</a></li>
+                        <li><a href="#">[Statistique 3]</a></li>
+                        <li><a href="#">[Statistique 4 avec un long titre... et plus...]</a></li>
+                    </ul>
+                    <p><a href="#">Toutes les statistiques connexes</a></p>
+                </section>
+            </div>
+        </section>
+
+- trigger: topic-head_fr
+  description: Creates the head section for a topic page used on Canada.ca pages in French
+  scope: html
+  mTime: 1470412267331
+  text: |
+        <div class="row profile">
+            <div class="col-md-6">
+                <h1 property="name" id="wb-cont">${1:[Nom du sujet]}</h1>
+                <p class="pagetag">${2:1 ou 2 phrases d’introduction qui définissent les sous-sujets et les tâches principales qui peuvent être consultés sur cette page.}</p>
+                <section class="followus">
+                    <h2>Suivez :</h2>
+                </section>
+            </div>
+            <div class="col-md-6 mrgn-tp-md hidden-sm hidden-xs">
+                <img src="${3:https://wet-boew.github.io/themes-dist/GCWeb/img/520x200.png}" alt="${4:description}" class="pull-right img-responsive thumbnail">
+            </div>
+        </div>${5}
+
+- trigger: whtwedo_fr
+  description: Creates a What we are doing section used on Canada.ca topic pages in French
+  scope: html
+  mTime: 1470412361939
+  text: |
+        <section>
+            <h2>Ce que nous faisons</h2>
+            <div class="row wb-eqht">
+                <section class="col-lg-4 col-md-6">
+                    <h3>Lois et règlements</h3>
+                    <ul>
+                        <li><a href="#">[Politiques 1]</a></li>
+                        <li><a href="#">[Lois 1 avec un long titre]</a></li>
+                        <li><a href="#">[Règlements 2 avec un long titre]</a></li>
+                        <li><a href="#">[Politiques 3]</a></li>
+                    </ul>
+                    <p><a href="#">Tous les règlements et lois connexes</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Publications</h3>
+                    <ul>
+                        <li><a href="#">[Publication 1]</a></li>
+                        <li><a href="#">[Publication 2 avec un long titre]</a></li>
+                        <li><a href="#">[Publication 3]</a></li>
+                        <li><a href="#">[Publication 4]</a></li>
+                    </ul>
+                    <p><a href="#">Toutes les publications connexes</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Consultations</h3>
+                    <ul>
+                        <li><a href="#">[Consultation 1]</a></li>
+                        <li><a href="#">[Consultation 2 avec un long titre]</a></li>
+                        <li><a href="#">[Consultation 3]</a></li>
+                        <li><a href="#">[Consultation 4 avec un long titre... et plus...]</a></li>
+                    </ul>
+                    <p><a href="#">Toutes les consultations connexes</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Données ouvertes</h3>
+                    <ul>
+                        <li><a href="#">[Donnée 1]</a></li>
+                        <li><a href="#">[Donnée 2 avec un long titre]</a></li>
+                        <li><a href="#">[Donnée 3]</a></li>
+                        <li><a href="#">[Donnée 4 avec un long titre... et plus...]</a></li>
+                    </ul>
+                    <p><a href="#">Toutes les données ouvertes connexes</a></p>
+                </section>
+                <section class="col-lg-4 col-md-6">
+                    <h3>Statistiques</h3>
+                    <ul>
+                        <li><a href="#">[Statistique 1]</a></li>
+                        <li><a href="#">[Statistique 2 avec un long titre]</a></li>
+                        <li><a href="#">[Statistique 3]</a></li>
+                        <li><a href="#">[Statistique 4 avec un long titre... et plus...]</a></li>
+                    </ul>
+                    <p><a href="#">Toutes les statistiques connexes</a></p>
+                </section>
+            </div>
+        </section>
 
