@@ -631,14 +631,14 @@
 - trigger: lbx-hide-gal
   description: Creates a WET4 lightbox hide gallery
   scope: html
-  mTime: 1469543076210
+  mTime: 1470406553670
   text: |
         <div class="wb-lbx lbx-hide-gal">
             <h4>${1:Image gallery}</h4>
             <ul class="list-inline">
                 <li>
                     <a href="${2:link}" title="${3:description}">
-                        <img src="${2:link}" alt="${3:description}" />
+                        <img src="${2:link}" alt="${3:description}" class="img-responsive" />
                     </a>
                 </li>${4}
             </ul>
@@ -647,25 +647,25 @@
 - trigger: lbx-img
   description: Creates an image for a WET4 lightbox gallery
   scope: html
-  mTime: 1465672359755
+  mTime: 1470406566612
   text: |
         <li>
             <a href="${1:link}" title="${2:description}">
-                <img src="${1:link}" alt="${2:description}" />
+                <img src="${1:link}" alt="${2:description}" class="img-responsive" />
             </a>
         </li>${3}
 
 - trigger: lbx-gal
   description: Creates a WET4 lightbox gallery
   scope: html
-  mTime: 1469543064479
+  mTime: 1470406545606
   text: |
         <div class="wb-lbx lbx-gal">
             <h4>${1:Image gallery}</h4>
             <ul class="list-inline">
                 <li>
                     <a href="${2:link}" title="${3:description}">
-                        <img src="${2:link}" alt="${3:description}" />
+                        <img src="${2:link}" alt="${3:description}" class="img-responsive" />
                     </a>
                 </li>${4}
             </ul>
@@ -674,10 +674,10 @@
 - trigger: lbx
   description: Creates a WET4 lightbox for a single image
   scope: html
-  mTime: 1465670359644
+  mTime: 1470406575571
   text: |
         <a class="wb-lbx" href="${1:link}" title="${2:description}">
-            <img src="${1:link}" alt="${2:description}" />
+            <img src="${1:link}" alt="${2:description}" class="img-responsive" />
         </a>${3}
 
 - trigger: fn-section-multi
