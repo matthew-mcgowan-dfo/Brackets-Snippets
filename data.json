@@ -59,6 +59,14 @@
         "o": {
             "tagName": "ol",
             "type": "block"
+        },
+        "j": {
+            "tagName": "dt",
+            "type": "block"
+        },
+        "k": {
+            "tagName": "dd",
+            "type": "block"
         }
     }
 }
