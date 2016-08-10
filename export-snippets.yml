@@ -2542,3 +2542,54 @@
             </div>
         </section>
 
+- trigger: carousel
+  description: Creates a tabbed carousel
+  scope: html
+  mTime: 1470832504004
+  text: |
+        <div class="wb-tabs carousel-s${1:1}">
+            <ul role="tablist">
+                <li class="active"><a href="#${2:panel1}"><img src="${3:link}" alt="Tab ${2:panel1}" /></a></li>
+                <li><a href="#${5:panel2}"><img src="${6:link}" alt="Tab ${5:panel1}" /></a></li>
+            </ul>
+            <div class="tabpanels">
+                <div role="tabpanel" id="${2:panel1}" class="in fade">
+                    <figure>
+                        <img src="${3:link}" alt="${2:panel1}" />
+                        <figcaption>
+                            <p>${4:description text}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div role="tabpanel" id="${5:panel2}" class="out fade">
+                    <figure>
+                        <img src="${6:link}" alt="${5:panel2}" />
+                        <figcaption>
+                            <p>${7:description text}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+- trigger: carousel-list-item
+  description: Creates a list item for the tablist in a carousel.
+  scope: html
+  mTime: 1470832515027
+  text: |
+        <li><a href="#${1:panel#}"><img src="${2:link}" alt="Tab ${1:panel#}" /></a></li>
+
+- trigger: carousel-panel-item
+  description: Creates a panel item for the tabpanel in a carousel
+  scope: html
+  mTime: 1470762895980
+  text: |
+        <div role="tabpanel" id="${1:panel1}" class="out fade">
+            <figure>
+                <img src="${2:link}" alt="${1:panel1}" />
+                <figcaption>
+                    <p>${3:description text}</p>
+                </figcaption>
+            </figure>
+        </div>
+
