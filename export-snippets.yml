@@ -1494,18 +1494,18 @@
 - trigger: template
   description: Creates the header area we use for DFO sites.
   scope: html
-  mTime: 1465822172795
+  mTime: 1470854600304
   text: |
         <!--#include virtual="/${1:site}/theme-wet4/asp/init.asp" -->
         <%
         Title = "${2:title}"
-        Breadcrumb = "BcRoot<li class='active'>${3:Current page}</li>"
+        Breadcrumb = BcRoot + "<li class='active'>${3:Current page}</li>"
         %>
-        <!--#include virtual="/${1:site}/theme-wet4/asp/template-head.asp"-->
+        <!--#include virtual="/${1:site}/theme-wet4/template-head.asp"-->
         <!-- MainContentStart -->
         ${4}
         <!-- MainContentEnd --> 
-        <!--#include virtual="/${1:site}/theme-wet4/asp/template-footer.asp"--> 
+        <!--#include virtual="/${1:site}/theme-wet4/template-footer.asp"--> 
 
 - trigger: template-init
   description: Creates the init include used on DFO pages
@@ -1517,25 +1517,25 @@
 - trigger: template-head
   description: Creates the head include used on DFO pages
   scope: html
-  mTime: 1465822236741
+  mTime: 1470854610964
   text: |
-        <!--#include virtual="/${1:site}/theme-wet4/asp/template-head.asp"-->
+        <!--#include virtual="/${1:site}/theme-wet4/template-head.asp"-->
 
 - trigger: template-foot
   description: Creates the footer include used on DFO pages
   scope: html
-  mTime: 1465822267260
+  mTime: 1470854605900
   text: |
-        <!--#include virtual="/${1:site}/theme-wet4/asp/template-footer.asp"--> 
+        <!--#include virtual="/${1:site}/theme-wet4/template-footer.asp"--> 
 
 - trigger: template-tbc
   description: Creates the title and breadcrumb elements used on DFO pages.
   scope: html
-  mTime: 1465822330962
+  mTime: 1470854618879
   text: |
         <%
         Title = "${1:title}"
-        Breadcrumb = "BcRoot<li class='active'>${2:Current page}</li>"
+        Breadcrumb = BcRoot + "<li class='active'>${2:Current page}</li>"
         %>
 
 - trigger: bc-item
