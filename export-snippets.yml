@@ -2593,3 +2593,15 @@
             </figure>
         </div>
 
+- trigger: figure-lbx
+  description: Creates a figure section with a lightbox on the image
+  scope: html
+  mTime: 1470933993878
+  text: |
+        <figure class="thumbnail">
+            <a href="${1:link}" class="wb-lbx" title="${2:caption}"><img src="${1:link}" class="img-responsive" alt="${2:caption}" /></a>
+            <figcaption class="caption">
+                <p>${2:caption}</p>
+            </figcaption>
+        </figure>${3}
+
