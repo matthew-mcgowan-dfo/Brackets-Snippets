@@ -23,6 +23,6 @@ The file this plugin uses can be found at the following path:
 
     C:\Users\[your username]\AppData\Roaming\Brackets\extensions\user\brackets-quick-markup\data.json
 
-Simply replace this edit or replace this file to edit the plugin's functionality.
+Simply edit or replace this file to edit the plugin's functionality.
 
 For more infromation, the link to the GitHub page for **Quick Markup** can be found here: https://github.com/redmunds/brackets-quick-markup
