@@ -16,6 +16,8 @@ To export your own snippets for use in this repository:
 3. Chose "Export user-defined snippets only (Recommended)".
 4. Click "Start Export", override the current file in your local repository and push it up.
 
+**Note: it seems that sometimes when you export your .yml file, it adds a bunch of "\t"s and "\r"s. Please be sure to go through the file after you export and remove those instances or else it will screw it up while importing.**
+
 For more infromation, the link to the GitHub page for **Brackets Snippets (by edc)** can be found here: https://github.com/chuyik/brackets-snippets
 
 ## Quick Markup

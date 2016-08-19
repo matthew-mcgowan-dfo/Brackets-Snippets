@@ -2605,3 +2605,12 @@
             </figcaption>
         </figure>${3}
 
+- trigger: lbx-thumb
+  scope: html
+  description: Creates a WET4 lightbox for a single image with a thumbnail
+  mTime: 1471620095507
+  text: |
+        <a class="wb-lbx" href="${1:link}" title="${2:description}">
+            <img src="${1:link}" alt="${2:description}" class="img-responsive thumbnail" />
+        </a>${3}
+
