@@ -2614,3 +2614,279 @@
             <img src="${1:link}" alt="${2:description}" class="img-responsive thumbnail" />
         </a>${3}
 
+- trigger: contact-eng
+  description: "Creates a \"Contact Us\" tabbed panel (in English)"
+  scope: html
+  mTime: 1475506399593
+  text: |
+        <div class="wb-tabs">\r
+           <div class="tabpanels">\r
+              <details id="phone" open>\r
+                 <summary>By Phone</summary>\r
+                 <h3>xxxxxxxxxxxxxxxx</h3>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+              </details>\r
+              <details id="email">\r
+                 <summary>By Email</summary>\r
+                 <h3>xxxxxxxxxxxxxxxx</h3>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+              </details>\r
+              <details id="fax">\r
+                 <summary>By Fax</summary>\r
+                 <h3>xxxxxxxxxxxxxxxx</h3>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+              </details>\r
+              <details id="mail">\r
+                 <summary>By Mail</summary>\r
+                 <h3>xxxxxxxxxxxxxxxx</h3>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+              </details>\r
+           </div>\r
+        </div>
+
+- trigger: contact-fra
+  description: "Creates a \"Contact Us\" tabbed panel (in French)"
+  scope: html
+  mTime: 1475506438318
+  text: |
+        <div class="wb-tabs">\r
+           <div class="tabpanels">\r
+              <details id="phone" open>\r
+                 <summary>Par téléphone</summary>\r
+                 <h3>xxxxxxxxxxxxxxxx</h3>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+              </details>\r
+              <details id="email">\r
+                 <summary>Par courriel</summary>\r
+                 <h3>xxxxxxxxxxxxxxxx</h3>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+              </details>\r
+              <details id="fax">\r
+                 <summary>Par télécopieur</summary>\r
+                 <h3>xxxxxxxxxxxxxxxx</h3>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+              </details>\r
+              <details id="mail">\r
+                 <summary>Par la poste</summary>\r
+                 <h3>xxxxxxxxxxxxxxxx</h3>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+                 <div class="clearfix">\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                    <div class="col-md-4">\r
+                       <h5>xxxxxxxxxxxxxxxx</h5>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                    </div>\r
+                 </div>\r
+              </details>\r
+           </div>\r
+        </div>
+
