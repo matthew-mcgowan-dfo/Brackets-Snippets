@@ -2617,8 +2617,10 @@
 - trigger: contact-eng
   description: "Creates a \"Contact Us\" tabbed panel (in English)"
   scope: html
-  mTime: 1475506399593
+  mTime: 1475582322844
   text: |
+        <h1>Contact Us</h1>\r
+        <p>xxxxxxxxxxxxxxxx</p>\r
         <div class="wb-tabs">\r
            <div class="tabpanels">\r
               <details id="phone" open>\r
@@ -2659,29 +2661,29 @@
                  <div class="clearfix">\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
                     </div>\r
                  </div>\r
                  <div class="clearfix">\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
                     </div>\r
                  </div>\r
               </details>\r
@@ -2723,29 +2725,41 @@
                  <div class="clearfix">\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <address>\r
+                       xxxxxx\r
+                       </address>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <address>\r
+                       xxxxxx\r
+                       </address>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <address>\r
+                       xxxxxx\r
+                       </address>\r
                     </div>\r
                  </div>\r
                  <div class="clearfix">\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <address>\r
+                       xxxxxx\r
+                       </address>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <address>\r
+                       xxxxxx\r
+                       </address>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <address>\r
+                       xxxxxx\r
+                       </address>\r
                     </div>\r
                  </div>\r
               </details>\r
@@ -2755,8 +2769,10 @@
 - trigger: contact-fra
   description: "Creates a \"Contact Us\" tabbed panel (in French)"
   scope: html
-  mTime: 1475506438318
+  mTime: 1475582352893
   text: |
+        <h1>Contactez-nous</h1>\r
+        <p>xxxxxxxxxxxxxxxx</p>\r
         <div class="wb-tabs">\r
            <div class="tabpanels">\r
               <details id="phone" open>\r
@@ -2797,29 +2813,29 @@
                  <div class="clearfix">\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
                     </div>\r
                  </div>\r
                  <div class="clearfix">\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
                     </div>\r
                  </div>\r
               </details>\r
@@ -2861,29 +2877,41 @@
                  <div class="clearfix">\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <address>\r
+                       xxxxxx\r
+                       </address>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <address>\r
+                       xxxxxx\r
+                       </address>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <address>\r
+                       xxxxxx\r
+                       </address>\r
                     </div>\r
                  </div>\r
                  <div class="clearfix">\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <address>\r
+                       xxxxxx\r
+                       </address>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <address>\r
+                       xxxxxx\r
+                       </address>\r
                     </div>\r
                     <div class="col-md-4">\r
                        <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> xxxxxxxxxxxxxxxx</p>\r
+                       <address>\r
+                       xxxxxx\r
+                       </address>\r
                     </div>\r
                  </div>\r
               </details>\r
