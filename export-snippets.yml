@@ -2237,7 +2237,7 @@
 - trigger: topic-landing-page_fr
   description: Creates a default topic landing page structure as specified by Canada.ca in French
   scope: html
-  mTime: 1470412167751
+  mTime: 1477576658383
   text: |
         <div class="row profile">
             <div class="col-md-6">
@@ -2274,7 +2274,7 @@
                 </section>
             </div>
             <section class="col-md-8 pull-left mrgn-bttm-lg">
-                <h2>Services and information</h2>
+                <h2>Services et renseignements</h2>
                 <div class="row">
                     <div class="col-md-6">
                         <section class="gc-drmt">
@@ -2614,307 +2614,46 @@
             <img src="${1:link}" alt="${2:description}" class="img-responsive thumbnail" />
         </a>${3}
 
-- trigger: contact-eng
-  description: "Creates a \"Contact Us\" tabbed panel (in English)"
+- trigger: form-group
+  description: Creates a div with the form-group class
   scope: html
-  mTime: 1475582322844
+  mTime: 1475588242142
   text: |
-        <h1>Contact Us</h1>\r
-        <p>xxxxxxxxxxxxxxxx</p>\r
-        <div class="wb-tabs">\r
-           <div class="tabpanels">\r
-              <details id="phone" open>\r
-                 <summary>By Phone</summary>\r
-                 <h3>xxxxxxxxxxxxxxxx</h3>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                 </div>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                 </div>\r
-              </details>\r
-              <details id="email">\r
-                 <summary>By Email</summary>\r
-                 <h3>xxxxxxxxxxxxxxxx</h3>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
-                    </div>\r
-                 </div>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
-                    </div>\r
-                 </div>\r
-              </details>\r
-              <details id="fax">\r
-                 <summary>By Fax</summary>\r
-                 <h3>xxxxxxxxxxxxxxxx</h3>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                 </div>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                 </div>\r
-              </details>\r
-              <details id="mail">\r
-                 <summary>By Mail</summary>\r
-                 <h3>xxxxxxxxxxxxxxxx</h3>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <address>\r
-                       xxxxxx\r
-                       </address>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <address>\r
-                       xxxxxx\r
-                       </address>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <address>\r
-                       xxxxxx\r
-                       </address>\r
-                    </div>\r
-                 </div>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <address>\r
-                       xxxxxx\r
-                       </address>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <address>\r
-                       xxxxxx\r
-                       </address>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <address>\r
-                       xxxxxx\r
-                       </address>\r
-                    </div>\r
-                 </div>\r
-              </details>\r
-           </div>\r
+        <div class="form-group">
+            ${1}
         </div>
 
-- trigger: contact-fra
-  description: "Creates a \"Contact Us\" tabbed panel (in French)"
+- trigger: form-label
+  description: Creates a label tag with the for attribute
   scope: html
-  mTime: 1475582352893
+  mTime: 1475588414818
   text: |
-        <h1>Contactez-nous</h1>\r
-        <p>xxxxxxxxxxxxxxxx</p>\r
-        <div class="wb-tabs">\r
-           <div class="tabpanels">\r
-              <details id="phone" open>\r
-                 <summary>Par téléphone</summary>\r
-                 <h3>xxxxxxxxxxxxxxxx</h3>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                 </div>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                 </div>\r
-              </details>\r
-              <details id="email">\r
-                 <summary>Par courriel</summary>\r
-                 <h3>xxxxxxxxxxxxxxxx</h3>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
-                    </div>\r
-                 </div>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</a></p>\r
-                    </div>\r
-                 </div>\r
-              </details>\r
-              <details id="fax">\r
-                 <summary>Par télécopieur</summary>\r
-                 <h3>xxxxxxxxxxxxxxxx</h3>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                 </div>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <p><span class="glyphicon glyphicon-phone"></span> xxxxxxxxxxxxxxxx</p>\r
-                    </div>\r
-                 </div>\r
-              </details>\r
-              <details id="mail">\r
-                 <summary>Par la poste</summary>\r
-                 <h3>xxxxxxxxxxxxxxxx</h3>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <address>\r
-                       xxxxxx\r
-                       </address>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <address>\r
-                       xxxxxx\r
-                       </address>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <address>\r
-                       xxxxxx\r
-                       </address>\r
-                    </div>\r
-                 </div>\r
-                 <div class="clearfix">\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <address>\r
-                       xxxxxx\r
-                       </address>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <address>\r
-                       xxxxxx\r
-                       </address>\r
-                    </div>\r
-                    <div class="col-md-4">\r
-                       <h5>xxxxxxxxxxxxxxxx</h5>\r
-                       <address>\r
-                       xxxxxx\r
-                       </address>\r
-                    </div>\r
-                 </div>\r
-              </details>\r
-           </div>\r
-        </div>
+        <label for="${1:id}">${2:Label}</label>${3}
+
+- trigger: input-text
+  description: Creates a text field input
+  scope: html
+  mTime: 1475588603251
+  text: |
+        <input type="text" id="${1:id/name}" name="${1:id/name}" class="form-control" placeholder="${2:Placeholder text}" />${3}
+
+- trigger: form-text
+  description: Creates a text input form group
+  scope: html
+  mTime: 1475588726265
+  text: |
+        <div class="form-group col-md-${1:1-12}">
+            <label for="${2:id/name}">${3:Label}</label>
+            <input type="text" id="${2:id/name}" name="${2:id/name}" class="form-control" placeholder="${4:Placeholder text}" />
+        </div>${5}
+
+- trigger: form-textarea
+  description: Creates a form group text area
+  scope: html
+  mTime: 1475590121212
+  text: |
+        <div class="form-group col-md-${1:1-12}">
+            <label for="${2:id/name}">${3:Label}</label>
+            <input type="textarea" id="${2:id/name}" name="${2:id/name}" class="form-control" placeholder="${4:Placeholder text}" />
+        </div>${5}
 
