@@ -65,9 +65,9 @@
 - trigger: more-info
   description: Creates a More information for section used on Canada.ca pages
   scope: html
-  mTime: 1465680399641
+  mTime: 1478019334987
   text: |
-        <section class="lnkbx well">
+        <section class="lnkbx">
             <h2>More information for</h2>
             <ul>
                 <li><a href="${1:link}">${2:text}</a></li>${3}
@@ -77,9 +77,9 @@
 - trigger: most-requested
   description: Creates a Most requested section used on Canada.ca pages
   scope: html
-  mTime: 1465680405835
+  mTime: 1478019342956
   text: |
-        <section class="lnkbx well">
+        <section class="lnkbx">
             <h2>Most requested</h2>
             <ul>
                 <li><a href="${1:link}">${2:text}</a></li>${3}
@@ -89,7 +89,7 @@
 - trigger: lowest-level-topic-page
   description: Creates a default lowest level topic page structure as specificied by Canada.ca
   scope: html
-  mTime: 1466003694604
+  mTime: 1478019302892
   text: |
         <div class="row profile">
             <div class="col-md-6">
@@ -193,7 +193,7 @@
                 </div>
             </section>
             <div class="col-md-4 mrgn-tp-lg">
-                <section class="lnkbx well">
+                <section class="lnkbx">
                     <h2>Contributors</h2>
                     <ul>
                         <li><a href="#">[Institution name]</a></li>
@@ -201,7 +201,7 @@
                         <li><a href="#">[Institution name]</a></li>
                     </ul>
                 </section>
-                <section class="lnkbx well">
+                <section class="lnkbx">
                     <h2>More information for</h2>
                     <ul>
                         <li><a href="#">[Audience hyperlink text]</a></li>
@@ -385,7 +385,7 @@
 - trigger: topic-landing-page
   description: Creates a default topic landing page structure as specificied by Canada.ca
   scope: html
-  mTime: 1466003676040
+  mTime: 1478018903461
   text: |
         <div class="row profile">
             <div class="col-md-6">
@@ -405,7 +405,7 @@
         </section>
         <div class="row">
             <div class="col-md-4 mrgn-tp-lg pull-right">
-                <section class="lnkbx well">
+                <section class="lnkbx">
                     <h2>Most requested</h2>
                     <ul>
                         <li><a href="#">[Top task hyperlink text]</a></li>
@@ -537,7 +537,7 @@
             </section>
             <div class="clr-rght-md clr-rght-lg"></div>
             <div class="pull-right col-md-4">
-                <section class="lnkbx well">
+                <section class="lnkbx">
                     <h2>Contributors</h2>
                     <ul>
                         <li><a href="#">[Institution name]</a></li>
@@ -545,7 +545,7 @@
                         <li><a href="#">[Institution name]</a></li>
                     </ul>
                 </section>
-                <section class="lnkbx well">
+                <section class="lnkbx">
                     <h2>More information for</h2>
                     <ul>
                         <li><a href="#">[Audience hyperlink text]</a></li>
@@ -1976,9 +1976,9 @@
 - trigger: most-requested_fr
   description: Creates a Most requested section used on Canada.ca pages in French
   scope: html
-  mTime: 1470410582378
+  mTime: 1478019346838
   text: |
-        <section class="lnkbx well">
+        <section class="lnkbx">
             <h2>En demande</h2>
             <ul>
                 <li><a href="${1:link}">${2:text}</a></li>${3}
@@ -1988,9 +1988,9 @@
 - trigger: more-info_fr
   description: Creates a More information for section used on Canada.ca pages in French
   scope: html
-  mTime: 1470410650634
+  mTime: 1478019338576
   text: |
-        <section class="lnkbx well">
+        <section class="lnkbx">
             <h2>Autres renseignements pour les</h2>
             <ul>
                 <li><a href="${1:link}">${2:text}</a></li>${3}
@@ -2000,7 +2000,7 @@
 - trigger: lowest-level-topic-page_FR
   description: Creates a default lowest level topic page structure as specified by Canada.ca in French
   scope: html
-  mTime: 1470411073469
+  mTime: 1478019324288
   text: |
         <div class="row profile">
             <div class="col-md-6">
@@ -2104,7 +2104,7 @@
                 </div>
             </section>
             <div class="col-md-4 mrgn-tp-lg">
-                <section class="lnkbx well">
+                <section class="lnkbx">
                     <h2>Collaborateurs</h2>
                     <ul>
                         <li><a href="#">[Nom de l’institution]</a></li>
@@ -2112,7 +2112,7 @@
                         <li><a href="#">[Nom de l’institution]</a></li>
                     </ul>
                 </section>
-                <section class="lnkbx well">
+                <section class="lnkbx">
                     <h2>Autres renseignements pour les</h2>
                     <ul>
                         <li><a href="#">[Lien à un sujet pour un auditoire ciblé]</a></li>
@@ -2237,7 +2237,7 @@
 - trigger: topic-landing-page_fr
   description: Creates a default topic landing page structure as specified by Canada.ca in French
   scope: html
-  mTime: 1477576658383
+  mTime: 1478019132026
   text: |
         <div class="row profile">
             <div class="col-md-6">
@@ -2257,7 +2257,7 @@
         </section>
         <div class="row">
             <div class="col-md-4 mrgn-tp-lg pull-right">
-                <section class="lnkbx well">
+                <section class="lnkbx">
                     <h2>En demande</h2>
                     <ul>
                         <li><a href="#">[Lien à une tâche principale]</a></li>
@@ -2389,7 +2389,7 @@
             </section>
             <div class="clr-rght-md clr-rght-lg"></div>
             <div class="col-md-4 mrgn-tp-lg">
-                <section class="lnkbx well">
+                <section class="lnkbx">
                     <h2>Collaborateurs</h2>
                     <ul>
                         <li><a href="#">[Nom de l’institution]</a></li>
@@ -2397,7 +2397,7 @@
                         <li><a href="#">[Nom de l’institution]</a></li>
                     </ul>
                 </section>
-                <section class="lnkbx well">
+                <section class="lnkbx">
                     <h2>Autres renseignements pour les</h2>
                     <ul>
                         <li><a href="#">[Lien à un sujet pour un auditoire ciblé]</a></li>
