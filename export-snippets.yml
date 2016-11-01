@@ -1370,12 +1370,12 @@
 - trigger: table
   description: Creates a basic table
   scope: html
-  mTime: 1465583491870
+  mTime: 1478005800491
   text: |
         <table class="table table-responsive table-bordered">
             <thead>
                 <tr class="active">
-                    <td></td>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -1388,12 +1388,12 @@
 - trigger: table-striped
   description: Creates a striped table
   scope: html
-  mTime: 1465583518776
+  mTime: 1478005825146
   text: |
         <table class="table table-responsive table-bordered table-striped">
             <thead>
                 <tr class="active">
-                    <td></td>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
