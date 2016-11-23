@@ -2657,3 +2657,35 @@
             <input type="textarea" id="${2:id/name}" name="${2:id/name}" class="form-control" placeholder="${4:Placeholder text}" />
         </div>${5}
 
+- trigger: lbx-gal-figure
+  description: Creates a lbx galery that handles figures
+  scope: html
+  mTime: 1479917092824
+  text: |
+        <section class="wb-lbx lbx-gal">
+            <section>
+                <a href="${1:link}" title="${2:description}">
+                    <figure class="thumbnail"> <img src="${1:link}" class="img-responsive" alt="${2:description}" />
+                        <figcaption class="caption">
+                            <p>${2:description}</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </section>${3}
+        </section>
+
+- trigger: figure-lbx-gal
+  description: Creates a figure to go into an lbx-gal
+  scope: html
+  mTime: 1479917158099
+  text: |
+        <section>
+            <a href="${1:link}" title="${2:description}">
+                <figure class="thumbnail"> <img src="${1:link}" class="img-responsive" alt="${2:description}" />
+                    <figcaption class="caption">
+                        <p>${2:description}</p>
+                    </figcaption>
+                </figure>
+            </a>
+        </section>${3}
+
