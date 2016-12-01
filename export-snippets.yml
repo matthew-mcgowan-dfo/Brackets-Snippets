@@ -2692,7 +2692,7 @@
 - trigger: contact-us
   description: Creates a contact page layout created by Ian.
   scope: html
-  mTime: 1480617830792
+  mTime: 1480619058858
   text: |
         <div class="wb-tabs ignore-session mrgn-tp-lg">
             <div class="tabpanels">
@@ -2904,65 +2904,65 @@
                     <h2>By mail</h2>
                     <h3>National headquarters</h3>
                     <div class="col-md-4">
-                        <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                        <p class="well">[Name/Title] <br/>[Street] <br/> [City], [Province (2 letter)] [Postal code]</p>
                     </div>
                     <div class="clearfix"></div>
                     <h3>Regional offices</h3>
                         <div class="col-md-4">
                             <h4>Alberta <small>(<a href="/science/regions/index-eng.htm#CA">Central and Arctic</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/> [City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>British Columbia <small>(<a href="/science/regions/index-eng.htm#PAC">Pacific</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/> [City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Manitoba <small>(<a href="/science/regions/index-eng.htm#CA">Central and Arctic</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/> [City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="clearfix visible-md visible-lg"></div>
                         <div class="col-md-4">
                             <h4>New Brunswick <small>(<a href="/science/regions/index-eng.htm#GLF">Gulf</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/> [City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Newfoundland and Labrador <small>(<a href="/science/regions/index-eng.htm#NL">Newfoundland and Labrador</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/> [City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Northwest Territories <small>(<a href="/science/regions/index-eng.htm#CA">Central and Arctic</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/> [City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="clearfix visible-md visible-lg"></div>
                         <div class="col-md-4">
                             <h4>Nova Scotia <small>(<a href="/science/regions/index-eng.htm#GLF">Gulf</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/> [City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Nunavut <small>(<a href="/science/regions/index-eng.htm#CA">Central and Arctic</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/> [City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Ontario <small>(<a href="/science/regions/index-eng.htm#CA">Central and Arctic</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/> [City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="clearfix visible-md visible-lg"></div>
                         <div class="col-md-4">
                             <h4>Prince Edward Island <small>(<a href="/science/regions/index-eng.htm#GLF">Gulf</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/> [City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Quebec <small>(<a href="/science/regions/index-eng.htm#QC">Quebec</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/> [City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Saskatchewan <small>(<a href="/science/regions/index-eng.htm#CA">Central and Arctic</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/> [City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="clearfix visible-md visible-lg"></div>
                         <div class="col-md-4">
                             <h4>Yukon <small>(<a href="/science/regions/index-eng.htm#CA">Central and Arctic</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/> [City], [Province (2 letter)] [Postal code]</p>
                         </div>
                 </details>
             </div>
@@ -2970,7 +2970,7 @@
 
 - trigger: contact-us_FR
   scope: html
-  mTime: 1480617894200
+  mTime: 1480619093907
   description: Creates a contact page layout created by Ian in French.
   text: |
         <div class="wb-tabs ignore-session mrgn-tp-lg">
@@ -3183,65 +3183,65 @@
                     <h2>Par la poste</h2>
                     <h3>Administration centrale</h3>
                     <div class="col-md-4">
-                        <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                        <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                     </div>
                     <div class="clearfix"></div>
                     <h3>Regional offices</h3>
                         <div class="col-md-4">
                             <h4>Alberta <small>(<a href="/science/regions/index-fra.htm#CA">Centre et Arctique</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Colombie-Britannique <small>(<a href="/science/regions/index-fra.htm#PAC">Pacifique</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Manitoba <small>(<a href="/science/regions/index-fra.htm#CA">Centre et Arctique</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="clearfix visible-md visible-lg"></div>
                         <div class="col-md-4">
                             <h4>Nouveau-Brunswick <small>(<a href="/science/regions/index-fra.htm#GLF">Golfe</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Terre-Neuve et Labrador <small>(<a href="/science/regions/index-fra.htm#NL">Terre-Neuve et Labrador</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Territories du Nord-Ouest <small>(<a href="/science/regions/index-fra.htm#CA">Centre et Arctique</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="clearfix visible-md visible-lg"></div>
                         <div class="col-md-4">
                             <h4>Nouvelle-Écosse <small>(<a href="/science/regions/index-fra.htm#GLF">Golfe</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Nunavut <small>(<a href="/science/regions/index-fra.htm#CA">Centre et Arctique</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Ontario <small>(<a href="/science/regions/index-fra.htm#CA">Centre et Arctique</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="clearfix visible-md visible-lg"></div>
                         <div class="col-md-4">
                             <h4>Ĭle-du-Prince-Édouard <small>(<a href="/science/regions/index-fra.htm#GLF">Golfe</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Québec <small>(<a href="/science/regions/index-fra.htm#QC">Québec</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="col-md-4">
                             <h4>Saskatchewan <small>(<a href="/science/regions/index-fra.htm#CA">Centre et Arctique</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                         </div>
                         <div class="clearfix visible-md visible-lg"></div>
                         <div class="col-md-4">
                             <h4>Yukon <small>(<a href="/science/regions/index-fra.htm#CA">Centre et Arctique</a>)</small></h4>
-                            <p class="well">[Name/Title]<br> [Street]<br> [City], [Province (2 letter)] [Postal code]</p>
+                            <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                         </div>
                 </details>
             </div>
