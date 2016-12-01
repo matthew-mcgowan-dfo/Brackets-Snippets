@@ -3247,3 +3247,12 @@
             </div>
         </div>
 
+- description: Creates a plain ordered list
+  trigger: ol
+  scope: html
+  mTime: 1480623198185
+  text: |
+        <ol>
+            <li></li>
+        </ol>
+
