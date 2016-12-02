@@ -3256,3 +3256,215 @@
             <li></li>
         </ol>
 
+- trigger: azimuth-eng
+  description: English template for Azimuth
+  scope: html
+  mTime: 1480689007124
+  text: |
+        <!--#include virtual="/theme/asp/init.asp" -->
+        <%
+        Title = "Highlights from the Hydrographer General of Canada (HGC)"
+        Breadcrumb = "<li><a href='http://intra.dfo-mpo.gc.ca/home_e.htm'>Home</a></li><li><a href='http://intra.dfo-mpo.gc.ca/science/index-eng.htm'>Ecosystems and Oceans Science</a></li><li><a href='/index-eng.asp'>CHS</a></li><li><a href='/newsletter/index-eng.html'>Newsletters</a></li><li class='active'>Highlights from the Hydrographer General of Canada (HGC)</li>"
+        %>
+            <!--#include virtual="/theme/asp/template-head.asp"-->
+            <!-- MainContentStart -->
+        
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 property="name" class="wb-inv">Azimuth HGC - Highlights from the Hydrographer General of Canada (HGC)</h1>
+                    <img src="/images/newletter/logo.png" class="img-responsive mrgn-tp-md" alt="Azimuth HGC" />
+                </div>
+                <div class="col-sm-6 col-md-4 pull-right">
+                    <figure class="thumbnail">
+                        <a href="HainsDenisLg.jpg" class="wb-lbx"><img src="HainsDenisLg.jpg" class="img-responsive" /></a>
+                        <figcaption class="caption">
+                            <p><strong>Denis Hains, Hydrographer General of Canada (HGC)</strong></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-6 col-md-8">
+                    <p><em>An Azimuth is "the angle formed between a reference direction (North) and a line from the observer to a point of interest projected on the same plane"; the addition of “gc” at the end is to cover “HGC” for Hydrographer General of Canada.</em></p>
+                    <p><strong>Chs Strategic Directions 2016/26 - New</strong> <br/><span class="glyphicon glyphicon-download"></span> <a href="/documents-documents/singledocs/MECTS-3698607-v2-2016_CHS_DGO_-_Canadian_Hydrographic_Service_Stategic_Directions__2016-2026_-_Signed_October_27__2016.pdf">New CHS Strategic Directions 2016/26</a></p>
+                    <p><strong>CHS Governance Structure</strong> <br/><span class="glyphicon glyphicon-download"></span> <a href="/newsletter/CHS%20Governance%20Structure_April%202016.pdf">http://wwwintra.chs-shc.gc.ca/newsletter/CHS%20Governance%20Structure_April%202016.pdf</a></p>
+                    <h2>Highlights from the Hydrographer General of Canada (HGC) <br/><small>${1:MONTH} 2016:</small></h2>
+                </div>
+                <section class="col-md-12">
+                    <h3>Internal Activities</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>External Activities</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>International Activities</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>QMS’ Corner</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>Offices Highlights</h3>
+                    <h4>St. John’s Office</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h4>Dartmouth Office</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h4>Mont-Joli Office</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h4>Burlington Office</h4>
+                    <ul>
+                        <li>Operations Division:
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </li>
+                        <li>Nautical Publications Division:
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4>Sidney Office</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h4>Ottawa Office</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>Upcoming Events for the HGC in October</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>How to Improve Internal Communication</h3>
+                    <p>If you would like more information on the above highlights, I encourage you to ask your respective Director or Manager. Please provide your comments, feedback and suggestions to <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:Robert.Dorais@dfo-mpo.gc.ca">Robert.Dorais@dfo-mpo.gc.ca</a>, Chair of the CHS Client Liaison and Marketing Committee (CLMC) for improving this new CHS internal communication tool, keeping in mind that I want to keep it short and relevant to <strong>you</strong>.</p>
+                    <p>Thank you!</p>
+                </section>
+            </div>
+            <!-- MainContentEnd -->
+            <!--#include virtual="/theme/asp/template-footer.asp"-->
+
+- trigger: azimuth-fra
+  description: French template for Azimuth
+  scope: html
+  mTime: 1480689001567
+  text: |
+        <!--#include virtual="/theme/asp/init.asp" -->
+        <%
+        Title = "Faits saillants de l'hydrographe général du Canada (HGC)"
+        Breadcrumb = "<li><a href='http://intra.dfo-mpo.gc.ca/home_f.htm'</a></li><li><a href='http://intra.dfo-mpo.gc.ca/science/index-fra.htm'>Sciences des &#233;cosyst&#232;mes et des oc&#233;ans</a></li><li><a href='/index-fra.asp'>SHC</a></li><li><a href='/newsletter/index-fra.html'>Bulletins</a></li><li class='active'>Faits saillants de l'hydrographe général du Canada (HGC)</li>"
+        %>
+            <!--#include virtual="/theme/asp/template-head.asp"-->
+            <!-- MainContentStart -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 property="name" class="wb-inv">Azimuth HGC - Faits saillants de l'hydrographe général du Canada (HGC)</h1>
+                    <img src="/images/newletter/logo.png" class="img-responsive mrgn-tp-md" alt="Azimuth HGC" />
+                </div>
+                <div class="col-sm-6 col-md-4 pull-right">
+                    <figure class="thumbnail"> <img src="HainsDenisLg.jpg" class="img-responsive" />
+                        <figcaption class="caption">
+                            <p><strong>Denis Hains, hydrographe général du Canada (HGC)</strong></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-6 col-md-8">
+                    <p><em>Un azimut est « l’angle formé entre la direction de référence (Nord) et une ligne tracée à partir de l’observateur jusqu’à un point d’intérêt projeté sur le même plan » ; l’ajout de « HGC » à la fin représente l’hydrographe général du Canada.</em></p>
+                    <p><strong>Orientations Stratégiques Du Shc Pour 2016-2026 - Nouveau</strong> <br/><span class="glyphicon glyphicon-download"></span> <a href="/documents-documents/singledocs/MECTS-3698608-v3-2016_CHS_DGO_-_Service_hydrographique_du_Canada_Orientations_strategiques__2016-2026_-_Signe_le_27_octobre_2016.PDF">Nouvelles orientations stratégiques du SHC 2016/26</a></p>
+                    <p><strong>Structure de gouvernance du SHC</strong> <br/><span class="glyphicon glyphicon-download"></span> <a href="/newsletter/CHS Governance Structure_April 2016-frPA.pdf">http://wwwintra.chs-shc.gc.ca/newsletter/CHS Governance Structure_April 2016-frPA.pdf</a></p>
+                    <h2>Faits saillants de l'hydrographe général du Canada (HGC) <br/><small>${1:MONTH} 2016:</small></h2>
+                </div>
+                <section class="col-md-12">
+                    <h3>Activités à l’interne</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>Activités externes</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>Activités internationales</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>Le coin du SGQ</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>Points saillants des bureaux</h3>
+                    <h4>Bureau de St. John’s</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h4>Bureau de Dartmouth</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h4>Bureau de Mont-Joli</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h4>Bureau de Burlington</h4>
+                    <ul>
+                        <li>Division des opérations :
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </li>
+                        <li>Division responsable des publications nautiques :
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4>Bureau de Sydney</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h4>Bureau d’Ottawa</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>Événements à venir pour l’hydrographe général du Canada en octobre</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>Comment améliorer les communications internes</h3>
+                    <p>Si vous souhaitez obtenir de plus amples renseignements au sujet des points saillants ci-dessus, je vous invite à communiquer avec votre directeur ou votre gestionnaire. Veuillez envoyer vos commentaires ou vos suggestions à <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:Robert.Dorais@dfo-mpo.gc.ca">Robert.Dorais@dfo-mpo.gc.ca</a>, président du Comité de liaison avec la clientèle et de marketing (CLCM), afin d’améliorer ce nouvel outil de communications internes du SHC, en gardant à l’esprit que je tiens à ce qu’il demeure concis et pertinent pour <strong>vous</strong>.</p>
+                    <p>Merci !</p>
+                </section>
+            </div>
+            <!-- MainContentEnd -->
+            <!--#include virtual="/theme/asp/template-footer.asp"-->
+
