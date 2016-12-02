@@ -2970,7 +2970,7 @@
 
 - trigger: contact-us_FR
   scope: html
-  mTime: 1480619093907
+  mTime: 1480686106685
   description: Creates a contact page layout created by Ian in French.
   text: |
         <div class="wb-tabs ignore-session mrgn-tp-lg">
@@ -2982,7 +2982,7 @@
                     <p>[Name] <br/> [Role]
                     </p>
                     <p class="mrgn-tp-md"><span class="glyphicon glyphicon-phone"></span> [123-456-7890]</p>
-                    <h3>Regional offices</h3>
+                    <h3>Bureaux régionaux</h3>
                     <div class="col-md-4">
                         <h4>Alberta</h4>
                         <p>[Name] <br/> [Role]</p>
@@ -3058,7 +3058,7 @@
                     <h2>Par courriel</h2>
                     <h3>Administration centrale</h3>
                     <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:[email@dfo-mpo.gc.ca]">[email@dfo-mpo.gc.ca]</a></p>
-                    <h3>Regional offices</h3>
+                    <h3>Bureaux régionaux</h3>
                     <div class="col-md-4">
                         <h4>Alberta</h4>
                         <p><a href="/science/regions/index-fra.htm#CA">Centre et Arctique</a>: <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:[email@dfo-mpo.gc.ca]">[email@dfo-mpo.gc.ca]</a></p>
@@ -3120,7 +3120,7 @@
                     <h2>Par télécopieur</h2>
                     <h3>Administration centrale</h3>
                     <p class="mrgn-tp-md">[123-456-7890]</p>
-                    <h3>Regional offices</h3>
+                    <h3>Bureaux régionaux</h3>
                     <div class="col-md-4">
                         <h4>Alberta</h4>
                         <p><a href="/science/regions/index-fra.htm#CA">Centre et Arctique</a>: [123-456-7890]</p>
@@ -3186,7 +3186,7 @@
                         <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
                     </div>
                     <div class="clearfix"></div>
-                    <h3>Regional offices</h3>
+                    <h3>Bureaux régionaux</h3>
                         <div class="col-md-4">
                             <h4>Alberta <small>(<a href="/science/regions/index-fra.htm#CA">Centre et Arctique</a>)</small></h4>
                             <p class="well">[Name/Title] <br/>[Street] <br/>[City], [Province (2 letter)] [Postal code]</p>
