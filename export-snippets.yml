@@ -3247,14 +3247,286 @@
             </div>
         </div>
 
-- description: Creates a plain ordered list
-  trigger: ol
+- trigger: consultation-CSAS
+  description: Creates a CSAS consultation page.
   scope: html
-  mTime: 1480623198185
+  mTime: 1481136521627
   text: |
-        <ol>
-            <li></li>
-        </ol>
+        <!--#include virtual="/science/theme-wet4/asp/init.asp" -->
+        <%
+        Title = "[Consultation main header]"
+        Breadcrumb = BcRoot + "<li><a href='/csas-sccs/index-eng.htm'>CSAS</a></li><li class='active'>[Consultation main header]</li>"
+        %>
+        <!--#include virtual="/science/theme-wet4/template-head.asp"-->
+        <!-- MainContentStart -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 property="name">[Consultation main header]</h1>
+                <p>From <a href="/csas-sccs/index-eng.htm">Canadian Science Advisory Secretariat</a></p>
+                <section class="alert alert-warning">
+                    <h3>Status message</h3>
+                    <p>Indicates whether the activity is upcoming, active or closed.</p>
+                </section>
+                <p>Aliquam id tristique arcu, condimentum placerat neque. Nam aliquet elit in metus rhoncus facilisis. Integer mattis elit est, vel auctor turpis facilisis id. Curabitur auctor diam quis varius rutrum. Aliquam id tristique arcu, condimentum placerat neque. Nam aliquet elit in metus rhoncus facilisis.</p>
+                <p>Integer mattis elit est, vel auctor turpis facilisis id. Curabitur auctor diam quis varius rutrum. Aliquam id tristique arcu, condimentum placerat neque. Nam aliquet elit in metus rhoncus facilisis. Integer mattis elit est, vel auctor turpis facilisis id.</p>
+                <h2 class="bg-warning">Why</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut fringilla metus. Nam luctus pellentesque velit, in aliquet mi. Aliquam id tristique arcu, condimentum placerat neque. Nam aliquet elit in metus rhoncus facilisis. Integer mattis elit est, vel auctor turpis facilisis id. Curabitur auctor diam quis varius rutrum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut fringilla metus. Nam luctus pellentesque velit, in aliquet mi. Aliquam id tristique arcu, condimentum placerat neque. Nam aliquet elit in metus rhoncus facilisis.</p>
+                <h2 class="bg-warning">Who</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut fringilla metus. Nam luctus pellentesque velit, in aliquet mi. Aliquam id tristique arcu, condimentum placerat neque. Nam aliquet elit in metus rhoncus facilisis. Integer mattis elit est, vel auctor turpis facilisis id. Curabitur auctor diam quis varius rutrum.</p>
+                <h2 class="bg-warning">What</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut fringilla metus. Nam luctus pellentesque velit, in aliquet mi:</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit.</li>
+                    <li>Etiam ut fringilla metus.</li>
+                    <li>Nam luctus pellentesque velit.</li>
+                </ul>
+                <h2 class="bg-warning">When and Where</h2>
+                <p>Integer mattis elit est, vel auctor turpis facilisis id. Curabitur auctor diam quis varius rutrum:</p>
+                <table class="table wb-tables table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <td class="col-xs-2">Date</td>
+                            <td class="col-xs-2">Province/Territory</td>
+                            <td class="col-xs-1">City</td>
+                            <td class="col-xs-5">Detail</td>
+                            <td class="col-xs-2">Participate</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>[Month day, ####]</td>
+                            <td>[XXXX]</td>
+                            <td>[XXXX]</td>
+                            <td>[Etiam ut fringilla metus. Nam luctus pellentesque velit, in aliquet mi.]</td>
+                            <td>
+                                <button class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> Send</button>
+                                <br/>
+                                <button class="btn btn-default"><span class="glyphicon glyphicon-share"></span> Share</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2 class="bg-warning">How to participate</h2>
+                <p>Describes actions that can be undertaken to contribute to the consultation:</p>
+                <ol>
+                    <li>Describes action 1</li>
+                    <li>Describes action 2</li>
+                    <li>Describes action 3</li>
+                    <li>Describes action 4</li>
+                    <li>Describes action 5</li>
+                </ol>
+                <h2>Related information</h2>
+                <ul class="lst-spcd">
+                    <li><a href="link">Links to other relevant consultations, reports and information 1</a></li>
+                    <li><a href="link">Links to other relevant consultations, reports and information 2</a></li>
+                    <li><a href="link">Links to other relevant consultations, reports and information 3</a></li>
+                </ul>
+                <h2>Contact us</h2>
+                <p><strong>John Smith</strong>
+                    <br/> Title/Role</p>
+                <p>123 1st Street 2nd Floor, PO Box 1
+                    <br/> City, Province X0X 0X0</p>
+                <p>Telephone: <span class="glyphicon glyphicon-phone"></span> 123-456-7890
+                    <br/> Fax: 123-456-7890</p>
+            </div>
+        </div>
+        <!-- MainContentEnd -->
+        <!--#include virtual="/science/theme-wet4/template-footer.asp"-->
+
+- trigger: consultation-CSAS_fr
+  description: Creates a CSAS consultation page in French.
+  scope: html
+  mTime: 1481136607481
+  text: |
+        <!--#include virtual="/science/theme-wet4/asp/init.asp" -->
+        <%
+        Title = "[En-tête principal de la consultation]"
+        Breadcrumb = BcRoot + "<li><a href='/csas-sccs/index-fra.htm'>SCCS</a></li><li class='active'>[En-tête principal de la consultation]</li>"
+        %>
+            <!--#include virtual="/science/theme-wet4/template-head.asp"-->
+            <!-- MainContentStart -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 property="name">[En-tête principal de la consultation]</h1>
+                    <p>Du <a href="/csas-sccs/index-fra.htm">Secrétariat canadien de consultation scientifique</a></p>
+                    <section class="alert alert-warning">
+                        <h3>Message sur la situation actuelle</h3>
+                        <p>Indique si l'activité est à venir, en cours ou terminée.</p>
+                    </section>
+                    <p>Aliquam id tristique arcu, condimentum placerat neque. Nam aliquet elit in metus rhoncus facilisis. Integer mattis elit est, vel auctor turpis facilisis id. Curabitur auctor diam quis varius rutrum. Aliquam id tristique arcu, condimentum placerat neque. Nam aliquet elit in metus rhoncus facilisis.</p>
+                    <p>Integer mattis elit est, vel auctor turpis facilisis id. Curabitur auctor diam quis varius rutrum. Aliquam id tristique arcu, condimentum placerat neque. Nam aliquet elit in metus rhoncus facilisis. Integer mattis elit est, vel auctor turpis facilisis id.</p>
+                    <h2 class="bg-warning">Pourquoi</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut fringilla metus. Nam luctus pellentesque velit, in aliquet mi. Aliquam id tristique arcu, condimentum placerat neque. Nam aliquet elit in metus rhoncus facilisis. Integer mattis elit est, vel auctor turpis facilisis id. Curabitur auctor diam quis varius rutrum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut fringilla metus. Nam luctus pellentesque velit, in aliquet mi. Aliquam id tristique arcu, condimentum placerat neque. Nam aliquet elit in metus rhoncus facilisis.</p>
+                    <h2 class="bg-warning">Qui</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut fringilla metus. Nam luctus pellentesque velit, in aliquet mi. Aliquam id tristique arcu, condimentum placerat neque. Nam aliquet elit in metus rhoncus facilisis. Integer mattis elit est, vel auctor turpis facilisis id. Curabitur auctor diam quis varius rutrum.</p>
+                    <h2 class="bg-warning">Quoi</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut fringilla metus. Nam luctus pellentesque velit, in aliquet mi:</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit.</li>
+                        <li>Etiam ut fringilla metus.</li>
+                        <li>Nam luctus pellentesque velit.</li>
+                    </ul>
+                    <h2 class="bg-warning">Où et quand</h2>
+                    <p>Integer mattis elit est, vel auctor turpis facilisis id. Curabitur auctor diam quis varius rutrum:</p>
+                    <table class="table wb-tables table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <td class="col-xs-2">Date</td>
+                                <td class="col-xs-2">Province/Territoire</td>
+                                <td class="col-xs-1">Ville</td>
+                                <td class="col-xs-5">Détails</td>
+                                <td class="col-xs-2">Participez</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>[Jour mois ####]</td>
+                                <td>[XXXX]</td>
+                                <td>[XXXX]</td>
+                                <td>[Etiam ut fringilla metus. Nam luctus pellentesque velit, in aliquet mi.]</td>
+                                <td>
+                                    <button class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> Envoyer</button>
+                                    <br/>
+                                    <button class="btn btn-default"><span class="glyphicon glyphicon-share"></span> Partager</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 class="bg-warning">Comment participer</h2>
+                    <p>Describes actions that can be undertaken to contribute to the consultation:</p>
+                    <ol>
+                        <li>Describes action 1</li>
+                        <li>Describes action 2</li>
+                        <li>Describes action 3</li>
+                        <li>Describes action 4</li>
+                        <li>Describes action 5</li>
+                    </ol>
+                    <h2>Information connexe</h2>
+                    <ul class="lst-spcd">
+                        <li><a href="link">Links to other relevant consultations, reports and information 1</a></li>
+                        <li><a href="link">Links to other relevant consultations, reports and information 2</a></li>
+                        <li><a href="link">Links to other relevant consultations, reports and information 3</a></li>
+                    </ul>
+                    <h2>Contactez-nous</h2>
+                    <p><strong>John Smith</strong>
+                        <br/> Title/Role</p>
+                    <p>123 1st Street 2nd Floor, PO Box 1
+                        <br/> City, Province X0X 0X0</p>
+                    <p>Telephone: <span class="glyphicon glyphicon-phone"></span> 123-456-7890
+                        <br/> Fax: 123-456-7890</p>
+                </div>
+            </div>
+            <!-- MainContentEnd -->
+            <!--#include virtual="/science/theme-wet4/template-footer.asp"-->
+
+- trigger: azimuth-fra
+  description: French template for Azimuth
+  scope: html
+  mTime: 1480689001567
+  text: |
+        <!--#include virtual="/theme/asp/init.asp" -->
+        <%
+        Title = "Faits saillants de l'hydrographe général du Canada (HGC)"
+        Breadcrumb = "<li><a href='http://intra.dfo-mpo.gc.ca/home_f.htm'</a></li><li><a href='http://intra.dfo-mpo.gc.ca/science/index-fra.htm'>Sciences des &#233;cosyst&#232;mes et des oc&#233;ans</a></li><li><a href='/index-fra.asp'>SHC</a></li><li><a href='/newsletter/index-fra.html'>Bulletins</a></li><li class='active'>Faits saillants de l'hydrographe général du Canada (HGC)</li>"
+        %>
+            <!--#include virtual="/theme/asp/template-head.asp"-->
+            <!-- MainContentStart -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 property="name" class="wb-inv">Azimuth HGC - Faits saillants de l'hydrographe général du Canada (HGC)</h1>
+                    <img src="/images/newletter/logo.png" class="img-responsive mrgn-tp-md" alt="Azimuth HGC" />
+                </div>
+                <div class="col-sm-6 col-md-4 pull-right">
+                    <figure class="thumbnail"> <img src="HainsDenisLg.jpg" class="img-responsive" />
+                        <figcaption class="caption">
+                            <p><strong>Denis Hains, hydrographe général du Canada (HGC)</strong></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-6 col-md-8">
+                    <p><em>Un azimut est « l’angle formé entre la direction de référence (Nord) et une ligne tracée à partir de l’observateur jusqu’à un point d’intérêt projeté sur le même plan » ; l’ajout de « HGC » à la fin représente l’hydrographe général du Canada.</em></p>
+                    <p><strong>Orientations Stratégiques Du Shc Pour 2016-2026 - Nouveau</strong> <br/><span class="glyphicon glyphicon-download"></span> <a href="/documents-documents/singledocs/MECTS-3698608-v3-2016_CHS_DGO_-_Service_hydrographique_du_Canada_Orientations_strategiques__2016-2026_-_Signe_le_27_octobre_2016.PDF">Nouvelles orientations stratégiques du SHC 2016/26</a></p>
+                    <p><strong>Structure de gouvernance du SHC</strong> <br/><span class="glyphicon glyphicon-download"></span> <a href="/newsletter/CHS Governance Structure_April 2016-frPA.pdf">http://wwwintra.chs-shc.gc.ca/newsletter/CHS Governance Structure_April 2016-frPA.pdf</a></p>
+                    <h2>Faits saillants de l'hydrographe général du Canada (HGC) <br/><small>${1:MONTH} 2016:</small></h2>
+                </div>
+                <section class="col-md-12">
+                    <h3>Activités à l’interne</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>Activités externes</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>Activités internationales</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>Le coin du SGQ</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>Points saillants des bureaux</h3>
+                    <h4>Bureau de St. John’s</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h4>Bureau de Dartmouth</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h4>Bureau de Mont-Joli</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h4>Bureau de Burlington</h4>
+                    <ul>
+                        <li>Division des opérations :
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </li>
+                        <li>Division responsable des publications nautiques :
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4>Bureau de Sydney</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h4>Bureau d’Ottawa</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>Événements à venir pour l’hydrographe général du Canada en octobre</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="col-md-12">
+                    <h3>Comment améliorer les communications internes</h3>
+                    <p>Si vous souhaitez obtenir de plus amples renseignements au sujet des points saillants ci-dessus, je vous invite à communiquer avec votre directeur ou votre gestionnaire. Veuillez envoyer vos commentaires ou vos suggestions à <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:Robert.Dorais@dfo-mpo.gc.ca">Robert.Dorais@dfo-mpo.gc.ca</a>, président du Comité de liaison avec la clientèle et de marketing (CLCM), afin d’améliorer ce nouvel outil de communications internes du SHC, en gardant à l’esprit que je tiens à ce qu’il demeure concis et pertinent pour <strong>vous</strong>.</p>
+                    <p>Merci !</p>
+                </section>
+            </div>
+            <!-- MainContentEnd -->
+            <!--#include virtual="/theme/asp/template-footer.asp"-->
 
 - trigger: azimuth-eng
   description: English template for Azimuth
@@ -3363,108 +3635,12 @@
             <!-- MainContentEnd -->
             <!--#include virtual="/theme/asp/template-footer.asp"-->
 
-- trigger: azimuth-fra
-  description: French template for Azimuth
+- description: Creates a plain ordered list
+  trigger: ol
   scope: html
-  mTime: 1480689001567
+  mTime: 1480623198185
   text: |
-        <!--#include virtual="/theme/asp/init.asp" -->
-        <%
-        Title = "Faits saillants de l'hydrographe général du Canada (HGC)"
-        Breadcrumb = "<li><a href='http://intra.dfo-mpo.gc.ca/home_f.htm'</a></li><li><a href='http://intra.dfo-mpo.gc.ca/science/index-fra.htm'>Sciences des &#233;cosyst&#232;mes et des oc&#233;ans</a></li><li><a href='/index-fra.asp'>SHC</a></li><li><a href='/newsletter/index-fra.html'>Bulletins</a></li><li class='active'>Faits saillants de l'hydrographe général du Canada (HGC)</li>"
-        %>
-            <!--#include virtual="/theme/asp/template-head.asp"-->
-            <!-- MainContentStart -->
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 property="name" class="wb-inv">Azimuth HGC - Faits saillants de l'hydrographe général du Canada (HGC)</h1>
-                    <img src="/images/newletter/logo.png" class="img-responsive mrgn-tp-md" alt="Azimuth HGC" />
-                </div>
-                <div class="col-sm-6 col-md-4 pull-right">
-                    <figure class="thumbnail"> <img src="HainsDenisLg.jpg" class="img-responsive" />
-                        <figcaption class="caption">
-                            <p><strong>Denis Hains, hydrographe général du Canada (HGC)</strong></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-6 col-md-8">
-                    <p><em>Un azimut est « l’angle formé entre la direction de référence (Nord) et une ligne tracée à partir de l’observateur jusqu’à un point d’intérêt projeté sur le même plan » ; l’ajout de « HGC » à la fin représente l’hydrographe général du Canada.</em></p>
-                    <p><strong>Orientations Stratégiques Du Shc Pour 2016-2026 - Nouveau</strong> <br/><span class="glyphicon glyphicon-download"></span> <a href="/documents-documents/singledocs/MECTS-3698608-v3-2016_CHS_DGO_-_Service_hydrographique_du_Canada_Orientations_strategiques__2016-2026_-_Signe_le_27_octobre_2016.PDF">Nouvelles orientations stratégiques du SHC 2016/26</a></p>
-                    <p><strong>Structure de gouvernance du SHC</strong> <br/><span class="glyphicon glyphicon-download"></span> <a href="/newsletter/CHS Governance Structure_April 2016-frPA.pdf">http://wwwintra.chs-shc.gc.ca/newsletter/CHS Governance Structure_April 2016-frPA.pdf</a></p>
-                    <h2>Faits saillants de l'hydrographe général du Canada (HGC) <br/><small>${1:MONTH} 2016:</small></h2>
-                </div>
-                <section class="col-md-12">
-                    <h3>Activités à l’interne</h3>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </section>
-                <section class="col-md-12">
-                    <h3>Activités externes</h3>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </section>
-                <section class="col-md-12">
-                    <h3>Activités internationales</h3>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </section>
-                <section class="col-md-12">
-                    <h3>Le coin du SGQ</h3>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </section>
-                <section class="col-md-12">
-                    <h3>Points saillants des bureaux</h3>
-                    <h4>Bureau de St. John’s</h4>
-                    <ul>
-                        <li></li>
-                    </ul>
-                    <h4>Bureau de Dartmouth</h4>
-                    <ul>
-                        <li></li>
-                    </ul>
-                    <h4>Bureau de Mont-Joli</h4>
-                    <ul>
-                        <li></li>
-                    </ul>
-                    <h4>Bureau de Burlington</h4>
-                    <ul>
-                        <li>Division des opérations :
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </li>
-                        <li>Division responsable des publications nautiques :
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h4>Bureau de Sydney</h4>
-                    <ul>
-                        <li></li>
-                    </ul>
-                    <h4>Bureau d’Ottawa</h4>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </section>
-                <section class="col-md-12">
-                    <h3>Événements à venir pour l’hydrographe général du Canada en octobre</h3>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </section>
-                <section class="col-md-12">
-                    <h3>Comment améliorer les communications internes</h3>
-                    <p>Si vous souhaitez obtenir de plus amples renseignements au sujet des points saillants ci-dessus, je vous invite à communiquer avec votre directeur ou votre gestionnaire. Veuillez envoyer vos commentaires ou vos suggestions à <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:Robert.Dorais@dfo-mpo.gc.ca">Robert.Dorais@dfo-mpo.gc.ca</a>, président du Comité de liaison avec la clientèle et de marketing (CLCM), afin d’améliorer ce nouvel outil de communications internes du SHC, en gardant à l’esprit que je tiens à ce qu’il demeure concis et pertinent pour <strong>vous</strong>.</p>
-                    <p>Merci !</p>
-                </section>
-            </div>
-            <!-- MainContentEnd -->
-            <!--#include virtual="/theme/asp/template-footer.asp"-->
+        <ol>
+            <li></li>
+        </ol>
 
