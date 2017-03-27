@@ -7138,35 +7138,35 @@
   mTime: 1489429955846
   text: |
         
-                 <div class="visible-xl visible-lg visible-md">
-                    <table class="table table-responsive">
-                       <caption>Statut COSEPAC / LEP</caption>
-                       <tbody>
-                          <tr>
-                             <td class="info text-center">Non en péril
-                                <br><span class="badge">NP</span></td>
-                             <td class="info text-center"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr>
-                                <br><span class="badge">P</span></td>
-                             <td class="info text-center"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr>
-                                <br><span class="badge">M</span></td>
-                             <td class="danger text-center"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente."><strong>En voie de disparition</strong></abbr>
-                                <br><span class="badge">EVD</span></td>
-                             <td class="info text-center"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr>
-                                <br><span class="badge">DP</span></td>
-                          </tr>
-                       </tbody>
-                    </table>
-                 </div>
-                 <div class="visible-sm visible-xs">
-                    <h4 class="text-center">Statut COSEPAC / LEP</h4>
-                    <ul class="list-group">
-                       <li class="list-group-item list-group-item-info">Non en péril <span class="badge">NP</span></li>
-                       <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
-                       <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr> <span class="badge">M</span></li>
-                       <li class="list-group-item list-group-item-danger"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente."><strong>En voie de disparition</strong></abbr> <span class="badge">EVD</span></li>
-                       <li class="list-group-item list-group-item-info"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr> <span class="badge">DP</span></li>
-                    </ul>
-                 </div>
+        <div class="visible-xl visible-lg visible-md">
+           <table class="table table-responsive">
+              <caption>Statut COSEPAC / LEP</caption>
+              <tbody>
+                 <tr>
+                    <td class="info text-center">Non en péril
+                       <br><span class="badge">NP</span></td>
+                    <td class="info text-center"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr>
+                       <br><span class="badge">P</span></td>
+                    <td class="info text-center"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr>
+                       <br><span class="badge">M</span></td>
+                    <td class="danger text-center"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente."><strong>En voie de disparition</strong></abbr>
+                       <br><span class="badge">EVD</span></td>
+                    <td class="info text-center"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr>
+                       <br><span class="badge">DP</span></td>
+                 </tr>
+              </tbody>
+           </table>
+        </div>
+        <div class="visible-sm visible-xs">
+           <h4 class="text-center">Statut COSEPAC / LEP</h4>
+           <ul class="list-group">
+              <li class="list-group-item list-group-item-info">Non en péril <span class="badge">NP</span></li>
+              <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
+              <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr> <span class="badge">M</span></li>
+              <li class="list-group-item list-group-item-danger"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente."><strong>En voie de disparition</strong></abbr> <span class="badge">EVD</span></li>
+              <li class="list-group-item list-group-item-info"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr> <span class="badge">DP</span></li>
+           </ul>
+        </div>
 
 - trigger: cosewic-special-fra
   scope: html
@@ -7202,9 +7202,9 @@
                     </ul>
                  </div>
 
-- trigger: cosewic-not-eng
+- trigger: cosewic-not-at-risk-eng
   scope: html
-  mTime: 1489430940712
+  mTime: 1490612899629
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
@@ -7270,9 +7270,9 @@
                     </ul>
                  </div>
 
-- trigger: cosewic-not-fra
+- trigger: cosewic-not-at-risk-fra
   scope: html
-  mTime: 1489431278421
+  mTime: 1490613560460
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
@@ -7335,6 +7335,142 @@
                        <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr> <span class="badge">M</span></li>
                        <li class="list-group-item list-group-item-info"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr> <span class="badge">EVD</span></li>
                        <li class="list-group-item list-group-item active"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs."><strong>Disparue du pays</strong></abbr> <span class="badge">DP</span></li>
+                    </ul>
+                 </div>
+
+- trigger: cosewic-no-status-eng
+  scope: html
+  mTime: 1490613468082
+  text: |
+        <div class="visible-xl visible-lg visible-md">
+                    <table class="table table-responsive">
+                       <caption>COSEWIC / SARA Status</caption>
+                       <tbody>
+                          <tr>
+                             <td class="success text-center"><strong>No Status</strong>
+                                <br><span class="badge">NS</span></td>
+                             <td class="info text-center"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr>
+                                <br><span class="badge">SC</span></td>
+                             <td class="info text-center"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr>
+                                <br><span class="badge">TH</span></td>
+                             <td class="info text-center"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr>
+                                <br><span class="badge">EN</span></td>
+                             <td class="info text-center"><abbr title="No longer exists in the wild in Canada, but exists elsewhere">Extirpated</abbr>
+                                <br><span class="badge">EX</span></td>
+                          </tr>
+                       </tbody>
+                    </table>
+                 </div>
+                 <div class="visible-sm visible-xs">
+                    <h4 class="text-center">COSEWIC / SARA Status</h4>
+                    <ul class="list-group">
+                       <li class="list-group-item list-group-item-success"><strong>No Status</strong> <span class="badge">NS</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr> <span class="badge">TH</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr> <span class="badge">EN</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="No longer exists in the wild in Canada, but exists elsewhere">Extirpated</abbr> <span class="badge">EX</span></li>
+                    </ul>
+                 </div>
+
+- trigger: cosewic-no-status-fra
+  scope: html
+  mTime: 1490613481915
+  text: |
+        <div class="visible-xl visible-lg visible-md">
+                    <table class="table table-responsive">
+                       <caption>Statut COSEPAC / LEP</caption>
+                       <tbody>
+                          <tr>
+                             <td class="success text-center"><strong>Aucun statut</strong>
+                                <br><span class="badge">AS</span></td>
+                             <td class="info text-center"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr>
+                                <br><span class="badge">P</span></td>
+                             <td class="info text-center"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr>
+                                <br><span class="badge">M</span></td>
+                             <td class="info text-center"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr>
+                                <br><span class="badge">EVD</span></td>
+                             <td class="info text-center"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr>
+                                <br><span class="badge">DP</span></td>
+                          </tr>
+                       </tbody>
+                    </table>
+                 </div>
+                 <div class="visible-sm visible-xs">
+                    <h4 class="text-center">Statut COSEPAC / LEP</h4>
+                    <ul class="list-group">
+                       <li class="list-group-item list-group-item-success"><strong>Aucun statut</strong> <span class="badge">AS</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr> <span class="badge">M</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr> <span class="badge">EVD</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr> <span class="badge">DP</span></li>
+                    </ul>
+                 </div>
+
+- trigger: cosewic-non-active-eng
+  scope: html
+  mTime: 1490613512954
+  text: |
+        <div class="visible-xl visible-lg visible-md">
+                    <table class="table table-responsive">
+                       <caption>COSEWIC / SARA Status</caption>
+                       <tbody>
+                          <tr>
+                             <td class="success text-center"><strong>Non-active</strong>
+                                <br><span class="badge">NA</span></td>
+                             <td class="info text-center"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr>
+                                <br><span class="badge">SC</span></td>
+                             <td class="info text-center"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr>
+                                <br><span class="badge">TH</span></td>
+                             <td class="info text-center"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr>
+                                <br><span class="badge">EN</span></td>
+                             <td class="info text-center"><abbr title="No longer exists in the wild in Canada, but exists elsewhere">Extirpated</abbr>
+                                <br><span class="badge">EX</span></td>
+                          </tr>
+                       </tbody>
+                    </table>
+                 </div>
+                 <div class="visible-sm visible-xs">
+                    <h4 class="text-center">COSEWIC / SARA Status</h4>
+                    <ul class="list-group">
+                       <li class="list-group-item list-group-item-success"><strong>Non-active</strong> <span class="badge">NA</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr> <span class="badge">TH</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr> <span class="badge">EN</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="No longer exists in the wild in Canada, but exists elsewhere">Extirpated</abbr> <span class="badge">EX</span></li>
+                    </ul>
+                 </div>
+
+- trigger: cosewic-non-active-fra
+  scope: html
+  mTime: 1490613527804
+  text: |
+        <div class="visible-xl visible-lg visible-md">
+                    <table class="table table-responsive">
+                       <caption>Statut COSEPAC / LEP</caption>
+                       <tbody>
+                          <tr>
+                             <td class="success text-center"><strong>Non active</strong>
+                                <br><span class="badge">NA</span></td>
+                             <td class="info text-center"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr>
+                                <br><span class="badge">P</span></td>
+                             <td class="info text-center"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr>
+                                <br><span class="badge">M</span></td>
+                             <td class="info text-center"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr>
+                                <br><span class="badge">EVD</span></td>
+                             <td class="info text-center"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr>
+                                <br><span class="badge">DP</span></td>
+                          </tr>
+                       </tbody>
+                    </table>
+                 </div>
+                 <div class="visible-sm visible-xs">
+                    <h4 class="text-center">Statut COSEPAC / LEP</h4>
+                    <ul class="list-group">
+                       <li class="list-group-item list-group-item-success"><strong>Non active</strong> <span class="badge">NA</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr> <span class="badge">M</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr> <span class="badge">EVD</span></li>
+                       <li class="list-group-item list-group-item-info"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr> <span class="badge">DP</span></li>
                     </ul>
                  </div>
 
