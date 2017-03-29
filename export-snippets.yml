@@ -6930,11 +6930,11 @@
 - trigger: cosewic-endangered-eng
   description: ""
   scope: html
-  mTime: 1489431884822
+  mTime: 1490807574531
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>COSEWIC / SARA Status</caption>
+                       <caption><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</caption>
                        <tbody>
                           <tr>
                              <td class="info text-center">Not at Risk
@@ -6952,7 +6952,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">COSEWIC / SARA Status</h4>
+                    <h4 class="text-center"><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-info">Not at Risk <span class="badge">NR</span></li>
                        <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
@@ -6965,11 +6965,11 @@
 - trigger: cosewic-eng
   description: ""
   scope: html
-  mTime: 1489430197991
+  mTime: 1490807601342
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>COSEWIC / SARA Status</caption>
+                       <caption><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</caption>
                        <tbody>
                           <tr>
                              <td class="success text-center">Not at Risk
@@ -6987,7 +6987,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">COSEWIC / SARA Status</h4>
+                    <h4 class="text-center"><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-success">Not at Risk <span class="badge">NR</span></li>
                        <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
@@ -6999,11 +6999,11 @@
 
 - trigger: cosewic-threatened-eng
   scope: html
-  mTime: 1489430439214
+  mTime: 1490807758278
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>COSEWIC / SARA Status</caption>
+                       <caption><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</caption>
                        <tbody>
                           <tr>
                              <td class="info text-center">Not at Risk
@@ -7021,7 +7021,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">COSEWIC / SARA Status</h4>
+                    <h4 class="text-center"><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-info">Not at Risk <span class="badge">NR</span></li>
                        <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
@@ -7033,11 +7033,11 @@
 
 - trigger: cosewic-special-eng
   scope: html
-  mTime: 1489430363796
+  mTime: 1490807735135
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>COSEWIC / SARA Status</caption>
+                       <caption><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</caption>
                        <tbody>
                           <tr>
                              <td class="info text-center">Not at Risk
@@ -7055,7 +7055,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">COSEWIC / SARA Status</h4>
+                    <h4 class="text-center"><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-info">Not at Risk <span class="badge">NR</span></li>
                        <li class="list-group-item list-group-item active"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats"><strong>Special Concern</strong></abbr> <span class="badge">SC</span></li>
@@ -7067,11 +7067,11 @@
 
 - trigger: cosewic-fra
   scope: html
-  mTime: 1489429048989
+  mTime: 1490807860623
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>Statut COSEPAC / LEP</caption>
+                       <caption>Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
                        <tbody>
                           <tr>
                              <td class="success text-center">Non en péril
@@ -7089,7 +7089,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">Statut COSEPAC / LEP</h4>
+                    <h4 class="text-center">Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-success">Non en péril <span class="badge">NP</span></li>
                        <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
@@ -7101,11 +7101,11 @@
 
 - trigger: cosewic-threatened-fra
   scope: html
-  mTime: 1489429879532
+  mTime: 1490808552858
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>Statut COSEPAC / LEP</caption>
+                       <caption>Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
                        <tbody>
                           <tr>
                              <td class="info text-center">Non en péril
@@ -7123,7 +7123,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">Statut COSEPAC / LEP</h4>
+                    <h4 class="text-center">Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-info">Non en péril <span class="badge">NP</span></li>
                        <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
@@ -7135,12 +7135,11 @@
 
 - trigger: cosewic-endangered-fra
   scope: html
-  mTime: 1489429955846
+  mTime: 1490808312390
   text: |
-        
         <div class="visible-xl visible-lg visible-md">
            <table class="table table-responsive">
-              <caption>Statut COSEPAC / LEP</caption>
+              <caption>Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
               <tbody>
                  <tr>
                     <td class="info text-center">Non en péril
@@ -7158,7 +7157,7 @@
            </table>
         </div>
         <div class="visible-sm visible-xs">
-           <h4 class="text-center">Statut COSEPAC / LEP</h4>
+           <h4 class="text-center">Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
            <ul class="list-group">
               <li class="list-group-item list-group-item-info">Non en péril <span class="badge">NP</span></li>
               <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
@@ -7170,11 +7169,11 @@
 
 - trigger: cosewic-special-fra
   scope: html
-  mTime: 1489429654012
+  mTime: 1490807972360
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>Statut COSEPAC / LEP</caption>
+                       <caption>Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
                        <tbody>
                           <tr>
                              <td class="info text-center">Non en péril
@@ -7192,7 +7191,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">Statut COSEPAC / LEP</h4>
+                    <h4 class="text-center">Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-info">Non en péril <span class="badge">NP</span></li>
                        <li class="list-group-item list-group-item active"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle."><strong>Préoccupante</strong></abbr> <span class="badge">P</span></li>
@@ -7204,11 +7203,11 @@
 
 - trigger: cosewic-not-at-risk-eng
   scope: html
-  mTime: 1490612899629
+  mTime: 1490807703780
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>COSEWIC / SARA Status</caption>
+                       <caption><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</caption>
                        <tbody>
                           <tr>
                              <td class="success text-center"><strong>Not at Risk</strong>
@@ -7226,7 +7225,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">COSEWIC / SARA Status</h4>
+                    <h4 class="text-center"><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-success"><strong>Not at Risk</strong> <span class="badge">NR</span></li>
                        <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
@@ -7238,11 +7237,11 @@
 
 - trigger: cosewic-extirpated-eng
   scope: html
-  mTime: 1489430569183
+  mTime: 1490807637207
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>COSEWIC / SARA Status</caption>
+                       <caption><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</strong> Status</caption>
                        <tbody>
                           <tr>
                              <td class="info text-center">Not at Risk
@@ -7260,7 +7259,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">COSEWIC / SARA Status</h4>
+                    <h4 class="text-center"><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</strong> Status</h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-info">Not at Risk <span class="badge">NR</span></li>
                        <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
@@ -7272,11 +7271,11 @@
 
 - trigger: cosewic-not-at-risk-fra
   scope: html
-  mTime: 1490613560460
+  mTime: 1490807946514
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>Statut COSEPAC / LEP</caption>
+                       <caption>Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
                        <tbody>
                           <tr>
                              <td class="success text-center"><strong>Non en péril</strong>
@@ -7294,7 +7293,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">Statut COSEPAC / LEP</h4>
+                    <h4 class="text-center">Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-success"><strong>Non en péril</strong> <span class="badge">NP</span></li>
                        <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
@@ -7306,11 +7305,11 @@
 
 - trigger: cosewic-extirpated-fra
   scope: html
-  mTime: 1489430007848
+  mTime: 1490807831067
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>Statut COSEPAC / LEP</caption>
+                       <caption>Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
                        <tbody>
                           <tr>
                              <td class="info text-center">Non en péril
@@ -7328,7 +7327,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">Statut COSEPAC / LEP</h4>
+                    <h4 class="text-center">Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-info">Non en péril <span class="badge">NP</span></li>
                        <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
@@ -7340,11 +7339,11 @@
 
 - trigger: cosewic-no-status-eng
   scope: html
-  mTime: 1490613468082
+  mTime: 1490807657431
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>COSEWIC / SARA Status</caption>
+                       <caption><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</strong> Status</caption>
                        <tbody>
                           <tr>
                              <td class="success text-center"><strong>No Status</strong>
@@ -7362,7 +7361,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">COSEWIC / SARA Status</h4>
+                    <h4 class="text-center"><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</strong> Status</h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-success"><strong>No Status</strong> <span class="badge">NS</span></li>
                        <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
@@ -7374,11 +7373,11 @@
 
 - trigger: cosewic-no-status-fra
   scope: html
-  mTime: 1490613481915
+  mTime: 1490807888207
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>Statut COSEPAC / LEP</caption>
+                       <caption>Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
                        <tbody>
                           <tr>
                              <td class="success text-center"><strong>Aucun statut</strong>
@@ -7396,7 +7395,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">Statut COSEPAC / LEP</h4>
+                    <h4 class="text-center">Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-success"><strong>Aucun statut</strong> <span class="badge">AS</span></li>
                        <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
@@ -7408,11 +7407,11 @@
 
 - trigger: cosewic-non-active-eng
   scope: html
-  mTime: 1490613512954
+  mTime: 1490807679589
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>COSEWIC / SARA Status</caption>
+                       <caption><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</caption>
                        <tbody>
                           <tr>
                              <td class="success text-center"><strong>Non-active</strong>
@@ -7430,7 +7429,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">COSEWIC / SARA Status</h4>
+                    <h4 class="text-center"><abbr title="Committee on the Status of Endangered Wildlife in Canada">COSEWIC</abbr> / <abbr title="Species at Risk Act">SARA</abbr> Status</h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-success"><strong>Non-active</strong> <span class="badge">NA</span></li>
                        <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
@@ -7442,11 +7441,11 @@
 
 - trigger: cosewic-non-active-fra
   scope: html
-  mTime: 1490613527804
+  mTime: 1490807917775
   text: |
         <div class="visible-xl visible-lg visible-md">
                     <table class="table table-responsive">
-                       <caption>Statut COSEPAC / LEP</caption>
+                       <caption>Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
                        <tbody>
                           <tr>
                              <td class="success text-center"><strong>Non active</strong>
@@ -7464,7 +7463,7 @@
                     </table>
                  </div>
                  <div class="visible-sm visible-xs">
-                    <h4 class="text-center">Statut COSEPAC / LEP</h4>
+                    <h4 class="text-center">Statut <abbr title="Le Comité sur la situation des espèces en péril au Canada">COSEPAC</abbr> / <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
                     <ul class="list-group">
                        <li class="list-group-item list-group-item-success"><strong>Non active</strong> <span class="badge">NA</span></li>
                        <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
