@@ -3683,7 +3683,6 @@
         </body>
         
         </html>
-        
 
 - trigger: template-new_fr
   scope: html
@@ -3725,7 +3724,6 @@
         </body>
         
         </html>
-        
 
 - trigger: sara-fra
   scope: html
@@ -8140,4 +8138,18 @@
         <ul class="lst-spcd">
             <li></li>
         </ul>
+
+- trigger: latinName-eng
+  scope: html
+  mTime: 1493161511334
+  description: The Scientific Name for a species used in the top-right corner panel of a SARA profile
+  text: |
+        <strong>Scientific name:</strong> <em>${1}</em><br>
+
+- trigger: latinName-fra
+  scope: html
+  mTime: 1493161548282
+  description: The Nom scientifique for a species used in the top-right corner panel of a SARA profile
+  text: |
+        <strong>Nom scientifique :</strong> <em>${1}</em><br>
 
