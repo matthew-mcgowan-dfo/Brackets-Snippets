@@ -3727,15 +3727,15 @@
 
 - trigger: sara-fra
   scope: html
-  mTime: 1493043267319
+  mTime: 1493316443436
   text: |
         <div class="visible-xl visible-lg visible-md">
                                 <table class="table table-responsive">
                                    <caption>Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
                                    <tbody>
                                       <tr>
-                                         <td class="success text-center">Non en péril
-                                            <br><span class="badge">NP</span></td>
+                                         <td class="active text-center"><strong>Aucun statut</strong>
+                                            <br><span class="badge">AS</span></td>
                                          <td class="info text-center"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr>
                                             <br><span class="badge">P</span></td>
                                          <td class="warning text-center"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr>
@@ -3751,7 +3751,7 @@
                              <div class="visible-sm visible-xs">
                                 <h4 class="text-center">Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
                                 <ul class="list-group">
-                                   <li class="list-group-item list-group-item-success">Non en péril <span class="badge">NP</span></li>
+                                   <li class="list-group-item"><strong>Aucun statut</strong> <span class="badge">AS</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
                                    <li class="list-group-item list-group-item-warning"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr> <span class="badge">M</span></li>
                                    <li class="list-group-item list-group-item-danger"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr> <span class="badge">EVD</span></li>
@@ -3761,15 +3761,15 @@
 
 - trigger: sara-eng
   scope: html
-  mTime: 1493043256871
+  mTime: 1493316851139
   text: |
         <div class="visible-xl visible-lg visible-md">
                                 <table class="table table-responsive">
                                    <caption><abbr title="Species at Risk Act">SARA</abbr> Status</caption>
                                    <tbody>
                                       <tr>
-                                         <td class="success text-center">Not at Risk
-                                            <br><span class="badge">NR</span></td>
+                                         <td class="active text-center">No Status
+                                            <br><span class="badge">NS</span></td>
                                          <td class="info text-center"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr>
                                             <br><span class="badge">SC</span></td>
                                          <td class="warning text-center"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr>
@@ -3785,7 +3785,7 @@
                              <div class="visible-sm visible-xs">
                                 <h4 class="text-center"><abbr title="Species at Risk Act">SARA</abbr> Status</h4>
                                 <ul class="list-group">
-                                   <li class="list-group-item list-group-item-success">Not at Risk <span class="badge">NR</span></li>
+                                   <li class="list-group-item">No Status <span class="badge">NS</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
                                    <li class="list-group-item list-group-item-warning"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr> <span class="badge">TH</span></li>
                                    <li class="list-group-item list-group-item-danger"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr> <span class="badge">EN</span></li>
@@ -3795,15 +3795,15 @@
 
 - trigger: sara-threatened-fra
   scope: html
-  mTime: 1493043210964
+  mTime: 1493315703339
   text: |
         <div class="visible-xl visible-lg visible-md">
                                 <table class="table table-responsive">
                                    <caption>Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
                                    <tbody>
                                       <tr>
-                                         <td class="info text-center">Non en péril
-                                            <br><span class="badge">NP</span></td>
+                                         <td class="info text-center">Aucun statut
+                                            <br><span class="badge">AS</span></td>
                                          <td class="info text-center"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr>
                                             <br><span class="badge">P</span></td>
                                          <td class="warning text-center"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète."><strong>Menacée</strong></abbr>
@@ -3819,7 +3819,7 @@
                              <div class="visible-sm visible-xs">
                                 <h4 class="text-center">Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
                                 <ul class="list-group">
-                                   <li class="list-group-item list-group-item-info">Non en péril <span class="badge">NP</span></li>
+                                   <li class="list-group-item list-group-item-info">Aucun statut <span class="badge">AS</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
                                    <li class="list-group-item list-group-item-warning"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète."><strong>Menacée</strong></abbr> <span class="badge">M</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr> <span class="badge">EVD</span></li>
@@ -3829,15 +3829,15 @@
 
 - trigger: sara-threatened-eng
   scope: html
-  mTime: 1493043195570
+  mTime: 1493315951203
   text: |
         <div class="visible-xl visible-lg visible-md">
                                 <table class="table table-responsive">
                                    <caption><abbr title="Species at Risk Act">SARA</abbr> Status</caption>
                                    <tbody>
                                       <tr>
-                                         <td class="info text-center">Not at Risk
-                                            <br><span class="badge">NR</span></td>
+                                         <td class="info text-center">No Status
+                                            <br><span class="badge">NS</span></td>
                                          <td class="info text-center"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr>
                                             <br><span class="badge">SC</span></td>
                                          <td class="warning text-center"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction"><strong>Threatened</strong></abbr>
@@ -3853,7 +3853,7 @@
                              <div class="visible-sm visible-xs">
                                 <h4 class="text-center"><abbr title="Species at Risk Act">SARA</abbr> Status</h4>
                                 <ul class="list-group">
-                                   <li class="list-group-item list-group-item-info">Not at Risk <span class="badge">NR</span></li>
+                                   <li class="list-group-item list-group-item-info">No Status <span class="badge">NS</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
                                    <li class="list-group-item list-group-item-warning"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction"><strong>Threatened</strong></abbr> <span class="badge">TH</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr> <span class="badge">EN</span></li>
@@ -3863,15 +3863,15 @@
 
 - trigger: sara-special-fra
   scope: html
-  mTime: 1493043135813
+  mTime: 1493315713370
   text: |
         <div class="visible-xl visible-lg visible-md">
                                 <table class="table table-responsive">
                                    <caption>Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
                                    <tbody>
                                       <tr>
-                                         <td class="info text-center">Non en péril
-                                            <br><span class="badge">NP</span></td>
+                                         <td class="info text-center">Aucun statut
+                                            <br><span class="badge">AS</span></td>
                                          <td class="bg-primary text-center"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle."><strong>Préoccupante</strong></abbr>
                                             <br><span class="badge">P</span></td>
                                          <td class="info text-center"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr>
@@ -3887,7 +3887,7 @@
                              <div class="visible-sm visible-xs">
                                 <h4 class="text-center">Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
                                 <ul class="list-group">
-                                   <li class="list-group-item list-group-item-info">Non en péril <span class="badge">NP</span></li>
+                                   <li class="list-group-item list-group-item-info">Aucun statut <span class="badge">AS</span></li>
                                    <li class="list-group-item list-group-item active"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle."><strong>Préoccupante</strong></abbr> <span class="badge">P</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr> <span class="badge">M</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr> <span class="badge">EVD</span></li>
@@ -3897,15 +3897,15 @@
 
 - trigger: sara-special-eng
   scope: html
-  mTime: 1493043114591
+  mTime: 1493316708027
   text: |
         <div class="visible-xl visible-lg visible-md">
                                 <table class="table table-responsive">
                                    <caption><abbr title="Species at Risk Act">SARA</abbr> Status</caption>
                                    <tbody>
                                       <tr>
-                                         <td class="info text-center">Not at Risk
-                                            <br><span class="badge">NR</span></td>
+                                         <td class="info text-center">No Status
+                                            <br><span class="badge">NS</span></td>
                                          <td class="bg-primary text-center"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats"><strong>Special Concern</strong></abbr>
                                             <br><span class="badge">SC</span></td>
                                          <td class="info text-center"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr>
@@ -3921,144 +3921,8 @@
                              <div class="visible-sm visible-xs">
                                 <h4 class="text-center"><abbr title="Species at Risk Act">SARA</abbr> Status</h4>
                                 <ul class="list-group">
-                                   <li class="list-group-item list-group-item-info">Not at Risk <span class="badge">NR</span></li>
+                                   <li class="list-group-item list-group-item-info">No Status <span class="badge">NS</span></li>
                                    <li class="list-group-item list-group-item active"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats"><strong>Special Concern</strong></abbr> <span class="badge">SC</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr> <span class="badge">TH</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr> <span class="badge">EN</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="No longer exists in the wild in Canada, but exists elsewhere">Extirpated</abbr> <span class="badge">EX</span></li>
-                                </ul>
-                             </div>
-
-- trigger: sara-not-at-risk-fra
-  scope: html
-  mTime: 1493043058419
-  text: |
-        <div class="visible-xl visible-lg visible-md">
-                                <table class="table table-responsive">
-                                   <caption>Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
-                                   <tbody>
-                                      <tr>
-                                         <td class="active text-center"><strong>Non en péril</strong>
-                                            <br><span class="badge">NP</span></td>
-                                         <td class="info text-center"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr>
-                                            <br><span class="badge">P</span></td>
-                                         <td class="info text-center"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr>
-                                            <br><span class="badge">M</span></td>
-                                         <td class="info text-center"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr>
-                                            <br><span class="badge">EVD</span></td>
-                                         <td class="info text-center"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr>
-                                            <br><span class="badge">DP</span></td>
-                                      </tr>
-                                   </tbody>
-                                </table>
-                             </div>
-                             <div class="visible-sm visible-xs">
-                                <h4 class="text-center">Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
-                                <ul class="list-group">
-                                   <li class="list-group-item"><strong>Non en péril</strong> <span class="badge">NP</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr> <span class="badge">M</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr> <span class="badge">EVD</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr> <span class="badge">DP</span></li>
-                                </ul>
-                             </div>
-
-- trigger: sara-not-at-risk-eng
-  scope: html
-  mTime: 1493043040117
-  text: |
-        <div class="visible-xl visible-lg visible-md">
-                                <table class="table table-responsive">
-                                   <caption><abbr title="Species at Risk Act">SARA</abbr> Status</caption>
-                                   <tbody>
-                                      <tr>
-                                         <td class="active text-center"><strong>Not at Risk</strong>
-                                            <br><span class="badge">NR</span></td>
-                                         <td class="info text-center"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr>
-                                            <br><span class="badge">SC</span></td>
-                                         <td class="info text-center"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr>
-                                            <br><span class="badge">TH</span></td>
-                                         <td class="info text-center"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr>
-                                            <br><span class="badge">EN</span></td>
-                                         <td class="info text-center"><abbr title="No longer exists in the wild in Canada, but exists elsewhere">Extirpated</abbr>
-                                            <br><span class="badge">EX</span></td>
-                                      </tr>
-                                   </tbody>
-                                </table>
-                             </div>
-                             <div class="visible-sm visible-xs">
-                                <h4 class="text-center"><abbr title="Species at Risk Act">SARA</abbr> Status</h4>
-                                <ul class="list-group">
-                                   <li class="list-group-item"><strong>Not at Risk</strong> <span class="badge">NR</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr> <span class="badge">TH</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr> <span class="badge">EN</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="No longer exists in the wild in Canada, but exists elsewhere">Extirpated</abbr> <span class="badge">EX</span></li>
-                                </ul>
-                             </div>
-
-- trigger: sara-non-active-fra
-  scope: html
-  mTime: 1493042977630
-  text: |
-        <div class="visible-xl visible-lg visible-md">
-                                <table class="table table-responsive">
-                                   <caption>Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
-                                   <tbody>
-                                      <tr>
-                                         <td class="active text-center"><strong>Non active</strong>
-                                            <br><span class="badge">NA</span></td>
-                                         <td class="info text-center"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr>
-                                            <br><span class="badge">P</span></td>
-                                         <td class="info text-center"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr>
-                                            <br><span class="badge">M</span></td>
-                                         <td class="info text-center"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr>
-                                            <br><span class="badge">EVD</span></td>
-                                         <td class="info text-center"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr>
-                                            <br><span class="badge">DP</span></td>
-                                      </tr>
-                                   </tbody>
-                                </table>
-                             </div>
-                             <div class="visible-sm visible-xs">
-                                <h4 class="text-center">Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
-                                <ul class="list-group">
-                                   <li class="list-group-item"><strong>Non active</strong> <span class="badge">NA</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr> <span class="badge">M</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr> <span class="badge">EVD</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr> <span class="badge">DP</span></li>
-                                </ul>
-                             </div>
-
-- trigger: sara-non-active-eng
-  scope: html
-  mTime: 1493042962201
-  text: |
-        <div class="visible-xl visible-lg visible-md">
-                                <table class="table table-responsive">
-                                   <caption><abbr title="Species at Risk Act">SARA</abbr> Status</caption>
-                                   <tbody>
-                                      <tr>
-                                         <td class="active text-center"><strong>Non-active</strong>
-                                            <br><span class="badge">NA</span></td>
-                                         <td class="info text-center"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr>
-                                            <br><span class="badge">SC</span></td>
-                                         <td class="info text-center"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr>
-                                            <br><span class="badge">TH</span></td>
-                                         <td class="info text-center"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr>
-                                            <br><span class="badge">EN</span></td>
-                                         <td class="info text-center"><abbr title="No longer exists in the wild in Canada, but exists elsewhere">Extirpated</abbr>
-                                            <br><span class="badge">EX</span></td>
-                                      </tr>
-                                   </tbody>
-                                </table>
-                             </div>
-                             <div class="visible-sm visible-xs">
-                                <h4 class="text-center"><abbr title="Species at Risk Act">SARA</abbr> Status</h4>
-                                <ul class="list-group">
-                                   <li class="list-group-item"><strong>Non-active</strong> <span class="badge">NA</span></li>
-                                   <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr> <span class="badge">TH</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr> <span class="badge">EN</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="No longer exists in the wild in Canada, but exists elsewhere">Extirpated</abbr> <span class="badge">EX</span></li>
@@ -4067,7 +3931,7 @@
 
 - trigger: sara-no-status-fra
   scope: html
-  mTime: 1493042904499
+  mTime: 1493316271300
   text: |
         <div class="visible-xl visible-lg visible-md">
                                 <table class="table table-responsive">
@@ -4101,7 +3965,7 @@
 
 - trigger: sara-no-status-eng
   scope: html
-  mTime: 1493042884121
+  mTime: 1493315928944
   text: |
         <div class="visible-xl visible-lg visible-md">
                                 <table class="table table-responsive">
@@ -4135,15 +3999,15 @@
 
 - trigger: sara-extirpated-fra
   scope: html
-  mTime: 1493042826006
+  mTime: 1493315743283
   text: |
         <div class="visible-xl visible-lg visible-md">
                                 <table class="table table-responsive">
                                    <caption>Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
                                    <tbody>
                                       <tr>
-                                         <td class="info text-center">Non en péril
-                                            <br><span class="badge">NP</span></td>
+                                         <td class="info text-center">Aucun statut
+                                            <br><span class="badge">AS</span></td>
                                          <td class="info text-center"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr>
                                             <br><span class="badge">P</span></td>
                                          <td class="info text-center"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr>
@@ -4159,7 +4023,7 @@
                              <div class="visible-sm visible-xs">
                                 <h4 class="text-center">Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
                                 <ul class="list-group">
-                                   <li class="list-group-item list-group-item-info">Non en péril <span class="badge">NP</span></li>
+                                   <li class="list-group-item list-group-item-info">Aucun statut <span class="badge">AS</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr> <span class="badge">M</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr> <span class="badge">EVD</span></li>
@@ -4169,15 +4033,15 @@
 
 - trigger: sara-extirpated-eng
   scope: html
-  mTime: 1493042809863
+  mTime: 1493315920914
   text: |
         <div class="visible-xl visible-lg visible-md">
                                 <table class="table table-responsive">
                                    <caption><abbr title="Species at Risk Act">SARA</abbr> Status</caption>
                                    <tbody>
                                       <tr>
-                                         <td class="info text-center">Not at Risk
-                                            <br><span class="badge">NR</span></td>
+                                         <td class="info text-center">No Status
+                                            <br><span class="badge">NS</span></td>
                                          <td class="info text-center"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr>
                                             <br><span class="badge">SC</span></td>
                                          <td class="info text-center"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr>
@@ -4193,7 +4057,7 @@
                              <div class="visible-sm visible-xs">
                                 <h4 class="text-center"><abbr title="Species at Risk Act">SARA</abbr> Status</h4>
                                 <ul class="list-group">
-                                   <li class="list-group-item list-group-item-info">Not at Risk <span class="badge">NR</span></li>
+                                   <li class="list-group-item list-group-item-info">No Status <span class="badge">NS</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr> <span class="badge">TH</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr> <span class="badge">EN</span></li>
@@ -4203,15 +4067,15 @@
 
 - trigger: sara-endangered-fra
   scope: html
-  mTime: 1493042744779
+  mTime: 1493315759556
   text: |
         <div class="visible-xl visible-lg visible-md">
                                 <table class="table table-responsive">
                                    <caption>Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
                                    <tbody>
                                       <tr>
-                                         <td class="info text-center">Non en péril
-                                            <br><span class="badge">NP</span></td>
+                                         <td class="info text-center">Aucun statut
+                                            <br><span class="badge">AS</span></td>
                                          <td class="info text-center"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr>
                                             <br><span class="badge">P</span></td>
                                          <td class="info text-center"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr>
@@ -4227,7 +4091,7 @@
                              <div class="visible-sm visible-xs">
                                 <h4 class="text-center">Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
                                 <ul class="list-group">
-                                   <li class="list-group-item list-group-item-info">Non en péril <span class="badge">NP</span></li>
+                                   <li class="list-group-item list-group-item-info">Aucun statut <span class="badge">AS</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr> <span class="badge">M</span></li>
                                    <li class="list-group-item list-group-item-danger"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente."><strong>En voie de disparition</strong></abbr> <span class="badge">EVD</span></li>
@@ -4237,15 +4101,15 @@
 
 - trigger: sara-endangered-eng
   scope: html
-  mTime: 1493042723260
+  mTime: 1493315909762
   text: |
         <div class="visible-xl visible-lg visible-md">
                                 <table class="table table-responsive">
                                    <caption><abbr title="Species at Risk Act">SARA</abbr> Status</caption>
                                    <tbody>
                                       <tr>
-                                         <td class="info text-center">Not at Risk
-                                            <br><span class="badge">NR</span></td>
+                                         <td class="info text-center">No Status
+                                            <br><span class="badge">NS</span></td>
                                          <td class="info text-center"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr>
                                             <br><span class="badge">SC</span></td>
                                          <td class="info text-center"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr>
@@ -4261,7 +4125,7 @@
                              <div class="visible-sm visible-xs">
                                 <h4 class="text-center"><abbr title="Species at Risk Act">SARA</abbr> Status</h4>
                                 <ul class="list-group">
-                                   <li class="list-group-item list-group-item-info">Not at Risk <span class="badge">NR</span></li>
+                                   <li class="list-group-item list-group-item-info">No Status <span class="badge">NS</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
                                    <li class="list-group-item list-group-item-info"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr> <span class="badge">TH</span></li>
                                    <li class="list-group-item list-group-item-danger"><abbr title="Facing imminent extirpation or extinction"><strong>Endangered</strong></abbr> <span class="badge">EN</span></li>
@@ -4269,10 +4133,10 @@
                                 </ul>
                              </div>
 
-- trigger: latinName
+- trigger: latinName-h2
   description: "The H2 tag for a species' latin name"
   scope: html
-  mTime: 1493040837532
+  mTime: 1493316902574
   text: |
         <h2 class="text-muted mrgn-tp-0"><em>${1}</em></h2>
 
@@ -8141,7 +8005,7 @@
 
 - trigger: latinName-eng
   scope: html
-  mTime: 1493161511334
+  mTime: 1493316879113
   description: The Scientific Name for a species used in the top-right corner panel of a SARA profile
   text: |
         <strong>Scientific name:</strong> <em>${1}</em><br>
