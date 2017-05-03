@@ -8017,3 +8017,633 @@
   text: |
         <strong>Nom scientifique :</strong> <em>${1}</em><br>
 
+- trigger: dfo-advanced-service-eng
+  description: "An advanced service initiation page in DFO's English page template"
+  scope: html
+  mTime: 1493831496998
+  text: |
+        <!doctype html>
+        <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
+        <!--[if gt IE 8]><!-->
+        <html class="no-js" lang="en">
+        <!--<![endif]-->
+        
+        <head>
+           <meta charset="utf-8" />
+           <title>pageTitle</title>
+           <meta content="width=device-width, initial-scale=1" name="viewport" />
+           <meta name="description" content="pageDescription" />
+           <meta name="dcterms.title" content="pageTitle" />
+           <meta name="dcterms.creator" content="Government of Canada, Fisheries and Oceans Canada, Communications Branch" />
+           <meta name="dcterms.issued" title="W3CDTF" content="2000-00-00" />
+           <meta name="dcterms.modified" title="W3CDTF" content="2000-00-00" />
+           <meta name="dcterms.subject" title="scheme" content="pageSubject" />
+           <meta name="dcterms.language" title="ISO639-2" content="eng" />
+           <!--#include virtual="/includes/css-header.html" -->
+           <script src="/includes/scripts/dfo-mpo-ga.js"></script>
+        </head>
+        
+        <body vocab="http://schema.org/" typeof="WebPage">
+           <ul id="wb-tphp">
+              <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a> </li>
+              <li class="wb-slc visible-sm visible-md visible-lg"> <a class="wb-sl" href="#wb-info">Skip to "About this site"</a> </li>
+           </ul>
+           <header role="banner">
+              <!--#include virtual="/includes/header4-en.html" -->
+              <nav role="navigation" id="wb-bc" property="breadcrumb">
+                 <h2>You are here:</h2>
+                 <div class="container">
+                    <div class="row">
+                       <ol class="breadcrumb">
+                          <li><a href="/index-eng.htm">Home</a></li>
+                          <li class="active">pageTitle</li>
+                       </ol>
+                    </div>
+                 </div>
+              </nav>
+           </header>
+           <main role="main" property="mainContentOfPage" class="container">
+              <div class="row">
+                 <div class="col-md-12">
+                    <section>
+                       <!-- MainContentStart -->
+                       <h1 property="name" id="wb-cont">[Service name] - 1. [Step / section page name]</h1>
+                       <p class="gc-byline"><strong>From <a href="/index-eng.htm">Fisheries and Oceans Canada</a></strong></p>
+                       <div class="gc-stp-stp">
+                          <div class="row">
+                             <ul class="toc lst-spcd col-md-12 list-unstyled">
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item active">1. [Step / section page name]</a></li>
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item" href="page2-en.html">2. [Step / section page name]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-sm"><a class="list-group-item" href="page3-en.html">3. [Step / section page name]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-md clr-lft-lg"><a class="list-group-item" href="page4-en.html">4. [Step / section page name]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-sm"><a class="list-group-item" href="page5-en.html">5. [Step / section page name]</a></li>
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item" href="page6-en.html">6. [Step / section page name]</a></li>
+                             </ul>
+                          </div>
+                       </div>
+                       <div class="row">
+                          <section class="col-md-8">
+                             <h2>1. [Step / section page name]</h2>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et a adipisci nostrum optio dolorum sint ipsa facilis nisi quisquam laboriosam.</p>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium odio adipisci ad neque distinctio quod molestias, molestiae accusamus quo aspernatur expedita blanditiis quam! Esse cum modi atque, beatae aliquam, dolor.</p>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aliquid hic numquam obcaecati ea, laborum accusamus culpa atque voluptate distinctio et omnis! Alias, beatae, tenetur.</p>
+                             <section>
+                                <h3>[Sub heading]</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
+                             </section>
+                             <section>
+                                <h3>[Sub heading]</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
+                             </section>
+                             <nav role="navigation" class="mrgn-bttm-lg">
+                                <h3 class="wb-inv">Document navigation</h3>
+                                <ul class="pager">
+                                   <li class="previous"><a href="index-en.html" rel="prev">Previous<span class="wb-inv">: 1. [Step / section page name]</span></a></li>
+                                   <li class="next"><a href="page3-en.html" rel="next">Next<span class="wb-inv">: 3. [Step / section page name]</span></a></li>
+                                </ul>
+                             </nav>
+                          </section>
+                          <div class="col-md-4">
+                             <aside class="lnkbx">
+                                <h2>Guides and help</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Related guides and help 1]</a></li>
+                                   <li><a href="#">[Related guides and help 2]</a></li>
+                                   <li><a href="#">[Related guides and help 3]</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Contact us</h2>
+                                <p>[Office name or location]<br> 1300-70 Somerset St. W<br> Moncton NB E1C 8P2</p>
+                                <dl>
+                                   <dt>Telephone:</dt>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 123</dd>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 124</dd>
+                                   <dt><span class="glyphicon glyphicon-envelope"></span> Email:</dt>
+                                   <dd><a href="mailto:firstname.lastname@canada.ca">firstname.lastname@canada.ca</a></dd>
+                                </dl>
+                                <ul>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Related services and information</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Related services 1]</a></li>
+                                   <li><a href="#">[Related services 2]</a></li>
+                                   <li><a href="#">[Related information 1]</a></li>
+                                   <li><a href="#">[Related information 2]</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Related program</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Program name]</a></li>
+                                </ul>
+                             </aside>
+                          </div>
+                       </div>
+                       <!-- MainContentEnd -->
+                    </section>
+                 </div>
+              </div>
+              <dl id="wb-dtmd" property="dateModified">
+                 <dt>Date modified:&#32;</dt>
+                 <dd>
+                    <time>2000-00-00</time>
+                 </dd>
+              </dl>
+           </main>
+           <!--#include virtual="/includes/footer4-en.html" -->
+           <!--#include virtual="/includes/css-footer.html" -->
+        </body>
+        
+        </html>
+        
+
+- trigger: dfo-advanced-service-fra
+  description: "An advanced service initiation page in DFO's French page template"
+  scope: html
+  mTime: 1493832076411
+  text: |
+        <!doctype html>
+        <!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr"><![endif]-->
+        <!--[if gt IE 8]><!-->
+        <html class="no-js" lang="fr">
+        <!--<![endif]-->
+        
+        <head>
+           <meta charset="utf-8" />
+           <title>pageTitle</title>
+           <meta content="width=device-width, initial-scale=1" name="viewport" />
+           <meta name="description" content="pageDescription" />
+           <meta name="dcterms.title" content="pageTitle" />
+           <meta name="dcterms.creator" content="Gouvernement du Canada, Pêches et Océans Canada, Direction générale des communications" />
+           <meta name="dcterms.issued" title="W3CDTF" content="2000-00-00" />
+           <meta name="dcterms.modified" title="W3CDTF" content="2000-00-00" />
+           <meta name="dcterms.subject" title="scheme" content="PageSubject" />
+           <meta name="dcterms.language" title="ISO639-2" content="fra" />
+           <!--#include virtual="/includes/css-header.html" -->
+           <script src="/includes/scripts/dfo-mpo-ga.js"></script>
+        </head>
+        
+        <body vocab="http://schema.org/" typeof="WebPage">
+           <ul id="wb-tphp">
+              <li class="wb-slc"> <a class="wb-sl" href="#wb-cont">Passer au contenu principal</a> </li>
+              <li class="wb-slc visible-sm visible-md visible-lg"> <a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a> </li>
+           </ul>
+           <header role="banner">
+              <!--#include virtual="/includes/header4-fr.html" -->
+              <nav role="navigation" id="wb-bc" property="breadcrumb">
+                 <h2>Vous êtes dans :</h2>
+                 <div class="container">
+                    <div class="row">
+                       <ol class="breadcrumb">
+                          <li><a href="/index-fra.htm">Accueil</a></li>
+                          <li class="active">pageTitle</li>
+                       </ol>
+                    </div>
+                 </div>
+              </nav>
+           </header>
+           <main role="main" property="mainContentOfPage" class="container">
+              <div class="row">
+                 <div class="col-md-12">
+                    <section>
+                       <!-- MainContentStart -->
+                       <h1 property="name" id="wb-cont">[Nom du service] - 2. [Nom de la page de la section ou de l’étape]</h1>
+                       <p class="gc-byline"><strong>De <a href="/index-fra.htm">Pêches et Océans Canada</a></strong></p>
+                       <div class="gc-stp-stp">
+                          <div class="row">
+                             <ul class="toc lst-spcd col-md-12 list-unstyled">
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item active">1. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item" href="page3-fr.html">2. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-sm"><a class="list-group-item" href="page3-fr.html">3. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-md clr-lft-lg"><a class="list-group-item" href="page4-fr.html">4. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-sm"><a class="list-group-item" href="page5-fr.html">5. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item" href="page6-fr.html">6. [Nom de la page de la section ou de l’étape]</a></li>
+                             </ul>
+                          </div>
+                       </div>
+                       <div class="row">
+                          <section class="col-md-8">
+                             <h2>2. [Nom de la page de la section ou de l’étape]</h2>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et a adipisci nostrum optio dolorum sint ipsa facilis nisi quisquam laboriosam.</p>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium odio adipisci ad neque distinctio quod molestias, molestiae accusamus quo aspernatur expedita blanditiis quam! Esse cum modi atque, beatae aliquam, dolor.</p>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aliquid hic numquam obcaecati ea, laborum accusamus culpa atque voluptate distinctio et omnis! Alias, beatae, tenetur.</p>
+                             <section>
+                                <h3>[Sous-titre]</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
+                             </section>
+                             <section>
+                                <h3>[Sous-titre]</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
+                             </section>
+                             <nav role="navigation" class="mrgn-bttm-lg">
+                                <h3 class="wb-inv">Navigation dans le document</h3>
+                                <ul class="pager">
+                                   <li class="previous"><a href="page3-fr.html" rel="prev">Précédent<span class="wb-inv"> : 3. [Nom de la page de la section ou de l’étape]</span></a></li>
+                                   <li class="next"><a href="page5-fr.html" rel="next">Suivant<span class="wb-inv"> : 5. [Nom de la page de la section ou de l’étape]</span></a></li>
+                                </ul>
+                             </nav>
+                          </section>
+                          <div class="col-md-4">
+                             <aside class="lnkbx">
+                                <h2>Guides et aide</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Guides connexes et aide 1]</a></li>
+                                   <li><a href="#">[Guides connexes et aide 2]</a></li>
+                                   <li><a href="#">[Guides connexes et aide 3]</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Contactez-nous</h2>
+                                <p>[Office name or location]<br> 1300-70 Somerset St. W<br> Moncton NB E1C 8P2</p>
+                                <dl>
+                                   <dt>Téléphone:</dt>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 123</dd>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 124</dd>
+                                   <dt><span class="glyphicon glyphicon-envelope"></span> Courriel:</dt>
+                                   <dd><a href="mailto:firstname.lastname@canada.ca">firstname.lastname@canada.ca</a></dd>
+                                </dl>
+                                <ul>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Services et renseignements connexes</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Services connexes 1]</a></li>
+                                   <li><a href="#">[Services connexes 2]</a></li>
+                                   <li><a href="#">[Renseignements connexes 1]</a></li>
+                                   <li><a href="#">[Renseignements connexes 2]</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Programme connexe</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Nom du programme]</a></li>
+                                </ul>
+                             </aside>
+                          </div>
+                       </div>
+                       <!-- MainContentEnd -->
+                    </section>
+                 </div>
+              </div>
+              <dl id="wb-dtmd" property="dateModified">
+                 <dt>Date de modification&#160;:&#32;</dt>
+                 <dd>
+                    <time>2000-00-00</time>
+                 </dd>
+              </dl>
+           </main>
+           <!--#include virtual="/includes/footer4-fr.html" -->
+           <!--#include virtual="/includes/css-footer.html" -->
+        </body>
+        
+        </html>
+        
+
+- trigger: simple-service-eng
+  description: The main content for a simple service initation page in Canada.ca
+  scope: html
+  mTime: 1493832254050
+  text: |
+        <h1 property="name" id="wb-cont">pageTitle</h1>
+                       <p class="gc-byline"><strong>From <a href="./institution-en.html">[Institution name]</a></strong></p>
+                       <div class="row">
+                          <div class="col-md-8">
+                             <p>[Service name], lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsam deserunt, doloremque mollitia laudantium quas ut accusamus perspiciatis repellendus quaerat omnis corporis laborum quasi magni possimus qui necessitatibus, aperiam enim.</p>
+                             <section>
+                                <h2>[Eligibility details]</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
+                             </section>
+                             <section>
+                                <h2>[What you need before you start]</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
+                             </section>
+                             <p><a href="#" class="btn btn-lg btn-primary mrgn-tp-md">[Apply now]</a></p>
+                             <section class="gc-cntct-lst">
+                                <h2>[Other ways to apply]</h2>
+                                <dl class="dl-horizontal">
+                                   <dt>By phone:</dt>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 123-456-7890</dd>
+                                   <dt>In person:</dt>
+                                   <dd>Lorem ipsum dolor sit amet
+                                      <br> 1234 street ave.
+                                      <br> City, Province
+                                      <br> A1B 2C3</dd>
+                                   <dt>By mail:</dt>
+                                   <dd>Lorem ipsum dolor sit amet
+                                      <br> 1234 street ave.
+                                      <br> City, Province
+                                      <br> A1B 2C3</dd>
+                                </dl>
+                             </section>
+                          </div>
+                          <div class="col-md-4">
+                             <section class="lnkbx">
+                                <h2 class="mrgn-tp-0">Guides and help</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Related guides and help 1]</a></li>
+                                   <li><a href="#">[Related guides and help 2]</a></li>
+                                   <li><a href="#">[Related guides and help 3]</a></li>
+                                </ul>
+                             </section>
+                             <section class="lnkbx">
+                                <h2>Contact us</h2>
+                                <p>[Office name or location]
+                                   <br> 1300-70 Somerset St. W
+                                   <br> Moncton NB E1C 8P2</p>
+                                <dl>
+                                   <dt>Telephone:</dt>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 123</dd>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 124</dd>
+                                   <dt>Email:</dt>
+                                   <dd><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:firstname.lastname@canada.ca">firstname.lastname@canada.ca</a></dd>
+                                </dl>
+                                <ul>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                </ul>
+                             </section>
+                             <section class="lnkbx">
+                                <h2>Related services and information</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Related services 1]</a></li>
+                                   <li><a href="#">[Related services 2]</a></li>
+                                   <li><a href="#">[Related information 1]</a></li>
+                                   <li><a href="#">[Related information 2]</a></li>
+                                </ul>
+                             </section>
+                             <section class="lnkbx">
+                                <h2>Related program</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Program name]</a></li>
+                                </ul>
+                             </section>
+                          </div>
+                       </div>
+
+- trigger: simple-service-fra
+  description: The main content for a simple service initation page in Canada.ca
+  scope: html
+  mTime: 1493832291835
+  text: |
+        <h1 id="wb-cont" property="name">pageTitle</h1>
+                       <p class="gc-byline"><strong>De <a href="./institution-fr.html">[nom de l'institution]</a></strong></p>
+                       <div class="row">
+                          <div class="col-md-8">
+                             <p>[Nom du service], lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsam deserunt, doloremque mollitia laudantium quas ut accusamus perspiciatis repellendus quaerat omnis corporis laborum quasi magni possimus qui necessitatibus, aperiam enim.</p>
+                             <section>
+                                <h2>[Détails sur l’admissibilité]</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
+                             </section>
+                             <section>
+                                <h2>[À savoir avant de commencer]</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
+                             </section>
+                             <p><a href="#" class="btn btn-lg btn-primary mrgn-tp-md">[Faire une demande]</a></p>
+                             <section class="gc-cntct-lst">
+                                <h2>[Autres façons de présenter une demande]</h2>
+                                <dl class="dl-horizontal">
+                                   <dt>Par téléphone&nbsp;:</dt>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 123-456-7890</dd>
+                                   <dt>En personne&nbsp;:</dt>
+                                   <dd>Lorem ipsum dolor sit amet
+                                      <br> 1234, avenue de la Rue
+                                      <br> Ville (Province)
+                                      <br> A1B 2C3</dd>
+                                   <dt>Par courrier&nbsp;:</dt>
+                                   <dd>Lorem ipsum dolor sit amet
+                                      <br> 1234, avenue de la Rue
+                                      <br> Ville (Province)
+                                      <br> A1B 2C3</dd>
+                                </dl>
+                             </section>
+                          </div>
+                          <div class="col-md-4">
+                             <section class="lnkbx">
+                                <h2 class="mrgn-tp-0">Guides et aide</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Guides connexes et aide 1]</a></li>
+                                   <li><a href="#">[Guides connexes et aide 2]</a></li>
+                                   <li><a href="#">[Guides connexes et aide 3]</a></li>
+                                </ul>
+                             </section>
+                             <section class="lnkbx">
+                                <h2>Contactez-nous</h2>
+                                <p>[Office name or location]
+                                   <br> 1300-70 Somerset St. W
+                                   <br> Moncton NB E1C 8P2</p>
+                                <dl>
+                                   <dt>Téléphone:</dt>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 123</dd>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 124</dd>
+                                   <dt>Courriel:</dt>
+                                   <dd><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:firstname.lastname@canada.ca">firstname.lastname@canada.ca</a></dd>
+                                </dl>
+                                <ul>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                </ul>
+                             </section>
+                             <section class="lnkbx">
+                                <h2>Services et renseignements connexes</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Services connexes 1]</a></li>
+                                   <li><a href="#">[Services connexes 2]</a></li>
+                                   <li><a href="#">[Renseignements connexes 1]</a></li>
+                                   <li><a href="#">[Renseignements connexes 2]</a></li>
+                                </ul>
+                             </section>
+                             <section class="lnkbx">
+                                <h2>Programme connexe</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Nom du programme]</a></li>
+                                </ul>
+                             </section>
+                          </div>
+                       </div>
+
+- trigger: advanced-service-eng
+  description: An advanced service initiation page in the Canada.ca template
+  scope: html
+  mTime: 1493832326130
+  text: |
+        <h1 property="name" id="wb-cont">[Service name] - 1. [Step / section page name]</h1>
+                       <p class="gc-byline"><strong>From <a href="/index-eng.htm">Fisheries and Oceans Canada</a></strong></p>
+                       <div class="gc-stp-stp">
+                          <div class="row">
+                             <ul class="toc lst-spcd col-md-12 list-unstyled">
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item active">1. [Step / section page name]</a></li>
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item" href="page2-en.html">2. [Step / section page name]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-sm"><a class="list-group-item" href="page3-en.html">3. [Step / section page name]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-md clr-lft-lg"><a class="list-group-item" href="page4-en.html">4. [Step / section page name]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-sm"><a class="list-group-item" href="page5-en.html">5. [Step / section page name]</a></li>
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item" href="page6-en.html">6. [Step / section page name]</a></li>
+                             </ul>
+                          </div>
+                       </div>
+                       <div class="row">
+                          <section class="col-md-8">
+                             <h2>1. [Step / section page name]</h2>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et a adipisci nostrum optio dolorum sint ipsa facilis nisi quisquam laboriosam.</p>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium odio adipisci ad neque distinctio quod molestias, molestiae accusamus quo aspernatur expedita blanditiis quam! Esse cum modi atque, beatae aliquam, dolor.</p>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aliquid hic numquam obcaecati ea, laborum accusamus culpa atque voluptate distinctio et omnis! Alias, beatae, tenetur.</p>
+                             <section>
+                                <h3>[Sub heading]</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
+                             </section>
+                             <section>
+                                <h3>[Sub heading]</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
+                             </section>
+                             <nav role="navigation" class="mrgn-bttm-lg">
+                                <h3 class="wb-inv">Document navigation</h3>
+                                <ul class="pager">
+                                   <li class="previous"><a href="index-en.html" rel="prev">Previous<span class="wb-inv">: 1. [Step / section page name]</span></a></li>
+                                   <li class="next"><a href="page3-en.html" rel="next">Next<span class="wb-inv">: 3. [Step / section page name]</span></a></li>
+                                </ul>
+                             </nav>
+                          </section>
+                          <div class="col-md-4">
+                             <aside class="lnkbx">
+                                <h2>Guides and help</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Related guides and help 1]</a></li>
+                                   <li><a href="#">[Related guides and help 2]</a></li>
+                                   <li><a href="#">[Related guides and help 3]</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Contact us</h2>
+                                <p>[Office name or location]<br> 1300-70 Somerset St. W<br> Moncton NB E1C 8P2</p>
+                                <dl>
+                                   <dt>Telephone:</dt>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 123</dd>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 124</dd>
+                                   <dt><span class="glyphicon glyphicon-envelope"></span> Email:</dt>
+                                   <dd><a href="mailto:firstname.lastname@canada.ca">firstname.lastname@canada.ca</a></dd>
+                                </dl>
+                                <ul>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Related services and information</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Related services 1]</a></li>
+                                   <li><a href="#">[Related services 2]</a></li>
+                                   <li><a href="#">[Related information 1]</a></li>
+                                   <li><a href="#">[Related information 2]</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Related program</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Program name]</a></li>
+                                </ul>
+                             </aside>
+                          </div>
+                       </div>
+
+- trigger: advanced-service-fra
+  description: An advanced service initiation page in the Canada.ca template
+  scope: html
+  mTime: 1493832359746
+  text: |
+        <h1 property="name" id="wb-cont">[Nom du service] - 2. [Nom de la page de la section ou de l’étape]</h1>
+                       <p class="gc-byline"><strong>De <a href="/index-fra.htm">Pêches et Océans Canada</a></strong></p>
+                       <div class="gc-stp-stp">
+                          <div class="row">
+                             <ul class="toc lst-spcd col-md-12 list-unstyled">
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item active">1. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item" href="page3-fr.html">2. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-sm"><a class="list-group-item" href="page3-fr.html">3. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-md clr-lft-lg"><a class="list-group-item" href="page4-fr.html">4. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-sm"><a class="list-group-item" href="page5-fr.html">5. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item" href="page6-fr.html">6. [Nom de la page de la section ou de l’étape]</a></li>
+                             </ul>
+                          </div>
+                       </div>
+                       <div class="row">
+                          <section class="col-md-8">
+                             <h2>2. [Nom de la page de la section ou de l’étape]</h2>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et a adipisci nostrum optio dolorum sint ipsa facilis nisi quisquam laboriosam.</p>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium odio adipisci ad neque distinctio quod molestias, molestiae accusamus quo aspernatur expedita blanditiis quam! Esse cum modi atque, beatae aliquam, dolor.</p>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aliquid hic numquam obcaecati ea, laborum accusamus culpa atque voluptate distinctio et omnis! Alias, beatae, tenetur.</p>
+                             <section>
+                                <h3>[Sous-titre]</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
+                             </section>
+                             <section>
+                                <h3>[Sous-titre]</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
+                             </section>
+                             <nav role="navigation" class="mrgn-bttm-lg">
+                                <h3 class="wb-inv">Navigation dans le document</h3>
+                                <ul class="pager">
+                                   <li class="previous"><a href="page3-fr.html" rel="prev">Précédent<span class="wb-inv"> : 3. [Nom de la page de la section ou de l’étape]</span></a></li>
+                                   <li class="next"><a href="page5-fr.html" rel="next">Suivant<span class="wb-inv"> : 5. [Nom de la page de la section ou de l’étape]</span></a></li>
+                                </ul>
+                             </nav>
+                          </section>
+                          <div class="col-md-4">
+                             <aside class="lnkbx">
+                                <h2>Guides et aide</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Guides connexes et aide 1]</a></li>
+                                   <li><a href="#">[Guides connexes et aide 2]</a></li>
+                                   <li><a href="#">[Guides connexes et aide 3]</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Contactez-nous</h2>
+                                <p>[Office name or location]<br> 1300-70 Somerset St. W<br> Moncton NB E1C 8P2</p>
+                                <dl>
+                                   <dt>Téléphone:</dt>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 123</dd>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 124</dd>
+                                   <dt><span class="glyphicon glyphicon-envelope"></span> Courriel:</dt>
+                                   <dd><a href="mailto:firstname.lastname@canada.ca">firstname.lastname@canada.ca</a></dd>
+                                </dl>
+                                <ul>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Services et renseignements connexes</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Services connexes 1]</a></li>
+                                   <li><a href="#">[Services connexes 2]</a></li>
+                                   <li><a href="#">[Renseignements connexes 1]</a></li>
+                                   <li><a href="#">[Renseignements connexes 2]</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Programme connexe</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Nom du programme]</a></li>
+                                </ul>
+                             </aside>
+                          </div>
+                       </div>
+
