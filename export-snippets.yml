@@ -8646,10 +8646,10 @@
   scope: html
   mTime: 1493944284955
   text: |
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ex, posuere eu neque a, elementum placerat massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sit amet malesuada urna. Pellentesque condimentum pretium cursus. Praesent magna dolor, tristique vel finibus a, hendrerit quis nisi. Proin nibh dui, condimentum non velit non, convallis cursus lectus. Ut elementum scelerisque augue dignissim vestibulum. Donec a finibus felis, in vestibulum magna. In purus turpis, tempus commodo pharetra at, vulputate id neque. Duis dolor nunc, dictum at leo vitae, accumsan tristique lectus. Quisque consectetur id leo ut euismod. Sed nec commodo diam, non luctus nulla. Nulla euismod consequat rhoncus. Duis mi neque, molestie quis nisl non, bibendum gravida urna.</p>\r
-        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ullamcorper fermentum ullamcorper. Donec ante erat, eleifend egestas dapibus dignissim, finibus pellentesque elit. Vivamus in est maximus, sodales justo id, varius tellus. Pellentesque lacus urna, varius sed lorem quis, sagittis consectetur turpis. Nunc id nisi convallis, maximus ex at, vulputate risus. Suspendisse maximus, tellus in fringilla consectetur, risus turpis ultrices erat, sed mattis risus lorem ut metus. Nam a aliquam eros. In libero diam, tristique nec odio eu, consequat finibus dolor. In et varius arcu. Duis lacinia, neque in egestas bibendum, quam neque facilisis sem, at tincidunt odio nisl eleifend odio. Fusce at lectus eros. Ut at quam vitae neque sodales tempus vel sed nunc. Integer dictum tincidunt semper.</p>\r
-        <p>Praesent luctus nisi non elit scelerisque ullamcorper. Aliquam malesuada ac leo eget efficitur. Aliquam sed euismod sapien. Vestibulum ullamcorper nisi vitae metus ultrices, at hendrerit sapien blandit. Vestibulum suscipit semper leo, id aliquam diam gravida at. Nullam sed dolor nec nisi ultrices vulputate ac eget erat. Maecenas nec metus fermentum, sodales velit ut, luctus turpis. Nunc sodales et leo eget ultricies. Morbi blandit urna quis leo interdum consequat. Praesent leo turpis, hendrerit sit amet urna eget, aliquam accumsan enim. Proin tincidunt, diam a euismod porttitor, turpis sapien imperdiet felis, eget pellentesque risus turpis sed ipsum.</p> Cras eget porta augue. Aliquam quam urna, ultricies at interdum ac, cursus vitae augue.\r
-        <p>Duis tristique erat eget pellentesque vulputate. Nam sed augue nisl. Ut hendrerit lorem eu lectus facilisis, fermentum tincidunt magna aliquam. Mauris vitae pulvinar nisl. Vivamus porta, neque facilisis blandit convallis, nisi est aliquam arcu, eu commodo erat magna quis ante. Proin gravida tempor urna, nec malesuada tellus faucibus et. Curabitur imperdiet in justo ut volutpat. Integer at consequat augue, faucibus porta tortor. Suspendisse potenti. Donec sed efficitur nulla. Donec in nibh at magna varius porta iaculis in justo. Nullam convallis hendrerit erat sed ullamcorper. Donec vel congue mi. Vestibulum dignissim venenatis sapien non dapibus.</p>\r
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ex, posuere eu neque a, elementum placerat massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sit amet malesuada urna. Pellentesque condimentum pretium cursus. Praesent magna dolor, tristique vel finibus a, hendrerit quis nisi. Proin nibh dui, condimentum non velit non, convallis cursus lectus. Ut elementum scelerisque augue dignissim vestibulum. Donec a finibus felis, in vestibulum magna. In purus turpis, tempus commodo pharetra at, vulputate id neque. Duis dolor nunc, dictum at leo vitae, accumsan tristique lectus. Quisque consectetur id leo ut euismod. Sed nec commodo diam, non luctus nulla. Nulla euismod consequat rhoncus. Duis mi neque, molestie quis nisl non, bibendum gravida urna.</p>\
+        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ullamcorper fermentum ullamcorper. Donec ante erat, eleifend egestas dapibus dignissim, finibus pellentesque elit. Vivamus in est maximus, sodales justo id, varius tellus. Pellentesque lacus urna, varius sed lorem quis, sagittis consectetur turpis. Nunc id nisi convallis, maximus ex at, vulputate risus. Suspendisse maximus, tellus in fringilla consectetur, risus turpis ultrices erat, sed mattis risus lorem ut metus. Nam a aliquam eros. In libero diam, tristique nec odio eu, consequat finibus dolor. In et varius arcu. Duis lacinia, neque in egestas bibendum, quam neque facilisis sem, at tincidunt odio nisl eleifend odio. Fusce at lectus eros. Ut at quam vitae neque sodales tempus vel sed nunc. Integer dictum tincidunt semper.</p>\
+        <p>Praesent luctus nisi non elit scelerisque ullamcorper. Aliquam malesuada ac leo eget efficitur. Aliquam sed euismod sapien. Vestibulum ullamcorper nisi vitae metus ultrices, at hendrerit sapien blandit. Vestibulum suscipit semper leo, id aliquam diam gravida at. Nullam sed dolor nec nisi ultrices vulputate ac eget erat. Maecenas nec metus fermentum, sodales velit ut, luctus turpis. Nunc sodales et leo eget ultricies. Morbi blandit urna quis leo interdum consequat. Praesent leo turpis, hendrerit sit amet urna eget, aliquam accumsan enim. Proin tincidunt, diam a euismod porttitor, turpis sapien imperdiet felis, eget pellentesque risus turpis sed ipsum.</p> Cras eget porta augue. Aliquam quam urna, ultricies at interdum ac, cursus vitae augue.\
+        <p>Duis tristique erat eget pellentesque vulputate. Nam sed augue nisl. Ut hendrerit lorem eu lectus facilisis, fermentum tincidunt magna aliquam. Mauris vitae pulvinar nisl. Vivamus porta, neque facilisis blandit convallis, nisi est aliquam arcu, eu commodo erat magna quis ante. Proin gravida tempor urna, nec malesuada tellus faucibus et. Curabitur imperdiet in justo ut volutpat. Integer at consequat augue, faucibus porta tortor. Suspendisse potenti. Donec sed efficitur nulla. Donec in nibh at magna varius porta iaculis in justo. Nullam convallis hendrerit erat sed ullamcorper. Donec vel congue mi. Vestibulum dignissim venenatis sapien non dapibus.</p>\
         <p>Sed quis justo ac lectus convallis faucibus. In ac dui fringilla leo tincidunt convallis in id tortor. Nam in condimentum diam. Curabitur nulla odio, tristique ac justo ac, volutpat porttitor mauris. Ut vitae metus blandit, tincidunt purus eget, tristique massa. Duis gravida elit lacinia rhoncus finibus. Sed ac scelerisque ante. Etiam eget venenatis quam. Suspendisse faucibus pulvinar dictum. Phasellus mi urna, maximus at ante sit amet, convallis sollicitudin tellus. Suspendisse finibus viverra efficitur. Vestibulum id ante eget sapien fermentum sollicitudin at a lacus. Aliquam ut dui sed tortor pretium semper. Fusce mollis ullamcorper efficitur. Suspendisse tempor scelerisque urna, sed porta arcu rhoncus at.</p>
 
 - trigger: lorem-ipsem-short
@@ -8658,4 +8658,42 @@
   mTime: 1493944300473
   text: |
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ex, posuere eu neque a, elementum placerat massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sit amet malesuada urna. Pellentesque condimentum pretium cursus. Praesent magna dolor, tristique vel finibus a, hendrerit quis nisi. Proin nibh dui, condimentum non velit non, convallis cursus lectus. Ut elementum scelerisque augue dignissim vestibulum. Donec a finibus felis, in vestibulum magna. In purus turpis, tempus commodo pharetra at, vulputate id neque. Duis dolor nunc, dictum at leo vitae, accumsan tristique lectus. Quisque consectetur id leo ut euismod. Sed nec commodo diam, non luctus nulla. Nulla euismod consequat rhoncus. Duis mi neque, molestie quis nisl non, bibendum gravida urna.</p>
+
+- trigger: vid-WET4
+  description: Creates a WET4 default HTML5 video player
+  scope: html
+  mTime: 1494358904115
+  text: |
+        <section>
+                                <figure class="wb-mltmd">
+                                   <video poster="xxxxxxxxxx" title="xxxxxxxxxx">
+                 <source type="video/mp4" src="xxxxxxxxxx" />
+                 <source type="video/webm" src="xxxxxxxxxx" />
+                 <track src="xxxxxxxxxx" kind="captions" data-type="text/html" srclang="en" label="English" />
+                 <h2>Your browser does not support the HTML5 video tag.</h2>
+                 <ul>
+                    <li>
+                       <p>Click on the following button to download the video: <a href="xxxxxxxxxx" type="video/mp4" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> Download</a></p>
+                    </li>
+                    <li>
+                       <p>Or, if you have access to Google Chrome, copy and paste the following URL into the address bar and  press the “Enter” key on your keyboard to see the video: <a href="http://intra.dfo-mpo.gc.ca/science/gcwcc/index-eng.html">http://intra.dfo-mpo.gc.ca/science/gcwcc/index-eng.html</a></p>
+                    </li>
+                    <li>
+                       <p>Or, perform the following steps in Internet Explorer:</p>
+                       <ol>
+                          <li>Select “<strong>Tools</strong>” on the menu bar indicating “File”, “Edit”, “View”, “Favorites”, “<strong>Tools</strong>”, and “Help”. If the menu bar is not visible, press the “<strong>Alt</strong>” key. The menu bar should appear.</li>
+                          <li>Under the “<strong>Tools</strong>” menu, select “<strong>Compatibility View Settings</strong>”. An options box should appear.</li>
+                          <li>In the “<strong>Compatibility View Settings</strong>” box, you will see a field with the heading “<strong>Websites you’ve added to Compatibility View:</strong>”. If any websites are listed in the field, select each of them and click the “<strong>Remove</strong>” button until the field is empty.</li>
+                          <li>You will also see three check boxes below the field. Make sure that “<strong>Display intranet sites in Compatibility View</strong>” and “<strong>Display all websites in Compatibility View</strong>” are <strong><em>not</em></strong> checked.</li>
+                          <li>Click on the “<strong>Close</strong>” button.</li>
+                          <li>Click on the “<strong>F5</strong>” button to refresh the webpage. The video should be visible.</li>
+                       </ol>
+                    </li>
+                 </ul>
+              </video>
+                                   <figcaption class="caption">
+                                      <p>xxxxxxxxxx</p>
+                                   </figcaption>
+                                </figure>
+                             </section>
 
