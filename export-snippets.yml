@@ -3643,7 +3643,7 @@
 - scope: html
   trigger: template-new
   description: Creates the initial code used for the new template
-  mTime: 1493132638753
+  mTime: 1494953109967
   text: |
         <!DOCTYPE html>
         <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
@@ -3653,7 +3653,7 @@
         <!-- DFO WET 4.0.24 template -->
         
         <head>
-            <!--#include virtual="/science/mockup-WET4/tides/theme/head-eng.html"-->
+            <!--#include virtual="${1}/theme/head-eng.html"-->
         </head>
         
         <body vocab="http://schema.org/" typeof="WebPage">
@@ -3664,18 +3664,18 @@
                 /*-- This variable changes the date modified --*/
                 var dateModified = "yyyy-mm-dd";
             </script>
-            <!--#include virtual="/science/mockup-WET4/tides/theme/nav-eng.html"-->
+            <!--#include virtual="${1}/theme/nav-eng.html"-->
             <main role="main" property="mainContentOfPage" class="container">
                 <!------------------------------>
                 <!-- Main content starts here -->
                 <!------------------------------>
-                ${1}
+                ${2}
                 <!------------------------------>
                 <!--- Main content ends here --->
                 <!------------------------------>
-                <!--#include virtual="/science/mockup-WET4/tides/theme/footer-eng.html"-->
+                <!--#include virtual="${1}/theme/footer-eng.html"-->
             </main>
-            <!--#include virtual="/science/mockup-WET4/tides/theme/end-eng.html"-->
+            <!--#include virtual="${1}/theme/end-eng.html"-->
         </body>
         
         </html>
@@ -3683,7 +3683,7 @@
 - trigger: template-new_fr
   scope: html
   description: Creates the initial code used for the new template in French
-  mTime: 1493132592945
+  mTime: 1494953131445
   text: |
         <!DOCTYPE html>
         <!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr"><![endif]-->
@@ -3693,7 +3693,7 @@
         <!-- DFO WET 4.0.24 template -->
         
         <head>
-            <!--#include virtual="/science/mockup-WET4/tides/theme/head-fra.html"-->
+            <!--#include virtual="${1}/theme/head-fra.html"-->
         </head>
         
         <body vocab="http://schema.org/" typeof="WebPage">
@@ -3705,18 +3705,18 @@
                 var dateModified = "yyyy-mm-dd";
         
             </script>
-            <!--#include virtual="/science/mockup-WET4/tides/theme/nav-fra.html"-->
+            <!--#include virtual="${1}/theme/nav-fra.html"-->
             <main role="main" property="mainContentOfPage" class="container">
                 <!------------------------------>
                 <!-- Main content starts here -->
                 <!------------------------------>
-                ${1}
+                ${2}
                 <!------------------------------>
                 <!--- Main content ends here --->
                 <!------------------------------>
-                <!--#include virtual="/science/mockup-WET4/tides/theme/footer-fra.html"-->
+                <!--#include virtual="${1}/theme/footer-fra.html"-->
             </main>
-            <!--#include virtual="/science/mockup-WET4/tides/theme/end-fra.html"-->
+            <!--#include virtual="${1}/theme/end-fra.html"-->
         </body>
         
         </html>
@@ -8201,10 +8201,10 @@
   scope: html
   mTime: 1493944284955
   text: |
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ex, posuere eu neque a, elementum placerat massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sit amet malesuada urna. Pellentesque condimentum pretium cursus. Praesent magna dolor, tristique vel finibus a, hendrerit quis nisi. Proin nibh dui, condimentum non velit non, convallis cursus lectus. Ut elementum scelerisque augue dignissim vestibulum. Donec a finibus felis, in vestibulum magna. In purus turpis, tempus commodo pharetra at, vulputate id neque. Duis dolor nunc, dictum at leo vitae, accumsan tristique lectus. Quisque consectetur id leo ut euismod. Sed nec commodo diam, non luctus nulla. Nulla euismod consequat rhoncus. Duis mi neque, molestie quis nisl non, bibendum gravida urna.</p>\\
-        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ullamcorper fermentum ullamcorper. Donec ante erat, eleifend egestas dapibus dignissim, finibus pellentesque elit. Vivamus in est maximus, sodales justo id, varius tellus. Pellentesque lacus urna, varius sed lorem quis, sagittis consectetur turpis. Nunc id nisi convallis, maximus ex at, vulputate risus. Suspendisse maximus, tellus in fringilla consectetur, risus turpis ultrices erat, sed mattis risus lorem ut metus. Nam a aliquam eros. In libero diam, tristique nec odio eu, consequat finibus dolor. In et varius arcu. Duis lacinia, neque in egestas bibendum, quam neque facilisis sem, at tincidunt odio nisl eleifend odio. Fusce at lectus eros. Ut at quam vitae neque sodales tempus vel sed nunc. Integer dictum tincidunt semper.</p>\\
-        <p>Praesent luctus nisi non elit scelerisque ullamcorper. Aliquam malesuada ac leo eget efficitur. Aliquam sed euismod sapien. Vestibulum ullamcorper nisi vitae metus ultrices, at hendrerit sapien blandit. Vestibulum suscipit semper leo, id aliquam diam gravida at. Nullam sed dolor nec nisi ultrices vulputate ac eget erat. Maecenas nec metus fermentum, sodales velit ut, luctus turpis. Nunc sodales et leo eget ultricies. Morbi blandit urna quis leo interdum consequat. Praesent leo turpis, hendrerit sit amet urna eget, aliquam accumsan enim. Proin tincidunt, diam a euismod porttitor, turpis sapien imperdiet felis, eget pellentesque risus turpis sed ipsum.</p> Cras eget porta augue. Aliquam quam urna, ultricies at interdum ac, cursus vitae augue.\\
-        <p>Duis tristique erat eget pellentesque vulputate. Nam sed augue nisl. Ut hendrerit lorem eu lectus facilisis, fermentum tincidunt magna aliquam. Mauris vitae pulvinar nisl. Vivamus porta, neque facilisis blandit convallis, nisi est aliquam arcu, eu commodo erat magna quis ante. Proin gravida tempor urna, nec malesuada tellus faucibus et. Curabitur imperdiet in justo ut volutpat. Integer at consequat augue, faucibus porta tortor. Suspendisse potenti. Donec sed efficitur nulla. Donec in nibh at magna varius porta iaculis in justo. Nullam convallis hendrerit erat sed ullamcorper. Donec vel congue mi. Vestibulum dignissim venenatis sapien non dapibus.</p>\\
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ex, posuere eu neque a, elementum placerat massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sit amet malesuada urna. Pellentesque condimentum pretium cursus. Praesent magna dolor, tristique vel finibus a, hendrerit quis nisi. Proin nibh dui, condimentum non velit non, convallis cursus lectus. Ut elementum scelerisque augue dignissim vestibulum. Donec a finibus felis, in vestibulum magna. In purus turpis, tempus commodo pharetra at, vulputate id neque. Duis dolor nunc, dictum at leo vitae, accumsan tristique lectus. Quisque consectetur id leo ut euismod. Sed nec commodo diam, non luctus nulla. Nulla euismod consequat rhoncus. Duis mi neque, molestie quis nisl non, bibendum gravida urna.</p>
+        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ullamcorper fermentum ullamcorper. Donec ante erat, eleifend egestas dapibus dignissim, finibus pellentesque elit. Vivamus in est maximus, sodales justo id, varius tellus. Pellentesque lacus urna, varius sed lorem quis, sagittis consectetur turpis. Nunc id nisi convallis, maximus ex at, vulputate risus. Suspendisse maximus, tellus in fringilla consectetur, risus turpis ultrices erat, sed mattis risus lorem ut metus. Nam a aliquam eros. In libero diam, tristique nec odio eu, consequat finibus dolor. In et varius arcu. Duis lacinia, neque in egestas bibendum, quam neque facilisis sem, at tincidunt odio nisl eleifend odio. Fusce at lectus eros. Ut at quam vitae neque sodales tempus vel sed nunc. Integer dictum tincidunt semper.</p>
+        <p>Praesent luctus nisi non elit scelerisque ullamcorper. Aliquam malesuada ac leo eget efficitur. Aliquam sed euismod sapien. Vestibulum ullamcorper nisi vitae metus ultrices, at hendrerit sapien blandit. Vestibulum suscipit semper leo, id aliquam diam gravida at. Nullam sed dolor nec nisi ultrices vulputate ac eget erat. Maecenas nec metus fermentum, sodales velit ut, luctus turpis. Nunc sodales et leo eget ultricies. Morbi blandit urna quis leo interdum consequat. Praesent leo turpis, hendrerit sit amet urna eget, aliquam accumsan enim. Proin tincidunt, diam a euismod porttitor, turpis sapien imperdiet felis, eget pellentesque risus turpis sed ipsum.</p> Cras eget porta augue. Aliquam quam urna, ultricies at interdum ac, cursus vitae augue.
+        <p>Duis tristique erat eget pellentesque vulputate. Nam sed augue nisl. Ut hendrerit lorem eu lectus facilisis, fermentum tincidunt magna aliquam. Mauris vitae pulvinar nisl. Vivamus porta, neque facilisis blandit convallis, nisi est aliquam arcu, eu commodo erat magna quis ante. Proin gravida tempor urna, nec malesuada tellus faucibus et. Curabitur imperdiet in justo ut volutpat. Integer at consequat augue, faucibus porta tortor. Suspendisse potenti. Donec sed efficitur nulla. Donec in nibh at magna varius porta iaculis in justo. Nullam convallis hendrerit erat sed ullamcorper. Donec vel congue mi. Vestibulum dignissim venenatis sapien non dapibus.</p>
         <p>Sed quis justo ac lectus convallis faucibus. In ac dui fringilla leo tincidunt convallis in id tortor. Nam in condimentum diam. Curabitur nulla odio, tristique ac justo ac, volutpat porttitor mauris. Ut vitae metus blandit, tincidunt purus eget, tristique massa. Duis gravida elit lacinia rhoncus finibus. Sed ac scelerisque ante. Etiam eget venenatis quam. Suspendisse faucibus pulvinar dictum. Phasellus mi urna, maximus at ante sit amet, convallis sollicitudin tellus. Suspendisse finibus viverra efficitur. Vestibulum id ante eget sapien fermentum sollicitudin at a lacus. Aliquam ut dui sed tortor pretium semper. Fusce mollis ullamcorper efficitur. Suspendisse tempor scelerisque urna, sed porta arcu rhoncus at.</p>
 
 - trigger: advanced-service-fra
