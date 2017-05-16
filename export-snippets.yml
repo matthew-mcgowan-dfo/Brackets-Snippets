@@ -748,13 +748,13 @@
 - trigger: fn-section-multi_fr
   scope: html
   description: Creates a footnotes section starting with a multi-reference in French
-  mTime: 1470409835491
+  mTime: 1494949225068
   text: |
         <aside class="wb-fnote" role="note">
             <h3 id="fn">Notes de bas de page</h3>
             <dl>
                 <dt>Note de bas de page ${1:1}</dt>
-                <dd id="fn1">
+                <dd id="fn${1:1}">
                     <p>${2:Exemple de note de bas de page qui comporte de nombreux liens.}</p>
                     <p class="fn-rtn">
                         <a href="#fn${1:1}-1-rf"><span class="wb-inv"> Retour à la première référence de la note de bas de page </span>${1:1}</a>
@@ -766,13 +766,13 @@
 - trigger: fn-section_fr
   scope: html
   description: Creates a section for footnotes in French
-  mTime: 1470409830839
+  mTime: 1494949229288
   text: |
         <aside class="wb-fnote" role="note">
             <h3 id="fn">Notes de bas de page</h3>
             <dl>
                 <dt>Note de bas de page ${1:1}</dt>
-                <dd id="fn1">
+                <dd id="fn${1:1}">
                     <p>${2:Exemple de note de bas de page standard.}</p>
                     <p class="fn-rtn">
                         <a href="#fn${1:1}-rf"><span class="wb-inv"> Retour à la référence de la note de bas de page </span>${1:1}</a>
@@ -1212,13 +1212,13 @@
 - trigger: fn-section
   description: Creates a section for footnotes
   scope: html
-  mTime: 1470409845522
+  mTime: 1494949215673
   text: |
         <aside class="wb-fnote" role="note">
             <h3 id="fn">Footnotes</h3>
             <dl>
                 <dt>Footnote ${1:1}</dt>
-                <dd id="fn1">
+                <dd id="fn${1:1}">
                     <p>${2:Example of a standard footnote.}</p>
                     <p class="fn-rtn">
                         <a href="#fn${1:1}-rf"><span class="wb-inv"> Return to footnote </span>${1:1}<span class="wb-inv"> referrer</span></a>
@@ -1994,13 +1994,13 @@
 - trigger: fn-section-multi
   description: Creates a footnote section starting with a multi-reference
   scope: html
-  mTime: 1470409839540
+  mTime: 1494949222021
   text: |
         <aside class="wb-fnote" role="note">
             <h3 id="fn">Footnotes</h3>
             <dl>
                 <dt>Footnote ${1:1}</dt>
-                <dd id="fn1">
+                <dd id="fn${1:1}">
                     <p>${2:Example of a footnote being referenced by multiple pieces of content.}</p>
                     <p class="fn-rtn">
                         <a href="#fn${1:1}-1-rf"><span class="wb-inv"> Return to first footnote </span>${1:1}<span class="wb-inve"> referrer</span></a>
@@ -3925,6 +3925,142 @@
                                 </ul>
                              </div>
 
+- trigger: sara-not-at-risk-fra
+  scope: html
+  mTime: 1493043058419
+  text: |
+        <div class="visible-xl visible-lg visible-md">
+                                <table class="table table-responsive">
+                                   <caption>Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
+                                   <tbody>
+                                      <tr>
+                                         <td class="active text-center"><strong>Non en péril</strong>
+                                            <br><span class="badge">NP</span></td>
+                                         <td class="info text-center"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr>
+                                            <br><span class="badge">P</span></td>
+                                         <td class="info text-center"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr>
+                                            <br><span class="badge">M</span></td>
+                                         <td class="info text-center"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr>
+                                            <br><span class="badge">EVD</span></td>
+                                         <td class="info text-center"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr>
+                                            <br><span class="badge">DP</span></td>
+                                      </tr>
+                                   </tbody>
+                                </table>
+                             </div>
+                             <div class="visible-sm visible-xs">
+                                <h4 class="text-center">Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
+                                <ul class="list-group">
+                                   <li class="list-group-item"><strong>Non en péril</strong> <span class="badge">NP</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr> <span class="badge">M</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr> <span class="badge">EVD</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr> <span class="badge">DP</span></li>
+                                </ul>
+                             </div>
+
+- trigger: sara-not-at-risk-eng
+  scope: html
+  mTime: 1493043040117
+  text: |
+        <div class="visible-xl visible-lg visible-md">
+                                <table class="table table-responsive">
+                                   <caption><abbr title="Species at Risk Act">SARA</abbr> Status</caption>
+                                   <tbody>
+                                      <tr>
+                                         <td class="active text-center"><strong>Not at Risk</strong>
+                                            <br><span class="badge">NR</span></td>
+                                         <td class="info text-center"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr>
+                                            <br><span class="badge">SC</span></td>
+                                         <td class="info text-center"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr>
+                                            <br><span class="badge">TH</span></td>
+                                         <td class="info text-center"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr>
+                                            <br><span class="badge">EN</span></td>
+                                         <td class="info text-center"><abbr title="No longer exists in the wild in Canada, but exists elsewhere">Extirpated</abbr>
+                                            <br><span class="badge">EX</span></td>
+                                      </tr>
+                                   </tbody>
+                                </table>
+                             </div>
+                             <div class="visible-sm visible-xs">
+                                <h4 class="text-center"><abbr title="Species at Risk Act">SARA</abbr> Status</h4>
+                                <ul class="list-group">
+                                   <li class="list-group-item"><strong>Not at Risk</strong> <span class="badge">NR</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr> <span class="badge">TH</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr> <span class="badge">EN</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="No longer exists in the wild in Canada, but exists elsewhere">Extirpated</abbr> <span class="badge">EX</span></li>
+                                </ul>
+                             </div>
+
+- trigger: sara-non-active-fra
+  scope: html
+  mTime: 1493042977630
+  text: |
+        <div class="visible-xl visible-lg visible-md">
+                                <table class="table table-responsive">
+                                   <caption>Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></caption>
+                                   <tbody>
+                                      <tr>
+                                         <td class="active text-center"><strong>Non active</strong>
+                                            <br><span class="badge">NA</span></td>
+                                         <td class="info text-center"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr>
+                                            <br><span class="badge">P</span></td>
+                                         <td class="info text-center"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr>
+                                            <br><span class="badge">M</span></td>
+                                         <td class="info text-center"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr>
+                                            <br><span class="badge">EVD</span></td>
+                                         <td class="info text-center"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr>
+                                            <br><span class="badge">DP</span></td>
+                                      </tr>
+                                   </tbody>
+                                </table>
+                             </div>
+                             <div class="visible-sm visible-xs">
+                                <h4 class="text-center">Statut <abbr title="Loi sur les espèces en péril">LEP</abbr></h4>
+                                <ul class="list-group">
+                                   <li class="list-group-item"><strong>Non active</strong> <span class="badge">NA</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce menacée ou en voie de disparation en raison de l’effet cumulatif de ses caractéristiques biologiques et des menaces qui pèsent sur elle.">Préoccupante</abbr> <span class="badge">P</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="Pourrait devenir une espèce en voie de disparition si rien n’est fait pour inverser les facteurs menant à sa disparition du pays ou de la planète.">Menacée</abbr> <span class="badge">M</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="Risque de disparaître du pays ou de la planète de façon imminente.">En voie de disparition</abbr> <span class="badge">EVD</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="Ne se trouve plus à l’état sauvage au Canada, mais qui existe ailleurs.">Disparue du pays</abbr> <span class="badge">DP</span></li>
+                                </ul>
+                             </div>
+
+- trigger: sara-non-active-eng
+  scope: html
+  mTime: 1493042962201
+  text: |
+        <div class="visible-xl visible-lg visible-md">
+                                <table class="table table-responsive">
+                                   <caption><abbr title="Species at Risk Act">SARA</abbr> Status</caption>
+                                   <tbody>
+                                      <tr>
+                                         <td class="active text-center"><strong>Non-active</strong>
+                                            <br><span class="badge">NA</span></td>
+                                         <td class="info text-center"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr>
+                                            <br><span class="badge">SC</span></td>
+                                         <td class="info text-center"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr>
+                                            <br><span class="badge">TH</span></td>
+                                         <td class="info text-center"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr>
+                                            <br><span class="badge">EN</span></td>
+                                         <td class="info text-center"><abbr title="No longer exists in the wild in Canada, but exists elsewhere">Extirpated</abbr>
+                                            <br><span class="badge">EX</span></td>
+                                      </tr>
+                                   </tbody>
+                                </table>
+                             </div>
+                             <div class="visible-sm visible-xs">
+                                <h4 class="text-center"><abbr title="Species at Risk Act">SARA</abbr> Status</h4>
+                                <ul class="list-group">
+                                   <li class="list-group-item"><strong>Non-active</strong> <span class="badge">NA</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="May become threatened or endangered because of a combination of biological characteristics and identified threats">Special Concern</abbr> <span class="badge">SC</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="Likely to become endangered if nothing is done to reverse the factors leading to its extirpation or extinction">Threatened</abbr> <span class="badge">TH</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="Facing imminent extirpation or extinction">Endangered</abbr> <span class="badge">EN</span></li>
+                                   <li class="list-group-item list-group-item-info"><abbr title="No longer exists in the wild in Canada, but exists elsewhere">Extirpated</abbr> <span class="badge">EX</span></li>
+                                </ul>
+                             </div>
+
 - trigger: sara-no-status-fra
   scope: html
   mTime: 1493316271300
@@ -4129,10 +4265,10 @@
                                 </ul>
                              </div>
 
-- trigger: latinName-h2
+- trigger: latinName
   description: "The H2 tag for a species' latin name"
   scope: html
-  mTime: 1493316902574
+  mTime: 1493040837532
   text: |
         <h2 class="text-muted mrgn-tp-0"><em>${1}</em></h2>
 
@@ -7999,71 +8135,169 @@
             <li></li>
         </ul>
 
-- trigger: latinName-eng
+- trigger: h1-gov
+  description: Creates an H1 tag with the property and id required for WET4 templates
   scope: html
-  mTime: 1493316879113
-  description: The Scientific Name for a species used in the top-right corner panel of a SARA profile
+  mTime: 1493321795186
   text: |
-        <strong>Scientific name:</strong> <em>${1}</em><br>
+        <h1 property="name" id="wb-cont">${1:Title}</h1>${2}
 
-- trigger: latinName-fra
+- trigger: ul-spaced-unstyled
+  description: Creates an unstyled unordered list with space between list items
   scope: html
-  mTime: 1493161548282
-  description: The Nom scientifique for a species used in the top-right corner panel of a SARA profile
+  mTime: 1494939516412
   text: |
-        <strong>Nom scientifique :</strong> <em>${1}</em><br>
+        <ul class="list-unstyled lst-spcd">
+            <li></li>
+        </ul>
 
-- trigger: dfo-advanced-service-eng
-  description: "An advanced service initiation page in DFO's English page template"
+- trigger: vid-WET4
+  description: Creates a WET4 default HTML5 video player
   scope: html
-  mTime: 1493831496998
+  mTime: 1494358904115
   text: |
-        <!doctype html>
-        <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
-        <!--[if gt IE 8]><!-->
-        <html class="no-js" lang="en">
-        <!--<![endif]-->
-        
-        <head>
-           <meta charset="utf-8" />
-           <title>pageTitle</title>
-           <meta content="width=device-width, initial-scale=1" name="viewport" />
-           <meta name="description" content="pageDescription" />
-           <meta name="dcterms.title" content="pageTitle" />
-           <meta name="dcterms.creator" content="Government of Canada, Fisheries and Oceans Canada, Communications Branch" />
-           <meta name="dcterms.issued" title="W3CDTF" content="2000-00-00" />
-           <meta name="dcterms.modified" title="W3CDTF" content="2000-00-00" />
-           <meta name="dcterms.subject" title="scheme" content="pageSubject" />
-           <meta name="dcterms.language" title="ISO639-2" content="eng" />
-           <!--#include virtual="/includes/css-header.html" -->
-           <script src="/includes/scripts/dfo-mpo-ga.js"></script>
-        </head>
-        
-        <body vocab="http://schema.org/" typeof="WebPage">
-           <ul id="wb-tphp">
-              <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a> </li>
-              <li class="wb-slc visible-sm visible-md visible-lg"> <a class="wb-sl" href="#wb-info">Skip to "About this site"</a> </li>
-           </ul>
-           <header role="banner">
-              <!--#include virtual="/includes/header4-en.html" -->
-              <nav role="navigation" id="wb-bc" property="breadcrumb">
-                 <h2>You are here:</h2>
-                 <div class="container">
-                    <div class="row">
-                       <ol class="breadcrumb">
-                          <li><a href="/index-eng.htm">Home</a></li>
-                          <li class="active">pageTitle</li>
+        <section>
+                                <figure class="wb-mltmd">
+                                   <video poster="xxxxxxxxxx" title="xxxxxxxxxx">
+                 <source type="video/mp4" src="xxxxxxxxxx" />
+                 <source type="video/webm" src="xxxxxxxxxx" />
+                 <track src="xxxxxxxxxx" kind="captions" data-type="text/html" srclang="en" label="English" />
+                 <h2>Your browser does not support the HTML5 video tag.</h2>
+                 <ul>
+                    <li>
+                       <p>Click on the following button to download the video: <a href="xxxxxxxxxx" type="video/mp4" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> Download</a></p>
+                    </li>
+                    <li>
+                       <p>Or, if you have access to Google Chrome, copy and paste the following URL into the address bar and  press the “Enter” key on your keyboard to see the video: <a href="http://intra.dfo-mpo.gc.ca/science/gcwcc/index-eng.html">http://intra.dfo-mpo.gc.ca/science/gcwcc/index-eng.html</a></p>
+                    </li>
+                    <li>
+                       <p>Or, perform the following steps in Internet Explorer:</p>
+                       <ol>
+                          <li>Select “<strong>Tools</strong>” on the menu bar indicating “File”, “Edit”, “View”, “Favorites”, “<strong>Tools</strong>”, and “Help”. If the menu bar is not visible, press the “<strong>Alt</strong>” key. The menu bar should appear.</li>
+                          <li>Under the “<strong>Tools</strong>” menu, select “<strong>Compatibility View Settings</strong>”. An options box should appear.</li>
+                          <li>In the “<strong>Compatibility View Settings</strong>” box, you will see a field with the heading “<strong>Websites you’ve added to Compatibility View:</strong>”. If any websites are listed in the field, select each of them and click the “<strong>Remove</strong>” button until the field is empty.</li>
+                          <li>You will also see three check boxes below the field. Make sure that “<strong>Display intranet sites in Compatibility View</strong>” and “<strong>Display all websites in Compatibility View</strong>” are <strong><em>not</em></strong> checked.</li>
+                          <li>Click on the “<strong>Close</strong>” button.</li>
+                          <li>Click on the “<strong>F5</strong>” button to refresh the webpage. The video should be visible.</li>
                        </ol>
-                    </div>
-                 </div>
-              </nav>
-           </header>
-           <main role="main" property="mainContentOfPage" class="container">
-              <div class="row">
-                 <div class="col-md-12">
-                    <section>
-                       <!-- MainContentStart -->
-                       <h1 property="name" id="wb-cont">[Service name] - 1. [Step / section page name]</h1>
+                    </li>
+                 </ul>
+              </video>
+                                   <figcaption class="caption">
+                                      <p>xxxxxxxxxx</p>
+                                   </figcaption>
+                                </figure>
+                             </section>
+
+- trigger: lorem-ipsem-short
+  description: 1 paragaphs of latin placeholder text
+  scope: html
+  mTime: 1493944300473
+  text: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ex, posuere eu neque a, elementum placerat massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sit amet malesuada urna. Pellentesque condimentum pretium cursus. Praesent magna dolor, tristique vel finibus a, hendrerit quis nisi. Proin nibh dui, condimentum non velit non, convallis cursus lectus. Ut elementum scelerisque augue dignissim vestibulum. Donec a finibus felis, in vestibulum magna. In purus turpis, tempus commodo pharetra at, vulputate id neque. Duis dolor nunc, dictum at leo vitae, accumsan tristique lectus. Quisque consectetur id leo ut euismod. Sed nec commodo diam, non luctus nulla. Nulla euismod consequat rhoncus. Duis mi neque, molestie quis nisl non, bibendum gravida urna.</p>
+
+- trigger: lorem-ipsem-long
+  description: 5 paragaphs of latin placeholder text
+  scope: html
+  mTime: 1493944284955
+  text: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ex, posuere eu neque a, elementum placerat massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sit amet malesuada urna. Pellentesque condimentum pretium cursus. Praesent magna dolor, tristique vel finibus a, hendrerit quis nisi. Proin nibh dui, condimentum non velit non, convallis cursus lectus. Ut elementum scelerisque augue dignissim vestibulum. Donec a finibus felis, in vestibulum magna. In purus turpis, tempus commodo pharetra at, vulputate id neque. Duis dolor nunc, dictum at leo vitae, accumsan tristique lectus. Quisque consectetur id leo ut euismod. Sed nec commodo diam, non luctus nulla. Nulla euismod consequat rhoncus. Duis mi neque, molestie quis nisl non, bibendum gravida urna.</p>\\
+        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ullamcorper fermentum ullamcorper. Donec ante erat, eleifend egestas dapibus dignissim, finibus pellentesque elit. Vivamus in est maximus, sodales justo id, varius tellus. Pellentesque lacus urna, varius sed lorem quis, sagittis consectetur turpis. Nunc id nisi convallis, maximus ex at, vulputate risus. Suspendisse maximus, tellus in fringilla consectetur, risus turpis ultrices erat, sed mattis risus lorem ut metus. Nam a aliquam eros. In libero diam, tristique nec odio eu, consequat finibus dolor. In et varius arcu. Duis lacinia, neque in egestas bibendum, quam neque facilisis sem, at tincidunt odio nisl eleifend odio. Fusce at lectus eros. Ut at quam vitae neque sodales tempus vel sed nunc. Integer dictum tincidunt semper.</p>\\
+        <p>Praesent luctus nisi non elit scelerisque ullamcorper. Aliquam malesuada ac leo eget efficitur. Aliquam sed euismod sapien. Vestibulum ullamcorper nisi vitae metus ultrices, at hendrerit sapien blandit. Vestibulum suscipit semper leo, id aliquam diam gravida at. Nullam sed dolor nec nisi ultrices vulputate ac eget erat. Maecenas nec metus fermentum, sodales velit ut, luctus turpis. Nunc sodales et leo eget ultricies. Morbi blandit urna quis leo interdum consequat. Praesent leo turpis, hendrerit sit amet urna eget, aliquam accumsan enim. Proin tincidunt, diam a euismod porttitor, turpis sapien imperdiet felis, eget pellentesque risus turpis sed ipsum.</p> Cras eget porta augue. Aliquam quam urna, ultricies at interdum ac, cursus vitae augue.\\
+        <p>Duis tristique erat eget pellentesque vulputate. Nam sed augue nisl. Ut hendrerit lorem eu lectus facilisis, fermentum tincidunt magna aliquam. Mauris vitae pulvinar nisl. Vivamus porta, neque facilisis blandit convallis, nisi est aliquam arcu, eu commodo erat magna quis ante. Proin gravida tempor urna, nec malesuada tellus faucibus et. Curabitur imperdiet in justo ut volutpat. Integer at consequat augue, faucibus porta tortor. Suspendisse potenti. Donec sed efficitur nulla. Donec in nibh at magna varius porta iaculis in justo. Nullam convallis hendrerit erat sed ullamcorper. Donec vel congue mi. Vestibulum dignissim venenatis sapien non dapibus.</p>\\
+        <p>Sed quis justo ac lectus convallis faucibus. In ac dui fringilla leo tincidunt convallis in id tortor. Nam in condimentum diam. Curabitur nulla odio, tristique ac justo ac, volutpat porttitor mauris. Ut vitae metus blandit, tincidunt purus eget, tristique massa. Duis gravida elit lacinia rhoncus finibus. Sed ac scelerisque ante. Etiam eget venenatis quam. Suspendisse faucibus pulvinar dictum. Phasellus mi urna, maximus at ante sit amet, convallis sollicitudin tellus. Suspendisse finibus viverra efficitur. Vestibulum id ante eget sapien fermentum sollicitudin at a lacus. Aliquam ut dui sed tortor pretium semper. Fusce mollis ullamcorper efficitur. Suspendisse tempor scelerisque urna, sed porta arcu rhoncus at.</p>
+
+- trigger: advanced-service-fra
+  description: An advanced service initiation page in the Canada.ca template
+  scope: html
+  mTime: 1493832359746
+  text: |
+        <h1 property="name" id="wb-cont">[Nom du service] - 2. [Nom de la page de la section ou de l’étape]</h1>
+                       <p class="gc-byline"><strong>De <a href="/index-fra.htm">Pêches et Océans Canada</a></strong></p>
+                       <div class="gc-stp-stp">
+                          <div class="row">
+                             <ul class="toc lst-spcd col-md-12 list-unstyled">
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item active">1. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item" href="page3-fr.html">2. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-sm"><a class="list-group-item" href="page3-fr.html">3. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-md clr-lft-lg"><a class="list-group-item" href="page4-fr.html">4. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6 clr-lft-sm"><a class="list-group-item" href="page5-fr.html">5. [Nom de la page de la section ou de l’étape]</a></li>
+                                <li class="col-md-4 col-sm-6"><a class="list-group-item" href="page6-fr.html">6. [Nom de la page de la section ou de l’étape]</a></li>
+                             </ul>
+                          </div>
+                       </div>
+                       <div class="row">
+                          <section class="col-md-8">
+                             <h2>2. [Nom de la page de la section ou de l’étape]</h2>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et a adipisci nostrum optio dolorum sint ipsa facilis nisi quisquam laboriosam.</p>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium odio adipisci ad neque distinctio quod molestias, molestiae accusamus quo aspernatur expedita blanditiis quam! Esse cum modi atque, beatae aliquam, dolor.</p>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aliquid hic numquam obcaecati ea, laborum accusamus culpa atque voluptate distinctio et omnis! Alias, beatae, tenetur.</p>
+                             <section>
+                                <h3>[Sous-titre]</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
+                             </section>
+                             <section>
+                                <h3>[Sous-titre]</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
+                             </section>
+                             <nav role="navigation" class="mrgn-bttm-lg">
+                                <h3 class="wb-inv">Navigation dans le document</h3>
+                                <ul class="pager">
+                                   <li class="previous"><a href="page3-fr.html" rel="prev">Précédent<span class="wb-inv"> : 3. [Nom de la page de la section ou de l’étape]</span></a></li>
+                                   <li class="next"><a href="page5-fr.html" rel="next">Suivant<span class="wb-inv"> : 5. [Nom de la page de la section ou de l’étape]</span></a></li>
+                                </ul>
+                             </nav>
+                          </section>
+                          <div class="col-md-4">
+                             <aside class="lnkbx">
+                                <h2>Guides et aide</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Guides connexes et aide 1]</a></li>
+                                   <li><a href="#">[Guides connexes et aide 2]</a></li>
+                                   <li><a href="#">[Guides connexes et aide 3]</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Contactez-nous</h2>
+                                <p>[Office name or location]<br> 1300-70 Somerset St. W<br> Moncton NB E1C 8P2</p>
+                                <dl>
+                                   <dt>Téléphone:</dt>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 123</dd>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 124</dd>
+                                   <dt><span class="glyphicon glyphicon-envelope"></span> Courriel:</dt>
+                                   <dd><a href="mailto:firstname.lastname@canada.ca">firstname.lastname@canada.ca</a></dd>
+                                </dl>
+                                <ul>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Services et renseignements connexes</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Services connexes 1]</a></li>
+                                   <li><a href="#">[Services connexes 2]</a></li>
+                                   <li><a href="#">[Renseignements connexes 1]</a></li>
+                                   <li><a href="#">[Renseignements connexes 2]</a></li>
+                                </ul>
+                             </aside>
+                             <aside class="lnkbx">
+                                <h2>Programme connexe</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Nom du programme]</a></li>
+                                </ul>
+                             </aside>
+                          </div>
+                       </div>
+
+- trigger: advanced-service-eng
+  description: An advanced service initiation page in the Canada.ca template
+  scope: html
+  mTime: 1493832326130
+  text: |
+        <h1 property="name" id="wb-cont">[Service name] - 1. [Step / section page name]</h1>
                        <p class="gc-byline"><strong>From <a href="/index-eng.htm">Fisheries and Oceans Canada</a></strong></p>
                        <div class="gc-stp-stp">
                           <div class="row">
@@ -8142,22 +8376,172 @@
                              </aside>
                           </div>
                        </div>
-                       <!-- MainContentEnd -->
-                    </section>
-                 </div>
-              </div>
-              <dl id="wb-dtmd" property="dateModified">
-                 <dt>Date modified:&#32;</dt>
-                 <dd>
-                    <time>2000-00-00</time>
-                 </dd>
-              </dl>
-           </main>
-           <!--#include virtual="/includes/footer4-en.html" -->
-           <!--#include virtual="/includes/css-footer.html" -->
-        </body>
-        
-        </html>
+
+- trigger: simple-service-fra
+  description: The main content for a simple service initation page in Canada.ca
+  scope: html
+  mTime: 1493832291835
+  text: |
+        <h1 id="wb-cont" property="name">pageTitle</h1>
+                       <p class="gc-byline"><strong>De <a href="./institution-fr.html">[nom de l'institution]</a></strong></p>
+                       <div class="row">
+                          <div class="col-md-8">
+                             <p>[Nom du service], lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsam deserunt, doloremque mollitia laudantium quas ut accusamus perspiciatis repellendus quaerat omnis corporis laborum quasi magni possimus qui necessitatibus, aperiam enim.</p>
+                             <section>
+                                <h2>[Détails sur l’admissibilité]</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
+                             </section>
+                             <section>
+                                <h2>[À savoir avant de commencer]</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
+                             </section>
+                             <p><a href="#" class="btn btn-lg btn-primary mrgn-tp-md">[Faire une demande]</a></p>
+                             <section class="gc-cntct-lst">
+                                <h2>[Autres façons de présenter une demande]</h2>
+                                <dl class="dl-horizontal">
+                                   <dt>Par téléphone&nbsp;:</dt>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 123-456-7890</dd>
+                                   <dt>En personne&nbsp;:</dt>
+                                   <dd>Lorem ipsum dolor sit amet
+                                      <br> 1234, avenue de la Rue
+                                      <br> Ville (Province)
+                                      <br> A1B 2C3</dd>
+                                   <dt>Par courrier&nbsp;:</dt>
+                                   <dd>Lorem ipsum dolor sit amet
+                                      <br> 1234, avenue de la Rue
+                                      <br> Ville (Province)
+                                      <br> A1B 2C3</dd>
+                                </dl>
+                             </section>
+                          </div>
+                          <div class="col-md-4">
+                             <section class="lnkbx">
+                                <h2 class="mrgn-tp-0">Guides et aide</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Guides connexes et aide 1]</a></li>
+                                   <li><a href="#">[Guides connexes et aide 2]</a></li>
+                                   <li><a href="#">[Guides connexes et aide 3]</a></li>
+                                </ul>
+                             </section>
+                             <section class="lnkbx">
+                                <h2>Contactez-nous</h2>
+                                <p>[Office name or location]
+                                   <br> 1300-70 Somerset St. W
+                                   <br> Moncton NB E1C 8P2</p>
+                                <dl>
+                                   <dt>Téléphone:</dt>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 123</dd>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 124</dd>
+                                   <dt>Courriel:</dt>
+                                   <dd><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:firstname.lastname@canada.ca">firstname.lastname@canada.ca</a></dd>
+                                </dl>
+                                <ul>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                </ul>
+                             </section>
+                             <section class="lnkbx">
+                                <h2>Services et renseignements connexes</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Services connexes 1]</a></li>
+                                   <li><a href="#">[Services connexes 2]</a></li>
+                                   <li><a href="#">[Renseignements connexes 1]</a></li>
+                                   <li><a href="#">[Renseignements connexes 2]</a></li>
+                                </ul>
+                             </section>
+                             <section class="lnkbx">
+                                <h2>Programme connexe</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Nom du programme]</a></li>
+                                </ul>
+                             </section>
+                          </div>
+                       </div>
+
+- trigger: simple-service-eng
+  description: The main content for a simple service initation page in Canada.ca
+  scope: html
+  mTime: 1493832254050
+  text: |
+        <h1 property="name" id="wb-cont">pageTitle</h1>
+                       <p class="gc-byline"><strong>From <a href="./institution-en.html">[Institution name]</a></strong></p>
+                       <div class="row">
+                          <div class="col-md-8">
+                             <p>[Service name], lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsam deserunt, doloremque mollitia laudantium quas ut accusamus perspiciatis repellendus quaerat omnis corporis laborum quasi magni possimus qui necessitatibus, aperiam enim.</p>
+                             <section>
+                                <h2>[Eligibility details]</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
+                             </section>
+                             <section>
+                                <h2>[What you need before you start]</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
+                             </section>
+                             <p><a href="#" class="btn btn-lg btn-primary mrgn-tp-md">[Apply now]</a></p>
+                             <section class="gc-cntct-lst">
+                                <h2>[Other ways to apply]</h2>
+                                <dl class="dl-horizontal">
+                                   <dt>By phone:</dt>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 123-456-7890</dd>
+                                   <dt>In person:</dt>
+                                   <dd>Lorem ipsum dolor sit amet
+                                      <br> 1234 street ave.
+                                      <br> City, Province
+                                      <br> A1B 2C3</dd>
+                                   <dt>By mail:</dt>
+                                   <dd>Lorem ipsum dolor sit amet
+                                      <br> 1234 street ave.
+                                      <br> City, Province
+                                      <br> A1B 2C3</dd>
+                                </dl>
+                             </section>
+                          </div>
+                          <div class="col-md-4">
+                             <section class="lnkbx">
+                                <h2 class="mrgn-tp-0">Guides and help</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Related guides and help 1]</a></li>
+                                   <li><a href="#">[Related guides and help 2]</a></li>
+                                   <li><a href="#">[Related guides and help 3]</a></li>
+                                </ul>
+                             </section>
+                             <section class="lnkbx">
+                                <h2>Contact us</h2>
+                                <p>[Office name or location]
+                                   <br> 1300-70 Somerset St. W
+                                   <br> Moncton NB E1C 8P2</p>
+                                <dl>
+                                   <dt>Telephone:</dt>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 123</dd>
+                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 124</dd>
+                                   <dt>Email:</dt>
+                                   <dd><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:firstname.lastname@canada.ca">firstname.lastname@canada.ca</a></dd>
+                                </dl>
+                                <ul>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                   <li><a href="#">Contact [Institution name] for help</a></li>
+                                </ul>
+                             </section>
+                             <section class="lnkbx">
+                                <h2>Related services and information</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Related services 1]</a></li>
+                                   <li><a href="#">[Related services 2]</a></li>
+                                   <li><a href="#">[Related information 1]</a></li>
+                                   <li><a href="#">[Related information 2]</a></li>
+                                </ul>
+                             </section>
+                             <section class="lnkbx">
+                                <h2>Related program</h2>
+                                <ul class="lst-spcd">
+                                   <li><a href="#">[Program name]</a></li>
+                                </ul>
+                             </section>
+                          </div>
+                       </div>
 
 - trigger: dfo-advanced-service-fra
   description: "An advanced service initiation page in DFO's French page template"
@@ -8305,178 +8689,57 @@
         
         </html>
 
-- trigger: simple-service-eng
-  description: The main content for a simple service initation page in Canada.ca
+- trigger: dfo-advanced-service-eng
+  description: "An advanced service initiation page in DFO's English page template"
   scope: html
-  mTime: 1493832254050
+  mTime: 1493831496998
   text: |
-        <h1 property="name" id="wb-cont">pageTitle</h1>
-                       <p class="gc-byline"><strong>From <a href="./institution-en.html">[Institution name]</a></strong></p>
-                       <div class="row">
-                          <div class="col-md-8">
-                             <p>[Service name], lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsam deserunt, doloremque mollitia laudantium quas ut accusamus perspiciatis repellendus quaerat omnis corporis laborum quasi magni possimus qui necessitatibus, aperiam enim.</p>
-                             <section>
-                                <h2>[Eligibility details]</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
-                             </section>
-                             <section>
-                                <h2>[What you need before you start]</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
-                             </section>
-                             <p><a href="#" class="btn btn-lg btn-primary mrgn-tp-md">[Apply now]</a></p>
-                             <section class="gc-cntct-lst">
-                                <h2>[Other ways to apply]</h2>
-                                <dl class="dl-horizontal">
-                                   <dt>By phone:</dt>
-                                   <dd><span class="glyphicon glyphicon-phone"></span> 123-456-7890</dd>
-                                   <dt>In person:</dt>
-                                   <dd>Lorem ipsum dolor sit amet
-                                      <br> 1234 street ave.
-                                      <br> City, Province
-                                      <br> A1B 2C3</dd>
-                                   <dt>By mail:</dt>
-                                   <dd>Lorem ipsum dolor sit amet
-                                      <br> 1234 street ave.
-                                      <br> City, Province
-                                      <br> A1B 2C3</dd>
-                                </dl>
-                             </section>
-                          </div>
-                          <div class="col-md-4">
-                             <section class="lnkbx">
-                                <h2 class="mrgn-tp-0">Guides and help</h2>
-                                <ul class="lst-spcd">
-                                   <li><a href="#">[Related guides and help 1]</a></li>
-                                   <li><a href="#">[Related guides and help 2]</a></li>
-                                   <li><a href="#">[Related guides and help 3]</a></li>
-                                </ul>
-                             </section>
-                             <section class="lnkbx">
-                                <h2>Contact us</h2>
-                                <p>[Office name or location]
-                                   <br> 1300-70 Somerset St. W
-                                   <br> Moncton NB E1C 8P2</p>
-                                <dl>
-                                   <dt>Telephone:</dt>
-                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 123</dd>
-                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 124</dd>
-                                   <dt>Email:</dt>
-                                   <dd><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:firstname.lastname@canada.ca">firstname.lastname@canada.ca</a></dd>
-                                </dl>
-                                <ul>
-                                   <li><a href="#">Contact [Institution name] for help</a></li>
-                                   <li><a href="#">Contact [Institution name] for help</a></li>
-                                   <li><a href="#">Contact [Institution name] for help</a></li>
-                                   <li><a href="#">Contact [Institution name] for help</a></li>
-                                </ul>
-                             </section>
-                             <section class="lnkbx">
-                                <h2>Related services and information</h2>
-                                <ul class="lst-spcd">
-                                   <li><a href="#">[Related services 1]</a></li>
-                                   <li><a href="#">[Related services 2]</a></li>
-                                   <li><a href="#">[Related information 1]</a></li>
-                                   <li><a href="#">[Related information 2]</a></li>
-                                </ul>
-                             </section>
-                             <section class="lnkbx">
-                                <h2>Related program</h2>
-                                <ul class="lst-spcd">
-                                   <li><a href="#">[Program name]</a></li>
-                                </ul>
-                             </section>
-                          </div>
-                       </div>
-
-- trigger: simple-service-fra
-  description: The main content for a simple service initation page in Canada.ca
-  scope: html
-  mTime: 1493832291835
-  text: |
-        <h1 id="wb-cont" property="name">pageTitle</h1>
-                       <p class="gc-byline"><strong>De <a href="./institution-fr.html">[nom de l'institution]</a></strong></p>
-                       <div class="row">
-                          <div class="col-md-8">
-                             <p>[Nom du service], lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsam deserunt, doloremque mollitia laudantium quas ut accusamus perspiciatis repellendus quaerat omnis corporis laborum quasi magni possimus qui necessitatibus, aperiam enim.</p>
-                             <section>
-                                <h2>[Détails sur l’admissibilité]</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
-                             </section>
-                             <section>
-                                <h2>[À savoir avant de commencer]</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
-                             </section>
-                             <p><a href="#" class="btn btn-lg btn-primary mrgn-tp-md">[Faire une demande]</a></p>
-                             <section class="gc-cntct-lst">
-                                <h2>[Autres façons de présenter une demande]</h2>
-                                <dl class="dl-horizontal">
-                                   <dt>Par téléphone&nbsp;:</dt>
-                                   <dd><span class="glyphicon glyphicon-phone"></span> 123-456-7890</dd>
-                                   <dt>En personne&nbsp;:</dt>
-                                   <dd>Lorem ipsum dolor sit amet
-                                      <br> 1234, avenue de la Rue
-                                      <br> Ville (Province)
-                                      <br> A1B 2C3</dd>
-                                   <dt>Par courrier&nbsp;:</dt>
-                                   <dd>Lorem ipsum dolor sit amet
-                                      <br> 1234, avenue de la Rue
-                                      <br> Ville (Province)
-                                      <br> A1B 2C3</dd>
-                                </dl>
-                             </section>
-                          </div>
-                          <div class="col-md-4">
-                             <section class="lnkbx">
-                                <h2 class="mrgn-tp-0">Guides et aide</h2>
-                                <ul class="lst-spcd">
-                                   <li><a href="#">[Guides connexes et aide 1]</a></li>
-                                   <li><a href="#">[Guides connexes et aide 2]</a></li>
-                                   <li><a href="#">[Guides connexes et aide 3]</a></li>
-                                </ul>
-                             </section>
-                             <section class="lnkbx">
-                                <h2>Contactez-nous</h2>
-                                <p>[Office name or location]
-                                   <br> 1300-70 Somerset St. W
-                                   <br> Moncton NB E1C 8P2</p>
-                                <dl>
-                                   <dt>Téléphone:</dt>
-                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 123</dd>
-                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 124</dd>
-                                   <dt>Courriel:</dt>
-                                   <dd><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:firstname.lastname@canada.ca">firstname.lastname@canada.ca</a></dd>
-                                </dl>
-                                <ul>
-                                   <li><a href="#">Contact [Institution name] for help</a></li>
-                                   <li><a href="#">Contact [Institution name] for help</a></li>
-                                   <li><a href="#">Contact [Institution name] for help</a></li>
-                                   <li><a href="#">Contact [Institution name] for help</a></li>
-                                </ul>
-                             </section>
-                             <section class="lnkbx">
-                                <h2>Services et renseignements connexes</h2>
-                                <ul class="lst-spcd">
-                                   <li><a href="#">[Services connexes 1]</a></li>
-                                   <li><a href="#">[Services connexes 2]</a></li>
-                                   <li><a href="#">[Renseignements connexes 1]</a></li>
-                                   <li><a href="#">[Renseignements connexes 2]</a></li>
-                                </ul>
-                             </section>
-                             <section class="lnkbx">
-                                <h2>Programme connexe</h2>
-                                <ul class="lst-spcd">
-                                   <li><a href="#">[Nom du programme]</a></li>
-                                </ul>
-                             </section>
-                          </div>
-                       </div>
-
-- trigger: advanced-service-eng
-  description: An advanced service initiation page in the Canada.ca template
-  scope: html
-  mTime: 1493832326130
-  text: |
-        <h1 property="name" id="wb-cont">[Service name] - 1. [Step / section page name]</h1>
+        <!doctype html>
+        <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
+        <!--[if gt IE 8]><!-->
+        <html class="no-js" lang="en">
+        <!--<![endif]-->
+        
+        <head>
+           <meta charset="utf-8" />
+           <title>pageTitle</title>
+           <meta content="width=device-width, initial-scale=1" name="viewport" />
+           <meta name="description" content="pageDescription" />
+           <meta name="dcterms.title" content="pageTitle" />
+           <meta name="dcterms.creator" content="Government of Canada, Fisheries and Oceans Canada, Communications Branch" />
+           <meta name="dcterms.issued" title="W3CDTF" content="2000-00-00" />
+           <meta name="dcterms.modified" title="W3CDTF" content="2000-00-00" />
+           <meta name="dcterms.subject" title="scheme" content="pageSubject" />
+           <meta name="dcterms.language" title="ISO639-2" content="eng" />
+           <!--#include virtual="/includes/css-header.html" -->
+           <script src="/includes/scripts/dfo-mpo-ga.js"></script>
+        </head>
+        
+        <body vocab="http://schema.org/" typeof="WebPage">
+           <ul id="wb-tphp">
+              <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a> </li>
+              <li class="wb-slc visible-sm visible-md visible-lg"> <a class="wb-sl" href="#wb-info">Skip to "About this site"</a> </li>
+           </ul>
+           <header role="banner">
+              <!--#include virtual="/includes/header4-en.html" -->
+              <nav role="navigation" id="wb-bc" property="breadcrumb">
+                 <h2>You are here:</h2>
+                 <div class="container">
+                    <div class="row">
+                       <ol class="breadcrumb">
+                          <li><a href="/index-eng.htm">Home</a></li>
+                          <li class="active">pageTitle</li>
+                       </ol>
+                    </div>
+                 </div>
+              </nav>
+           </header>
+           <main role="main" property="mainContentOfPage" class="container">
+              <div class="row">
+                 <div class="col-md-12">
+                    <section>
+                       <!-- MainContentStart -->
+                       <h1 property="name" id="wb-cont">[Service name] - 1. [Step / section page name]</h1>
                        <p class="gc-byline"><strong>From <a href="/index-eng.htm">Fisheries and Oceans Canada</a></strong></p>
                        <div class="gc-stp-stp">
                           <div class="row">
@@ -8555,154 +8818,41 @@
                              </aside>
                           </div>
                        </div>
+                       <!-- MainContentEnd -->
+                    </section>
+                 </div>
+              </div>
+              <dl id="wb-dtmd" property="dateModified">
+                 <dt>Date modified:&#32;</dt>
+                 <dd>
+                    <time>2000-00-00</time>
+                 </dd>
+              </dl>
+           </main>
+           <!--#include virtual="/includes/footer4-en.html" -->
+           <!--#include virtual="/includes/css-footer.html" -->
+        </body>
+        
+        </html>
 
-- trigger: advanced-service-fra
-  description: An advanced service initiation page in the Canada.ca template
+- trigger: latinName-fra
   scope: html
-  mTime: 1493832359746
+  mTime: 1493161548282
+  description: The Nom scientifique for a species used in the top-right corner panel of a SARA profile
   text: |
-        <h1 property="name" id="wb-cont">[Nom du service] - 2. [Nom de la page de la section ou de l’étape]</h1>
-                       <p class="gc-byline"><strong>De <a href="/index-fra.htm">Pêches et Océans Canada</a></strong></p>
-                       <div class="gc-stp-stp">
-                          <div class="row">
-                             <ul class="toc lst-spcd col-md-12 list-unstyled">
-                                <li class="col-md-4 col-sm-6"><a class="list-group-item active">1. [Nom de la page de la section ou de l’étape]</a></li>
-                                <li class="col-md-4 col-sm-6"><a class="list-group-item" href="page3-fr.html">2. [Nom de la page de la section ou de l’étape]</a></li>
-                                <li class="col-md-4 col-sm-6 clr-lft-sm"><a class="list-group-item" href="page3-fr.html">3. [Nom de la page de la section ou de l’étape]</a></li>
-                                <li class="col-md-4 col-sm-6 clr-lft-md clr-lft-lg"><a class="list-group-item" href="page4-fr.html">4. [Nom de la page de la section ou de l’étape]</a></li>
-                                <li class="col-md-4 col-sm-6 clr-lft-sm"><a class="list-group-item" href="page5-fr.html">5. [Nom de la page de la section ou de l’étape]</a></li>
-                                <li class="col-md-4 col-sm-6"><a class="list-group-item" href="page6-fr.html">6. [Nom de la page de la section ou de l’étape]</a></li>
-                             </ul>
-                          </div>
-                       </div>
-                       <div class="row">
-                          <section class="col-md-8">
-                             <h2>2. [Nom de la page de la section ou de l’étape]</h2>
-                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et a adipisci nostrum optio dolorum sint ipsa facilis nisi quisquam laboriosam.</p>
-                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium odio adipisci ad neque distinctio quod molestias, molestiae accusamus quo aspernatur expedita blanditiis quam! Esse cum modi atque, beatae aliquam, dolor.</p>
-                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aliquid hic numquam obcaecati ea, laborum accusamus culpa atque voluptate distinctio et omnis! Alias, beatae, tenetur.</p>
-                             <section>
-                                <h3>[Sous-titre]</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
-                             </section>
-                             <section>
-                                <h3>[Sous-titre]</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
-                             </section>
-                             <nav role="navigation" class="mrgn-bttm-lg">
-                                <h3 class="wb-inv">Navigation dans le document</h3>
-                                <ul class="pager">
-                                   <li class="previous"><a href="page3-fr.html" rel="prev">Précédent<span class="wb-inv"> : 3. [Nom de la page de la section ou de l’étape]</span></a></li>
-                                   <li class="next"><a href="page5-fr.html" rel="next">Suivant<span class="wb-inv"> : 5. [Nom de la page de la section ou de l’étape]</span></a></li>
-                                </ul>
-                             </nav>
-                          </section>
-                          <div class="col-md-4">
-                             <aside class="lnkbx">
-                                <h2>Guides et aide</h2>
-                                <ul class="lst-spcd">
-                                   <li><a href="#">[Guides connexes et aide 1]</a></li>
-                                   <li><a href="#">[Guides connexes et aide 2]</a></li>
-                                   <li><a href="#">[Guides connexes et aide 3]</a></li>
-                                </ul>
-                             </aside>
-                             <aside class="lnkbx">
-                                <h2>Contactez-nous</h2>
-                                <p>[Office name or location]<br> 1300-70 Somerset St. W<br> Moncton NB E1C 8P2</p>
-                                <dl>
-                                   <dt>Téléphone:</dt>
-                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 123</dd>
-                                   <dd><span class="glyphicon glyphicon-phone"></span> 506-857-2400 ext. 124</dd>
-                                   <dt><span class="glyphicon glyphicon-envelope"></span> Courriel:</dt>
-                                   <dd><a href="mailto:firstname.lastname@canada.ca">firstname.lastname@canada.ca</a></dd>
-                                </dl>
-                                <ul>
-                                   <li><a href="#">Contact [Institution name] for help</a></li>
-                                   <li><a href="#">Contact [Institution name] for help</a></li>
-                                   <li><a href="#">Contact [Institution name] for help</a></li>
-                                   <li><a href="#">Contact [Institution name] for help</a></li>
-                                </ul>
-                             </aside>
-                             <aside class="lnkbx">
-                                <h2>Services et renseignements connexes</h2>
-                                <ul class="lst-spcd">
-                                   <li><a href="#">[Services connexes 1]</a></li>
-                                   <li><a href="#">[Services connexes 2]</a></li>
-                                   <li><a href="#">[Renseignements connexes 1]</a></li>
-                                   <li><a href="#">[Renseignements connexes 2]</a></li>
-                                </ul>
-                             </aside>
-                             <aside class="lnkbx">
-                                <h2>Programme connexe</h2>
-                                <ul class="lst-spcd">
-                                   <li><a href="#">[Nom du programme]</a></li>
-                                </ul>
-                             </aside>
-                          </div>
-                       </div>
+        <strong>Nom scientifique :</strong> <em>${1}</em><br>
 
-- trigger: lorem-ipsem-long
-  description: 5 paragaphs of latin placeholder text
+- trigger: latinName-eng
   scope: html
-  mTime: 1493944284955
+  mTime: 1493316879113
+  description: The Scientific Name for a species used in the top-right corner panel of a SARA profile
   text: |
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ex, posuere eu neque a, elementum placerat massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sit amet malesuada urna. Pellentesque condimentum pretium cursus. Praesent magna dolor, tristique vel finibus a, hendrerit quis nisi. Proin nibh dui, condimentum non velit non, convallis cursus lectus. Ut elementum scelerisque augue dignissim vestibulum. Donec a finibus felis, in vestibulum magna. In purus turpis, tempus commodo pharetra at, vulputate id neque. Duis dolor nunc, dictum at leo vitae, accumsan tristique lectus. Quisque consectetur id leo ut euismod. Sed nec commodo diam, non luctus nulla. Nulla euismod consequat rhoncus. Duis mi neque, molestie quis nisl non, bibendum gravida urna.</p>\
-        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ullamcorper fermentum ullamcorper. Donec ante erat, eleifend egestas dapibus dignissim, finibus pellentesque elit. Vivamus in est maximus, sodales justo id, varius tellus. Pellentesque lacus urna, varius sed lorem quis, sagittis consectetur turpis. Nunc id nisi convallis, maximus ex at, vulputate risus. Suspendisse maximus, tellus in fringilla consectetur, risus turpis ultrices erat, sed mattis risus lorem ut metus. Nam a aliquam eros. In libero diam, tristique nec odio eu, consequat finibus dolor. In et varius arcu. Duis lacinia, neque in egestas bibendum, quam neque facilisis sem, at tincidunt odio nisl eleifend odio. Fusce at lectus eros. Ut at quam vitae neque sodales tempus vel sed nunc. Integer dictum tincidunt semper.</p>\
-        <p>Praesent luctus nisi non elit scelerisque ullamcorper. Aliquam malesuada ac leo eget efficitur. Aliquam sed euismod sapien. Vestibulum ullamcorper nisi vitae metus ultrices, at hendrerit sapien blandit. Vestibulum suscipit semper leo, id aliquam diam gravida at. Nullam sed dolor nec nisi ultrices vulputate ac eget erat. Maecenas nec metus fermentum, sodales velit ut, luctus turpis. Nunc sodales et leo eget ultricies. Morbi blandit urna quis leo interdum consequat. Praesent leo turpis, hendrerit sit amet urna eget, aliquam accumsan enim. Proin tincidunt, diam a euismod porttitor, turpis sapien imperdiet felis, eget pellentesque risus turpis sed ipsum.</p> Cras eget porta augue. Aliquam quam urna, ultricies at interdum ac, cursus vitae augue.\
-        <p>Duis tristique erat eget pellentesque vulputate. Nam sed augue nisl. Ut hendrerit lorem eu lectus facilisis, fermentum tincidunt magna aliquam. Mauris vitae pulvinar nisl. Vivamus porta, neque facilisis blandit convallis, nisi est aliquam arcu, eu commodo erat magna quis ante. Proin gravida tempor urna, nec malesuada tellus faucibus et. Curabitur imperdiet in justo ut volutpat. Integer at consequat augue, faucibus porta tortor. Suspendisse potenti. Donec sed efficitur nulla. Donec in nibh at magna varius porta iaculis in justo. Nullam convallis hendrerit erat sed ullamcorper. Donec vel congue mi. Vestibulum dignissim venenatis sapien non dapibus.</p>\
-        <p>Sed quis justo ac lectus convallis faucibus. In ac dui fringilla leo tincidunt convallis in id tortor. Nam in condimentum diam. Curabitur nulla odio, tristique ac justo ac, volutpat porttitor mauris. Ut vitae metus blandit, tincidunt purus eget, tristique massa. Duis gravida elit lacinia rhoncus finibus. Sed ac scelerisque ante. Etiam eget venenatis quam. Suspendisse faucibus pulvinar dictum. Phasellus mi urna, maximus at ante sit amet, convallis sollicitudin tellus. Suspendisse finibus viverra efficitur. Vestibulum id ante eget sapien fermentum sollicitudin at a lacus. Aliquam ut dui sed tortor pretium semper. Fusce mollis ullamcorper efficitur. Suspendisse tempor scelerisque urna, sed porta arcu rhoncus at.</p>
+        <strong>Scientific name:</strong> <em>${1}</em><br>
 
-- trigger: lorem-ipsem-short
-  description: 1 paragaphs of latin placeholder text
+- trigger: latinName-h2
+  description: "The H2 tag for a species' latin name"
   scope: html
-  mTime: 1493944300473
+  mTime: 1493316902574
   text: |
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ex, posuere eu neque a, elementum placerat massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sit amet malesuada urna. Pellentesque condimentum pretium cursus. Praesent magna dolor, tristique vel finibus a, hendrerit quis nisi. Proin nibh dui, condimentum non velit non, convallis cursus lectus. Ut elementum scelerisque augue dignissim vestibulum. Donec a finibus felis, in vestibulum magna. In purus turpis, tempus commodo pharetra at, vulputate id neque. Duis dolor nunc, dictum at leo vitae, accumsan tristique lectus. Quisque consectetur id leo ut euismod. Sed nec commodo diam, non luctus nulla. Nulla euismod consequat rhoncus. Duis mi neque, molestie quis nisl non, bibendum gravida urna.</p>
-
-- trigger: vid-WET4
-  description: Creates a WET4 default HTML5 video player
-  scope: html
-  mTime: 1494358904115
-  text: |
-        <section>
-                                <figure class="wb-mltmd">
-                                   <video poster="xxxxxxxxxx" title="xxxxxxxxxx">
-                 <source type="video/mp4" src="xxxxxxxxxx" />
-                 <source type="video/webm" src="xxxxxxxxxx" />
-                 <track src="xxxxxxxxxx" kind="captions" data-type="text/html" srclang="en" label="English" />
-                 <h2>Your browser does not support the HTML5 video tag.</h2>
-                 <ul>
-                    <li>
-                       <p>Click on the following button to download the video: <a href="xxxxxxxxxx" type="video/mp4" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> Download</a></p>
-                    </li>
-                    <li>
-                       <p>Or, if you have access to Google Chrome, copy and paste the following URL into the address bar and  press the “Enter” key on your keyboard to see the video: <a href="http://intra.dfo-mpo.gc.ca/science/gcwcc/index-eng.html">http://intra.dfo-mpo.gc.ca/science/gcwcc/index-eng.html</a></p>
-                    </li>
-                    <li>
-                       <p>Or, perform the following steps in Internet Explorer:</p>
-                       <ol>
-                          <li>Select “<strong>Tools</strong>” on the menu bar indicating “File”, “Edit”, “View”, “Favorites”, “<strong>Tools</strong>”, and “Help”. If the menu bar is not visible, press the “<strong>Alt</strong>” key. The menu bar should appear.</li>
-                          <li>Under the “<strong>Tools</strong>” menu, select “<strong>Compatibility View Settings</strong>”. An options box should appear.</li>
-                          <li>In the “<strong>Compatibility View Settings</strong>” box, you will see a field with the heading “<strong>Websites you’ve added to Compatibility View:</strong>”. If any websites are listed in the field, select each of them and click the “<strong>Remove</strong>” button until the field is empty.</li>
-                          <li>You will also see three check boxes below the field. Make sure that “<strong>Display intranet sites in Compatibility View</strong>” and “<strong>Display all websites in Compatibility View</strong>” are <strong><em>not</em></strong> checked.</li>
-                          <li>Click on the “<strong>Close</strong>” button.</li>
-                          <li>Click on the “<strong>F5</strong>” button to refresh the webpage. The video should be visible.</li>
-                       </ol>
-                    </li>
-                 </ul>
-              </video>
-                                   <figcaption class="caption">
-                                      <p>xxxxxxxxxx</p>
-                                   </figcaption>
-                                </figure>
-                             </section>
-
-- trigger: ul-spaced-unstyled
-  description: Creates an unstyled unordered list with space between list items
-  scope: html
-  mTime: 1494939516412
-  text: |
-        <ul class="list-unstyled lst-spcd">
-            <li></li>
-        </ul>
+        <h2 class="text-muted mrgn-tp-0"><em>${1}</em></h2>
 
