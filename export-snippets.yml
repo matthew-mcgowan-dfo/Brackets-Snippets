@@ -1513,9 +1513,9 @@
 - trigger: glyphicon
   description: Creates a glyphicon span
   scope: html
-  mTime: 1465578721552
+  mTime: 1495221020686
   text: |
-        <span class="glyphicon glyphicon-${1:type}"></span> ${2}
+        <span class="glyphicon glyphicon-${1:type}"></span>&nbsp;${2}
 
 - trigger: clearfix
   description: Creates a div with a clearfix
@@ -1546,16 +1546,16 @@
 - trigger: glyphicon-envelope
   description: Creates an envelope glyphicon
   scope: html
-  mTime: 1465578739188
+  mTime: 1495221031118
   text: |
-        <span class="glyphicon glyphicon-envelope"></span> ${1}
+        <span class="glyphicon glyphicon-envelope"></span>&nbsp;${1}
 
 - trigger: glyphicon-phone
   description: Creates a phone glyphicon
   scope: html
-  mTime: 1465578742951
+  mTime: 1495221035366
   text: |
-        <span class="glyphicon glyphicon-phone"></span> ${1}
+        <span class="glyphicon glyphicon-phone"></span>&nbsp;${1}
 
 - trigger: img-thumb
   description: Creates an image tag with img-responsive and thumbnail
@@ -1567,9 +1567,9 @@
 - trigger: glyphicon-download
   description: Creates a download glyphicon
   scope: html
-  mTime: 1465578734573
+  mTime: 1495221024332
   text: |
-        <span class="glyphicon glyphicon-download"></span> ${1}
+        <span class="glyphicon glyphicon-download"></span>&nbsp;${1}
 
 - trigger: img
   scope: html
