@@ -6484,7 +6484,7 @@
 - trigger: dfo-content-fra
   description: "A content page in DFO's French page template"
   scope: html
-  mTime: 1487971781055
+  mTime: 1503415330819
   text: |
         <!doctype html>
         <!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr"><![endif]-->
@@ -6496,12 +6496,12 @@
            <meta charset="utf-8" />
            <title>pageTitle</title>
            <meta content="width=device-width, initial-scale=1" name="viewport" />
-           <meta name="description" content="pageDescription" />
+           <meta name="description" content="pageTitle" />
            <meta name="dcterms.title" content="pageTitle" />
            <meta name="dcterms.creator" content="Gouvernement du Canada, Pêches et Océans Canada, Direction générale des communications" />
            <meta name="dcterms.issued" title="W3CDTF" content="2000-00-00" />
            <meta name="dcterms.modified" title="W3CDTF" content="2000-00-00" />
-           <meta name="dcterms.subject" title="scheme" content="PageSubject" />
+           <meta name="dcterms.subject" title="scheme" content="pageTitle" />
            <meta name="dcterms.language" title="ISO639-2" content="fra" />
            <!--#include virtual="/includes/css-header.html" -->
            <script src="/includes/scripts/dfo-mpo-ga.js"></script>
@@ -8119,7 +8119,7 @@
 - trigger: dfo-content-eng
   scope: html
   description: "A Content Page in DFO's English page template"
-  mTime: 1487971770603
+  mTime: 1503415323467
   text: |
         <!doctype html>
         <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
@@ -8131,12 +8131,12 @@
            <meta charset="utf-8" />
            <title>pageTitle</title>
            <meta content="width=device-width, initial-scale=1" name="viewport" />
-           <meta name="description" content="pageDescription" />
+           <meta name="description" content="pageTitle" />
            <meta name="dcterms.title" content="pageTitle" />
            <meta name="dcterms.creator" content="Government of Canada, Fisheries and Oceans Canada, Communications Branch" />
            <meta name="dcterms.issued" title="W3CDTF" content="2000-00-00" />
            <meta name="dcterms.modified" title="W3CDTF" content="2000-00-00" />
-           <meta name="dcterms.subject" title="scheme" content="pageSubject" />
+           <meta name="dcterms.subject" title="scheme" content="pageTitle" />
            <meta name="dcterms.language" title="ISO639-2" content="eng" />
            <!--#include virtual="/includes/css-header.html" -->
            <script src="/includes/scripts/dfo-mpo-ga.js"></script>
@@ -9297,4 +9297,23 @@
   mTime: 1493316902574
   text: |
         <h2 class="text-muted mrgn-tp-0"><em>${1}</em></h2>
+
+- trigger: redirect
+  description: ASP code to redirect from one page to another
+  scope: html
+  mTime: 1502376381483
+  text: |
+        <%@ Language=VBScript %>\r
+           <% ' Permanent redirection\r
+        Response.Status = "301 Moved Permanently"\r
+        Response.AddHeader "Location", "${1}"\r
+        Response.End\r
+        %>
+
+- trigger: wb-invisible
+  description: An invisible span tag to hide additional details from the HTML page in the browser
+  scope: html
+  mTime: 1503502926610
+  text: |
+        <span class="wb-inv">${1}</span>
 
