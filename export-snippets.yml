@@ -2438,10 +2438,10 @@
             </p>
         </dd>${3}
 
-- trigger: template
-  description: Creates the header area we use for DFO sites.
+- trigger: template-ASP
+  description: Creates the ASP header and footer areas we use for DFO sites.
   scope: html
-  mTime: 1470854600304
+  mTime: 1505418724676
   text: |
         <!--#include virtual="/${1:site}/theme-wet4/asp/init.asp" -->
         <%
@@ -2453,37 +2453,6 @@
         ${4}
         <!-- MainContentEnd --> 
         <!--#include virtual="/${1:site}/theme-wet4/template-footer.asp"--> 
-
-- trigger: template-init
-  description: Creates the init include used on DFO pages
-  scope: html
-  mTime: 1465822196366
-  text: |
-        <!--#include virtual="/${1:site}/theme-wet4/asp/init.asp" -->
-
-- trigger: template-head
-  description: Creates the head include used on DFO pages
-  scope: html
-  mTime: 1470854610964
-  text: |
-        <!--#include virtual="/${1:site}/theme-wet4/template-head.asp"-->
-
-- trigger: template-foot
-  description: Creates the footer include used on DFO pages
-  scope: html
-  mTime: 1470854605900
-  text: |
-        <!--#include virtual="/${1:site}/theme-wet4/template-footer.asp"--> 
-
-- trigger: template-tbc
-  description: Creates the title and breadcrumb elements used on DFO pages.
-  scope: html
-  mTime: 1470854618879
-  text: |
-        <%
-        Title = "${1:title}"
-        Breadcrumb = BcRoot + "<li class='active'>${2:Current page}</li>"
-        %>
 
 - trigger: bc-item
   description: Creates a list item used in the breadcrumbs
@@ -4083,82 +4052,88 @@
         </dl>
 
 - scope: html
-  trigger: template-new
-  description: Creates the initial code used for the new template
-  mTime: 1494953109967
+  trigger: template-JS-eng
+  description: Creates the English header and footer areas we use for DFO sites using JavaScript.
+  mTime: 1505419070470
   text: |
         <!DOCTYPE html>
         <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
         <!--[if gt IE 8]><!-->
         <html class="no-js" lang="en">
         <!--<![endif]-->
-        <!-- DFO WET 4.0.24 template -->
+        <!-- DFO WET 4.0.26 template -->
         
         <head>
-            <!--#include virtual="${1}/theme/head-eng.html"-->
+            <!--#include virtual="/${1}/theme/head-eng.html"-->
         </head>
         
         <body vocab="http://schema.org/" typeof="WebPage">
             <script>
                 /*-- This variable is used for changing the standard breadcrumb in an easy way --*/
-                var breadcrumb = "<li class='active'>Current page</li>";
+                var breadcrumb = "<li class='active'>${2}</li>";
                 
                 /*-- This variable changes the date modified --*/
                 var dateModified = "yyyy-mm-dd";
             </script>
-            <!--#include virtual="${1}/theme/nav-eng.html"-->
+            <!--#include virtual="/${1}/theme/nav-eng.html"-->
             <main role="main" property="mainContentOfPage" class="container">
                 <!------------------------------>
                 <!-- Main content starts here -->
                 <!------------------------------>
-                ${2}
+                
+                <h1 property="name" id="wb-cont">${2}</h1>
+                ${3}
+                
                 <!------------------------------>
                 <!--- Main content ends here --->
                 <!------------------------------>
-                <!--#include virtual="${1}/theme/footer-eng.html"-->
+                <!--#include virtual="/${1}/theme/footer-eng.html"-->
             </main>
-            <!--#include virtual="${1}/theme/end-eng.html"-->
+            <!--#include virtual="/${1}/theme/end-eng.html"-->
         </body>
         
         </html>
 
-- trigger: template-new_fr
+- trigger: template-JS-fra
   scope: html
-  description: Creates the initial code used for the new template in French
-  mTime: 1494953131445
+  description: Creates the French header and footer areas we use for DFO sites using JavaScript.
+  mTime: 1505419063680
   text: |
         <!DOCTYPE html>
         <!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr"><![endif]-->
         <!--[if gt IE 8]><!-->
         <html class="no-js" lang="fr">
         <!--<![endif]-->
-        <!-- DFO WET 4.0.24 template -->
+        <!-- DFO WET 4.0.26 template -->
         
         <head>
-            <!--#include virtual="${1}/theme/head-fra.html"-->
+            <!--#include virtual="/${1}/theme/head-fra.html"-->
         </head>
         
         <body vocab="http://schema.org/" typeof="WebPage">
             <script>
                 /*-- This variable is used for changing the standard breadcrumb in an easy way --*/
-                var breadcrumb = "<li class='active'>Current page</li>";
+                var breadcrumb = "<li class='active'>${2}</li>";
         
                 /*-- This variable changes the date modified --*/
                 var dateModified = "yyyy-mm-dd";
         
             </script>
-            <!--#include virtual="${1}/theme/nav-fra.html"-->
+            <!--#include virtual="/${1}/theme/nav-fra.html"-->
             <main role="main" property="mainContentOfPage" class="container">
                 <!------------------------------>
                 <!-- Main content starts here -->
                 <!------------------------------>
-                ${2}
+                
+                <h1 property="name" id="wb-cont">${2}</h1>
+                ${3}
+                
                 <!------------------------------>
                 <!--- Main content ends here --->
                 <!------------------------------>
-                <!--#include virtual="${1}/theme/footer-fra.html"-->
+                <!--#include virtual="/${1}/theme/footer-fra.html"-->
             </main>
-            <!--#include virtual="${1}/theme/end-fra.html"-->
+            <!--#include virtual="/${1}/theme/end-fra.html"-->
         </body>
         
         </html>
@@ -9303,11 +9278,11 @@
   scope: html
   mTime: 1502376381483
   text: |
-        <%@ Language=VBScript %>\r
-           <% ' Permanent redirection\r
-        Response.Status = "301 Moved Permanently"\r
-        Response.AddHeader "Location", "${1}"\r
-        Response.End\r
+        <%@ Language=VBScript %>\\r
+           <% ' Permanent redirection\\r
+        Response.Status = "301 Moved Permanently"\\r
+        Response.AddHeader "Location", "${1}"\\r
+        Response.End\\r
         %>
 
 - trigger: wb-invisible
@@ -9316,4 +9291,146 @@
   mTime: 1503502926610
   text: |
         <span class="wb-inv">${1}</span>
+
+- trigger: template-HTML-eng
+  scope: html
+  mTime: 1505419362295
+  description: Creates the long-form HTML English header and footer areas we use for DFO sites.
+  text: |
+        <!doctype html>
+        <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
+        <!--[if gt IE 8]><!-->
+        <html class="no-js" lang="en">
+        <!--<![endif]-->
+        
+        <head>
+           <meta charset="utf-8" />
+           <title>${1}</title>
+           <meta content="width=device-width, initial-scale=1" name="viewport" />
+           <meta name="description" content="${1}" />
+           <meta name="dcterms.title" content="${1}" />
+           <meta name="dcterms.creator" content="Government of Canada, Fisheries and Oceans Canada, Communications Branch" />
+           <meta name="dcterms.issued" title="W3CDTF" content="${2}" />
+           <meta name="dcterms.modified" title="W3CDTF" content="${2}" />
+           <meta name="dcterms.subject" title="scheme" content="${1}" />
+           <meta name="dcterms.language" title="ISO639-2" content="eng" />
+           <!--#include virtual="/includes/css-header.html" -->
+           <script src="/includes/scripts/dfo-mpo-ga.js"></script>
+        </head>
+        
+        <body vocab="http://schema.org/" typeof="WebPage">
+           <ul id="wb-tphp">
+              <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a> </li>
+              <li class="wb-slc visible-sm visible-md visible-lg"> <a class="wb-sl" href="#wb-info">Skip to "About this site"</a> </li>
+           </ul>
+           <header role="banner">
+              <!--#include virtual="/includes/header4-en.html" -->
+              <nav role="navigation" id="wb-bc" property="breadcrumb">
+                 <h2>You are here:</h2>
+                 <div class="container">
+                    <div class="row">
+                       <ol class="breadcrumb">
+                          <li><a href="/index-eng.htm">Home</a></li>
+                          <li class="active">${1}</li>
+                       </ol>
+                    </div>
+                 </div>
+              </nav>
+           </header>
+           <main role="main" property="mainContentOfPage" class="container">
+              <div class="row">
+                 <div class="col-md-12">
+                    <section>
+                       <!-- MainContentStart -->
+                       
+                       <h1 property="name" id="wb-cont">${1}</h1>
+                       ${3}
+                       
+                       <!-- MainContentEnd -->
+                    </section>
+                 </div>
+              </div>
+              <dl id="wb-dtmd" property="dateModified">
+                 <dt>Date modified:&#32;</dt>
+                 <dd>
+                    <time>${2}</time>
+                 </dd>
+              </dl>
+           </main>
+           <!--#include virtual="/includes/footer4-en.html" -->
+           <!--#include virtual="/includes/css-footer.html" -->
+        </body>
+        
+        </html>
+
+- trigger: template-HTML-fra
+  scope: html
+  mTime: 1505420774412
+  description: Creates the long-form HTML French header and footer areas we use for DFO sites.
+  text: |
+        <!doctype html>
+        <!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr"><![endif]-->
+        <!--[if gt IE 8]><!-->
+        <html class="no-js" lang="fr">
+        <!--<![endif]-->
+        
+        <head>
+           <meta charset="utf-8" />
+           <title>${1}</title>
+           <meta content="width=device-width, initial-scale=1" name="viewport" />
+           <meta name="description" content="${1}" />
+           <meta name="dcterms.title" content="${1}" />
+           <meta name="dcterms.creator" content="Gouvernement du Canada, Pêches et Océans Canada, Direction générale des communications" />
+           <meta name="dcterms.issued" title="W3CDTF" content="${2}" />
+           <meta name="dcterms.modified" title="W3CDTF" content="${2}" />
+           <meta name="dcterms.subject" title="scheme" content="${1}" />
+           <meta name="dcterms.language" title="ISO639-2" content="fra" />
+           <!--#include virtual="/includes/css-header.html" -->
+           <script src="/includes/scripts/dfo-mpo-ga.js"></script>
+        </head>
+        
+        <body vocab="http://schema.org/" typeof="WebPage">
+           <ul id="wb-tphp">
+              <li class="wb-slc"> <a class="wb-sl" href="#wb-cont">Passer au contenu principal</a> </li>
+              <li class="wb-slc visible-sm visible-md visible-lg"> <a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a> </li>
+           </ul>
+           <header role="banner">
+              <!--#include virtual="/includes/header4-fr.html" -->
+              <nav role="navigation" id="wb-bc" property="breadcrumb">
+                 <h2>Vous êtes dans :</h2>
+                 <div class="container">
+                    <div class="row">
+                       <ol class="breadcrumb">
+                          <li><a href="/index-fra.htm">Accueil</a></li>
+                          <li class="active">${1}</li>
+                       </ol>
+                    </div>
+                 </div>
+              </nav>
+           </header>
+           <main role="main" property="mainContentOfPage" class="container">
+              <div class="row">
+                 <div class="col-md-12">
+                    <section>
+                       <!-- MainContentStart -->
+                       
+                       <h1 id="wb-cont" property="name">${1}</h1>
+                       ${3}
+                       
+                       <!-- MainContentEnd -->
+                    </section>
+                 </div>
+              </div>
+              <dl id="wb-dtmd" property="dateModified">
+                 <dt>Date de modification&#160;:&#32;</dt>
+                 <dd>
+                    <time>${2}</time>
+                 </dd>
+              </dl>
+           </main>
+           <!--#include virtual="/includes/footer4-fr.html" -->
+           <!--#include virtual="/includes/css-footer.html" -->
+        </body>
+        
+        </html>
 
