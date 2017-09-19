@@ -1336,227 +1336,245 @@
 - trigger: topic-landing-page
   description: Creates a default topic landing page structure as specificied by Canada.ca
   scope: html
-  mTime: 1495215606488
+  mTime: 1505823247773
   text: |
-        <div class="row profile">
-            <div class="col-md-6">
-                <h1 property="name" id="wb-cont">[Topic title]</h1>
-                <p>1-2 sentences that describe the topics and top tasks that can be accessed on this page.</p>
-                <section class="followus">
-                    <h2>Follow:</h2>
-                </section>
-            </div>
-            <div class="col-md-6 mrgn-tp-sm hidden-sm hidden-xs">
-                <img src="http://wet-boew.github.io/themes-dist/GCWeb/img/520x200.png" alt="" class="pull-right img-responsive thumbnail">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mrgn-tp-lg pull-right">
-                <section class="lnkbx">
-                    <h2>Most requested</h2>
-                    <ul>
-                        <li><a href="#">[Top task hyperlink text]</a></li>
-                        <li><a href="#">[Top task hyperlink text]</a></li>
-                        <li><a href="#">[Top task hyperlink text]</a></li>
-                        <li><a href="#">[Top task hyperlink text]</a></li>
-                        <li><a href="#">[Top task hyperlink text]</a></li>
-                        <li><a href="#">[Top task hyperlink text]</a></li>
-                        <li><a href="#">[Top task hyperlink text]</a></li>
-                        <li><a href="#">[Top task hyperlink text]</a></li>
-                        <li><a href="#">[Top task hyperlink text]</a></li>
-                        <li><a href="#">[Top task hyperlink text]</a></li>
-                    </ul>
-                </section>
-            </div>
-            <section class="col-md-8 pull-left mrgn-bttm-lg">
-                <h2>Services and information</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="col-md-6">
-                        <section class="gc-drmt">
-                            <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                            <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                        </section>
-                    </div>
-                    <div class="clearfix"></div>
-                    <details class="mrgn-tp-md brdr-0">
-                        <summary class="btn btn-default text-center">Show more services and information</summary>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <section class="gc-drmt">
-                                    <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                                    <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                                </section>
-                            </div>
-                            <div class="col-md-6">
-                                <section class="gc-drmt">
-                                    <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                                    <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                                </section>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-md-6">
-                                <section class="gc-drmt">
-                                    <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                                    <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                                </section>
-                            </div>
-                            <div class="col-md-6">
-                                <section class="gc-drmt">
-                                    <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                                    <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                                </section>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-md-6">
-                                <section class="gc-drmt">
-                                    <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                                    <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                                </section>
-                            </div>
-                            <div class="col-md-6">
-                                <section class="gc-drmt">
-                                    <h3 class="h5"><a href="#">[Subtopic hyperlink text]</a></h3>
-                                    <p>Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs.</p>
-                                </section>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </details>
-                </div>
-            </section>
-            <div class="clr-rght-md clr-rght-lg"></div>
-            <div class="pull-right col-md-4">
-                <section class="lnkbx">
-                    <h2>Contributors</h2>
-                    <ul>
-                        <li><a href="#">[Institution name]</a></li>
-                        <li><a href="#">[Institution name]</a></li>
-                        <li><a href="#">[Institution name]</a></li>
-                    </ul>
-                </section>
-                <section class="lnkbx">
-                    <h2>More information for</h2>
-                    <ul>
-                        <li><a href="#">[Audience hyperlink text]</a></li>
-                        <li><a href="#">[Audience hyperlink text]</a></li>
-                        <li><a href="#">[Audience hyperlink text]</a></li>
-                    </ul>
-                </section>
-            </div>
-        </div>
-        <section class="whtwedo">
-            <h2>What we are doing</h2>
-            <div class="row wb-eqht">
-                <section class="col-lg-4 col-md-6">
-                    <h3>Laws and regulations</h3>
-                    <ul>
-                        <li><a href="#">[Regulation 1]</a></li>
-                        <li><a href="#">[Law 1 with a long heading]</a></li>
-                        <li><a href="#">[Regulation 2 with a long heading]</a></li>
-                        <li><a href="#">[Regulation 3]</a></li>
-                    </ul>
-                    <p><a href="#">All related laws and regulations</a></p>
-                </section>
-                <section class="col-lg-4 col-md-6">
-                    <h3>Publications</h3>
-                    <ul>
-                        <li><a href="#">[Publication 1]</a></li>
-                        <li><a href="#">[Publication 2 with a long heading]</a></li>
-                        <li><a href="#">[Publication 3]</a></li>
-                        <li><a href="#">[Publication 4]</a></li>
-                    </ul>
-                    <p><a href="#">All related publications</a></p>
-                </section>
-                <section class="col-lg-4 col-md-6">
-                    <h3>Consultations</h3>
-                    <ul>
-                        <li><a href="#">[Consultation 1]</a></li>
-                        <li><a href="#">[Consultation 2 with a long heading]</a></li>
-                        <li><a href="#">[Consultation 3]</a></li>
-                        <li><a href="#">[Consultation 4 with a long heading..and a bit longer]</a></li>
-                    </ul>
-                    <p><a href="#">All related consultations</a></p>
-                </section>
-                <section class="col-lg-4 col-md-6">
-                    <h3>Open data</h3>
-                    <ul>
-                        <li><a href="#">[Open data 1]</a></li>
-                        <li><a href="#">[Open data 2 with a long heading]</a></li>
-                        <li><a href="#">[Open data 3]</a></li>
-                        <li><a href="#">[Open data 4 with a long heading..and a bit longer]</a></li>
-                    </ul>
-                    <p><a href="#">All related open data</a></p>
-                </section>
-                <section class="col-lg-4 col-md-6">
-                    <h3>Statistics</h3>
-                    <ul>
-                        <li><a href="#">[Statistic 1]</a></li>
-                        <li><a href="#">[Statistic 2 with a long heading]</a></li>
-                        <li><a href="#">[Statistic 3]</a></li>
-                        <li><a href="#">[Statistic 4 with a long heading..and a bit longer]</a></li>
-                    </ul>
-                    <p><a href="#">All related statistics</a></p>
-                </section>
-            </div>
-        </section>
+        <div class="row profile">\r
+                                <div class="col-md-6">\r
+                                    <h1 property="name" id="wb-cont">pageTitle</h1>\r
+                                    <p class="pagetag">1 ou 2 phrases d’introduction qui définissent les sous-sujets et les tâches principales qui peuvent être consultés sur cette page.</p>\r
+                                    <div class="clearfix">\r
+                                        <section class="followus mrgn-tp-md mrgn-bttm-md col-xs-12 col-sm-12 col-md-8 col-lg-7">\r
+                                            <ul class="list-inline well well-sm">\r
+                                                <li><strong>Suivez :</strong></li>\r
+                                                <li>\r
+                                                    <a href="/connect/twitter-fra.htm"><img src="/wet-boew/dist/theme-gcwu-fegc/images/sl_twitter.png" alt="Twitter" /></a>\r
+                                                </li>\r
+                                                <li>\r
+                                                    <a href="/connect/youtube-fra.htm"><img src="/wet-boew/dist/theme-gcwu-fegc/images/sl_youtube.png" alt="YouTube" /></a>\r
+                                                </li>\r
+                                                <li>\r
+                                                    <a href="/connect/index-fra.htm#rss"><img src="/wet-boew/dist/theme-gcwu-fegc/images/sl_feeds.png" alt="RSS feeds" /></a>\r
+                                                </li>\r
+                                                <li>\r
+                                                    <a href="/connect/flickr-fra.htm"><img src="/images/flickr-sml.png" alt="Flickr" /></a>\r
+                                                </li>\r
+                                            </ul>\r
+                                        </section>\r
+                                    </div>\r
+                                </div>\r
+                                <div class="col-md-6 mrgn-tp-sm hidden-sm hidden-xs"> <img src="https://wet-boew.github.io/themes-dist/GCWeb/img/520x200.png" alt="" class="pull-right img-responsive thumbnail"> </div>\r
+                            </div>\r
+                            <section class="alert alert-info">\r
+                                <h2 class="h3">Nous procédons actuellement au transfert de nos services et de nos renseignements vers Canada.ca.</h2>\r
+                                <p>Le <a href="#">site Web actuel du / de / de la / de l’[ajouter le nom de l’institution / l'organization]</a> restera accessible jusqu’à ce que le transfert vers Canada.ca soit terminé.</p>\r
+                            </section>\r
+                            <div class="row">\r
+                                <div class="col-md-4 mrgn-tp-lg pull-right">\r
+                                    <section class="lnkbx">\r
+                                        <h2>En demande</h2>\r
+                                        <ul>\r
+                                            <li><a href="#">[Lien à une tâche principale]</a></li>\r
+                                            <li><a href="#">[Lien à une tâche principale]</a></li>\r
+                                            <li><a href="#">[Lien à une tâche principale]</a></li>\r
+                                            <li><a href="#">[Lien à une tâche principale]</a></li>\r
+                                            <li><a href="#">[Lien à une tâche principale]</a></li>\r
+                                            <li><a href="#">[Lien à une tâche principale]</a></li>\r
+                                            <li><a href="#">[Lien à une tâche principale]</a></li>\r
+                                            <li><a href="#">[Lien à une tâche principale]</a></li>\r
+                                            <li><a href="#">[Lien à une tâche principale]</a></li>\r
+                                            <li><a href="#">[Lien à une tâche principale]</a></li>\r
+                                        </ul>\r
+                                    </section>\r
+                                </div>\r
+                                <section class="col-md-8 pull-left mrgn-bttm-lg">\r
+                                    <h2>Services et renseignements</h2>\r
+                                    <div class="row">\r
+                                        <div class="col-md-6">\r
+                                            <section class="gc-drmt">\r
+                                                <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                            </section>\r
+                                        </div>\r
+                                        <div class="col-md-6">\r
+                                            <section class="gc-drmt">\r
+                                                <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                            </section>\r
+                                        </div>\r
+                                        <div class="clearfix"></div>\r
+                                        <div class="col-md-6">\r
+                                            <section class="gc-drmt">\r
+                                                <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                            </section>\r
+                                        </div>\r
+                                        <div class="col-md-6">\r
+                                            <section class="gc-drmt">\r
+                                                <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                            </section>\r
+                                        </div>\r
+                                        <div class="clearfix"></div>\r
+                                        <div class="col-md-6">\r
+                                            <section class="gc-drmt">\r
+                                                <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                            </section>\r
+                                        </div>\r
+                                        <div class="col-md-6">\r
+                                            <section class="gc-drmt">\r
+                                                <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                            </section>\r
+                                        </div>\r
+                                        <div class="clearfix"></div>\r
+                                        <div class="col-md-6">\r
+                                            <section class="gc-drmt">\r
+                                                <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                            </section>\r
+                                        </div>\r
+                                        <div class="col-md-6">\r
+                                            <section class="gc-drmt">\r
+                                                <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                            </section>\r
+                                        </div>\r
+                                        <div class="clearfix"></div>\r
+                                        <div class="col-md-6">\r
+                                            <section class="gc-drmt">\r
+                                                <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                            </section>\r
+                                        </div>\r
+                                        <div class="col-md-6">\r
+                                            <section class="gc-drmt">\r
+                                                <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                            </section>\r
+                                        </div>\r
+                                        <div class="clearfix"></div>\r
+                                        <details class="mrgn-tp-md brdr-0">\r
+                                            <summary class="btn btn-default text-center">Afficher plus de services et de renseignements</summary>\r
+                                            <div class="row">\r
+                                                <div class="col-md-6">\r
+                                                    <section class="gc-drmt">\r
+                                                        <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                        <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                                    </section>\r
+                                                </div>\r
+                                                <div class="col-md-6">\r
+                                                    <section class="gc-drmt">\r
+                                                        <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                        <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                                    </section>\r
+                                                </div>\r
+                                                <div class="clearfix"></div>\r
+                                                <div class="col-md-6">\r
+                                                    <section class="gc-drmt">\r
+                                                        <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                        <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                                    </section>\r
+                                                </div>\r
+                                                <div class="col-md-6">\r
+                                                    <section class="gc-drmt">\r
+                                                        <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                        <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                                    </section>\r
+                                                </div>\r
+                                                <div class="clearfix"></div>\r
+                                                <div class="col-md-6">\r
+                                                    <section class="gc-drmt">\r
+                                                        <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                        <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                                    </section>\r
+                                                </div>\r
+                                                <div class="col-md-6">\r
+                                                    <section class="gc-drmt">\r
+                                                        <h3 class="h5"><a href="#">[Lien à un sous-sujet]</a></h3>\r
+                                                        <p>Résumé des renseignements disponibles ou des tâches pouvant être accomplies sur la page. Supprimez les longs libellés et les messages promotionnels. Utilisez une formulation basée sur l'action.</p>\r
+                                                    </section>\r
+                                                </div>\r
+                                                <div class="clearfix"></div>\r
+                                            </div>\r
+                                        </details>\r
+                                    </div>\r
+                                </section>\r
+                                <div class="clr-rght-md clr-rght-lg"></div>\r
+                                <div class="col-md-4 mrgn-tp-lg">\r
+                                    <section class="lnkbx">\r
+                                        <h2>Collaborateurs</h2>\r
+                                        <ul>\r
+                                            <li><a href="#">[Nom de l’institution]</a></li>\r
+                                            <li><a href="#">[Nom de l’institution]</a></li>\r
+                                            <li><a href="#">[Nom de l’institution]</a></li>\r
+                                        </ul>\r
+                                    </section>\r
+                                    <section class="lnkbx">\r
+                                        <h2>Autres renseignements pour les</h2>\r
+                                        <ul>\r
+                                            <li><a href="#">[Lien à un sujet pour un auditoire ciblé]</a></li>\r
+                                            <li><a href="#">[Lien à un sujet pour un auditoire ciblé]</a></li>\r
+                                            <li><a href="#">[Lien à un sujet pour un auditoire ciblé]</a></li>\r
+                                        </ul>\r
+                                    </section>\r
+                                </div>\r
+                            </div>\r
+                            <section class="whtwedo">\r
+                                <h2>Ce que nous faisons</h2>\r
+                                <div class="row wb-eqht">\r
+                                    <section class="col-lg-4 col-md-6">\r
+                                        <h3>Lois et règlements</h3>\r
+                                        <ul>\r
+                                            <li><a href="#">[Politiques 1]</a></li>\r
+                                            <li><a href="#">[Lois 1 avec un long titre]</a></li>\r
+                                            <li><a href="#">[Règlements 2 avec un long titre]</a></li>\r
+                                            <li><a href="#">[Politiques 3]</a></li>\r
+                                        </ul>\r
+                                        <p><a href="#">Tous les règlements et lois connexes</a></p>\r
+                                    </section>\r
+                                    <section class="col-lg-4 col-md-6">\r
+                                        <h3>Publications</h3>\r
+                                        <ul>\r
+                                            <li><a href="#">[Publication 1]</a></li>\r
+                                            <li><a href="#">[Publication 2 avec un long titre]</a></li>\r
+                                            <li><a href="#">[Publication 3]</a></li>\r
+                                            <li><a href="#">[Publication 4]</a></li>\r
+                                        </ul>\r
+                                        <p><a href="#">Toutes les publications connexes</a></p>\r
+                                    </section>\r
+                                    <section class="col-lg-4 col-md-6">\r
+                                        <h3>Consultations</h3>\r
+                                        <ul>\r
+                                            <li><a href="#">[Consultation 1]</a></li>\r
+                                            <li><a href="#">[Consultation 2 avec un long titre]</a></li>\r
+                                            <li><a href="#">[Consultation 3]</a></li>\r
+                                            <li><a href="#">[Consultation 4 avec un long titre... et plus...]</a></li>\r
+                                        </ul>\r
+                                        <p><a href="#">Toutes les consultations connexes</a></p>\r
+                                    </section>\r
+                                    <section class="col-lg-4 col-md-6">\r
+                                        <h3>Données ouvertes</h3>\r
+                                        <ul>\r
+                                            <li><a href="#">[Donnée 1]</a></li>\r
+                                            <li><a href="#">[Donnée 2 avec un long titre]</a></li>\r
+                                            <li><a href="#">[Donnée 3]</a></li>\r
+                                            <li><a href="#">[Donnée 4 avec un long titre... et plus...]</a></li>\r
+                                        </ul>\r
+                                        <p><a href="#">Toutes les données ouvertes connexes</a></p>\r
+                                    </section>\r
+                                    <section class="col-lg-4 col-md-6">\r
+                                        <h3>Statistiques</h3>\r
+                                        <ul>\r
+                                            <li><a href="#">[Statistique 1]</a></li>\r
+                                            <li><a href="#">[Statistique 2 avec un long titre]</a></li>\r
+                                            <li><a href="#">[Statistique 3]</a></li>\r
+                                            <li><a href="#">[Statistique 4 avec un long titre... et plus...]</a></li>\r
+                                        </ul>\r
+                                        <p><a href="#">Toutes les statistiques connexes</a></p>\r
+                                    </section>\r
+                                </div>\r
+                            </section>
 
 - trigger: tabs-panel
   description: Creates a panel for a tabbed interface
@@ -2441,16 +2459,19 @@
 - trigger: template-ASP
   description: Creates the ASP header and footer areas we use for DFO sites.
   scope: html
-  mTime: 1505418724676
+  mTime: 1505822944880
   text: |
         <!--#include virtual="/${1:site}/theme-wet4/asp/init.asp" -->
         <%
         Title = "${2:title}"
-        Breadcrumb = BcRoot + "<li class='active'>${3:Current page}</li>"
+        Breadcrumb = BcRoot + "<li>${2:title}</li>"
         %>
         <!--#include virtual="/${1:site}/theme-wet4/template-head.asp"-->
         <!-- MainContentStart -->
-        ${4}
+        
+            <h1 property="name" id="wb-cont">${2:title}</h1>
+            ${3}
+            
         <!-- MainContentEnd --> 
         <!--#include virtual="/${1:site}/theme-wet4/template-footer.asp"--> 
 
@@ -2759,10 +2780,10 @@
 - trigger: ul
   description: Creates a plain unordered list
   scope: html
-  mTime: 1468409176952
+  mTime: 1505756825386
   text: |
         <ul>
-            <li></li>
+            <li>${1}</li>
         </ul>
 
 - trigger: target_blank
@@ -4054,7 +4075,7 @@
 - scope: html
   trigger: template-JS-eng
   description: Creates the English header and footer areas we use for DFO sites using JavaScript.
-  mTime: 1505419070470
+  mTime: 1505755788639
   text: |
         <!DOCTYPE html>
         <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
@@ -4070,10 +4091,10 @@
         <body vocab="http://schema.org/" typeof="WebPage">
             <script>
                 /*-- This variable is used for changing the standard breadcrumb in an easy way --*/
-                var breadcrumb = "<li class='active'>${2}</li>";
+                var breadcrumb = "<li>${2}</li>";
                 
                 /*-- This variable changes the date modified --*/
-                var dateModified = "yyyy-mm-dd";
+                var dateModified = "${3}";
             </script>
             <!--#include virtual="/${1}/theme/nav-eng.html"-->
             <main role="main" property="mainContentOfPage" class="container">
@@ -4082,7 +4103,7 @@
                 <!------------------------------>
                 
                 <h1 property="name" id="wb-cont">${2}</h1>
-                ${3}
+                ${4}
                 
                 <!------------------------------>
                 <!--- Main content ends here --->
@@ -4097,7 +4118,7 @@
 - trigger: template-JS-fra
   scope: html
   description: Creates the French header and footer areas we use for DFO sites using JavaScript.
-  mTime: 1505419063680
+  mTime: 1505755801219
   text: |
         <!DOCTYPE html>
         <!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr"><![endif]-->
@@ -4113,10 +4134,10 @@
         <body vocab="http://schema.org/" typeof="WebPage">
             <script>
                 /*-- This variable is used for changing the standard breadcrumb in an easy way --*/
-                var breadcrumb = "<li class='active'>${2}</li>";
+                var breadcrumb = "<li>${2}</li>";
         
                 /*-- This variable changes the date modified --*/
-                var dateModified = "yyyy-mm-dd";
+                var dateModified = "${3}";
         
             </script>
             <!--#include virtual="/${1}/theme/nav-fra.html"-->
@@ -4126,7 +4147,7 @@
                 <!------------------------------>
                 
                 <h1 property="name" id="wb-cont">${2}</h1>
-                ${3}
+                ${4}
                 
                 <!------------------------------>
                 <!--- Main content ends here --->
@@ -8562,10 +8583,10 @@
 - trigger: ul-spaced-unstyled
   description: Creates an unstyled unordered list with space between list items
   scope: html
-  mTime: 1494939516412
+  mTime: 1505823042743
   text: |
         <ul class="list-unstyled lst-spcd">
-            <li></li>
+            <li>${1}</li>
         </ul>
 
 - trigger: vid-WET4
