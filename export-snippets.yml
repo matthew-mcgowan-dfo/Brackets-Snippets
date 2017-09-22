@@ -1336,7 +1336,7 @@
 - trigger: topic-landing-page
   description: Creates a default topic landing page structure as specificied by Canada.ca
   scope: html
-  mTime: 1505834099480
+  mTime: 1506105943534
   text: |
         <div class="row profile">\r
                     <div class="col-md-6">\r
@@ -1350,7 +1350,7 @@
               <li> <a href="/connect/index-eng.htm#twitter"><img src="/wet-boew/dist/theme-gcwu-fegc/images/twitter_32_square.png" alt="Twitter" /></a> </li>\r
               <li> <a href="/connect/index-eng.htm#youtube"><img src="/wet-boew/dist/theme-gcwu-fegc/images/sl_youtube.png" alt="YouTube" /></a> </li>\r
               <li> <a href="/connect/index-eng.htm#rss"><img src="/wet-boew/dist/theme-gcwu-fegc/images/sl_feeds.png" alt="RSS feeds" /></a> </li>\r
-              <li> <a href="/connect/index-eng.htm#flickr"><img src="/images/flickr-sml.png" alt="Flickr" /></a> </li>\r
+              <li> <a href="/connect/index-eng.htm#flickr"><img src="/wet-boew/dist/theme-gcwu-fegc/images/flickr-sml.png" alt="Flickr" /></a> </li>\r
             </ul>\r
           </section>\r
                         </div>\r
@@ -1526,7 +1526,7 @@
                                 <li><a href="#">[Regulation 2 with a long heading]</a></li>\r
                                 <li><a href="#">[Regulation 3]</a></li>\r
                             </ul>\r
-                            <p><a href="#">All related laws and regulations</a></p>\r
+                            <p><strong><a href="#">All related laws and regulations</a></strong></p>\r
                         </section>\r
                         <section class="col-lg-4 col-md-6">\r
                             <h3>Publications</h3>\r
@@ -1536,7 +1536,7 @@
                                 <li><a href="#">[Publication 3]</a></li>\r
                                 <li><a href="#">[Publication 4]</a></li>\r
                             </ul>\r
-                            <p><a href="#">All related publications</a></p>\r
+                            <p><strong><a href="#">All related publications</a></strong></p>\r
                         </section>\r
                         <section class="col-lg-4 col-md-6">\r
                             <h3>Consultations</h3>\r
@@ -1546,7 +1546,7 @@
                                 <li><a href="#">[Consultation 3]</a></li>\r
                                 <li><a href="#">[Consultation 4 with a long heading..and a bit longer]</a></li>\r
                             </ul>\r
-                            <p><a href="#">All related consultations</a></p>\r
+                            <p><strong><a href="#">All related consultations</a></strong></p>\r
                         </section>\r
                         <section class="col-lg-4 col-md-6">\r
                             <h3>Open data</h3>\r
@@ -1556,7 +1556,7 @@
                                 <li><a href="#">[Open data 3]</a></li>\r
                                 <li><a href="#">[Open data 4 with a long heading..and a bit longer]</a></li>\r
                             </ul>\r
-                            <p><a href="#">All related open data</a></p>\r
+                            <p><strong><a href="#">All related open data</a></strong></p>\r
                         </section>\r
                         <section class="col-lg-4 col-md-6">\r
                             <h3>Statistics</h3>\r
@@ -1566,7 +1566,7 @@
                                 <li><a href="#">[Statistic 3]</a></li>\r
                                 <li><a href="#">[Statistic 4 with a long heading..and a bit longer]</a></li>\r
                             </ul>\r
-                            <p><a href="#">All related statistics</a></p>\r
+                            <p><strong><a href="#">All related statistics</a></strong></p>\r
                         </section>\r
                     </div>\r
                 </section>
@@ -3169,7 +3169,7 @@
 - trigger: topic-landing-page_fr
   description: Creates a default topic landing page structure as specified by Canada.ca in French
   scope: html
-  mTime: 1505834111430
+  mTime: 1506105971912
   text: |
         <div class="row profile">\r
                                 <div class="col-md-6">\r
@@ -3183,7 +3183,7 @@
                 <li> <a href="/connect/index-fra.htm#twitter"><img src="/wet-boew/dist/theme-gcwu-fegc/images/twitter_32_square.png" alt="Twitter" /></a> </li>\r
                 <li> <a href="/connect/index-fra.htm#youtube"><img src="/wet-boew/dist/theme-gcwu-fegc/images/sl_youtube.png" alt="YouTube" /></a> </li>\r
                 <li> <a href="/connect/index-fra.htm#rss"><img src="/wet-boew/dist/theme-gcwu-fegc/images/sl_feeds.png" alt="RSS feeds" /></a> </li>\r
-                <li> <a href="/connect/index-fra.htm#flickr"><img src="/images/flickr-sml.png" alt="Flickr" /></a> </li>\r
+                <li> <a href="/connect/index-fra.htm#flickr"><img src="/wet-boew/dist/theme-gcwu-fegc/images/flickr-sml.png" alt="Flickr" /></a> </li>\r
               </ul>\r
             </section>\r
                                     </div>\r
@@ -3357,7 +3357,7 @@
                                             <li><a href="#">[Règlements 2 avec un long titre]</a></li>\r
                                             <li><a href="#">[Politiques 3]</a></li>\r
                                         </ul>\r
-                                        <p><a href="#">Tous les règlements et lois connexes</a></p>\r
+                                        <p><strong><a href="#">Tous les règlements et lois connexes</a></strong></p>\r
                                     </section>\r
                                     <section class="col-lg-4 col-md-6">\r
                                         <h3>Publications</h3>\r
@@ -3367,7 +3367,7 @@
                                             <li><a href="#">[Publication 3]</a></li>\r
                                             <li><a href="#">[Publication 4]</a></li>\r
                                         </ul>\r
-                                        <p><a href="#">Toutes les publications connexes</a></p>\r
+                                        <p><strong><a href="#">Toutes les publications connexes</a></strong></p>\r
                                     </section>\r
                                     <section class="col-lg-4 col-md-6">\r
                                         <h3>Consultations</h3>\r
@@ -3377,7 +3377,7 @@
                                             <li><a href="#">[Consultation 3]</a></li>\r
                                             <li><a href="#">[Consultation 4 avec un long titre... et plus...]</a></li>\r
                                         </ul>\r
-                                        <p><a href="#">Toutes les consultations connexes</a></p>\r
+                                        <p><strong><a href="#">Toutes les consultations connexes</a></strong></p>\r
                                     </section>\r
                                     <section class="col-lg-4 col-md-6">\r
                                         <h3>Données ouvertes</h3>\r
@@ -3387,7 +3387,7 @@
                                             <li><a href="#">[Donnée 3]</a></li>\r
                                             <li><a href="#">[Donnée 4 avec un long titre... et plus...]</a></li>\r
                                         </ul>\r
-                                        <p><a href="#">Toutes les données ouvertes connexes</a></p>\r
+                                        <p><strong><a href="#">Toutes les données ouvertes connexes</a></strong></p>\r
                                     </section>\r
                                     <section class="col-lg-4 col-md-6">\r
                                         <h3>Statistiques</h3>\r
@@ -3397,7 +3397,7 @@
                                             <li><a href="#">[Statistique 3]</a></li>\r
                                             <li><a href="#">[Statistique 4 avec un long titre... et plus...]</a></li>\r
                                         </ul>\r
-                                        <p><a href="#">Toutes les statistiques connexes</a></p>\r
+                                        <p><strong><a href="#">Toutes les statistiques connexes</a></strong></p>\r
                                     </section>\r
                                 </div>\r
                             </section>
@@ -5369,11 +5369,11 @@
 - trigger: lorem-ipsem-long
   description: 5 paragaphs of latin placeholder text
   scope: html
-  mTime: 1493944284955
+  mTime: 1505844699117
   text: |
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ex, posuere eu neque a, elementum placerat massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sit amet malesuada urna. Pellentesque condimentum pretium cursus. Praesent magna dolor, tristique vel finibus a, hendrerit quis nisi. Proin nibh dui, condimentum non velit non, convallis cursus lectus. Ut elementum scelerisque augue dignissim vestibulum. Donec a finibus felis, in vestibulum magna. In purus turpis, tempus commodo pharetra at, vulputate id neque. Duis dolor nunc, dictum at leo vitae, accumsan tristique lectus. Quisque consectetur id leo ut euismod. Sed nec commodo diam, non luctus nulla. Nulla euismod consequat rhoncus. Duis mi neque, molestie quis nisl non, bibendum gravida urna.</p>
         <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ullamcorper fermentum ullamcorper. Donec ante erat, eleifend egestas dapibus dignissim, finibus pellentesque elit. Vivamus in est maximus, sodales justo id, varius tellus. Pellentesque lacus urna, varius sed lorem quis, sagittis consectetur turpis. Nunc id nisi convallis, maximus ex at, vulputate risus. Suspendisse maximus, tellus in fringilla consectetur, risus turpis ultrices erat, sed mattis risus lorem ut metus. Nam a aliquam eros. In libero diam, tristique nec odio eu, consequat finibus dolor. In et varius arcu. Duis lacinia, neque in egestas bibendum, quam neque facilisis sem, at tincidunt odio nisl eleifend odio. Fusce at lectus eros. Ut at quam vitae neque sodales tempus vel sed nunc. Integer dictum tincidunt semper.</p>
-        <p>Praesent luctus nisi non elit scelerisque ullamcorper. Aliquam malesuada ac leo eget efficitur. Aliquam sed euismod sapien. Vestibulum ullamcorper nisi vitae metus ultrices, at hendrerit sapien blandit. Vestibulum suscipit semper leo, id aliquam diam gravida at. Nullam sed dolor nec nisi ultrices vulputate ac eget erat. Maecenas nec metus fermentum, sodales velit ut, luctus turpis. Nunc sodales et leo eget ultricies. Morbi blandit urna quis leo interdum consequat. Praesent leo turpis, hendrerit sit amet urna eget, aliquam accumsan enim. Proin tincidunt, diam a euismod porttitor, turpis sapien imperdiet felis, eget pellentesque risus turpis sed ipsum.</p> Cras eget porta augue. Aliquam quam urna, ultricies at interdum ac, cursus vitae augue.
+        <p>Praesent luctus nisi non elit scelerisque ullamcorper. Aliquam malesuada ac leo eget efficitur. Aliquam sed euismod sapien. Vestibulum ullamcorper nisi vitae metus ultrices, at hendrerit sapien blandit. Vestibulum suscipit semper leo, id aliquam diam gravida at. Nullam sed dolor nec nisi ultrices vulputate ac eget erat. Maecenas nec metus fermentum, sodales velit ut, luctus turpis. Nunc sodales et leo eget ultricies. Morbi blandit urna quis leo interdum consequat. Praesent leo turpis, hendrerit sit amet urna eget, aliquam accumsan enim. Proin tincidunt, diam a euismod porttitor, turpis sapien imperdiet felis, eget pellentesque risus turpis sed ipsum. Cras eget porta augue. Aliquam quam urna, ultricies at interdum ac, cursus vitae augue.</p>
         <p>Duis tristique erat eget pellentesque vulputate. Nam sed augue nisl. Ut hendrerit lorem eu lectus facilisis, fermentum tincidunt magna aliquam. Mauris vitae pulvinar nisl. Vivamus porta, neque facilisis blandit convallis, nisi est aliquam arcu, eu commodo erat magna quis ante. Proin gravida tempor urna, nec malesuada tellus faucibus et. Curabitur imperdiet in justo ut volutpat. Integer at consequat augue, faucibus porta tortor. Suspendisse potenti. Donec sed efficitur nulla. Donec in nibh at magna varius porta iaculis in justo. Nullam convallis hendrerit erat sed ullamcorper. Donec vel congue mi. Vestibulum dignissim venenatis sapien non dapibus.</p>
         <p>Sed quis justo ac lectus convallis faucibus. In ac dui fringilla leo tincidunt convallis in id tortor. Nam in condimentum diam. Curabitur nulla odio, tristique ac justo ac, volutpat porttitor mauris. Ut vitae metus blandit, tincidunt purus eget, tristique massa. Duis gravida elit lacinia rhoncus finibus. Sed ac scelerisque ante. Etiam eget venenatis quam. Suspendisse faucibus pulvinar dictum. Phasellus mi urna, maximus at ante sit amet, convallis sollicitudin tellus. Suspendisse finibus viverra efficitur. Vestibulum id ante eget sapien fermentum sollicitudin at a lacus. Aliquam ut dui sed tortor pretium semper. Fusce mollis ullamcorper efficitur. Suspendisse tempor scelerisque urna, sed porta arcu rhoncus at.</p>
 
@@ -5988,4 +5988,49 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ex, posuere eu neque a, elementum placerat massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sit amet malesuada urna. Pellentesque condimentum pretium cursus. Praesent magna dolor, tristique vel finibus a, hendrerit quis nisi. Proin nibh dui, condimentum non velit non, convallis cursus lectus. Ut elementum scelerisque augue dignissim vestibulum. Donec a finibus felis, in vestibulum magna. In purus turpis, tempus commodo pharetra at, vulputate id neque. Duis dolor nunc, dictum at leo vitae, accumsan tristique lectus. Quisque consectetur id leo ut euismod. Sed nec commodo diam, non luctus nulla. Nulla euismod consequat rhoncus. Duis mi neque, molestie quis nisl non, bibendum gravida urna.</p>\r
             </div>\r
         </section>
+
+- trigger: template-intranet-science-eng
+  scope: html
+  mTime: 1505837258648
+  text: |
+        <!--#include virtual="/science/theme/asp/init.asp"-->\r
+        <%\r
+        Title = "${1:title}"\r
+        Breadcrumb = "<li><a href='/home_e.htm'>Home</a></li><li><a href='/science/index-eng.htm'>Ecosystems &amp; Oceans Science Intranet</a></li>"\r
+        %>\r
+            <!--#include virtual="/science/theme/asp/template-head.asp"-->\r
+            <!-- MainContentStart -->\r
+        \r
+            <h1 property="name" id="wb-cont">${1:title}</h1>\r
+            ${2}        \r
+                    \r
+            <!-- MainContentEnd -->\r
+            <!--#include virtual="/science/theme/asp/template-footer.asp"-->\r
+        
+
+- trigger: template-intranet-science-fra
+  scope: html
+  mTime: 1505837337102
+  text: |
+        <!--#include virtual="/science/theme/asp/init.asp"-->\r
+        <%\r
+        Title = "${1:title}"\r
+        Breadcrumb = "<li><a href='/home_f.htm'>Accueil</a></li><li><a href='/science/index-fra.htm'>Sciences des écosystèmes et des océans</a></li>"\r
+        %>\r
+            <!--#include virtual="/science/theme/asp/template-head.asp"-->\r
+            <!-- MainContentStart -->\r
+        \r
+            <h1 property="name" id="wb-cont">${1:title}</h1>\r
+            ${2}\r
+            \r
+            <!-- MainContentEnd -->\r
+            <!--#include virtual="/science/theme/asp/template-footer.asp"-->\r
+        
+
+- trigger: include
+  description: Creates an ASP server include line
+  scope: html
+  mTime: 1506016903052
+  text: |
+        <!--#include virtual="${1:link}" -->
 
