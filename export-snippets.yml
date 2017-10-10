@@ -4081,7 +4081,7 @@
 - scope: html
   trigger: template-JS-eng
   description: Creates the English header and footer areas we use for DFO sites using JavaScript.
-  mTime: 1505755788639
+  mTime: 1507643258229
   text: |
         <!DOCTYPE html>
         <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
@@ -4108,8 +4108,8 @@
                 <!-- Main content starts here -->
                 <!------------------------------>
                 
-                <h1 property="name" id="wb-cont">${2}</h1>
-                ${4}
+                <h1 property="name" id="wb-cont">${4}</h1>
+                ${5}
                 
                 <!------------------------------>
                 <!--- Main content ends here --->
@@ -4124,7 +4124,7 @@
 - trigger: template-JS-fra
   scope: html
   description: Creates the French header and footer areas we use for DFO sites using JavaScript.
-  mTime: 1505755801219
+  mTime: 1507643278868
   text: |
         <!DOCTYPE html>
         <!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr"><![endif]-->
@@ -4152,8 +4152,8 @@
                 <!-- Main content starts here -->
                 <!------------------------------>
                 
-                <h1 property="name" id="wb-cont">${2}</h1>
-                ${4}
+                <h1 property="name" id="wb-cont">${4}</h1>
+                ${5}
                 
                 <!------------------------------>
                 <!--- Main content ends here --->
@@ -5737,11 +5737,11 @@
   scope: html
   mTime: 1502376381483
   text: |
-        <%@ Language=VBScript %>\\\
-           <% ' Permanent redirection\\\
-        Response.Status = "301 Moved Permanently"\\\
-        Response.AddHeader "Location", "${1}"\\\
-        Response.End\\\
+        <%@ Language=VBScript %>\\\\\\
+           <% ' Permanent redirection\\\\\\
+        Response.Status = "301 Moved Permanently"\\\\\\
+        Response.AddHeader "Location", "${1}"\\\\\\
+        Response.End\\\\\\
         %>
 
 - trigger: wb-invisible
@@ -6006,7 +6006,6 @@
                     
             <!-- MainContentEnd -->
             <!--#include virtual="/science/theme/asp/template-footer.asp"-->
-        
 
 - trigger: template-intranet-science-fra
   scope: html
@@ -6025,7 +6024,6 @@
             
             <!-- MainContentEnd -->
             <!--#include virtual="/science/theme/asp/template-footer.asp"-->
-        
 
 - trigger: include
   description: Creates an ASP server include line
