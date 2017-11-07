@@ -4081,7 +4081,7 @@
 - scope: html
   trigger: template-JS-eng
   description: Creates the English header and footer areas we use for DFO sites using JavaScript.
-  mTime: 1507643258229
+  mTime: 1510081145803
   text: |
         <!DOCTYPE html>
         <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
@@ -4091,32 +4091,32 @@
         <!-- DFO WET 4.0.26 template -->
         
         <head>
-            <!--#include virtual="/${1}/theme/head-eng.html"-->
+            <!--#include virtual="/science/theme/head-eng.html"-->
         </head>
         
         <body vocab="http://schema.org/" typeof="WebPage">
             <script>
                 /*-- This variable is used for changing the standard breadcrumb in an easy way --*/
-                var breadcrumb = "<li>${2}</li>";
+                var breadcrumb = "<li>${1}</li>";
                 
                 /*-- This variable changes the date modified --*/
-                var dateModified = "${3}";
+                var dateModified = "${2}";
             </script>
-            <!--#include virtual="/${1}/theme/nav-eng.html"-->
+            <!--#include virtual="/science/theme/nav-eng.html"-->
             <main role="main" property="mainContentOfPage" class="container">
                 <!------------------------------>
                 <!-- Main content starts here -->
                 <!------------------------------>
                 
-                <h1 property="name" id="wb-cont">${4}</h1>
-                ${5}
+                <h1 property="name" id="wb-cont">${3}</h1>
+                ${4}
                 
                 <!------------------------------>
                 <!--- Main content ends here --->
                 <!------------------------------>
-                <!--#include virtual="/${1}/theme/footer-eng.html"-->
+                <!--#include virtual="/science/theme/footer-eng.html"-->
             </main>
-            <!--#include virtual="/${1}/theme/end-eng.html"-->
+            <!--#include virtual="/science/theme/end-eng.html"-->
         </body>
         
         </html>
@@ -4124,7 +4124,7 @@
 - trigger: template-JS-fra
   scope: html
   description: Creates the French header and footer areas we use for DFO sites using JavaScript.
-  mTime: 1507643278868
+  mTime: 1510081175807
   text: |
         <!DOCTYPE html>
         <!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr"><![endif]-->
@@ -4134,33 +4134,33 @@
         <!-- DFO WET 4.0.26 template -->
         
         <head>
-            <!--#include virtual="/${1}/theme/head-fra.html"-->
+            <!--#include virtual="/science/theme/head-fra.html"-->
         </head>
         
         <body vocab="http://schema.org/" typeof="WebPage">
             <script>
                 /*-- This variable is used for changing the standard breadcrumb in an easy way --*/
-                var breadcrumb = "<li>${2}</li>";
+                var breadcrumb = "<li>${1}</li>";
         
                 /*-- This variable changes the date modified --*/
-                var dateModified = "${3}";
+                var dateModified = "${2}";
         
             </script>
-            <!--#include virtual="/${1}/theme/nav-fra.html"-->
+            <!--#include virtual="/science/theme/nav-fra.html"-->
             <main role="main" property="mainContentOfPage" class="container">
                 <!------------------------------>
                 <!-- Main content starts here -->
                 <!------------------------------>
                 
-                <h1 property="name" id="wb-cont">${4}</h1>
-                ${5}
+                <h1 property="name" id="wb-cont">${3}</h1>
+                ${4}
                 
                 <!------------------------------>
                 <!--- Main content ends here --->
                 <!------------------------------>
-                <!--#include virtual="/${1}/theme/footer-fra.html"-->
+                <!--#include virtual="/science/theme/footer-fra.html"-->
             </main>
-            <!--#include virtual="/${1}/theme/end-fra.html"-->
+            <!--#include virtual="/science/theme/end-fra.html"-->
         </body>
         
         </html>
